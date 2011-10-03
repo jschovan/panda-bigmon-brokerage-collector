@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head id='head'><title>Panda logging monitor (logged incidents) over last 2 hours (0.1 days)</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="description" content="Panda monitor" />
+<meta name="date" content="Mon, 03 Oct 2011 12:31:37 GMT">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel=start href="http://panda.cern.ch/server/pandamon/query" title="Panda monitor home page">
+<style type="text/css">
+/* comment */
+/*
+body {
+  color: black;
+  background-color: #cc9966;
+}
+*/
+
+td {
+font-family: sans-serif;
+font-size: small;
+}
+
+#tophome{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: small;
+}
+
+#topheader{
+text-align: left;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: small;
+}
+
+#browsertitle{
+ visibility: hidden;
+}
+
+#homeup{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: medium;
+font-weight: bold;
+}
+
+#hometop{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#homedown{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#titleheader{
+text-align: left;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: large;
+font-weight: bold;
+}
+
+#nav{
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#menu{
+vertical-align: top;
+font-family: sans-serif;
+}
+
+#main{
+text-align: left;
+vertical-align: top;
+font-family: sans-serif;
+}
+
+#foot{
+font-size: small;
+font-family: sans-serif;
+}
+
+.headerbar {
+  background: #ffcccc;
+  font-family: sans-serif;
+}
+
+.menubar {
+  background: #ffcc88;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.overlap {
+  background: #ffccaa;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.mainpage {
+  background: white;
+  font-family: sans-serif;
+  font-size: small;
+}
+</style>
+<!-- Page-specific header insertion -->
+
+</head>
+<noscript>
+JavaScript must be enabled in order for you to use this browser.
+</noscript>
+
+         <!--Load the JQUERY/FLOT -->
+                <link type="text/css" href='http://panda.cern.ch/monitor/css/ui-lightness/jquery-ui.css' rel='stylesheet' />	
+                <link rel="stylesheet" href='http://panda.cern.ch/monitor/css/tablesorter/themes/blue/style.css' type='text/css' media='print, projection, screen'/>
+                <link rel="stylesheet" href='http://panda.cern.ch/monitor/css/demo_table_jui.css' type='text/css' media='print, projection, screen'/>
+                <!--[if IE]><script language="javascript"  src="http://panda.cern.ch/monitor/js/jquery/excanvas.min.js"></script><![endif]-->                
+                <script   src='http://panda.cern.ch/monitor/js/jquery/jquery.min.js'></script>
+                <script   src='http://panda.cern.ch/monitor/js/jquery/jquery.ba-bbq.min.js'></script>
+                <script   src='http://panda.cern.ch/monitor/js/jquery/jquery-ui.min.js'></script>
+                <script   src='http://panda.cern.ch/monitor/js/flot/jquery.flot.js'></script>
+                <script   src='http://panda.cern.ch/monitor/js/flot/jquery.flot.crosshair.js'></script>
+                <script   src='http://panda.cern.ch/monitor/js/flot/jquery.flot.stack.js'></script> 
+                <script   src='http://panda.cern.ch/monitor/js/jquery/jquery.tablesorter.js'></script> 
+                <script   src='http://panda.cern.ch/monitor/js/jquery/jquery.tablesorter.pager.js'></script> 
+                <script   src='http://panda.cern.ch/monitor/js/jquery/jquery.uitablefilter.js'></script> 
+                <script   src='http://panda.cern.ch/monitor/js/jquery/jquery.dataTables.min.js'></script>
+                <!--Load the PANDA API-->
+                <script  src='http://panda.cern.ch/monitor/js/PandaMonitorUtils.js'> </script>
+<style>
+.ui-widget {
+  font-size: 9pt;
+}
+</style>
+          <script> 
+          document.pandaURL = 'http://panda.cern.ch/monitor/';
+         // JQuery init
+         $(document).ready(function() {
+             utils();
+         });
+         </script>
+                
+    <!--    <script src="http://tjweb.org/scripts/xml_http_request.js"></script> -->
+        <script type="text/javascript">
+        gAnswer = "";  // Global answer
+        // gHTTP = getHTTPObject(); // HTTP object for XMLHttpRequest
+
+        var datael = new Array( );
+        datastate = 0;
+
+        function dataToggle() { if ( datastate == 1 ) { datastate=0;} else {datastate=1;} dataControl(datastate);}
+        function dataControl(state) {
+          for (var el in datael) {
+            setDisplay(datael[el],state)
+          }
+        }
+
+        function pause(numberMillis) {
+          var now = new Date();
+          var exitTime = now.getTime() + numberMillis;
+          while (true) {
+            now = new Date();
+            if (now.getTime() > exitTime)
+            return;
+          }
+        }
+
+        function domDynamicContent(elid,content) {
+          rng = document.createRange();
+          el = document.getElementById(elid);
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(content);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+        }
+
+        function fieldContent(elid,content) {
+          rng = document.createRange();
+          el = document.getElementById(elid);
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(content);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+        }
+
+        function folderContent(elid,content,folder) {
+          rng = document.createRange();
+          el = document.getElementById(elid);
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(content);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+          el = document.getElementById('nav');
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(folder);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+        }
+
+        // Retrieve contents of a page element from a URL
+        function getHTTPElement(url,elid) {
+          gHTTP = new XMLHttpRequest(); // HTTP object for XMLHttpRequest
+
+          gHTTP.open("GET",url,false); // Third param means asynch=true. Always use.
+          gHTTP.onreadystatechange=function() {
+            if (gHTTP.readyState==4) {
+              domDynamicContent(elid,gHTTP.responseText);
+              gHTTP = null;
+              delete gHTTP;
+            }
+          }
+          gHTTP.send(null)
+        }
+
+        function getHTTPFolder(url,elid,folder) {
+          gHTTP = new XMLHttpRequest(); // HTTP object for XMLHttpRequest
+
+          gHTTP.open("GET",url,false); // Third param means asynch=true. Always use.
+          gHTTP.onreadystatechange=function() {
+            if (gHTTP.readyState==4) {
+              folderContent(elid,gHTTP.responseText, folder);
+              gHTTP = null;
+              delete gHTTP;
+            }
+          }
+          gHTTP.send(null)
+        }
+
+        function setDisplay(elid,i) {
+          var el = document.getElementById(elid);
+          if (i == 0)
+            el.style.display = "none";
+          else
+            el.style.display = "";
+        }
+
+        function toggleDisplay(elid) {
+          // Use visibility, not this
+          var el = document.getElementById(elid);
+          if (el.style.display=="")
+            el.style.display = "none";
+          else
+            el.style.display = "";
+        }
+        function toggleVisibility(elid) {
+        var el = document.getElementById(elid);
+        if (el.style.visibility=="visible")
+          el.style.visibility = "hidden";
+        else
+          el.style.visibility = "visible";
+        }
+        </script>
+        <body marginwidth=0>
+<table border=0 width="100%" cellspacing=0 cellpadding=5>
+  <tr height="12px">
+  <td width="3px"></td>
+  <td id="tophome" class="menubar" nowrap> <b> &nbsp; &nbsp; &nbsp; <a href='http://panda.cern.ch/server/pandamon/query?mode=config'>Configuration</a> 
+  &nbsp;&nbsp; &nbsp;  </b></td><td id="topheader" width="100%" colspan=2> <a href='http://panda.cern.ch/server/pandamon/query?dash=prod'>Production</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?dash=clouds'>Clouds</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?overview=incidents'>Incidents</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?dash=ddm'>DDM</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?ddm=dash'>PandaMover</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?tp=main'>AutoPilot</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?dash=site'>Sites</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?overview=releaseinfo'>Releases</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?dash=analysis'>Analysis</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?mode=sitestats'>Stats</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?ui=users'>Users</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?dash=physics'>Physics data</a> &nbsp;<a href='http://dashb-atlas-prodsys-test.cern.ch/dashboard/request.py/overview'>ProdDash</a> &nbsp;<a href='http://panda.cern.ch/server/pandamon/query?mode=dashsitestats'>StatsDash</a> &nbsp;<a href='http://dashb-atlas-data-test.cern.ch/dashboard/request.py/site'>DDMDash</a> &nbsp;<a href='http://dashb-atlas-ssb.cern.ch/dashboard/request.py/siteviewhome'>SSB</a> &nbsp;</td>
+  </tr>
+  <tr>
+  <td height="12px" class="headerbar"></td>
+  <td id="hometop" class="overlap" nowrap> <a href='http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=20'>Update</a></td>
+  <td id="topright" class="headerbar" align="left" width="75%"> &nbsp;&nbsp;</font></td>
+  <td id="topright" class="headerbar" align="right" style="vertical-align:top"> &nbsp;</td>
+  </tr>
+  <tr>
+  <td height="40px" class="headerbar"></td>
+  <td id="homeup" class="overlap" nowrap> <a href='http://panda.cern.ch/server/pandamon/query'>Panda monitor</a><br><b><font size=-1>Times are in UTC</font></b></td>
+  <td id="titleheader" class="headerbar"  colspan=2> Panda logging monitor (logged incidents) over last 2 hours (0.1 days)</td>
+  </tr>
+  <tr>
+  <td height="20px" class="headerbar"></td>
+  <td id="homedown" class="overlap" nowrap> <a href='http://panda.cern.ch/server/pandamon/query?overview=info'>Panda info and help</a></td>
+  <td id="nav" class="headerbar" align="left">  &nbsp; category=panda.mon.prod &nbsp; type=analy_brokerage</td>
+  <td id="nav" class="headerbar" align="right"  style="vertical-align:bottom"> &nbsp;</td>
+  </tr>  
+  <tr>
+  <td></td>
+  <td id="menu" class="menubar"> <p><b>Jobs</b> - <a href='http://panda.cern.ch/server/pandamon/query?mode=jobquery'>search</a><br>States: <a href='http://panda.cern.ch/server/pandamon/query?job=*&jobStatus=running'>running</a>, <a href='http://panda.cern.ch/server/pandamon/query?job=*&jobStatus=defined'>defined</a>, <a href='http://panda.cern.ch/server/pandamon/query?job=*&jobStatus=waiting'>waiting</a>, <a href='http://panda.cern.ch/server/pandamon/query?job=*&jobStatus=assigned'>assigned</a>, <a href='http://panda.cern.ch/server/pandamon/query?job=*&jobStatus=activated'>activated</a>, <a href='http://panda.cern.ch/server/pandamon/query?job=*&jobStatus=finished&hours=3'>finished</a>, <a href='http://panda.cern.ch/server/pandamon/query?job=*&jobStatus=failed&hours=3'>failed</a><br>Types: <a href='http://panda.cern.ch/server/pandamon/query?job=*&type=analysis&hours=3'>analysis</a>, <a href='http://panda.cern.ch/server/pandamon/query?job=*&type=production&hours=3'>prod</a>,  <a href='http://panda.cern.ch/server/pandamon/query?job=*&prodSourceLabel=software&hours=3'>install</a>,  <a href='http://panda.cern.ch/server/pandamon/query?job=*&type=test&hours=3'>test</a><form method=GET style='margin-top:0; margin:0; border:0; font-size:8pt;'         action='http://panda.cern.ch/server/pandamon/query'><b>Quick search</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>Panda job ID <input style='margin-top:0; margin:0;         border:0; font-size:8pt;' type=text border=0 name=job size=6 maxlength=100></form><form method=GET style='margin-top:0; margin:0; border:0; font-size:8pt;'         action='http://panda.cern.ch/server/pandamon/query'>Batch ID <input style='margin-top:0; margin:0; border:0; font-size:8pt;'         type=text border=0 name='batchID' size=6 maxlength=200><input type=hidden name=job         value='*'></form><form method=GET style='margin-top:0; margin:0; border:0; font-size:8pt;'         action='http://panda.cern.ch/server/pandamon/query'>Dataset <input style='margin-top:0; margin:0; border:0; font-size:8pt;'         type=text border=0 name=name size=6 maxlength=200><input type=hidden name=mode         value=dset></form><form method=GET style='margin-top:0; margin:0; border:0; font-size:8pt;'         action='http://panda.cern.ch/server/pandamon/query'>Task&nbsp;request&nbsp;<input style='margin-top:0; margin:0; border:0;         font-size:8pt;' type=text border=0 name=qTID size=6 maxlength=100><input type=hidden         name=mode value=taskquery><input type=hidden name=qsubmit value=QuerySubmit></form><form method=GET style='margin-top:0; margin:0; border:0; font-size:8pt;'         action='http://panda.cern.ch/server/pandamon/query'>Task&nbsp;status&nbsp;<input style='margin-top:0; margin:0; border:0;         font-size:8pt;' type=text border=0 name=taskname size=6 maxlength=100><input type=hidden         name=overview value=taskinfo></form><form method=GET style='margin-top:0; margin:0; border:0; font-size:8pt;'         action='http://panda.cern.ch/server/pandamon/query'>File <input style='margin-top:0; margin:0; border:0; font-size:8pt;'         type=text border=0 name=lfn size=6 maxlength=200><input type=hidden name=overview         value=findfile><input type=hidden name=archive value=yes></form><p><form method=GET style='margin:1px; border:0; font-size:8pt;' action='http://panda.cern.ch/server/pandamon/query'>        <b>Summaries</b><br>Blocks:&nbsp;<input style='margin-top:0; margin:0; border:0;         font-size:8pt;' type=text border=0 name=days size=3 maxlength=3><input type=hidden         name=overview value=prodlist>&nbsp;days</form><form method=GET style='margin:1px; border:0; font-size:8pt;' action='http://panda.cern.ch/server/pandamon/query'>        Errors:&nbsp;<input style='margin-top:0; margin:0; border:0; font-size:8pt;' type=text         border=0 name=days size=3 maxlength=3><input type=hidden name=overview value=errorlist>        &nbsp;days</form><form method=GET style='margin:1px; border:0; font-size:8pt;' action='http://panda.cern.ch/server/pandamon/query'>        Nodes:&nbsp;<input style='margin-top:0; margin:0; border:0; font-size:8pt;' type=text         border=0 name=days size=3 maxlength=3><input type=hidden name=overview value=wnlist>        &nbsp;days<br>Usage <a href='http://panda.cern.ch/server/pandamon/query?overview=usage'>1</a>, <a href='http://panda.cern.ch/server/pandamon/query?overview=daysusage&days=3'>        3</a> days</form><p><b>Tasks</b> - <a href='http://panda.cern.ch/server/pandamon/query?mode=taskquery'>search</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=reqtask1'>Generic Task Req</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=reqtask2&type=evgen'>EvGen Task Req</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=reqtask3'>HLT Task Req</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listtask'>Task list</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=defNewTag'>New Tag</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listBugReport'>Bug Report</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=tinfoSearch'>Task overview query</a><p><b>Datasets</b> - <a href='http://panda.cern.ch/server/pandamon/query?mode=dbquery'>search</a><br><a href='http://popularity.cern.ch'>DQ2 Popularity</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listAbortedDatasetsState'>Aborted datasets</a><p><b>Datasets Distribution </b><br>DaTRI:<br>&bull;&nbsp;<a href='http://panda.cern.ch/server/pandamon/query?mode=ddm_req'>Data_Transfer_Request</a><br>&bull;&nbsp;<a href='http://panda.cern.ch/server/pandamon/query?mode=ddm_req&action=List'>List_User_Requests</a><br>&bull;&nbsp;<a href='http://panda.cern.ch/server/pandamon/query?mode=ddm_pathenareq&action=List'>List_Pathena_Requests</a><br>&bull;&nbsp;<a href='http://panda.cern.ch/server/pandamon/query?mode=ddm_gangareq&action=List'>List_Ganga_Requests</a><br>&bull;&nbsp;<a href='http://panda.cern.ch/server/pandamon/query?mode=ddm_groupreq&action=List'>Group_Production</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=pd2p'>PD2P</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listAODReplications'>AODs</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listEVNTReplications'>EVNTs</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listConditionsDB'>Conditions DS</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listDBRelease'>DB Releases</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listPacballs'>SIT pacballs</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listValidationReplications'>Validation Samples</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listFunctionalTests'>Functional Tests</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listCR'>ATLAS Data</a><br><a href='http://panda.cern.ch/server/pandamon/query?mode=listReproDSReplications'>Reprocessed_Datasets</a><p><a href='http://panda.cern.ch/server/pandamon/query?mode=mon&hours=6'><b>Logging monitor</b></a></td>
+  <td id="main" class="mainpage" colspan=2> <p>Record count: 20<p>
+         <script> 
+         $(document).ready(function() {
+           utils().datatable('logInfo_ID_1' , {"aaSorting":[]} ); } );
+        </script>
+        <table id='logInfo_ID_1'  class='display' cellpadding=2 border=0>
+       <thead> <tr><th>Category</th><th>Type</th><th>Time</th><th>Level</th><th>Message</th><th>&nbsp;</th></tr> </thead><tbody><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_LONG_BNL_ATLAS reason=notmaxweight - weight=(1+647/556)*1785/0 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_GRIF-IRFU reason=missingapp - app=Atlas-16.6.6 is missing &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_SFU reason=notmaxweight - weight=(1+30/32)*245/7 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_VICTORIA-WG1 reason=notmaxweight - weight=(1+42/45)*612/244 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_IFAE reason=notmaxweight - weight=(1+187/200)*601/281 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_FZU reason=notmaxweight - weight=(1+214/232)*683/77 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_BNL_ATLAS_1 reason=notmaxweight - weight=(1+1613/570)*2217/0 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_NET2 reason=notmaxweight - weight=(1+11/105)*341/39 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_DESY-ZN reason=notmaxweight - weight=(1+1/97)*852/16 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_SFU_bugaboo reason=notmaxweight - weight=(1+0/140)*1027/12 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_wuppertalprod reason=notmaxweight - weight=(1+109/115)*677/0 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_NIKHEF-ELPROD reason=notmaxweight - weight=(1+326/337)*997/8 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=choose site=ANALY_HU_ATLAS_Tier2 reason=maxweight - max weight=(1+36/107)*614/0 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_FZK reason=notmaxweight - weight=(1+222/761)*2241/645 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_LIP-Coimbra reason=notmaxweight - weight=(1+3/19)*226/7 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_GRIF-LPNHE reason=notmaxweight - weight=(1+82/94)*608/7 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Dudziak Fany\'  : jobset=4185 jobdef=4186 : action=skip site=ANALY_GOEGRID reason=notmaxweight - weight=(1+71/122)*792/0 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Eleni Mountricha\'  : jobset=11596 jobdef=11597 : action=choose site=ANALY_GLASGOW reason=maxweight - max weight=(1+162/163)*1261/0 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Eleni Mountricha\'  : jobset=11596 jobdef=11597 : action=skip site=ANALY_INFN-NAPOLI reason=notmaxweight - weight=(1+64/107)*1307/1 &nbsp;</td><td> &nbsp;</td></tr><tr><td>panda.mon.prod &nbsp;</td><td>analy_brokerage &nbsp;</td><td>10-03 12:31 &nbsp;</td><td><font color=darkgreen>INFO</font> &nbsp;</td><td>dn=\'Bruno Lenzi\'  : jobset=1036 jobdef=1037 : action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+0/72)*636/2 &nbsp;</td><td> &nbsp;</td></tr></body><tfoot><tr><th>Category</th><th>Type</th><th>Time</th><th>Level</th><th>Message</th><th>&nbsp;</th></tr></tfoot></table></td>
+  </tr></table>
+<div id="foot"><address><br>Bookmark URL: <a href='http://panda.cern.ch?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=20'>http://panda.cern.ch?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=20</a><br>
+
+<br>Code Rev: 6670 <br>Run by None@voatlas139.cern.ch. To produce this page our server spent: Real time 0:00:00, CP time 0.010 . <br><a href='https://savannah.cern.ch/bugs/?func=additem&group=panda'><b>Report a problem. </b></a> Usage questions: <a href='mailto:hn-atlas-dist-analysis-help@cern.ch'>distributed analysis help list</a><br><a href='mailto:fine@bnl.gov'><address><font size=-2>Contact WebMaster</font></address></a></div></body></html>

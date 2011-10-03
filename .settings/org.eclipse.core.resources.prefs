@@ -1,5 +1,6 @@
-#Fri Sep 30 17:12:52 CEST 2011
+#Mon Oct 03 10:38:41 CEST 2011
 eclipse.preferences.version=1
 encoding//lib/BSXPath/BSXPath.py=utf-8
 encoding/BSXPath.py=utf-8
+encoding/parse_analy_brokerage_log.py=utf-8
 encoding/parse_table_pd2p_log.py=utf-8
