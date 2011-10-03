@@ -30,7 +30,7 @@ class Test:
 
 
 def get_URL():
-    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=20'
+    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=200'
     #return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=pd2p&hours=2&limit=500'
     ##return 'http://panda.cern.ch/server/pandamon/query?mode=mon&hours=48&name=panda.mon.prod&type=pd2p&limit=20000'
     #return 'http://hpv2.farm.particle.cz/~schovan/pd2p/tadashi.html'
@@ -116,23 +116,44 @@ def parse_document(document):
         message_time = message_datetime[1]
 
         tmp_message = str(cell_message.replace('&nbsp;', ' ')).split(' : ')
-        message_dn = tmp_message[0].split('=')[1].replace("\\\'","")
+        message_dn = tmp_message[0].split('=')[1].replace("\\\'","").replace(' ','_')
         message_jobset = tmp_message[1].split(' ')[0].split('=')[1]  
         message_jobdef = tmp_message[1].split(' ')[1].split('=')[1]
         ###print;print;print
-        print u'DEBUG: date time=', message_date, message_time
-        print u'DEBUG: dn=', message_dn
-        print u'DEBUG: jobset=', message_jobset
-        print u'DEBUG: jobdef=', message_jobdef
+        #print u'DEBUG: date time=', message_date, message_time
+        #print u'DEBUG: dn=', message_dn
+        #print u'DEBUG: jobset=', message_jobset
+        #print u'DEBUG: jobdef=', message_jobdef
         #print u'DEBUG: ln113: tmp_message[1]=', tmp_message[1]
         #print u'DEBUG: ln113: tmp_message[2]=', tmp_message[2]
         
-        ## SKIPPED
-        ## triggered
-        ## SELECTEDT1
-        ## SELECTEDT2
-        ## SELECTEDT2_T1MOU
-        ## SELECTEDT2_T2MOU
+        ## skip
+        if is_this_category(cell_message, ' action=skip '):
+            message_skip = tmp_message[2].split(' ')
+            message_action = message_skip[0].split('=')[1]
+            message_site = message_skip[1].split('=')[1]
+            message_reason = message_skip[2].split('=')[1]
+            if re.search('=',message_skip[4]):
+                message_weight = message_skip[4].split('=')[1]
+            else:
+                message_reason = '_'.join(message_skip[3:])
+        
+        ## choose
+        if is_this_category(cell_message, ' action=choose '):
+            message_choose = tmp_message[2].split(' ')
+            message_action = message_choose[0].split('=')[1]
+            message_site = message_choose[1].split('=')[1]
+            message_reason = message_choose[2].split('=')[1]
+            if re.search('=',message_choose[5]):
+                message_weight = message_choose[5].split('=')[1]
+            else:
+                message_reason = '_'.join(message_choose[3:])
+        ## use
+        if is_this_category(cell_message, ' use '):
+            message_use = tmp_message[2].split(' ')
+            message_action = message_use[0]
+            message_site = message_use[1]
+            message_reason = '_'.join(message_use[3:])
         
         record = (message_date, message_time, message_category, \
                   message_dn, message_jobset, message_jobdef, \
@@ -167,6 +188,8 @@ def run():
     write_document(document, '%s.html' % (OUTPUT_FILENAME_PREFIX) )
     rec = parse_document(document)
     print_records(rec, '%s.data' % (OUTPUT_FILENAME_PREFIX) )
+    print u'DEBUG: Done'
+    
 
 
 if __name__ == "__main__":
