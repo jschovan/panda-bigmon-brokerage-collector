@@ -164,9 +164,9 @@ def parse_document(document):
             message_action = message_use[0]
             message_site = message_use[1]
             message_reason = '_'.join(message_use[3:])
-            if is_this_category(message_reason, '_site_'):
+            if is_this_category(message_reason, 'site'):
                 message_category = "A"
-            if is_this_category(message_reason, '_cloud_'):
+            if is_this_category(message_reason, 'cloud'):
                 message_category = "B"
         if message_category in ['A','B','C']:                
             record = (message_date, message_time, message_category, \
@@ -199,7 +199,7 @@ def write_document(document, FILENAME):
 
 def run():
     document = get_document()
-    write_document(document, '%s.html' % (OUTPUT_FILENAME_PREFIX) )
+    # write_document(document, '%s.html' % (OUTPUT_FILENAME_PREFIX) )
     rec = parse_document(document)
     print_records(rec, '%s.data' % (OUTPUT_FILENAME_PREFIX) )
     print u'DEBUG: Done'
