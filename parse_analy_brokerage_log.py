@@ -14,13 +14,6 @@ OUTPUT_FILENAME_PREFIX = 'analyBrokerageLog'
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
 
-WEIGHT_NA_STRING="NA"
-WEIGHT_NA_VALUE=-2
-WEIGHT_T2_T1MOU_VALUE=-3
-WEIGHT_T2_T2MOU_VALUE=-4
-WEIGHT_T1_VALUE=-4
-
-
 class Test:
     def __init__(self):
         self.contents = ''
@@ -30,7 +23,7 @@ class Test:
 
 
 def get_URL():
-    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=2000'
+    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=400'
     #return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=pd2p&hours=2&limit=500'
     ##return 'http://panda.cern.ch/server/pandamon/query?mode=mon&hours=48&name=panda.mon.prod&type=pd2p&limit=20000'
     #return 'http://hpv2.farm.particle.cz/~schovan/pd2p/tadashi.html'
@@ -112,22 +105,22 @@ def parse_document(document):
         message_weight="no.weight"
         
         message_datetime = str(cell_time).split(' ')
-        message_date = message_datetime[0]
-        message_time = message_datetime[1]
+        message_date = message_datetime[0].strip()
+        message_time = message_datetime[1].strip()
         
         print u'DUBUG:(',row_counter,') cell message=', cell_message
         
         tmp_message = str(cell_message.replace('&nbsp;', ' ')).split(' : ')
-        message_dn = tmp_message[0].split('=')[1].replace("\\\'","").replace(' ','_')
+        message_dn = tmp_message[0].split('=')[1].replace("\\\'","").strip().replace(' ','_')
         tmp_job = tmp_message[1].split(' ')
         if len(tmp_job) > 1:
-            message_jobset = tmp_job[0].split('=')[1]  
-            message_jobdef = tmp_job[1].split('=')[1]
+            message_jobset = tmp_job[0].split('=')[1].strip() 
+            message_jobdef = tmp_job[1].split('=')[1].strip()
         else:
             if is_this_category(tmp_job[0],'jobset'):
-                message_jobset = tmp_job[0].split('=')[1]
+                message_jobset = tmp_job[0].split('=')[1].strip()
             if is_this_category(tmp_job[0],'jobdef'):
-                message_jobdef = tmp_job[0].split('=')[1]
+                message_jobdef = tmp_job[0].split('=')[1].strip()
         ###print;print;print
         #print u'DEBUG: date time=', message_date, message_time
         #print u'DEBUG: dn=', message_dn
@@ -139,31 +132,32 @@ def parse_document(document):
         ## skip
         if is_this_category(cell_message, ' action=skip '):
             message_skip = tmp_message[2].split(' ')
-            message_action = message_skip[0].split('=')[1]
-            message_site = message_skip[1].split('=')[1]
-            message_reason = message_skip[2].split('=')[1]
+            message_action = message_skip[0].split('=')[1].strip()
+            message_site = message_skip[1].split('=')[1].strip()
+            message_reason = message_skip[2].split('=')[1].strip()
             if re.search('=',message_skip[4]):
-                message_weight = message_skip[4].split('=')[1]
+                message_weight = message_skip[4].split('=')[1].strip()
             else:
-                message_reason = '_'.join(message_skip[3:])
+                message_reason = '_'.join(message_skip[3:]).strip('_')
         
         ## choose
         if is_this_category(cell_message, ' action=choose '):
             message_category = "C"
             message_choose = tmp_message[2].split(' ')
-            message_action = message_choose[0].split('=')[1]
-            message_site = message_choose[1].split('=')[1]
-            message_reason = message_choose[2].split('=')[1]
+            message_action = message_choose[0].split('=')[1].strip()
+            message_site = message_choose[1].split('=')[1].strip()
+            message_reason = message_choose[2].split('=')[1].strip()
             if re.search('=',message_choose[5]):
-                message_weight = message_choose[5].split('=')[1]
+                message_weight = message_choose[5].split('=')[1].strip()
             else:
-                message_reason = '_'.join(message_choose[3:])
+                message_reason = '_'.join(message_choose[3:]).strip('_')
+        
         ## use site or cloud
         if is_this_category(cell_message, ' use '):
             message_use = tmp_message[2].split(' ')
-            message_action = message_use[0]
-            message_site = message_use[1]
-            message_reason = '_'.join(message_use[3:])
+            message_action = message_use[0].strip()
+            message_site = message_use[1].strip()
+            message_reason = '_'.join(message_use[3:]).strip('_')
             if is_this_category(message_reason, 'site'):
                 message_category = "A"
             if is_this_category(message_reason, 'cloud'):
