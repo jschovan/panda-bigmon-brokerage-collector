@@ -100,12 +100,12 @@ def parse_document(document):
             cell_message = cell_message[0]
         
         
-        message_category=""
+        message_category="no.category"
         message_date = ""
         message_time = ""
         message_dn = ""
-        message_jobset =""
-        message_jobdef = ""
+        message_jobset ="no.jobset"
+        message_jobdef = "no.jobdef"
         message_action = ""
         message_site="no.site"
         message_reason="no.reason"
@@ -114,11 +114,20 @@ def parse_document(document):
         message_datetime = str(cell_time).split(' ')
         message_date = message_datetime[0]
         message_time = message_datetime[1]
-
+        
+        print u'DUBUG:(',row_counter,') cell message=', cell_message
+        
         tmp_message = str(cell_message.replace('&nbsp;', ' ')).split(' : ')
         message_dn = tmp_message[0].split('=')[1].replace("\\\'","").replace(' ','_')
-        message_jobset = tmp_message[1].split(' ')[0].split('=')[1]  
-        message_jobdef = tmp_message[1].split(' ')[1].split('=')[1]
+        tmp_job = tmp_message[1].split(' ')
+        if len(tmp_job) > 1:
+            message_jobset = tmp_job[0].split('=')[1]  
+            message_jobdef = tmp_job[1].split('=')[1]
+        else:
+            if is_this_category(tmp_job[0],'jobset'):
+                message_jobset = tmp_job[0].split('=')[1]
+            if is_this_category(tmp_job[0],'jobdef'):
+                message_jobdef = tmp_job[0].split('=')[1]
         ###print;print;print
         #print u'DEBUG: date time=', message_date, message_time
         #print u'DEBUG: dn=', message_dn
@@ -140,6 +149,7 @@ def parse_document(document):
         
         ## choose
         if is_this_category(cell_message, ' action=choose '):
+            message_category = "C"
             message_choose = tmp_message[2].split(' ')
             message_action = message_choose[0].split('=')[1]
             message_site = message_choose[1].split('=')[1]
@@ -148,18 +158,22 @@ def parse_document(document):
                 message_weight = message_choose[5].split('=')[1]
             else:
                 message_reason = '_'.join(message_choose[3:])
-        ## use
+        ## use site or cloud
         if is_this_category(cell_message, ' use '):
             message_use = tmp_message[2].split(' ')
             message_action = message_use[0]
             message_site = message_use[1]
             message_reason = '_'.join(message_use[3:])
-        
-        record = (message_date, message_time, message_category, \
+            if is_this_category(message_reason, '_site_'):
+                message_category = "A"
+            if is_this_category(message_reason, '_cloud_'):
+                message_category = "B"
+        if message_category in ['A','B','C']:                
+            record = (message_date, message_time, message_category, \
                   message_dn, message_jobset, message_jobdef, \
                   message_action, message_site, message_reason, message_weight \
                   )
-        records.append(record)
+            records.append(record)
         
     return records
 
@@ -171,7 +185,7 @@ def print_records(records, FILENAME):
                   message_dn, message_jobset, message_jobdef, \
                   message_action, message_site, message_reason, message_weight = record
         of.write('%s %s %s %s %s %s %s %s %s %s \n' % ( \
-                message_date, message_time, message_category, \
+                  message_date, message_time, message_category, \
                   message_dn, message_jobset, message_jobdef, \
                   message_action, message_site, message_reason, message_weight) )
     of.close()

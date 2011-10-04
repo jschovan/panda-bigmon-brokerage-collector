@@ -135,7 +135,11 @@ def toBoolean(obj):
 
 def toString(obj):
   if isinstance(obj,bool):
-    return u'true' if obj else u'false'
+    #return u'true' if obj else u'false'
+    if obj:
+        return u'true'
+    else:
+        return u'false'
   if isinstance(obj,str) or isinstance(obj,int) or isinstance(obj,float):
     return unicode(obj)
   return obj
@@ -421,10 +425,18 @@ def makeNodeUtils():
         if name=='nodeType': return NodeTypeDOM.PROCESSING_INSTRUCTION_NODE
         if name=='nodeName':
           mrslt=re_processing_instruction.search(NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING))
-          return mrslt.group(1) if mrslt else NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING)
+          #return mrslt.group(1) if mrslt else NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING)
+          if mrslt:
+              return mrslt.group(1)
+          else:
+              return NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING)
         if name=='nodeValue':
           mrslt=re_processing_instruction.search(NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING))
-          return mrslt.group(2) if mrslt else None
+          #return mrslt.group(2) if mrslt else None
+          if mrslt:
+              return mrslt.group(2)
+          else:
+              return None
         if name=='parentNode': return self.parent
         if name=='ownerDocument': return _ownerDocument(self)
         if name=='attributes': return None
@@ -464,7 +476,11 @@ def makeNodeUtils():
             return NodeTypeDOM.ANY_NODE
         if name=='nodeName':
           mrslt=re_declaration_name.search(NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING))
-          return mrslt.group(2) if mrslt else NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING)
+          #return mrslt.group(2) if mrslt else NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING)
+          if mrslt:
+              return mrslt.group(2) 
+          else: 
+              return NavigableString.encode(self,DEFAULT_OUTPUT_ENCODING)
         if name=='nodeValue': return None
         if name=='parentNode': return self.parent
         if name=='ownerDocument': return _ownerDocument(self)
@@ -656,17 +672,29 @@ class Lexer(object):
     self.index=0
     
   def peek(self,i=0):
-    token=self.tokens[self.index+i] if self.index+i<len(self.tokens) else None
+    #token=self.tokens[self.index+i] if self.index+i<len(self.tokens) else None
+    if self.index+i<len(self.tokens):
+        token=self.tokens[self.index+i]
+    else:
+        token=None
     return token
   
   def next(self):
-    token=self.tokens[self.index] if self.index<len(self.tokens) else None
+    #token=self.tokens[self.index]  else None
+    if self.index<len(self.tokens):
+        token=self.tokens[self.index]
+    else:
+        token=None
     self.index+=1
     return token
   
   def back(self):
     self.index-=1
-    token=self.tokens[self.index] if self.index<len(self.tokens) else None
+    #token=self.tokens[self.index] if self.index<len(self.tokens) else None
+    if self.index<len(self.tokens):
+        token=self.tokens[self.index]
+    else:
+        token=None
   
   def empty(self):
     return (len(self.tokens)<=self.index)
@@ -781,13 +809,21 @@ class BaseExprHasPredicates(BaseExpr):
       
       l1=len(nodes)
       for j in range(0,l1):
-        position=(l1-j) if reverse else (j+1)
+        #position=(l1-j) if reverse else (j+1)
+        if reverse:
+            position=(l1-j)
+        else:
+            position=(j+1)
         exrs=predicate.evaluate(Ctx(nodes[j],position,l1))
         
         if typeof(exrs)=='number':
           exrs=(position==exrs)
         elif typeof(exrs)=='string':
-          exrs=False if exrs=='' else True
+          #exrs=False if exrs=='' else True
+          if exrs=='' :
+              exrs=False
+          else:
+              exrs=True
         elif typeof(exrs)=='object':
           exrs=exrs.bool()
         
@@ -903,7 +939,11 @@ class BinaryExpr(BaseExpr):
       else: return 'Infinity'
     n=float(l) / float(r)
     n1=int(n)
-    return n1 if n1==n else n
+    #return n1 if n1==n else n
+    if n1==n:
+        return n1
+    else:
+        return n
   
   def _mod(left,right,ctx):
     l=left.number(ctx)
@@ -920,7 +960,11 @@ class BinaryExpr(BaseExpr):
     if typeof(l)!='number' or typeof(r)!='number': return 'NaN'
     n=l * r
     n1=int(n)
-    return n1 if n1==n else n
+    #return n1 if n1==n else n
+    if n1==n:
+        return n1 
+    else:
+        return n
   
   def _add(left,right,ctx):
     l=left.number(ctx)
@@ -928,7 +972,11 @@ class BinaryExpr(BaseExpr):
     if typeof(l)!='number' or typeof(r)!='number': return 'NaN'
     n=l + r
     n1=int(n)
-    return n1 if n1==n else n
+    #return n1 if n1==n else n
+    if n1==n:
+        return n1
+    else:
+        return n
   
   def _sub(left,right,ctx):
     l=left.number(ctx)
@@ -936,7 +984,11 @@ class BinaryExpr(BaseExpr):
     if typeof(l)!='number' or typeof(r)!='number': return 'NaN'
     n=l - r
     n1=int(n)
-    return n1 if n1==n else n
+    #return n1 if n1==n else n
+    if n1==n:
+        return n1
+    else:
+        return n
   
   def _lt(left,right,ctx):
     return BinaryExpr._compare('<',(lambda a,b:a<b),left,right,ctx)
@@ -1334,7 +1386,11 @@ class Step(BaseExprHasPredicates):
       if not self.needContextPosition and self.axis=='child':
         if getattr(self,'quickAttr',None):
           attrValueExpr=getattr(self,'attrValueExpr',None)
-          attrValue=attrValueExpr.string(ctx) if attrValueExpr else None
+          #attrValue=attrValueExpr.string(ctx) if attrValueExpr else None
+          if attrValueExpr:
+              attrValue=attrValueExpr.string(ctx)
+          else:
+              attrValue=None
           nodeset=NodeUtil.getDescendantNodes(self.test,node,NodeSet(),self.attrName,attrValue,prevNodeset,prevIndex)
           nodeset=self.evaluatePredicates(nodeset,1)
         else:
@@ -1357,7 +1413,11 @@ class Step(BaseExprHasPredicates):
         prevIndex=None
       if getattr(self,'quickAttr',None):
         attrValueExpr=getattr(self,'attrValueExpr',None)
-        attrValue=attrValueExpr.string(ctx) if attrValueExpr else None
+        #attrValue=attrValueExpr.string(ctx) if attrValueExpr else None
+        if attrValueExpr:
+            attrValue=attrValueExpr.string(ctx)
+        else:
+            attrValue=None
         nodeset=self.func(self.test,node,NodeSet(),self.attrName,attrValue,prevNodeset,prevIndex)
         nodeset=self.evaluatePredicates(nodeset,1)
       else:
@@ -1759,9 +1819,17 @@ class FunctionCall(BaseExpr):
     self.func=info[0]
     self.args=[]
     self.datatype=info[1]
-    self.needContextPosition=True if info[2] else False
+    #self.needContextPosition=True if info[2] else False
+    if info[2]:
+        self.needContextPosition=True
+    else:
+        self.needContextPosition=False
     self.needContextNodeInfo=info[3]
-    self.needContextNode=self.needContextNodeInfo[0] if 0<len(self.needContextNodeInfo) else False
+    #self.needContextNode=self.needContextNodeInfo[0] if 0<len(self.needContextNodeInfo) else False
+    if 0<len(self.needContextNodeInfo):
+        self.needContextNode=self.needContextNodeInfo[0]
+    else:
+        self.needContextNode=False
   
   def evaluate(self,ctx):
     result=self.func(ctx,*self.args)
@@ -2009,11 +2077,19 @@ class FunctionCall(BaseExpr):
     for i in range(0,len(s2)):
       ch=s2[i]
       if not _map.get(ch):
-        _map[ch]=s3[i] if i<len(s3) else ''
+        #_map[ch]=s3[i] if i<len(s3) else ''
+        if i<len(s3):
+            _map[ch]=s3[i]
+        else:
+            _map[ch]=''
     t=''
     for ch in s1:
       replace=_map.get(ch)
-      t+=replace if replace!=None else ch
+      #t+=replace if replace!=None else ch
+      if replace!=None:
+          t+=replace
+      else:
+          t=ch
     return t
   
   def _boolean(self,*arguments):
@@ -2057,7 +2133,11 @@ class FunctionCall(BaseExpr):
       return n
     elif isinstance(n,float):
       n1=int(n)
-      return n1 if n1==n else n
+      #return n1 if n1==n else n
+      if n1==n:
+        return n1
+      else:
+        return n
     else:
       return 'NaN'
   
@@ -2358,7 +2438,11 @@ class NodeSet(object):
   
   def string(self):
     node=self.only or self.first()
-    return NodeUtil.to('string',node) if node else ''
+    #return NodeUtil.to('string',node) if node else ''
+    if node:
+        return NodeUtil.to('string',node)
+    else:
+        return ''
   
   def bool(self):
     return toBoolean(self.length or self.only)
@@ -2382,7 +2466,11 @@ class NodeSet(object):
       _info['count']+=1
       if getattr(nodeset,'only',None) and index==0:
         return nodeset.only
-      return nodeset.nodes[index] if 0<=index and index<len(nodeset.nodes) else None
+      #return nodeset.nodes[index] if 0<=index and index<len(nodeset.nodes) else None
+      if 0<=index and index<len(nodeset.nodes):
+          return nodeset.nodes[index]
+      else:
+          return None
     return iter
 
   class nodeID(object):
@@ -2428,11 +2516,23 @@ class XPathResult(object):
     self.resultType=type
     
     if type==self.NUMBER_TYPE:
-      self.numberValue=value.number() if getattr(value,'isNodeSet',None) else toNumber(value)
+      #self.numberValue=value.number() if getattr(value,'isNodeSet',None) else toNumber(value)
+      if getattr(value,'isNodeSet',None):
+          self.numberValue=value.number()
+      else:
+          self.numberValue=toNumber(value)
     elif type==self.STRING_TYPE:
-      self.stringValue=value.string() if getattr(value,'isNodeSet',None) else toString(value)
+      #self.stringValue=value.string() if getattr(value,'isNodeSet',None) else toString(value)
+      if getattr(value,'isNodeSet',None):
+        self.stringValue=value.string() 
+      else:
+        self.stringValue=toString(value)
     elif type==self.BOOLEAN_TYPE:
-      self.booleanValue=value.bool() if getattr(value,'isNodeSet',None) else toBoolean(value)
+      #self.booleanValue=value.bool() if getattr(value,'isNodeSet',None) else toBoolean(value)
+      if getattr(value,'isNodeSet',None):
+          self.booleanValue=value.bool()
+      else:
+          self.booleanValue=toBoolean(value)
     elif type==self.ANY_UNORDERED_NODE_TYPE or type==self.FIRST_ORDERED_NODE_TYPE:
       self.singleNodeValue=value.first()
     else:
@@ -2688,4 +2788,4 @@ if __name__ == '__main__':
 #  0.01 : 2009-03-25
 #    first release
 #
-# End of BSXPath.py 
+#■ End of BSXPath.py 
