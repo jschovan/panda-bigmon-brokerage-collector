@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from BSXPath import BSXPathEvaluator,XPathResult, XPathExpression
 from BeautifulSoup import BeautifulSoup
+
 ### get it from: http://www.crummy.com/software/BeautifulSoup/
 import re
 import sys
@@ -23,7 +24,7 @@ class Test:
 
 
 def get_URL():
-    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=400'
+    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=100'
     #return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=pd2p&hours=2&limit=500'
     ##return 'http://panda.cern.ch/server/pandamon/query?mode=mon&hours=48&name=panda.mon.prod&type=pd2p&limit=20000'
     #return 'http://hpv2.farm.particle.cz/~schovan/pd2p/tadashi.html'
