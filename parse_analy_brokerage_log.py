@@ -2,6 +2,9 @@
 from BSXPath import BSXPathEvaluator,XPathResult, XPathExpression
 from BeautifulSoup import BeautifulSoup
 
+from dashboard.dao.DAOFactory import DAOFactory
+from dashboard.dao.DAOContext import DAOContext
+
 ### get it from: http://www.crummy.com/software/BeautifulSoup/
 import re
 import sys
