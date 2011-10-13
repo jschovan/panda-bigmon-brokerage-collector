@@ -36,6 +36,7 @@ SQLS = [
 
 db = dailyDB()
 DATEFORMAT = "%Y-%m-%d"
+last_updated = db.get_last_updated_time()
 query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-30*24*60*60)) # monthly
 
 def parse_document_category():
@@ -48,7 +49,7 @@ def parse_document_category():
     for row in rs:
         series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
         comm = ","
-    data = data.replace('#TITLE_TEXT#',title_text).replace('#SERIES_DATA#',series_data)
+    data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return data
 
 def parse_document_site(idx):
@@ -69,7 +70,7 @@ def parse_document_site(idx):
             others += row[1]
     if others > 0:
         series_data = "%s %s ['others', %d]"%(series_data,comm,others)
-    data = data.replace('#TITLE_TEXT#',title_text).replace('#SERIES_DATA#',series_data)
+    data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return data
 
 def parse_document_cloud(idx):
@@ -83,7 +84,7 @@ def parse_document_cloud(idx):
         color = ADC_COLOR[row[0]]
         series_data = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data,comm,row[0],row[1],color)
         comm = ","
-    data = data.replace('#TITLE_TEXT#',title_text).replace('#SERIES_DATA#',series_data)
+    data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return data
 
 def write_document(document, FILENAME):

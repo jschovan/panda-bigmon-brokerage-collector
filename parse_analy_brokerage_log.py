@@ -18,7 +18,7 @@ db = dailyDB()
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
 QUERY_HOUR = 1
-QUERY_LIMIT = 3000
+QUERY_LIMIT = 650
 
 class Test:
     def __init__(self):
@@ -102,6 +102,7 @@ def parse_document(document):
     set_last = None
     if maxId is None:
         maxId = 0
+    processed_rows = 0
     
     for row_counter in xrange(len(rows)):
         record = ()
@@ -163,10 +164,11 @@ def parse_document(document):
             set_last = True
         
         # Break when reach the last_time
-        if last_time is not None and this_time <= last_time:
+        if (last_time is not None) and (this_time <= last_time):
             break
                
         print 'Debug:',message_date,message_time,row_counter,cell_message
+        processed_rows += 1
         
         tmp_message = str(cell_message.replace('&nbsp;', ' ')).split(' : ')
         message_dn = tmp_message[0].split('=')[1].replace("\\\'","").strip().replace(' ','_')
@@ -240,10 +242,10 @@ def parse_document(document):
                   cloud, message_dn, count)
                 records.append(record)
     
-    if this_time is not None and not (this_time <= last_time):
+    if (this_time is not None) and not (this_time <= last_time):
         print "Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
         
-    return (records, exist_records, in_buf_records)
+    return (processed_rows,records, exist_records, in_buf_records)
 
 
 def print_records(records, FILENAME):
@@ -269,7 +271,7 @@ def run():
     t1 = time.time()
     document = get_document()
     t2 = time.time()
-    rec,exist_rec,in_buf_rec = parse_document(document)
+    processed_rows,rec,exist_rec,in_buf_rec = parse_document(document)
     t3 = time.time()
     db.add_logs(rec)
     db.increase_logs_count(exist_rec)
@@ -281,8 +283,9 @@ def run():
     time_db = t4-t3
     
     logs_count = len(rec)+len(exist_rec)+len(in_buf_rec)
+    last_time = db.get_last_updated_time()
     
-    print u'DEBUG: Done(Limit-%d, Effective logs: %d). Time: get-%d, parse-%d, db-%d'%(QUERY_LIMIT,logs_count,time_get,time_parse,time_db)
+    print u'DEBUG: %s Done(Limit-%d, Effective logs: %d/%d). Time: get-%d, parse-%d, db-%d'%(last_time,QUERY_LIMIT,logs_count,processed_rows,time_get,time_parse,time_db)
     
 
 

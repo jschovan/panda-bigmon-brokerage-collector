@@ -16,10 +16,16 @@
 			title: {
 				text: 'Top 10 sites of Category A - monthly'
 			},
+			subtitle: {
+				text: 'Last updated: 2011-10-13 15:26'
+			},
 			tooltip: {
 				formatter: function() {
 					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
 				}
+			},
+			credits: {
+				enabled: false
 			},
 			plotOptions: {
 				pie: {
@@ -40,7 +46,7 @@
 				type: 'pie',
 				name: 'Panda Brokerage Job',
 				data: [
-				  ['FZK-LCG2', 306] , ['DESY-ZN', 153] , ['BNL-ATLAS', 89] , ['IllinoisHEP', 74] , ['UNI-FREIBURG', 29] , ['INFN-MILANO-ATLASC', 18] , ['MWT2_UC', 17] , ['UKI-SOUTHGRID-OX-HEP', 16] , ['DESY-HH', 15] , ['NDGF-T1', 11] , ['others', 61]
+				  ['FZK-LCG2', 306] , ['DESY-ZN', 153] , ['BNL-ATLAS', 102] , ['IllinoisHEP', 74] , ['UNI-FREIBURG', 44] , ['TOKYO-LCG2', 25] , ['UKI-SOUTHGRID-OX-HEP', 21] , ['INFN-MILANO-ATLASC', 19] , ['BU_ATLAS_Tier2', 18] , ['MWT2_UC', 17] , ['others', 92]
 				]
 			}]
 		};

@@ -16,10 +16,16 @@
 			title: {
 				text: 'Category A,B,C Analy - Weekly'
 			},
+			subtitle: {
+				text: 'Last updated: 2011-10-13 15:26'
+			},
 			tooltip: {
 				formatter: function() {
 					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
 				}
+			},
+			credits: {
+				enabled: false
 			},
 			plotOptions: {
 				pie: {
@@ -40,7 +46,7 @@
 				type: 'pie',
 				name: 'Panda Brokerage Job',
 				data: [
-				  ['A', 789] , ['B', 93] , ['C', 16348]
+				  ['A', 871] , ['B', 93] , ['C', 19374]
 				]
 			}]
 		};

@@ -16,10 +16,16 @@
 			title: {
 				text: 'Cloud Analy of Category B - monthly'
 			},
+			subtitle: {
+				text: 'Last updated: 2011-10-13 15:26'
+			},
 			tooltip: {
 				formatter: function() {
 					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
 				}
+			},
+			credits: {
+				enabled: false
 			},
 			plotOptions: {
 				pie: {
