@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript'>
+var chart;
+$(document).ready(function() {
+   chart = new Highcharts.Chart({
+      chart: {
+         renderTo: 'container',
+         plotBackgroundColor: null,
+         plotBorderWidth: null,
+         plotShadow: false
+      },
+      title: {
+         text: 'Panda Brokerage Job - Weekly'
+      },
+      tooltip: {
+         formatter: function() {
+            return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+         }
+      },
+      plotOptions: {
+         pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+               enabled: true,
+               formatter: function() {
+                  return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+               }
+            }
+         }
+      },
+       series: [{
+         type: 'pie',
+         name: 'Browser share',
+         data: [
+            ['Firefox',   45.0],
+            ['IE',       26.8],
+            {
+               name: 'Chrome',    
+               y: 12.8,
+               sliced: true,
+               selected: true
+            },
+            ['Safari',    8.5],
+            ['Opera',     6.2],
+            ['Others',   0.7]
+         ]
+      }]
+   });
+});
+</script>
+</head>
+<body>
+P1 for all Category (A,B,C)<br>
+<div id='container' style='width:600px; height:410px;'>
+P1 ...
+</div>
+</body>
+</html>

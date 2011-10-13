@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript'>
+	var chart;
+	var options = {
+			chart: {
+				renderTo: 'container',
+				plotBackgroundColor: null,
+				plotBorderWidth: 1,
+				plotShadow: false
+			},
+			title: {
+				text: 'Top 10 sites of Category C - monthly'
+			},
+			tooltip: {
+				formatter: function() {
+					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+				}
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#000000',
+						connecterColor: '#000000',
+						formatter: function() {
+							return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+						}
+					},
+					showInLegend: true
+				}
+			},
+			series: [{
+				type: 'pie',
+				name: 'Panda Brokerage Job',
+				data: [
+				  ['BNL-ATLAS', 2204] , ['GRIF-LPNHE', 943] , ['AGLT2', 811] , ['MWT2_UC', 728] , ['DESY-ZN', 649] , ['praguelcg2', 514] , ['TOKYO-LCG2', 479] , ['UKI-LT2-QMUL', 472] , ['WT2', 453] , ['UNI-FREIBURG', 446] , ['others', 8495]
+				]
+			}]
+		};
+		
+	$(document).ready(function() {
+		chart = new Highcharts.Chart(options);
+	});
+</script>
+</head>
+<body>
+
+<div id='container' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>Back Home</a>
+</body>
+</html>
+

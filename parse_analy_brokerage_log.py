@@ -1,22 +1,24 @@
 # -*- coding: utf-8 -*-
 from BSXPath import BSXPathEvaluator,XPathResult, XPathExpression
 from BeautifulSoup import BeautifulSoup
-
-from dashboard.dao.DAOFactory import DAOFactory
-from dashboard.dao.DAOContext import DAOContext
+from dailyDB import dailyDB
 
 ### get it from: http://www.crummy.com/software/BeautifulSoup/
 import re
 import sys
 import pycurl
+import time
 #from pd2p_monitoring import WORKDIR
 
 
 OUTPUT_FILENAME_PREFIX = 'analyBrokerageLog'
+db = dailyDB()
 
 #MESSAGE_CATEGORIES=[' - SKIPPED ', ' - triggered ', ' - UNSELECTEDT2 ', ' - SELECTEDT2 ']
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
+QUERY_HOUR = 1
+QUERY_LIMIT = 1000
 
 class Test:
     def __init__(self):
@@ -27,7 +29,7 @@ class Test:
 
 
 def get_URL():
-    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=2&limit=100'
+    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=%d&limit=%d'%(QUERY_HOUR,QUERY_LIMIT)
     #return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=pd2p&hours=2&limit=500'
     ##return 'http://panda.cern.ch/server/pandamon/query?mode=mon&hours=48&name=panda.mon.prod&type=pd2p&limit=20000'
     #return 'http://hpv2.farm.particle.cz/~schovan/pd2p/tadashi.html'
@@ -51,6 +53,29 @@ def is_this_category(string, category_pattern):
         return False
     else:
         return True
+    
+def get_sitecloud_name(dic, siteID):
+    cloud = siteID
+    site_name = siteID
+    for site_dic in dic:
+        if site_dic['panda_siteID']==siteID:
+            cloud = site_dic['cloud']
+            site_name = site_dic['agis_ssb_site_name']
+            break
+    return (site_name,cloud)
+
+def is_in_buf(records, logDate, category, site, dnUser):
+    found = False
+    idx = 0
+    for record in records:
+        if record[1]==logDate and record[2]==category and record[3]==site and record[5]==dnUser:
+            found = True
+            break
+        idx += 1
+    if not found:
+        return None
+    else:
+        return idx
 
 def parse_document(document):
     BSXdocument = BSXPathEvaluator(document)
@@ -60,13 +85,27 @@ def parse_document(document):
     XPath_table_header = '%s/tr[1]' % (XPath_table_body)
     XPath_table_lines = '%s/tr' % (XPath_table_body)
     rows = BSXdocument.getItemList(XPath_table_lines)[1:]
+    # get cloud name
+    data = open('panda_queues.json').read()
+    dic = eval(data)
     
     records = []
+    exist_records = []
+    in_buf_records = []
+    maxId = db.get_max_id()
+    last_time = db.get_last_updated_time()
+    if last_time is None:
+        db.first_last_updated_time()
+        last_time = db.get_last_updated_time()
+    this_time = None
+    skip_time = None
+    set_last = None
+    if maxId is None:
+        maxId = 0
     
     for row_counter in xrange(len(rows)):
         record = ()
         SHIFT=0
-        
         
         row = rows[row_counter]
         XPath_table_row = '%s/tr[%d]' % (XPath_table_body, row_counter+1)
@@ -112,7 +151,22 @@ def parse_document(document):
         message_date = message_datetime[0].strip()
         message_time = message_datetime[1].strip()
         
-        print u'DUBUG:(',row_counter,') cell message=', cell_message
+        # Skip the leading uncompleted minute
+        this_time = "2011-%s %s"%(message_date, message_time)
+        
+        if skip_time is None or skip_time == this_time:
+            skip_time = this_time
+            continue
+        # set the last updated time when skip done.( Records in time DESC )
+        if set_last is None:
+            db.set_last_updated_time(this_time)
+            set_last = True
+        
+        # Break when reach the last_time
+        if last_time is not None and this_time <= last_time:
+            break
+               
+        print 'Debug:',message_date,message_time,row_counter,cell_message
         
         tmp_message = str(cell_message.replace('&nbsp;', ' ')).split(' : ')
         message_dn = tmp_message[0].split('=')[1].replace("\\\'","").strip().replace(' ','_')
@@ -135,6 +189,7 @@ def parse_document(document):
         
         ## skip
         if is_this_category(cell_message, ' action=skip '):
+            continue # try to speed up
             message_skip = tmp_message[2].split(' ')
             message_action = message_skip[0].split('=')[1].strip()
             message_site = message_skip[1].split('=')[1].strip()
@@ -166,14 +221,29 @@ def parse_document(document):
                 message_category = "A"
             if is_this_category(message_reason, 'cloud'):
                 message_category = "B"
-        if message_category in ['A','B','C']:                
-            record = (message_date, message_time, message_category, \
-                  message_dn, message_jobset, message_jobdef, \
-                  message_action, message_site, message_reason, message_weight \
-                  )
-            records.append(record)
         
-    return records
+        ## append to records it belong to
+        if message_category in ['A','B','C']:
+            logDate = str("2011-%s"%message_date)
+            site_name,cloud = get_sitecloud_name(dic,message_site)
+            dailyLogId = db.is_exist_item(logDate, message_category, site_name, message_dn)
+            rec_idx = is_in_buf(records, logDate, message_category, site_name, message_dn)
+            if dailyLogId is not None:
+                exist_records.append([dailyLogId])
+            elif rec_idx is not None:
+                record = (logDate, message_category, site_name, message_dn)
+                in_buf_records.append(record)
+            else:
+                maxId += 1
+                count = 1               
+                record = (maxId, logDate, message_category, site_name, \
+                  cloud, message_dn, count)
+                records.append(record)
+    
+    if this_time is not None and not (this_time <= last_time):
+        print "Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
+        
+    return (records, exist_records, in_buf_records)
 
 
 def print_records(records, FILENAME):
@@ -196,11 +266,21 @@ def write_document(document, FILENAME):
 
 
 def run():
+    t1 = time.time()
     document = get_document()
-    # write_document(document, '%s.html' % (OUTPUT_FILENAME_PREFIX) )
-    rec = parse_document(document)
-    print_records(rec, '%s.data' % (OUTPUT_FILENAME_PREFIX) )
-    print u'DEBUG: Done'
+    t2 = time.time()
+    rec,exist_rec,in_buf_rec = parse_document(document)
+    t3 = time.time()
+    db.add_logs(rec)
+    db.increase_logs_count(exist_rec)
+    db.increase_buf_count(in_buf_rec)
+    t4 = time.time()
+    
+    time_get = t2-t1
+    time_parse = t3-t2
+    time_db = t4-t3
+    
+    print u'DEBUG: Done(Limit-%d). Time: get-%d, parse-%d, db-%d'%(QUERY_LIMIT,time_get,time_parse,time_db)
     
 
 
