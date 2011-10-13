@@ -18,7 +18,7 @@ db = dailyDB()
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
 QUERY_HOUR = 1
-QUERY_LIMIT = 1000
+QUERY_LIMIT = 3000
 
 class Test:
     def __init__(self):
@@ -280,7 +280,9 @@ def run():
     time_parse = t3-t2
     time_db = t4-t3
     
-    print u'DEBUG: Done(Limit-%d). Time: get-%d, parse-%d, db-%d'%(QUERY_LIMIT,time_get,time_parse,time_db)
+    logs_count = len(rec)+len(exist_rec)+len(in_buf_rec)
+    
+    print u'DEBUG: Done(Limit-%d, Effective logs: %d). Time: get-%d, parse-%d, db-%d'%(QUERY_LIMIT,logs_count,time_get,time_parse,time_db)
     
 
 
