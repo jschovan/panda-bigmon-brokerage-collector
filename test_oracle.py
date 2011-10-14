@@ -3,6 +3,9 @@ import time
 import cx_Oracle
 import os
 
+QUERY_HOUR = 1
+QUERY_LIMIT = 650
+
 def multi_result():
     rec1 = []
     rec2 = []
@@ -11,6 +14,17 @@ def multi_result():
     for j in range(11,20):
         rec2.append((j,j))
     return (rec1,rec2)
+
+def get_document_wget():
+    url = get_URL()
+    cmd = 'wget -q -r -l 2 -w 10 -O /tmp/PBMon_log.txt %s'%url
+    os.system(cmd)
+    time.sleep(5)
+    contents = open('/tmp/PBMon_log.txt').read()
+    return contents
+
+def get_URL():
+    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=%d&limit=%d'%(QUERY_HOUR,QUERY_LIMIT)
 
 def get_sitecloud_name(siteID):
     cloud = siteID
@@ -21,6 +35,9 @@ def get_sitecloud_name(siteID):
             site_name = site['agis_ssb_site_name']
             break
     return (site_name,cloud)
+
+contents = get_document_wget()
+print "Contents:",contents
 
 data = open('panda_queues.json').read()
 dic = eval(data)

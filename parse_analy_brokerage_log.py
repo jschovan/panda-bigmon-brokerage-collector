@@ -6,6 +6,7 @@ from dailyDB import dailyDB
 ### get it from: http://www.crummy.com/software/BeautifulSoup/
 import re
 import sys
+import os
 import pycurl
 import time
 #from pd2p_monitoring import WORKDIR
@@ -18,7 +19,7 @@ db = dailyDB()
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
 QUERY_HOUR = 1
-QUERY_LIMIT = 650
+QUERY_LIMIT = 1000
 
 class Test:
     def __init__(self):
@@ -110,7 +111,7 @@ def parse_document(document):
         
         row = rows[row_counter]
         XPath_table_row = '%s/tr[%d]' % (XPath_table_body, row_counter+1)
-        
+        """
         XPath_table_row_cell_category = '%s/td[%d]/text()' % (XPath_table_row, 1)
         cell_category = BSXdocument.getItemList(XPath_table_row_cell_category)
         if len(cell_category)>0:
@@ -120,17 +121,17 @@ def parse_document(document):
         cell_type = BSXdocument.getItemList(XPath_table_row_cell_type)
         if len(cell_type)>0:
             cell_type = cell_type[0]
-        
+        """
         XPath_table_row_cell_time = '%s/td[%d]/text()' % (XPath_table_row, 3)
         cell_time = BSXdocument.getItemList(XPath_table_row_cell_time)
         if len(cell_time)>0:
             cell_time = cell_time[0]
-        
+        """
         XPath_table_row_cell_level = '%s/td[%d]/text()' % (XPath_table_row, 4)
         cell_level = BSXdocument.getItemList(XPath_table_row_cell_level)
         if len(cell_level)>0:
             cell_level = cell_level[0]
-        
+        """
         XPath_table_row_cell_message = '%s/td[%d]/text()' % (XPath_table_row, 5)
         cell_message = BSXdocument.getItemList(XPath_table_row_cell_message)
         if len(cell_message)>0:
@@ -167,7 +168,7 @@ def parse_document(document):
         if (last_time is not None) and (this_time <= last_time):
             break
                
-        print 'Debug:',message_date,message_time,row_counter,cell_message
+        # print 'Debug:',message_date,message_time,row_counter,cell_message
         processed_rows += 1
         
         tmp_message = str(cell_message.replace('&nbsp;', ' ')).split(' : ')
@@ -202,7 +203,7 @@ def parse_document(document):
                 message_reason = '_'.join(message_skip[3:]).strip('_')
         
         ## choose
-        if is_this_category(cell_message, ' action=choose '):
+        elif is_this_category(cell_message, ' action=choose '):
             message_category = "C"
             message_choose = tmp_message[2].split(' ')
             message_action = message_choose[0].split('=')[1].strip()
@@ -214,7 +215,7 @@ def parse_document(document):
                 message_reason = '_'.join(message_choose[3:]).strip('_')
         
         ## use site or cloud
-        if is_this_category(cell_message, ' use '):
+        elif is_this_category(cell_message, ' use '):
             message_use = tmp_message[2].split(' ')
             message_action = message_use[0].strip()
             message_site = message_use[1].strip()
@@ -265,7 +266,6 @@ def write_document(document, FILENAME):
     of = open(FILENAME, 'w')
     print >>of, document
     of.close()
-
 
 def run():
     t1 = time.time()

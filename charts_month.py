@@ -38,6 +38,16 @@ db = dailyDB()
 DATEFORMAT = "%Y-%m-%d"
 last_updated = db.get_last_updated_time()
 query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-30*24*60*60)) # monthly
+data = open('panda_queues.json').read()
+dic = eval(data)
+
+def get_cloud_name(site):
+    cloud = site
+    for site_dic in dic:
+        if site_dic['agis_ssb_site_name']==site:
+            cloud = site_dic['cloud']
+            break
+    return cloud
 
 def parse_document_category():
     data = open('template/P1_month.html').read()
@@ -64,12 +74,16 @@ def parse_document_site(idx):
     for row in rs:
         limit += 1
         if limit <= 10:
-            series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
+            # series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
+            cloud = get_cloud_name(row[0])
+            color = ADC_COLOR[cloud]
+            series_data = "%s %s {name: '%s(%s)', y: %d, color: '%s'}"%(series_data,comm,row[0],cloud,row[1],color)
             comm = ","
         else:
             others += row[1]
     if others > 0:
-        series_data = "%s %s ['others', %d]"%(series_data,comm,others)
+        # series_data = "%s %s ['others', %d]"%(series_data,comm,others)
+        series_data = "%s %s {name: 'others', y: %d, color: '#CCCCCC'}"%(series_data,comm,others)
     data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return data
 
