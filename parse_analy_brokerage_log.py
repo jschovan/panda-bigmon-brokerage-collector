@@ -19,7 +19,8 @@ db = dailyDB()
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
 QUERY_HOUR = 1
-QUERY_LIMIT = 1000
+QUERY_LIMIT = 10000
+DEBUG = 0
 
 class Test:
     def __init__(self):
@@ -110,7 +111,15 @@ def parse_document(document):
         SHIFT=0
         
         row = rows[row_counter]
-        XPath_table_row = '%s/tr[%d]' % (XPath_table_body, row_counter+1)
+        if DEBUG==1:
+            print "========="
+            print row
+            print "========="
+
+        rowDoc = BSXPathEvaluator('%s'%row)
+
+        #XPath_table_row = '%s/tr[%d]' % (XPath_table_body, row_counter+1)
+        XPath_table_row = '/'
         """
         XPath_table_row_cell_category = '%s/td[%d]/text()' % (XPath_table_row, 1)
         cell_category = BSXdocument.getItemList(XPath_table_row_cell_category)
@@ -123,9 +132,9 @@ def parse_document(document):
             cell_type = cell_type[0]
         """
         XPath_table_row_cell_time = '%s/td[%d]/text()' % (XPath_table_row, 3)
-        cell_time = BSXdocument.getItemList(XPath_table_row_cell_time)
-        if len(cell_time)>0:
-            cell_time = cell_time[0]
+        cell_time = rowDoc.getFirstItem(XPath_table_row_cell_time)
+        #if len(cell_time)>0:
+            #cell_time = cell_time[0]
         """
         XPath_table_row_cell_level = '%s/td[%d]/text()' % (XPath_table_row, 4)
         cell_level = BSXdocument.getItemList(XPath_table_row_cell_level)
@@ -133,9 +142,9 @@ def parse_document(document):
             cell_level = cell_level[0]
         """
         XPath_table_row_cell_message = '%s/td[%d]/text()' % (XPath_table_row, 5)
-        cell_message = BSXdocument.getItemList(XPath_table_row_cell_message)
-        if len(cell_message)>0:
-            cell_message = cell_message[0]
+        cell_message = rowDoc.getFirstItem(XPath_table_row_cell_message)
+        #if len(cell_message)>0:
+            #cell_message = cell_message[0]
         
         
         message_category="no.category"
@@ -228,9 +237,12 @@ def parse_document(document):
         ## append to records it belong to
         if message_category in ['A','B','C']:
             logDate = str("2011-%s"%message_date)
+            rec_idx = None
             site_name,cloud = get_sitecloud_name(dic,message_site)
             dailyLogId = db.is_exist_item(logDate, message_category, site_name, message_dn)
-            rec_idx = is_in_buf(records, logDate, message_category, site_name, message_dn)
+            if dailyLogId is None:
+                rec_idx = is_in_buf(records, logDate, message_category, site_name, message_dn)
+                
             if dailyLogId is not None:
                 exist_records.append([dailyLogId])
             elif rec_idx is not None:
@@ -248,27 +260,8 @@ def parse_document(document):
         
     return (processed_rows,records, exist_records, in_buf_records)
 
-
-def print_records(records, FILENAME):
-    of = open(FILENAME, 'w')
-    for record in records: 
-        message_date, message_time, message_category, \
-                  message_dn, message_jobset, message_jobdef, \
-                  message_action, message_site, message_reason, message_weight = record
-        of.write('%s %s %s %s %s %s %s %s %s %s \n' % ( \
-                  message_date, message_time, message_category, \
-                  message_dn, message_jobset, message_jobdef, \
-                  message_action, message_site, message_reason, message_weight) )
-    of.close()
-
-
-def write_document(document, FILENAME):
-    of = open(FILENAME, 'w')
-    print >>of, document
-    of.close()
-
 def run():
-    t1 = time.time()
+    #t1 = time.time()
     document = get_document()
     t2 = time.time()
     processed_rows,rec,exist_rec,in_buf_rec = parse_document(document)
@@ -276,16 +269,16 @@ def run():
     db.add_logs(rec)
     db.increase_logs_count(exist_rec)
     db.increase_buf_count(in_buf_rec)
-    t4 = time.time()
+    #t4 = time.time()
     
-    time_get = t2-t1
+    #time_get = t2-t1
     time_parse = t3-t2
-    time_db = t4-t3
+    #time_db = t4-t3
     
     logs_count = len(rec)+len(exist_rec)+len(in_buf_rec)
     last_time = db.get_last_updated_time()
     
-    print u'DEBUG: %s Done(Limit-%d, Effective logs: %d/%d). Time: get-%d, parse-%d, db-%d'%(last_time,QUERY_LIMIT,logs_count,processed_rows,time_get,time_parse,time_db)
+    print u'INFOR: %s Done(Limit: %d, Effective: %d/%d). ParsingTime: %d'%(last_time,QUERY_LIMIT,logs_count,processed_rows,time_parse)
     
 
 
