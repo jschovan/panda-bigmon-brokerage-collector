@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript'>
+	var chart;
+	var options = {
+			chart: {
+				renderTo: '',
+				plotBackgroundColor: null,
+				plotBorderWidth: 1,
+				plotShadow: false
+			},
+			title: {
+				text: ''
+			},
+			tooltip: {
+				formatter: function() {
+					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+				}
+			},
+			credits: {
+				enabled: false
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#000000',
+						connecterColor: '#000000',
+						formatter: function() {
+							return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+						}
+					},
+					showInLegend: true
+				}
+			},
+			series: [{
+				type: 'pie',
+				name: 'Panda Brokerage Job',
+				data: []
+			}]
+		};
+		
+	$(document).ready(function() {
+	    options.chart.renderTo = "container1";
+		options.title.text = "Category A,B,C Analy - Logfile";
+		options.series[0].data = [   ['A', 676] , ['C', 5531] , ['B', 0] ];
+		chart1 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container2";
+		options.title.text = "Top 10 sites of Category A - Logfile";
+		options.series[0].data = [   {name: 'RAL-LCG2 (UK)', y: 258, color: '#356C20'} , {name: 'BNL-ATLAS (US)', y: 218, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 182, color: '#6298FF'} , {name: 'AGLT2 (US)', y: 5, color: '#00006B'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 4, color: '#356C20'} , {name: 'DESY-HH (DE)', y: 4, color: '#000000'} , {name: 'GoeGrid (DE)', y: 2, color: '#000000'} , {name: 'GRIF-LAL (FR)', y: 1, color: '#0055A5'} , {name: 'CERN-PROD (CERN)', y: 1, color: '#AE3C51'} , {name: 'BU_ATLAS_Tier2 (US)', y: 1, color: '#00006B'} ];
+		chart2 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container3";
+		options.title.text = "Cloud Analy of Category B - Logfile";
+		options.series[0].data = [  ];
+		chart3 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container4";
+		options.title.text = "Top 10 sites of Category C - Logfile";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 647, color: '#00006B'} , {name: 'DESY-HH (DE)', y: 341, color: '#000000'} , {name: 'GRIF-LPNHE (FR)', y: 238, color: '#0055A5'} , {name: 'DESY-ZN (DE)', y: 213, color: '#000000'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 210, color: '#356C20'} , {name: 'INFN-T1 (IT)', y: 199, color: '#009246'} , {name: 'UNI-FREIBURG (DE)', y: 197, color: '#000000'} , {name: 'UKI-LT2-QMUL (UK)', y: 191, color: '#356C20'} , {name: 'NDGF-T1 (ND)', y: 178, color: '#6298FF'} , {name: 'MWT2_UC (US)', y: 168, color: '#00006B'} ];
+		chart4 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container5";
+		options.title.text = "Cloud Analy of Category C - Logfile";
+		options.series[0].data = [   {name: 'DE', y: 1384, color: '#000000'} , {name: 'US', y: 1257, color: '#00006B'} , {name: 'UK', y: 875, color: '#356C20'} , {name: 'FR', y: 607, color: '#0055A5'} , {name: 'NL', y: 333, color: '#D97529'} , {name: 'CA', y: 295, color: '#FF1F1F'} , {name: 'IT', y: 292, color: '#009246'} , {name: 'ES', y: 218, color: '#EDBF00'} , {name: 'ND', y: 178, color: '#6298FF'} , {name: 'CERN', y: 73, color: '#AE3C51'} , {name: 'TW', y: 19, color: '#89000F'} ];
+		chart5 = new Highcharts.Chart(options);
+		
+	});
+</script>
+</head>
+<body>
+
+<div id='container1' style='width:100%; height:480px;'>
+</div>
+<div id='container2' style='width:100%; height:480px;'>
+</div>
+<div id='container3' style='width:100%; height:480px;'>
+</div>
+<div id='container4' style='width:100%; height:480px;'>
+</div>
+<div id='container5' style='width:100%; height:480px;'>
+</div>
+</body>
+</html>
+

@@ -10,6 +10,7 @@ import os
 import pycurl
 import time
 import datetime
+import simplejson as json
 #from pd2p_monitoring import WORKDIR
 
 
@@ -89,8 +90,10 @@ def parse_document(document):
     XPath_table_lines = '%s/tr' % (XPath_table_body)
     rows = BSXdocument.getItemList(XPath_table_lines)[1:]
     # get cloud name
-    data = open('panda_queues.json').read()
-    dic = eval(data)
+    fjson = open('panda_queues.json','r')
+    data = fjson.read()
+    dic = json.loads(data)
+    fjson.close()
     
     records = []
     exist_records = []

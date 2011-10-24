@@ -5,6 +5,7 @@ import re
 import sys
 import pycurl
 import time
+import simplejson as json
 
 interval_days = 30 # Monthly
 
@@ -42,8 +43,11 @@ db = dailyDB()
 DATEFORMAT = "%Y-%m-%d"
 last_updated = db.get_last_updated_time()
 query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days*24*60*60))
-data = open('panda_queues.json').read()
-dic = eval(data)
+# get cloud name
+fjson = open('panda_queues.json','r')
+data = fjson.read()
+dic = json.loads(data)
+fjson.close()
 
 def get_cloud_name(site):
     cloud = site
