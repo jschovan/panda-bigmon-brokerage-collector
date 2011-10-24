@@ -3,9 +3,11 @@ import cx_Oracle
 class dailyDB(object):
     
     _db = None
+    _connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
     
     def __init__(self):       
-        self._db = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')
+        # self._db = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')
+        self._db = cx_Oracle.connect(self._connect)
         
     def get_max_id(self):
         cursor = self._db.cursor()

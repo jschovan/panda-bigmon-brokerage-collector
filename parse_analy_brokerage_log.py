@@ -9,6 +9,7 @@ import sys
 import os
 import pycurl
 import time
+import datetime
 #from pd2p_monitoring import WORKDIR
 
 
@@ -102,6 +103,7 @@ def parse_document(document):
     this_time = None
     skip_time = None
     set_last = None
+    this_year = datetime.date.today().year
     if maxId is None:
         maxId = 0
     processed_rows = 0
@@ -111,10 +113,6 @@ def parse_document(document):
         SHIFT=0
         
         row = rows[row_counter]
-        if DEBUG==1:
-            print "========="
-            print row
-            print "========="
 
         rowDoc = BSXPathEvaluator('%s'%row)
 
@@ -163,7 +161,7 @@ def parse_document(document):
         message_time = message_datetime[1].strip()
         
         # Skip the leading uncompleted minute
-        this_time = "2011-%s %s"%(message_date, message_time)
+        this_time = "%s-%s %s"%(this_year, message_date, message_time)
         
         if skip_time is None or skip_time == this_time:
             skip_time = this_time
@@ -201,7 +199,8 @@ def parse_document(document):
         
         ## skip
         if is_this_category(cell_message, ' action=skip '):
-            continue # try to speed up
+            # continue # try to speed up
+            message_category = "D"
             message_skip = tmp_message[2].split(' ')
             message_action = message_skip[0].split('=')[1].strip()
             message_site = message_skip[1].split('=')[1].strip()
@@ -236,7 +235,7 @@ def parse_document(document):
         
         ## append to records it belong to
         if message_category in ['A','B','C']:
-            logDate = str("2011-%s"%message_date)
+            logDate = str("%s-%s"%(this_year, message_date))
             rec_idx = None
             site_name,cloud = get_sitecloud_name(dic,message_site)
             dailyLogId = db.is_exist_item(logDate, message_category, site_name, message_dn)
@@ -254,7 +253,12 @@ def parse_document(document):
                 record = (maxId, logDate, message_category, site_name, \
                   cloud, message_dn, count)
                 records.append(record)
-    
+        
+        if DEBUG==1:
+            print "========="
+            print "DEBUG:",message_category,": ",row
+            print "========="
+
     if (this_time is not None) and not (this_time <= last_time):
         print "Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
         

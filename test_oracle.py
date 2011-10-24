@@ -1,5 +1,6 @@
 from dailyDB import dailyDB
 import time
+import datetime
 import cx_Oracle
 import os
 
@@ -36,8 +37,8 @@ def get_sitecloud_name(siteID):
             break
     return (site_name,cloud)
 
-contents = get_document_wget()
-print "Contents:",contents
+#contents = get_document_wget()
+#print "Contents:",contents
 
 data = open('panda_queues.json').read()
 dic = eval(data)
@@ -64,6 +65,7 @@ t1 = time.time()
 t2 = t1 - 7*24*60*60
 print time.strftime(DATEFORMAT,time.localtime(t2))
 print "=====" 
+print "Year:",datetime.date.today().year
 """
 cursor.execute("select * from dailyLog where logDate>'2011-10-06' order by dailyLogId DESC")
 rows = cursor.fetchall()
