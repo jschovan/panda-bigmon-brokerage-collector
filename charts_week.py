@@ -58,8 +58,8 @@ def get_cloud_name(site):
     return cloud
 
 def parse_document_category():
-    data = open('template/P1_week.html').read()
-    title_text = CHARTS[0][1]
+    # data = open('template/P1_week.html').read()
+    # title_text = CHARTS[0][1]
     comm = ""
     series_data = ""
     sql = SQLS[0]
@@ -67,12 +67,12 @@ def parse_document_category():
     for row in rs:
         series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
         comm = ","
-    data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
-    return data
+    # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
+    return series_data
 
 def parse_document_site(idx,show_others=True):
-    data = open('template/P1_week.html').read()
-    title_text = CHARTS[idx][1]
+    # data = open('template/P1_week.html').read()
+    # title_text = CHARTS[idx][1]
     comm = ""
     series_data = ""
     sql = SQLS[idx]
@@ -92,12 +92,12 @@ def parse_document_site(idx,show_others=True):
     if others > 0 and show_others:
         # series_data = "%s %s ['others', %d]"%(series_data,comm,others)
         series_data = "%s %s {name: 'others', y: %d, color: '#CCCCCC'}"%(series_data,comm,others)
-    data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
-    return data
+    # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
+    return series_data
 
 def parse_document_cloud(idx):
-    data = open('template/P1_week.html').read()
-    title_text = CHARTS[idx][1]
+    # data = open('template/P1_week.html').read()
+    # title_text = CHARTS[idx][1]
     comm = ""
     series_data = ""
     sql = SQLS[idx]
@@ -106,12 +106,12 @@ def parse_document_cloud(idx):
         color = ADC_COLOR[row[0]]
         series_data = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data,comm,row[0],row[1],color)
         comm = ","
-    data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
-    return data
+    # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
+    return series_data
 
 def parse_document_user(idx):
-    data = open('template/P1_week.html').read()
-    title_text = CHARTS[idx][1]
+    # data = open('template/P1_week.html').read()
+    # title_text = CHARTS[idx][1]
     comm = ""
     series_data = ""
     sql = SQLS[idx]
@@ -124,30 +124,38 @@ def parse_document_user(idx):
             comm = ","
         else:
             break
-    data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
-    return data
+    # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
+    return series_data
 
-def write_document(document, FILENAME):
+def write_document(document, FILENAME='weekly.html'):
     of = open(FILENAME, 'w')
     print >>of, document
     of.close()
 
 def run():
-    document = parse_document_category()
-    write_document(document, '%s.html' % CHARTS[0][0] )
-    
-    document = parse_document_site(1)
-    write_document(document, '%s.html' % CHARTS[1][0] )
-    document = parse_document_site(3,False)
-    write_document(document, '%s.html' % CHARTS[3][0] )
-    
-    document = parse_document_cloud(2)
-    write_document(document, '%s.html' % CHARTS[2][0] )
-    document = parse_document_cloud(4)
-    write_document(document, '%s.html' % CHARTS[4][0] )
+    data = open('template/CHART_brokerage.html').read()
+    data = data.replace('#LAST_UPDATED#',last_updated)
 
-    document = parse_document_user(5)
-    write_document(document, '%s.html' % CHARTS[5][0] )
+    data = data.replace('#TITLE_TEXT1#',CHARTS[0][1])
+    data = data.replace('#TITLE_TEXT2#',CHARTS[1][1])
+    data = data.replace('#TITLE_TEXT3#',CHARTS[2][1])
+    data = data.replace('#TITLE_TEXT4#',CHARTS[3][1])
+    data = data.replace('#TITLE_TEXT5#',CHARTS[4][1])
+    
+    series_data1 = parse_document_category()   
+    series_data2 = parse_document_site(1)
+    series_data3 = parse_document_cloud(2)
+    series_data4 = parse_document_site(3)
+    series_data5 = parse_document_cloud(4)
+    # document = parse_document_user(5)
+    
+    data = data.replace('#SERIES_DATA1#',series_data1)
+    data = data.replace('#SERIES_DATA2#',series_data2)
+    data = data.replace('#SERIES_DATA3#',series_data3)
+    data = data.replace('#SERIES_DATA4#',series_data4)
+    data = data.replace('#SERIES_DATA5#',series_data5)
+
+    write_document(data)
 
     print u'DEBUG: Done'
     

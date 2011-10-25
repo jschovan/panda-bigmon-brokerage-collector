@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript'>
+	var chart;
+	var options = {
+			chart: {
+				renderTo: '',
+				plotBackgroundColor: null,
+				plotBorderWidth: 1,
+				plotShadow: false
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: 'Last updated: 2011-10-25 08:13 (UTC)'
+			},
+			tooltip: {
+				formatter: function() {
+					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+				}
+			},
+			credits: {
+				enabled: false
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#000000',
+						connecterColor: '#000000',
+						formatter: function() {
+							return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+						}
+					},
+					showInLegend: true
+				}
+			},
+			series: [{
+				type: 'pie',
+				name: 'Panda Brokerage Job',
+				data: []
+			}]
+		};
+		
+	$(document).ready(function() {
+	    options.chart.renderTo = "container1";
+		options.title.text = "Category A,B,C Analy - Weekly";
+		options.series[0].data = [   ['A', 4536] , ['B', 73] , ['C', 55562] ];
+		chart1 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container2";
+		options.title.text = "Top 10 sites of Category A - Weekly";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 1347, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 1207, color: '#6298FF'} , {name: 'FZK-LCG2 (DE)', y: 405, color: '#000000'} , {name: 'TRIUMF-LCG2 (CA)', y: 400, color: '#FF1F1F'} , {name: 'UKI-SOUTHGRID-OX-HEP (UK)', y: 360, color: '#356C20'} , {name: 'RAL-LCG2 (UK)', y: 282, color: '#356C20'} , {name: 'CA-VICTORIA-WESTGRID-T2 (CA)', y: 97, color: '#FF1F1F'} , {name: 'MWT2_UC (US)', y: 73, color: '#00006B'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 71, color: '#009246'} , {name: 'DESY-HH (DE)', y: 57, color: '#000000'} , {name: 'others', y: 237, color: '#CCCCCC'} ];
+		chart2 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container3";
+		options.title.text = "Cloud Analy of Category B - Weekly";
+		options.series[0].data = [   {name: 'US', y: 70, color: '#00006B'} , {name: 'FR', y: 3, color: '#0055A5'} ];
+		chart3 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container4";
+		options.title.text = "Top 10 sites of Category C - Weekly";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 6650, color: '#00006B'} , {name: 'DESY-HH (DE)', y: 2311, color: '#000000'} , {name: 'DESY-ZN (DE)', y: 1976, color: '#000000'} , {name: 'NIKHEF-ELPROD (NL)', y: 1962, color: '#D97529'} , {name: 'MWT2_UC (US)', y: 1950, color: '#00006B'} , {name: 'IN2P3-CC-T2 (FR)', y: 1881, color: '#0055A5'} , {name: 'NDGF-T1 (ND)', y: 1837, color: '#6298FF'} , {name: 'UKI-LT2-QMUL (UK)', y: 1809, color: '#356C20'} , {name: 'INFN-T1 (IT)', y: 1643, color: '#009246'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 1628, color: '#356C20'} , {name: 'others', y: 31915, color: '#CCCCCC'} ];
+		chart4 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container5";
+		options.title.text = "Cloud Analy of Category C - Weekly";
+		options.series[0].data = [   {name: 'US', y: 12431, color: '#00006B'} , {name: 'DE', y: 10769, color: '#000000'} , {name: 'UK', y: 9890, color: '#356C20'} , {name: 'FR', y: 7043, color: '#0055A5'} , {name: 'NL', y: 4257, color: '#D97529'} , {name: 'IT', y: 3370, color: '#009246'} , {name: 'CA', y: 3069, color: '#FF1F1F'} , {name: 'ND', y: 1837, color: '#6298FF'} , {name: 'ES', y: 1705, color: '#EDBF00'} , {name: 'CERN', y: 841, color: '#AE3C51'} , {name: 'TW', y: 350, color: '#89000F'} ];
+		chart5 = new Highcharts.Chart(options);
+		
+	});
+</script>
+</head>
+<body>
+<a href='index.html'>[Back]</a>
+<div id='container1' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container2' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container3' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container4' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container5' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+</body>
+</html>
+

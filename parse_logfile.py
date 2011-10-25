@@ -91,9 +91,19 @@ def parse_document(document):
     sumB = 0
     sumC = 0
     processed_rows = 0
+    from_date = None
+    to_date = None
     
     for row in document:
         cell_message = document[row]['message']
+        if from_date is None:
+            from_date = document[row]['timestamp']
+        if to_date is None:
+            to_date = document[row]['timestamp']
+        if document[row]['timestamp']<from_date:
+            from_date = document[row]['timestamp']
+        if document[row]['timestamp']>to_date:
+            to_date = document[row]['timestamp']
         
         message_category="no.category"
         message_dn = ""
@@ -170,7 +180,7 @@ def parse_document(document):
                 
         # print "INFOR: category=%s user=%s action=%s site=%s jobset=%s jobdef=%s reason=%s"%(message_category,message_dn,message_action,message_site,message_jobset,message_jobdef,message_reason)
         
-    return (processed_rows,P_category, P_site, P_cloud)
+    return (processed_rows, from_date, to_date, P_category, P_site, P_cloud)
 
 def sort_by_value(dic):
     lists = dic.items()
@@ -178,8 +188,10 @@ def sort_by_value(dic):
     backitems.sort(reverse=True)
     return [ backitems[i][1] for i in range(0,len(backitems))]
 
-def write_document(P_category,P_site,P_cloud,doc_file="logfile.html"):
+def write_document(from_date, to_date, P_category,P_site,P_cloud,doc_file="logfile.html"):
     data = open('template/CHART_logfile.html').read()
+    data = data.replace('#FROM_DATE#',from_date)
+    data = data.replace('#TO_DATE#',to_date)
     data = data.replace('#TITLE_TEXT1#',CHARTS[0][1])
     data = data.replace('#TITLE_TEXT2#',CHARTS[1][1])
     data = data.replace('#TITLE_TEXT3#',CHARTS[2][1])
@@ -248,45 +260,16 @@ def run(logfile):
     #t1 = time.time()
     document = get_document(logfile)
     t2 = time.time()
-    processed_rows,P_category,P_site,P_cloud = parse_document(document)
+    processed_rows,from_date,to_date,P_category,P_site,P_cloud = parse_document(document)
     t3 = time.time()
     
     #time_get = t2-t1
     time_parse = t3-t2
     
-    write_document(P_category,P_site,P_cloud)
+    write_document(from_date,to_date,P_category,P_site,P_cloud)
     
     #time_db = t4-t3
-    print "Category====\n",P_category
-    print "======="
-    print "Site========\n",P_site
-    sorted = sort_by_value(P_site['A'])
-    print "Site A (sorted)========"
-    cnt = 0
-    for k in sorted:
-        print k,":",P_site['A'][k]
-        cnt += 1
-        if cnt>9:
-            break
-    sorted = sort_by_value(P_site['B'])
-    print "Site B (sorted)========"
-    cnt = 0
-    for k in sorted:
-        print k,":",P_site['B'][k]
-        cnt += 1
-        if cnt>9:
-            break
-    sorted = sort_by_value(P_site['C'])
-    print "Site C (sorted)========"
-    cnt = 0
-    for k in sorted:
-        print k,":",P_site['C'][k]
-        cnt += 1
-        if cnt>9:
-            break
-    print "======="
-    print "Cloud=======\n",P_cloud
-    #print u'INFOR: Rows: %d Done(A/B/C: %d/%d/%d). ParsingTime: %d'%(processed_rows,sumA,sumB,sumC,time_parse)
+    print u'INFOR: Rows: %d Done(A/B/C: %d/%d/%d). ParsingTime: %d'%(processed_rows,P_category['A'],P_category['B'],P_category['C'],time_parse)
     
 
 
@@ -295,7 +278,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print "ERROR: too few input parameters"
         print "USAGE: python   parse_logfile.py   <input logfile>"
-        exit(1)
+        sys.exit(1) # before Python 2.5, after: exit(1)
     #else:
     #    OUTPUT_FILENAME_PREFIX = sys.argv[1]
 

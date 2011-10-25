@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript'>
+	var chart;
+	var options = {
+			chart: {
+				renderTo: '',
+				plotBackgroundColor: null,
+				plotBorderWidth: 1,
+				plotShadow: false
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: 'Last updated: 2011-10-25 08:13 (UTC)'
+			},
+			tooltip: {
+				formatter: function() {
+					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+				}
+			},
+			credits: {
+				enabled: false
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#000000',
+						connecterColor: '#000000',
+						formatter: function() {
+							return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+						}
+					},
+					showInLegend: true
+				}
+			},
+			series: [{
+				type: 'pie',
+				name: 'Panda Brokerage Job',
+				data: []
+			}]
+		};
+		
+	$(document).ready(function() {
+	    options.chart.renderTo = "container1";
+		options.title.text = "Category A,B,C Analy - Monthly";
+		options.series[0].data = [   ['A', 6296] , ['B', 312] , ['C', 115096] ];
+		chart1 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container2";
+		options.title.text = "Top 10 sites of Category A - Monthly";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 1498, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 1227, color: '#6298FF'} , {name: 'FZK-LCG2 (DE)', y: 718, color: '#000000'} , {name: 'TRIUMF-LCG2 (CA)', y: 424, color: '#FF1F1F'} , {name: 'UKI-SOUTHGRID-OX-HEP (UK)', y: 402, color: '#356C20'} , {name: 'MWT2_UC (US)', y: 305, color: '#00006B'} , {name: 'wuppertalprod (DE)', y: 293, color: '#000000'} , {name: 'RAL-LCG2 (UK)', y: 288, color: '#356C20'} , {name: 'DESY-ZN (DE)', y: 170, color: '#000000'} , {name: 'CA-VICTORIA-WESTGRID-T2 (CA)', y: 113, color: '#FF1F1F'} , {name: 'others', y: 858, color: '#CCCCCC'} ];
+		chart2 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container3";
+		options.title.text = "Cloud Analy of Category B - Monthly";
+		options.series[0].data = [   {name: 'US', y: 163, color: '#00006B'} , {name: 'DE', y: 112, color: '#000000'} , {name: 'CA', y: 20, color: '#FF1F1F'} , {name: 'UK', y: 11, color: '#356C20'} , {name: 'FR', y: 3, color: '#0055A5'} , {name: 'IT', y: 3, color: '#009246'} ];
+		chart3 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container4";
+		options.title.text = "Top 10 sites of Category C - Monthly";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 13332, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 4250, color: '#000000'} , {name: 'MWT2_UC (US)', y: 4113, color: '#00006B'} , {name: 'DESY-HH (DE)', y: 3912, color: '#000000'} , {name: 'AGLT2 (US)', y: 3652, color: '#00006B'} , {name: 'NIKHEF-ELPROD (NL)', y: 3565, color: '#D97529'} , {name: 'IN2P3-CC-T2 (FR)', y: 3353, color: '#0055A5'} , {name: 'UKI-LT2-QMUL (UK)', y: 3292, color: '#356C20'} , {name: 'GRIF-LPNHE (FR)', y: 3271, color: '#0055A5'} , {name: 'INFN-T1 (IT)', y: 3165, color: '#009246'} , {name: 'others', y: 69191, color: '#CCCCCC'} ];
+		chart4 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container5";
+		options.title.text = "Cloud Analy of Category C - Monthly";
+		options.series[0].data = [   {name: 'US', y: 26521, color: '#00006B'} , {name: 'DE', y: 22847, color: '#000000'} , {name: 'UK', y: 19354, color: '#356C20'} , {name: 'FR', y: 15631, color: '#0055A5'} , {name: 'NL', y: 7651, color: '#D97529'} , {name: 'IT', y: 6929, color: '#009246'} , {name: 'CA', y: 6488, color: '#FF1F1F'} , {name: 'ES', y: 3612, color: '#EDBF00'} , {name: 'ND', y: 3153, color: '#6298FF'} , {name: 'CERN', y: 1900, color: '#AE3C51'} , {name: 'TW', y: 1010, color: '#89000F'} ];
+		chart5 = new Highcharts.Chart(options);
+		
+	});
+</script>
+</head>
+<body>
+<a href='index.html'>[Back]</a>
+<div id='container1' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container2' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container3' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container4' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container5' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+</body>
+</html>
+
