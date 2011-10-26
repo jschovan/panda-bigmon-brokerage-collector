@@ -52,7 +52,7 @@
 	$(document).ready(function() {
 	    options.chart.renderTo = "container1";
 		options.title.text = "Category A,B,C Analy - Logfile";
-		options.series[0].data = [   ['A', 676] , ['C', 5531] , ['B', 0] ];
+		options.series[0].data = [   ['A', 676] , ['C', 5531] , ['B', 0] , ['E', 0] ];
 		chart1 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container2";
@@ -75,6 +75,16 @@
 		options.series[0].data = [   {name: 'DE', y: 1384, color: '#000000'} , {name: 'US', y: 1257, color: '#00006B'} , {name: 'UK', y: 875, color: '#356C20'} , {name: 'FR', y: 607, color: '#0055A5'} , {name: 'NL', y: 333, color: '#D97529'} , {name: 'CA', y: 295, color: '#FF1F1F'} , {name: 'IT', y: 292, color: '#009246'} , {name: 'ES', y: 218, color: '#EDBF00'} , {name: 'ND', y: 178, color: '#6298FF'} , {name: 'CERN', y: 73, color: '#AE3C51'} , {name: 'TW', y: 19, color: '#89000F'} ];
 		chart5 = new Highcharts.Chart(options);
 		
+		options.chart.renderTo = "container6";
+		options.title.text = "Top 10 sites of Category E - Logfile";
+		options.series[0].data = [  ];
+		chart6 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container7";
+		options.title.text = "Cloud Analy of Category E - Logfile";
+		options.series[0].data = [  ];
+		chart7 = new Highcharts.Chart(options);
+		
 	});
 </script>
 </head>
@@ -89,6 +99,10 @@
 <div id='container4' style='width:100%; height:480px;'>
 </div>
 <div id='container5' style='width:100%; height:480px;'>
+</div>
+<div id='container6' style='width:100%; height:480px;'>
+</div>
+<div id='container7' style='width:100%; height:480px;'>
 </div>
 </body>
 </html>

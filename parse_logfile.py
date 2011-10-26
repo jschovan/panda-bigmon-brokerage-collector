@@ -28,7 +28,8 @@ CHARTS = [
           ["P3_Logfile","Cloud Analy of Category B - Logfile"],
           ["P4_Logfile","Top 10 sites of Category C - Logfile"],
           ["P5_Logfile","Cloud Analy of Category C - Logfile"],
-          ["P6_Logfile","Top 10 users - Logfile"]
+          ["P6_Logfile","Top 10 sites of Category E - Logfile"],
+          ["P7_Logfile","Cloud Analy of Category E - Logfile"]
           ]
 
 # get cloud name
@@ -83,13 +84,10 @@ def is_in_buf(records, logDate, category, site, dnUser):
         return idx
 
 def parse_document(document):
-    P_category = {'A':0,'B':0,'C':0}
-    P_site = {'A':{},'B':{},'C':{}}
-    P_cloud = {'A':{},'B':{},'C':{}}
+    P_category = {'A':0,'B':0,'C':0,'E':0}
+    P_site = {'A':{},'B':{},'C':{},'E':{}}
+    P_cloud = {'A':{},'B':{},'C':{},'E':{}}
     
-    sumA = 0
-    sumB = 0
-    sumC = 0
     processed_rows = 0
     from_date = None
     to_date = None
@@ -142,6 +140,18 @@ def parse_document(document):
             else:
                 message_reason = '_'.join(message_skip[3:]).strip('_')
         
+        # exclude : add at 2011-10-26
+        elif is_this_category(cell_message, ' action=exclude '):
+            message_category = "E"
+            message_skip = tmp_message[2].split(' ')
+            message_action = message_skip[0].split('=')[1].strip()
+            message_site = message_skip[1].split('=')[1].strip()
+            message_reason = message_skip[2].split('=')[1].strip()
+            if re.search('=',message_skip[4]):
+                message_weight = message_skip[4].split('=')[1].strip()
+            else:
+                message_reason = '_'.join(message_skip[3:]).strip('_')
+        
         ## choose
         elif is_this_category(cell_message, ' action=choose '):
             message_category = "C"
@@ -166,7 +176,7 @@ def parse_document(document):
                 message_category = "B"
         
         ## append to records it belong to
-        if message_category in ['A','B','C']:
+        if message_category in ['A','B','C','E']:
             site_name,cloud = get_sitecloud_name(dic,message_site)
             P_category[message_category] += 1
             if site_name not in P_site[message_category]:
@@ -197,6 +207,8 @@ def write_document(from_date, to_date, P_category,P_site,P_cloud,doc_file="logfi
     data = data.replace('#TITLE_TEXT3#',CHARTS[2][1])
     data = data.replace('#TITLE_TEXT4#',CHARTS[3][1])
     data = data.replace('#TITLE_TEXT5#',CHARTS[4][1])
+    data = data.replace('#TITLE_TEXT6#',CHARTS[5][1])
+    data = data.replace('#TITLE_TEXT7#',CHARTS[6][1])
     
     comm = ""
     series_data1 = ""
@@ -251,6 +263,29 @@ def write_document(from_date, to_date, P_category,P_site,P_cloud,doc_file="logfi
         comm = ","
     data = data.replace('#SERIES_DATA5#',series_data5)
     
+    comm = ""
+    series_data6 = ""
+    sorted = sort_by_value(P_site['E'])
+    cnt = 0
+    for k in sorted:
+        cloud = get_cloud_name(k)
+        color = ADC_COLOR[cloud]
+        series_data6 = "%s %s {name: '%s (%s)', y: %d, color: '%s'}"%(series_data6,comm,k,cloud,P_site['E'][k],color)
+        comm = ","
+        cnt += 1
+        if cnt>9:
+            break
+    data = data.replace('#SERIES_DATA6#',series_data6)
+    
+    comm = ""
+    series_data7 = ""
+    sorted = sort_by_value(P_cloud['E'])
+    for k in sorted:
+        color = ADC_COLOR[k]
+        series_data7 = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data7,comm,k,P_cloud['E'][k],color)
+        comm = ","
+    data = data.replace('#SERIES_DATA7#',series_data7)
+    
     of = open(doc_file, 'w')
     print >>of, data
     of.close()
@@ -269,7 +304,7 @@ def run(logfile):
     write_document(from_date,to_date,P_category,P_site,P_cloud)
     
     #time_db = t4-t3
-    print u'INFOR: Rows: %d Done(A/B/C: %d/%d/%d). ParsingTime: %d'%(processed_rows,P_category['A'],P_category['B'],P_category['C'],time_parse)
+    print u'INFOR: Rows: %d Done(A/B/C/E: %d/%d/%d/%d). ParsingTime: %d'%(processed_rows,P_category['A'],P_category['B'],P_category['C'],P_category['E'],time_parse)
     
 
 
