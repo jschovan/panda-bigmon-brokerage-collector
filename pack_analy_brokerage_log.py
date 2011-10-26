@@ -16,7 +16,7 @@ DEBUG = 0
 
 def get_document():
     lastID = monthlydb.get_last_updated_id()
-    sql = 'select dailyLogId,logDate,category,site,cloud,dnUser,count from dailyLog where dailyLogId>%d order by dailyLogId'%lastID
+    sql = 'select dailyLogId,logDate,category,site,cloud,dnUser,jobdefCount from dailyLog where dailyLogId>%d order by dailyLogId'%lastID
     rs = dailydb.query(sql)
     return rs
 

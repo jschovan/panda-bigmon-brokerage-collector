@@ -23,20 +23,22 @@ ADC_COLOR = {
              'US': '#00006B'
              }
 CHARTS = [
-          ["P1_month","Category A,B,C Analy - Monthly"],
+          ["P1_month","Category A,B,C,E Analy - Monthly"],
           ["P2_month","Top 10 sites of Category A - Monthly"],
           ["P3_month","Cloud Analy of Category B - Monthly"],
           ["P4_month","Top 10 sites of Category C - Monthly"],
           ["P5_month","Cloud Analy of Category C - Monthly"],
-          ["P6_month","Top 10 users - Monthly"]
+          ["P6_month","Top 10 sites of Category E - Monthly"],
+          ["P7_month","Cloud Analy of Category E - Monthly"]
           ]
 SQLS = [
-        "select category, sum(count) nums from dailylog where logDate > '%s' group by category order by category",
-        "select site, sum(count) nums from dailylog where category='A' and logDate > '%s' group by site order by nums DESC",
-        "select cloud, sum(count) nums from dailylog where category='B' and logDate > '%s' group by cloud order by nums DESC",
-        "select site, sum(count) nums from dailylog where category='C' and logDate > '%s' group by site order by nums DESC",
-        "select cloud, sum(count) nums from dailylog where category='C' and logDate > '%s' group by cloud order by nums DESC",
-        "select dnUser, sum(count) nums from dailylog where logDate > '%s' group by dnUser order by nums DESC"
+        "select category, sum(jobdefCount) nums from dailylog where logDate > '%s' group by category order by category",
+        "select site, sum(jobdefCount) nums from dailylog where category='A' and logDate > '%s' group by site order by nums DESC",
+        "select cloud, sum(jobdefCount) nums from dailylog where category='B' and logDate > '%s' group by cloud order by nums DESC",
+        "select site, sum(jobdefCount) nums from dailylog where category='C' and logDate > '%s' group by site order by nums DESC",
+        "select cloud, sum(jobdefCount) nums from dailylog where category='C' and logDate > '%s' group by cloud order by nums DESC",
+        "select site, sum(jobdefCount) nums from dailylog where category='E' and logDate > '%s' group by site order by nums DESC",
+        "select cloud, sum(jobdefCount) nums from dailylog where category='E' and logDate > '%s' group by cloud order by nums DESC"
         ]
 
 db = dailyDB()
@@ -141,12 +143,16 @@ def run():
     data = data.replace('#TITLE_TEXT3#',CHARTS[2][1])
     data = data.replace('#TITLE_TEXT4#',CHARTS[3][1])
     data = data.replace('#TITLE_TEXT5#',CHARTS[4][1])
+    data = data.replace('#TITLE_TEXT6#',CHARTS[5][1])
+    data = data.replace('#TITLE_TEXT7#',CHARTS[6][1])
     
     series_data1 = parse_document_category()   
     series_data2 = parse_document_site(1)
     series_data3 = parse_document_cloud(2)
     series_data4 = parse_document_site(3)
     series_data5 = parse_document_cloud(4)
+    series_data6 = parse_document_site(5)
+    series_data7 = parse_document_cloud(6)
     # document = parse_document_user(5)
     
     data = data.replace('#SERIES_DATA1#',series_data1)
@@ -154,6 +160,8 @@ def run():
     data = data.replace('#SERIES_DATA3#',series_data3)
     data = data.replace('#SERIES_DATA4#',series_data4)
     data = data.replace('#SERIES_DATA5#',series_data5)
+    data = data.replace('#SERIES_DATA6#',series_data6)
+    data = data.replace('#SERIES_DATA7#',series_data7)
 
     write_document(data)
 

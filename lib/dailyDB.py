@@ -17,6 +17,18 @@ class dailyDB(object):
         cursor.close()
         return maxID
     
+    def get_logdate_by_id(self, id):
+        cursor = self._db.cursor()
+        sql = "SELECT logDate from dailyLog where dailyLogId=%d"%id
+        cursor.execute(sql)
+        rs = cursor.fetchone()
+        if rs is not None:
+            logDate = rs[0]
+        else:
+            logDate = None;
+        cursor.close()
+        return logDate
+    
     def get_last_updated_time(self):
         cursor = self._db.cursor()
         sql = "SELECT LastUpdatedTime from LastUpdated ORDER By LastUpdatedTime DESC"
@@ -59,7 +71,7 @@ class dailyDB(object):
         
     def add_logs(self,logs):
         cursor = self._db.cursor()
-        sql = "INSERT INTO dailyLog ( dailyLogId, logDate, category, site, cloud, dnUser, count) " + \
+        sql = "INSERT INTO dailyLog ( dailyLogId, logDate, category, site, cloud, dnUser, jobdefCount) " + \
                   "VALUES ( :1, :2, :3, :4, :5, :6, :7)"
         cursor.executemany(sql, logs)
         self._db.commit()
@@ -68,7 +80,7 @@ class dailyDB(object):
         
     def increase_logs_count(self,logIds):
         cursor = self._db.cursor()
-        sql = "UPDATE dailyLog SET count = count + 1 WHERE dailyLogId = :1 "
+        sql = "UPDATE dailyLog SET jobdefCount = jobdefCount + 1 WHERE dailyLogId = :1 "
         cursor.executemany(sql, logIds)
         self._db.commit()
         cursor.close()
@@ -76,7 +88,7 @@ class dailyDB(object):
         
     def increase_buf_count(self,logs):
         cursor = self._db.cursor()
-        sql = "UPDATE dailyLog SET count = count + 1 WHERE logDate = :1 AND category = :2 AND site = :3 AND dnUser = :4 "
+        sql = "UPDATE dailyLog SET jobdefCount = jobdefCount + 1 WHERE logDate = :1 AND category = :2 AND site = :3 AND dnUser = :4 "
         cursor.executemany(sql, logs)
         self._db.commit()
         cursor.close()

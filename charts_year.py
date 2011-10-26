@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from dailyDB import dailyDB
+from monthlyDB import monthlyDB
 
 import re
 import sys
@@ -7,7 +8,7 @@ import pycurl
 import time
 import simplejson as json
 
-interval_days = 7 # Weekly
+interval_days = 365 # Yearly
 
 ADC_COLOR = {
              'CA': '#FF1F1F',
@@ -23,27 +24,29 @@ ADC_COLOR = {
              'US': '#00006B'
              }
 CHARTS = [
-          ["P1_week","Category A,B,C,E Analy - Weekly"],
-          ["P2_week","Top 10 sites of Category A - Weekly"],
-          ["P3_week","Cloud Analy of Category B - Weekly"],
-          ["P4_week","Top 10 sites of Category C - Weekly"],
-          ["P5_week","Cloud Analy of Category C - Weekly"],
-          ["P6_week","Top 10 sites of Category E - Weekly"],
-          ["P7_week","Cloud Analy of Category E - Weekly"]
+          ["P1_year","Category A,B,C,E Analy - Yearly"],
+          ["P2_year","Top 10 sites of Category A - Yearly"],
+          ["P3_year","Cloud Analy of Category B - Yearly"],
+          ["P4_year","Top 10 sites of Category C - Yearly"],
+          ["P5_year","Cloud Analy of Category C - Yearly"],
+          ["P6_year","Top 10 sites of Category E - Yearly"],
+          ["P7_year","Cloud Analy of Category E - Yearly"]
           ]
 SQLS = [
-        "select category, sum(jobdefCount) nums from dailylog where logDate > '%s' group by category order by category",
-        "select site, sum(jobdefCount) nums from dailylog where category='A' and logDate > '%s' group by site order by nums DESC",
-        "select cloud, sum(jobdefCount) nums from dailylog where category='B' and logDate > '%s' group by cloud order by nums DESC",
-        "select site, sum(jobdefCount) nums from dailylog where category='C' and logDate > '%s' group by site order by nums DESC",
-        "select cloud, sum(jobdefCount) nums from dailylog where category='C' and logDate > '%s' group by cloud order by nums DESC",
-        "select site, sum(jobdefCount) nums from dailylog where category='E' and logDate > '%s' group by site order by nums DESC",
-        "select cloud, sum(jobdefCount) nums from dailylog where category='E' and logDate > '%s' group by cloud order by nums DESC"
+        "select category, sum(jobdefCount) nums from monthlylog where logMonth > '%s' group by category order by category",
+        "select site, sum(jobdefCount) nums from monthlylog where category='A' and logMonth > '%s' group by site order by nums DESC",
+        "select cloud, sum(jobdefCount) nums from monthlylog where category='B' and logMonth > '%s' group by cloud order by nums DESC",
+        "select site, sum(jobdefCount) nums from monthlylog where category='C' and logMonth > '%s' group by site order by nums DESC",
+        "select cloud, sum(jobdefCount) nums from monthlylog where category='C' and logMonth > '%s' group by cloud order by nums DESC",
+        "select site, sum(jobdefCount) nums from monthlylog where category='E' and logMonth > '%s' group by site order by nums DESC",
+        "select cloud, sum(jobdefCount) nums from monthlylog where category='E' and logMonth > '%s' group by cloud order by nums DESC"
         ]
 
-db = dailyDB()
-DATEFORMAT = "%Y-%m-%d"
-last_updated = db.get_last_updated_time()
+dailydb = dailyDB()
+db = monthlyDB()
+DATEFORMAT = "%Y-%m"
+last_id = db.get_last_updated_id()
+last_updated = dailydb.get_logdate_by_id(last_id)
 query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days*24*60*60))
 # get cloud name
 fjson = open('panda_queues.json','r')
@@ -129,7 +132,7 @@ def parse_document_user(idx):
     # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return series_data
 
-def write_document(document, FILENAME='weekly.html'):
+def write_document(document, FILENAME='yearly.html'):
     of = open(FILENAME, 'w')
     print >>of, document
     of.close()

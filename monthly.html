@@ -18,7 +18,7 @@
 				text: ''
 			},
 			subtitle: {
-				text: 'Last updated: 2011-10-25 14:18 (UTC)'
+				text: 'Last updated: 2011-10-26 09:23 (UTC)'
 			},
 			tooltip: {
 				formatter: function() {
@@ -52,13 +52,13 @@
 		
 	$(document).ready(function() {
 	    options.chart.renderTo = "container1";
-		options.title.text = "Category A,B,C Analy - Monthly";
-		options.series[0].data = [   ['A', 6466] , ['B', 312] , ['C', 117493] ];
+		options.title.text = "Category A,B,C,E Analy - Monthly";
+		options.series[0].data = [   ['A', 6809] , ['B', 312] , ['C', 126719] , ['E', 2965] ];
 		chart1 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container2";
 		options.title.text = "Top 10 sites of Category A - Monthly";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 1646, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 1227, color: '#6298FF'} , {name: 'FZK-LCG2 (DE)', y: 719, color: '#000000'} , {name: 'TRIUMF-LCG2 (CA)', y: 424, color: '#FF1F1F'} , {name: 'UKI-SOUTHGRID-OX-HEP (UK)', y: 402, color: '#356C20'} , {name: 'MWT2_UC (US)', y: 305, color: '#00006B'} , {name: 'wuppertalprod (DE)', y: 293, color: '#000000'} , {name: 'RAL-LCG2 (UK)', y: 288, color: '#356C20'} , {name: 'DESY-ZN (DE)', y: 173, color: '#000000'} , {name: 'CA-VICTORIA-WESTGRID-T2 (CA)', y: 113, color: '#FF1F1F'} , {name: 'others', y: 876, color: '#CCCCCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 1952, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 1227, color: '#6298FF'} , {name: 'FZK-LCG2 (DE)', y: 719, color: '#000000'} , {name: 'TRIUMF-LCG2 (CA)', y: 424, color: '#FF1F1F'} , {name: 'UKI-SOUTHGRID-OX-HEP (UK)', y: 402, color: '#356C20'} , {name: 'MWT2_UC (US)', y: 305, color: '#00006B'} , {name: 'wuppertalprod (DE)', y: 293, color: '#000000'} , {name: 'RAL-LCG2 (UK)', y: 291, color: '#356C20'} , {name: 'DESY-ZN (DE)', y: 173, color: '#000000'} , {name: 'CA-VICTORIA-WESTGRID-T2 (CA)', y: 113, color: '#FF1F1F'} , {name: 'others', y: 910, color: '#CCCCCC'} ];
 		chart2 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container3";
@@ -68,13 +68,23 @@
 		
 		options.chart.renderTo = "container4";
 		options.title.text = "Top 10 sites of Category C - Monthly";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 13621, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 4289, color: '#000000'} , {name: 'MWT2_UC (US)', y: 4113, color: '#00006B'} , {name: 'DESY-HH (DE)', y: 3997, color: '#000000'} , {name: 'AGLT2 (US)', y: 3760, color: '#00006B'} , {name: 'NIKHEF-ELPROD (NL)', y: 3629, color: '#D97529'} , {name: 'IN2P3-CC-T2 (FR)', y: 3373, color: '#0055A5'} , {name: 'GRIF-LPNHE (FR)', y: 3353, color: '#0055A5'} , {name: 'NDGF-T1 (ND)', y: 3340, color: '#6298FF'} , {name: 'UKI-LT2-QMUL (UK)', y: 3292, color: '#356C20'} , {name: 'others', y: 70726, color: '#CCCCCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 14298, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 4371, color: '#000000'} , {name: 'MWT2_UC (US)', y: 4331, color: '#00006B'} , {name: 'DESY-HH (DE)', y: 4300, color: '#000000'} , {name: 'NIKHEF-ELPROD (NL)', y: 4224, color: '#D97529'} , {name: 'AGLT2 (US)', y: 4067, color: '#00006B'} , {name: 'IN2P3-CC-T2 (FR)', y: 3810, color: '#0055A5'} , {name: 'INFN-T1 (IT)', y: 3531, color: '#009246'} , {name: 'GRIF-LPNHE (FR)', y: 3493, color: '#0055A5'} , {name: 'NDGF-T1 (ND)', y: 3443, color: '#6298FF'} , {name: 'others', y: 76851, color: '#CCCCCC'} ];
 		chart4 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container5";
 		options.title.text = "Cloud Analy of Category C - Monthly";
-		options.series[0].data = [   {name: 'US', y: 27074, color: '#00006B'} , {name: 'DE', y: 23210, color: '#000000'} , {name: 'UK', y: 19662, color: '#356C20'} , {name: 'FR', y: 15954, color: '#0055A5'} , {name: 'NL', y: 7852, color: '#D97529'} , {name: 'IT', y: 7153, color: '#009246'} , {name: 'CA', y: 6625, color: '#FF1F1F'} , {name: 'ES', y: 3691, color: '#EDBF00'} , {name: 'ND', y: 3340, color: '#6298FF'} , {name: 'CERN', y: 1912, color: '#AE3C51'} , {name: 'TW', y: 1020, color: '#89000F'} ];
+		options.series[0].data = [   {name: 'US', y: 28755, color: '#00006B'} , {name: 'DE', y: 24749, color: '#000000'} , {name: 'UK', y: 21508, color: '#356C20'} , {name: 'FR', y: 17323, color: '#0055A5'} , {name: 'NL', y: 8878, color: '#D97529'} , {name: 'IT', y: 7762, color: '#009246'} , {name: 'CA', y: 7168, color: '#FF1F1F'} , {name: 'ES', y: 4004, color: '#EDBF00'} , {name: 'ND', y: 3443, color: '#6298FF'} , {name: 'CERN', y: 2015, color: '#AE3C51'} , {name: 'TW', y: 1114, color: '#89000F'} ];
 		chart5 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container6";
+		options.title.text = "Top 10 sites of Category E - Monthly";
+		options.series[0].data = [   {name: 'IN2P3-CC (FR)', y: 327, color: '#0055A5'} , {name: 'GRIF-LPNHE (FR)', y: 322, color: '#0055A5'} , {name: 'SFU-LCG2 (CA)', y: 258, color: '#FF1F1F'} , {name: 'IN2P3-CC-T2 (FR)', y: 204, color: '#0055A5'} , {name: 'FZK-LCG2 (DE)', y: 153, color: '#000000'} , {name: 'GoeGrid (DE)', y: 142, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 137, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 134, color: '#6298FF'} , {name: 'WT2 (US)', y: 130, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 130, color: '#000000'} , {name: 'others', y: 1028, color: '#CCCCCC'} ];
+		chart6 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container7";
+		options.title.text = "Cloud Analy of Category E - Monthly";
+		options.series[0].data = [   {name: 'FR', y: 902, color: '#0055A5'} , {name: 'DE', y: 620, color: '#000000'} , {name: 'UK', y: 421, color: '#356C20'} , {name: 'US', y: 284, color: '#00006B'} , {name: 'CA', y: 280, color: '#FF1F1F'} , {name: 'ND', y: 134, color: '#6298FF'} , {name: 'IT', y: 131, color: '#009246'} , {name: 'ES', y: 128, color: '#EDBF00'} , {name: 'CERN', y: 44, color: '#AE3C51'} , {name: 'NL', y: 21, color: '#D97529'} ];
+		chart7 = new Highcharts.Chart(options);
 		
 	});
 </script>
@@ -94,6 +104,12 @@
 </div>
 <a href='index.html'>[Back]</a>
 <div id='container5' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container6' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container7' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
 </body>

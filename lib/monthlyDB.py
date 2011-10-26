@@ -51,7 +51,7 @@ class monthlyDB(object):
         
     def add_log(self,monthlyLogId,logMonth,category,site,cloud,dnUser,count):
         cursor = self._db.cursor()
-        sql = "INSERT INTO monthlyLog ( monthlyLogId, logMonth, category, site, cloud, dnUser, count) " + \
+        sql = "INSERT INTO monthlyLog ( monthlyLogId, logMonth, category, site, cloud, dnUser, jobdefCount) " + \
                   "VALUES ( %d, '%s', '%s', '%s', '%s', '%s', %d)" % (monthlyLogId,logMonth,category,site,cloud,dnUser,count)
         cursor.execute(sql)
         self._db.commit()
@@ -60,7 +60,7 @@ class monthlyDB(object):
         
     def increase_log_count(self,logId,byCount):
         cursor = self._db.cursor()
-        sql = "UPDATE monthlyLog SET count = count + %d WHERE monthlyLogId = %d "%(byCount,logId)
+        sql = "UPDATE monthlyLog SET jobdefCount = jobdefCount + %d WHERE monthlyLogId = %d "%(byCount,logId)
         cursor.execute(sql)
         self._db.commit()
         cursor.close()

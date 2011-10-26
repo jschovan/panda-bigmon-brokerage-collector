@@ -7,7 +7,7 @@ import pycurl
 import time
 import simplejson as json
 
-interval_days = 7 # Weekly
+interval_days = 90 # seasonly
 
 ADC_COLOR = {
              'CA': '#FF1F1F',
@@ -23,13 +23,13 @@ ADC_COLOR = {
              'US': '#00006B'
              }
 CHARTS = [
-          ["P1_week","Category A,B,C,E Analy - Weekly"],
-          ["P2_week","Top 10 sites of Category A - Weekly"],
-          ["P3_week","Cloud Analy of Category B - Weekly"],
-          ["P4_week","Top 10 sites of Category C - Weekly"],
-          ["P5_week","Cloud Analy of Category C - Weekly"],
-          ["P6_week","Top 10 sites of Category E - Weekly"],
-          ["P7_week","Cloud Analy of Category E - Weekly"]
+          ["P1_season","Category A,B,C,E Analy - Seasonly"],
+          ["P2_season","Top 10 sites of Category A - Seasonly"],
+          ["P3_season","Cloud Analy of Category B - Seasonly"],
+          ["P4_season","Top 10 sites of Category C - Seasonly"],
+          ["P5_season","Cloud Analy of Category C - Seasonly"],
+          ["P6_season","Top 10 sites of Category E - Seasonly"],
+          ["P7_season","Cloud Analy of Category E - Seasonly"]
           ]
 SQLS = [
         "select category, sum(jobdefCount) nums from dailylog where logDate > '%s' group by category order by category",
@@ -129,7 +129,7 @@ def parse_document_user(idx):
     # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return series_data
 
-def write_document(document, FILENAME='weekly.html'):
+def write_document(document, FILENAME='seasonly.html'):
     of = open(FILENAME, 'w')
     print >>of, document
     of.close()

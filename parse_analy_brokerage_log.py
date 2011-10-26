@@ -17,8 +17,7 @@ import simplejson as json
 OUTPUT_FILENAME_PREFIX = 'analyBrokerageLog'
 db = dailyDB()
 
-#MESSAGE_CATEGORIES=[' - SKIPPED ', ' - triggered ', ' - UNSELECTEDT2 ', ' - SELECTEDT2 ']
-MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' use ']
+MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' action=exclude ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
 QUERY_HOUR = 1
 QUERY_LIMIT = 10000
@@ -213,6 +212,18 @@ def parse_document(document):
             else:
                 message_reason = '_'.join(message_skip[3:]).strip('_')
         
+        # exclude : add at 2011-10-26
+        elif is_this_category(cell_message, ' action=exclude '):
+            message_category = "E"
+            message_skip = tmp_message[2].split(' ')
+            message_action = message_skip[0].split('=')[1].strip()
+            message_site = message_skip[1].split('=')[1].strip()
+            message_reason = message_skip[2].split('=')[1].strip()
+            if re.search('=',message_skip[4]):
+                message_weight = message_skip[4].split('=')[1].strip()
+            else:
+                message_reason = '_'.join(message_skip[3:]).strip('_')
+        
         ## choose
         elif is_this_category(cell_message, ' action=choose '):
             message_category = "C"
@@ -237,7 +248,7 @@ def parse_document(document):
                 message_category = "B"
         
         ## append to records it belong to
-        if message_category in ['A','B','C']:
+        if message_category in ['A','B','C','E']:
             logDate = str("%s-%s"%(this_year, message_date))
             rec_idx = None
             site_name,cloud = get_sitecloud_name(dic,message_site)
