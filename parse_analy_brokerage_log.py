@@ -11,6 +11,7 @@ import pycurl
 import time
 import datetime
 import simplejson as json
+from dateutil import parser
 #from pd2p_monitoring import WORKDIR
 
 
@@ -79,6 +80,26 @@ def is_in_buf(records, logDate, category, site, dnUser):
         return None
     else:
         return idx
+    
+def is_excluded(ex_record,dn,jobset,site):
+    found = False
+    for r in ex_record:
+        if r[0]==dn and r[1]==jobset and r[2]==site:
+            found = True
+            break
+    return found
+    
+def get_log_year(p_year,p_date,p_time=''):
+    DATEFORMAT = "%Y-%m-%d %H:%I:%S"
+    r_year = p_year
+    t1 = time.time()
+    tf = time.strftime(DATEFORMAT,time.localtime(t1))
+    dt1 = parser.parse("%s-%s %s"%(p_year,p_date,p_time))
+    dt2 = parser.parse(tf)
+    if dt1 > dt2:
+        r_year -= 1
+    return r_year
+    
 
 def parse_document(document):
     BSXdocument = BSXPathEvaluator(document)
@@ -95,6 +116,7 @@ def parse_document(document):
     fjson.close()
     
     records = []
+    ex_record = []
     exist_records = []
     in_buf_records = []
     maxId = db.get_max_id()
@@ -112,6 +134,7 @@ def parse_document(document):
     
     for row_counter in xrange(len(rows)):
         record = ()
+        ex_rec = ()
         SHIFT=0
         
         row = rows[row_counter]
@@ -163,15 +186,16 @@ def parse_document(document):
         message_time = message_datetime[1].strip()
         
         # Skip the leading uncompleted minute
-        this_time = "%s-%s %s"%(this_year, message_date, message_time)
+        log_year = get_log_year(this_year, message_date, message_time)
+        this_time = "%s-%s %s"%(log_year, message_date, message_time)
         
         if skip_time is None or skip_time == this_time:
             skip_time = this_time
             continue
         # set the last updated time when skip done.( Records in time DESC )
         if set_last is None:
-            db.set_last_updated_time(this_time)
-            set_last = True
+            # save it when every thing done
+            set_last = this_time
         
         # Break when reach the last_time
         if (last_time is not None) and (this_time <= last_time):
@@ -223,6 +247,12 @@ def parse_document(document):
                 message_weight = message_skip[4].split('=')[1].strip()
             else:
                 message_reason = '_'.join(message_skip[3:]).strip('_')
+            site_name,cloud = get_sitecloud_name(dic,message_site)
+            if is_excluded(ex_record,message_dn,message_jobset,site_name):
+                message_category = "D" # skip if excluded by other jobdef of same jobset
+            else:
+                ex_rec = (message_dn, message_jobset, site_name)
+                ex_record.insert(0, ex_rec)
         
         ## choose
         elif is_this_category(cell_message, ' action=choose '):
@@ -236,6 +266,19 @@ def parse_document(document):
             else:
                 message_reason = '_'.join(message_choose[3:]).strip('_')
         
+        ## action=use: add at 2011-10-26
+        elif is_this_category(cell_message, ' action=use '):
+            #message_category = "C"
+            message_choose = tmp_message[2].split(' ')
+            message_action = message_choose[0].split('=')[1].strip()
+            message_site = message_choose[1].split('=')[1].strip()
+            # message_reason = message_choose[2].split('=')[1].strip()
+            message_reason = '_'.join(message_choose[3:]).strip('_')
+            if is_this_category(message_reason, 'site'):
+                message_category = "A"
+            if is_this_category(message_reason, 'cloud'):
+                message_category = "B"
+        
         ## use site or cloud
         elif is_this_category(cell_message, ' use '):
             message_use = tmp_message[2].split(' ')
@@ -246,10 +289,16 @@ def parse_document(document):
                 message_category = "A"
             if is_this_category(message_reason, 'cloud'):
                 message_category = "B"
+                
+        ## other actions
+        elif is_this_category(cell_message, ' action='):
+            message_buf = tmp_message[2].split(' ')
+            message_action = message_buf[0].split('=')[1].strip()
+            print "WARNING: action=%s is not processed!"%message_action
         
         ## append to records it belong to
         if message_category in ['A','B','C','E']:
-            logDate = str("%s-%s"%(this_year, message_date))
+            logDate = str("%s-%s"%(log_year, message_date))
             rec_idx = None
             site_name,cloud = get_sitecloud_name(dic,message_site)
             dailyLogId = db.is_exist_item(logDate, message_category, site_name, message_dn)
@@ -273,6 +322,7 @@ def parse_document(document):
             print "DEBUG:",message_category,": ",row
             print "========="
 
+    db.set_last_updated_time(set_last) # set when all done.
     if (this_time is not None) and not (this_time <= last_time):
         print "Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
         

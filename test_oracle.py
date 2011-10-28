@@ -3,6 +3,8 @@ import time
 import datetime
 import cx_Oracle
 import os
+from dateutil import parser
+import simplejson as json
 
 QUERY_HOUR = 1
 QUERY_LIMIT = 650
@@ -40,8 +42,10 @@ def get_sitecloud_name(siteID):
 #contents = get_document_wget()
 #print "Contents:",contents
 
-data = open('panda_queues.json').read()
-dic = eval(data)
+fjson = open('panda_queues.json','r')
+data = fjson.read()
+dic = json.loads(data)
+fjson.close()
 # print dic[10]['cloud'],dic[10]['panda_siteID']
 
 con = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')
@@ -60,12 +64,23 @@ for result in cursor1:
         cursor.execute(sql)
         con.commit()
 """
-DATEFORMAT = "%Y-%m-%d"
+DATEFORMAT = "%Y-%m-%d %H:%I:%S"
 t1 = time.time()
 t2 = t1 - 7*24*60*60
-print time.strftime(DATEFORMAT,time.localtime(t2))
+tf = time.strftime(DATEFORMAT,time.localtime(t2))
+print tf
 print "=====" 
 print "Year:",datetime.date.today().year
+dt = parser.parse("2011-10-02 14:00")
+dt1 = parser.parse("2011-10-02")
+dt2 = parser.parse(tf)
+print "DT:",dt
+print "DT1:",dt1
+print "DT2:",dt2
+print "t1:",tf
+if dt > dt2:
+    print "BIG"
+
 """
 cursor.execute("select * from dailyLog where logDate>'2011-10-06' order by dailyLogId DESC")
 rows = cursor.fetchall()

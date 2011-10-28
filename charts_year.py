@@ -27,9 +27,9 @@ CHARTS = [
           ["P1_year","Category A,B,C,E Analy - Yearly"],
           ["P2_year","Top 10 sites of Category A - Yearly"],
           ["P3_year","Cloud Analy of Category B - Yearly"],
-          ["P4_year","Top 10 sites of Category C - Yearly"],
+          ["P4_year","Top 20 sites of Category C - Yearly"],
           ["P5_year","Cloud Analy of Category C - Yearly"],
-          ["P6_year","Top 10 sites of Category E - Yearly"],
+          ["P6_year","Top 20 sites of Category E - Yearly"],
           ["P7_year","Cloud Analy of Category E - Yearly"]
           ]
 SQLS = [
@@ -75,7 +75,7 @@ def parse_document_category():
     # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return series_data
 
-def parse_document_site(idx,show_others=True):
+def parse_document_site(idx,show_others=True,nTop=10):
     # data = open('template/P1_week.html').read()
     # title_text = CHARTS[idx][1]
     comm = ""
@@ -86,7 +86,7 @@ def parse_document_site(idx,show_others=True):
     others = 0
     for row in rs:
         limit += 1
-        if limit <= 10:
+        if limit <= nTop:
             # series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
             cloud = get_cloud_name(row[0])
             color = ADC_COLOR[cloud]
@@ -114,7 +114,7 @@ def parse_document_cloud(idx):
     # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
     return series_data
 
-def parse_document_user(idx):
+def parse_document_user(idx,nTop=10):
     # data = open('template/P1_week.html').read()
     # title_text = CHARTS[idx][1]
     comm = ""
@@ -124,7 +124,7 @@ def parse_document_user(idx):
     limit = 0
     for row in rs:
         limit += 1
-        if limit <= 10:
+        if limit <= nTop:
             series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
             comm = ","
         else:
@@ -152,9 +152,9 @@ def run():
     series_data1 = parse_document_category()   
     series_data2 = parse_document_site(1)
     series_data3 = parse_document_cloud(2)
-    series_data4 = parse_document_site(3)
+    series_data4 = parse_document_site(3,True,20)
     series_data5 = parse_document_cloud(4)
-    series_data6 = parse_document_site(5)
+    series_data6 = parse_document_site(5,True,20)
     series_data7 = parse_document_cloud(6)
     # document = parse_document_user(5)
     

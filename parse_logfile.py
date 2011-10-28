@@ -26,9 +26,9 @@ CHARTS = [
           ["P1_Logfile","Category A,B,C Analy - Logfile"],
           ["P2_Logfile","Top 10 sites of Category A - Logfile"],
           ["P3_Logfile","Cloud Analy of Category B - Logfile"],
-          ["P4_Logfile","Top 10 sites of Category C - Logfile"],
+          ["P4_Logfile","Top 20 sites of Category C - Logfile"],
           ["P5_Logfile","Cloud Analy of Category C - Logfile"],
-          ["P6_Logfile","Top 10 sites of Category E - Logfile"],
+          ["P6_Logfile","Top 20 sites of Category E - Logfile"],
           ["P7_Logfile","Cloud Analy of Category E - Logfile"]
           ]
 
@@ -164,6 +164,19 @@ def parse_document(document):
             else:
                 message_reason = '_'.join(message_choose[3:]).strip('_')
         
+        ## action=use: add at 2011-10-26
+        elif is_this_category(cell_message, ' action=use '):
+            #message_category = "C"
+            message_choose = tmp_message[2].split(' ')
+            message_action = message_choose[0].split('=')[1].strip()
+            message_site = message_choose[1].split('=')[1].strip()
+            # message_reason = message_choose[2].split('=')[1].strip()
+            message_reason = '_'.join(message_choose[3:]).strip('_')
+            if is_this_category(message_reason, 'site'):
+                message_category = "A"
+            if is_this_category(message_reason, 'cloud'):
+                message_category = "B"
+        
         ## use site or cloud
         elif is_this_category(cell_message, ' use '):
             message_use = tmp_message[2].split(' ')
@@ -227,7 +240,7 @@ def write_document(from_date, to_date, P_category,P_site,P_cloud,doc_file="logfi
         series_data2 = "%s %s {name: '%s (%s)', y: %d, color: '%s'}"%(series_data2,comm,k,cloud,P_site['A'][k],color)
         comm = ","
         cnt += 1
-        if cnt>9:
+        if cnt>= 10:
             break
     data = data.replace('#SERIES_DATA2#',series_data2)
     
@@ -250,7 +263,7 @@ def write_document(from_date, to_date, P_category,P_site,P_cloud,doc_file="logfi
         series_data4 = "%s %s {name: '%s (%s)', y: %d, color: '%s'}"%(series_data4,comm,k,cloud,P_site['C'][k],color)
         comm = ","
         cnt += 1
-        if cnt>9:
+        if cnt>=20:
             break
     data = data.replace('#SERIES_DATA4#',series_data4)
     
@@ -273,7 +286,7 @@ def write_document(from_date, to_date, P_category,P_site,P_cloud,doc_file="logfi
         series_data6 = "%s %s {name: '%s (%s)', y: %d, color: '%s'}"%(series_data6,comm,k,cloud,P_site['E'][k],color)
         comm = ","
         cnt += 1
-        if cnt>9:
+        if cnt>=20:
             break
     data = data.replace('#SERIES_DATA6#',series_data6)
     
