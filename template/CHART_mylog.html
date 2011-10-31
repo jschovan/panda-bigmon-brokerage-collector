@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='refresh' content='300'>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript' src='js/highstock.js'></script>
+<script type='text/javascript'>
+	var chart;
+	var chart1;
+	var options = {
+			chart: {
+				renderTo: 'container',
+				zoomType: 'x'
+			},
+			credits: {
+				enabled: false
+			},
+			title: {
+				text: 'Panda Brokerage Monitor Logs'
+			},
+			subtitle: {
+				text: 'LastUpdatedTime from #FROM_DATE# To #TO_DATE# (UTC)'
+			},
+			xAxis: {
+				type: 'datetime'
+			},
+			yAxis: [ { //Primary yAxis
+				labels: {
+					formatter: function() {
+						return this.value;
+					},
+					style: {
+						color: '#89A5E4'
+					}
+				},
+				title: {
+					text: 'JobDef Count',
+					style: {
+						color: '#89A5E4'
+					}
+				}
+			},{ //Second yAxis
+				labels: {
+					formatter: function() {
+						return this.value + ' secs';
+					},
+					style: {
+						color: '#FF72A7'
+					}
+				},
+				title: {
+					text: 'Parsing Time',
+					style: {
+						color: '#FF72A7'
+					}
+				},
+				opposite: true
+			}],
+			
+			tooltip: {
+				crosshairs: [ true, true],
+				formatter: function() {
+					return ''+
+						this.series.name+': '+this.y+
+						(this.series.name=='Parsing Time'?' secs':'');
+				}
+			},
+			
+			series: [{
+				name: 'Processed',
+				color: '#89FF34',
+				type: 'spline',
+				data: []
+			},{
+				name: 'All',
+				color: '#A9C5F4',
+				type: 'spline',
+				data: []
+			},{
+				name: 'Parsing Time',
+				color: '#FF72A7',
+				yAxis: 1,
+				type: 'column',
+				data: []
+			}
+			]
+		};
+	var options1 = {
+			chart: {
+				renderTo: 'container1',
+				type: 'spline'
+			},
+			rangeSelector: {
+				buttons: [{
+					type: 'day',
+					count: 1,
+					text: '1d'
+				},{
+					type: 'week',
+					count: 1,
+					text: '1w'
+				},{
+					type: 'month',
+					count: 1,
+					text: '1m'
+				},{
+					type: 'month',
+					count: 3,
+					text: '3m'
+				},{
+					type: 'year',
+					count: 1,
+					text: '1y'
+				},{
+					type: 'all',
+					text: 'all'
+				}],
+				selected: 0,
+				inputEnabled: false
+			},
+			navigator: {
+				height: 30
+			},
+			title: {
+				text: 'Panda Brokerage Monitor Logs',
+				floating: true,
+				align: 'right',
+				x: -20,
+				top: 20
+			},
+			xAxis: {
+				type: 'datetime'
+			},
+			series: [{
+				name: 'All',
+				data: [],
+				tooltip: {
+					yDecimals: 0
+				}
+			}]
+		};
+		
+	$(document).ready(function() {
+		options.series[0].data = [ #SERIES_DATA1# ];
+		options.series[1].data = [ #SERIES_DATA2# ];
+		options.series[2].data = [ #SERIES_DATA3# ];
+		chart = new Highcharts.Chart(options);		
+		options1.series[0].data = [ #SERIES_DATA4# ];
+		chart1 = new Highcharts.StockChart(options1);		
+	});
+</script>
+</head>
+<body>
+
+<div id='container' style='width:100%; height:480px;'>
+</div>
+<div id='container1' style='width:100%; height:480px;'>
+</div>
+</body>
+</html>

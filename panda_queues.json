@@ -18,7 +18,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -39,7 +39,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -60,7 +60,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -81,7 +81,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -102,7 +102,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -123,7 +123,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -144,7 +144,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TRIUMF-LCG2", 
@@ -165,7 +165,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NIKHEF-ELPROD", 
@@ -186,7 +186,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -207,7 +207,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-MCGILL-CLUMEQ-T2", 
@@ -228,7 +228,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -249,7 +249,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -270,7 +270,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Australia-ATLAS", 
@@ -291,7 +291,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ZA-WITS-CORE", 
@@ -312,7 +312,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -333,7 +333,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "HEPHY-UIBK", 
@@ -349,12 +349,12 @@
     "panda_queue_CE": "grid.uibk.ac.at/cream-pbs|grid.uibk.ac.at", 
     "panda_siteID": "HEPHY-UIBK", 
     "panda_site_name": "HEPHY-UIBK", 
-    "queue_comment": "30854", 
-    "queue_status": "test", 
+    "queue_comment": "ELOG.30878", 
+    "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TR-10-ULAKBIM", 
@@ -375,7 +375,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Tufts_ATLAS_Tier3", 
@@ -396,7 +396,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LAPP", 
@@ -417,7 +417,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -438,7 +438,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC-T2", 
@@ -459,7 +459,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Taiwan-LCG2", 
@@ -480,7 +480,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -501,7 +501,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MPPMU", 
@@ -522,7 +522,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IL-TAU-HEP", 
@@ -543,7 +543,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-RALPP", 
@@ -559,12 +559,12 @@
     "panda_queue_CE": "heplnx206.pp.rl.ac.uk/cream-pbs|to.be.set", 
     "panda_siteID": "ANALY_RALPP", 
     "panda_site_name": "UKI-SOUTHGRID-RALPP", 
-    "queue_comment": "HC.Blacklist.set.brokeroff", 
-    "queue_status": "brokeroff", 
+    "queue_comment": "HC.Blacklist.set.online", 
+    "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -585,7 +585,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -606,7 +606,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-BOLOGNA-T3", 
@@ -627,7 +627,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -648,7 +648,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -669,7 +669,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "HEPHY-UIBK", 
@@ -690,7 +690,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -711,7 +711,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-VICTORIA-WESTGRID-T2", 
@@ -732,7 +732,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-RALPP", 
@@ -753,7 +753,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-HH", 
@@ -774,7 +774,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -795,7 +795,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -816,7 +816,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NIKHEF-ELPROD", 
@@ -837,7 +837,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -858,7 +858,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -879,7 +879,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -900,7 +900,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -921,7 +921,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-IC-HEP", 
@@ -942,7 +942,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Tufts_ATLAS_Tier3", 
@@ -963,7 +963,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BEIJING-LCG2", 
@@ -984,7 +984,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -1000,12 +1000,12 @@
     "panda_queue_CE": "lcgce07.gridpp.rl.ac.uk/cream-pbs|lcgce07.gridpp.rl.ac.uk", 
     "panda_siteID": "RAL-LCG2", 
     "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "online", 
+    "queue_comment": "ELOG.30963", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-MCGILL-CLUMEQ-T2", 
@@ -1026,7 +1026,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TOKYO-LCG2", 
@@ -1047,7 +1047,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -1068,7 +1068,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -1089,7 +1089,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-IC-HEP", 
@@ -1110,7 +1110,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -1131,7 +1131,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -1152,7 +1152,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Tufts_ATLAS_Tier3", 
@@ -1173,7 +1173,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-FRASCATI", 
@@ -1194,7 +1194,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-ROMA1", 
@@ -1215,7 +1215,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IllinoisHEP", 
@@ -1236,7 +1236,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -1257,7 +1257,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-NAPOLI-ATLAS", 
@@ -1278,7 +1278,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -1299,7 +1299,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -1320,7 +1320,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TUDresden-ZIH", 
@@ -1336,12 +1336,12 @@
     "panda_queue_CE": "desdemona.zih.tu-dresden.de/cream-pbs|desdemona.zih.tu-dresden.de", 
     "panda_siteID": "ANALY_DRESDEN", 
     "panda_site_name": "TUDresden-ZIH", 
-    "queue_comment": "HC.Blacklist.set.brokeroff", 
-    "queue_status": "brokeroff", 
+    "queue_comment": "HC.Blacklist.set.online", 
+    "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-HH", 
@@ -1362,7 +1362,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -1378,12 +1378,12 @@
     "panda_queue_CE": "lcgce07.gridpp.rl.ac.uk/cream-pbs|lcgce07.gridpp.rl.ac.uk", 
     "panda_siteID": "RAL-LCG2", 
     "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "online", 
+    "queue_comment": "ELOG.30963", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -1399,12 +1399,12 @@
     "panda_queue_CE": "lcgce08.gridpp.rl.ac.uk/cream-pbs|lcgce08.gridpp.rl.ac.uk", 
     "panda_siteID": "RAL-LCG2", 
     "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "online", 
+    "queue_comment": "ELOG.30963", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-GENOVA", 
@@ -1425,7 +1425,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ifae", 
@@ -1446,7 +1446,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-RHUL", 
@@ -1467,7 +1467,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IllinoisHEP", 
@@ -1488,7 +1488,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -1509,7 +1509,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LAPP", 
@@ -1530,7 +1530,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UAM-LCG2", 
@@ -1551,7 +1551,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -1572,7 +1572,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TRIUMF-LCG2", 
@@ -1593,7 +1593,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "pic", 
@@ -1614,7 +1614,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IllinoisHEP", 
@@ -1635,7 +1635,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -1656,7 +1656,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-SHEF-HEP", 
@@ -1677,7 +1677,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-ECDF", 
@@ -1693,12 +1693,12 @@
     "panda_queue_CE": "ce3.glite.ecdf.ed.ac.uk/cream-sge|to.be.set", 
     "panda_siteID": "ANALY_ECDF", 
     "panda_site_name": "UKI-SCOTGRID-ECDF", 
-    "queue_comment": "HC.Blacklist.set.brokeroff", 
-    "queue_status": "brokeroff", 
+    "queue_comment": "HC.Blacklist.set.online", 
+    "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -1719,7 +1719,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WT2", 
@@ -1740,7 +1740,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-Brunel", 
@@ -1761,7 +1761,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "EELA-UTFSM", 
@@ -1782,7 +1782,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-HH", 
@@ -1803,28 +1803,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
-  }, 
-  {
-    "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
-    "agis_gocdb_site_name": "RAL-LCG2", 
-    "agis_ssb_site_name": "RAL-LCG2", 
-    "cloud": "UK", 
-    "country": "United Kingdom", 
-    "ddm_site_name": "RAL-LCG2", 
-    "is_atlas_analysis_site": 1, 
-    "is_atlas_production_site": 1, 
-    "is_atlas_site": 1, 
-    "panda_queue": "RAL-LCG2-lcgce06-grid4000M-pbs", 
-    "panda_queue_CE": "lcgce06.gridpp.rl.ac.uk/cream-pbs|lcgce06.gridpp.rl.ac.uk", 
-    "panda_siteID": "RAL-LCG2", 
-    "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "WillBeReinstalledAsCREAM", 
-    "queue_status": "offline", 
-    "queue_status_control": "manual", 
-    "queue_type": "PRODUCTION_QUEUE", 
-    "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -1845,7 +1824,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -1866,7 +1845,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-MILANO-ATLASC", 
@@ -1882,12 +1861,12 @@
     "panda_queue_CE": "t2-ce-01.mi.infn.it/jobmanager-lcgpbs|t2-ce-01.mi.infn.it", 
     "panda_siteID": "ANALY_INFN-MILANO-ATLASC", 
     "panda_site_name": "INFN-MILANO-ATLASC", 
-    "queue_comment": "HC.Blacklist.set.brokeroff", 
-    "queue_status": "brokeroff", 
+    "queue_comment": "HC.Blacklist.set.online", 
+    "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-ZN", 
@@ -1908,7 +1887,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -1929,7 +1908,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-QMUL", 
@@ -1950,7 +1929,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BELLARMINE-ATLAS-T3", 
@@ -1971,7 +1950,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -1992,7 +1971,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -2013,7 +1992,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -2034,7 +2013,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -2055,7 +2034,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -2071,12 +2050,12 @@
     "panda_queue_CE": "lcgce09.gridpp.rl.ac.uk/cream-pbs|lcgce09.gridpp.rl.ac.uk", 
     "panda_siteID": "RAL-LCG2", 
     "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "online", 
+    "queue_comment": "ELOG.30963", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SFU-LCG2", 
@@ -2097,7 +2076,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "praguelcg2", 
@@ -2118,7 +2097,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TW-FTT", 
@@ -2139,7 +2118,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -2160,7 +2139,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -2181,7 +2160,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IndianaU", 
@@ -2202,7 +2181,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-CAM-HEP", 
@@ -2223,7 +2202,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -2244,7 +2223,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-OX-HEP", 
@@ -2260,12 +2239,12 @@
     "panda_queue_CE": "t2ce06.physics.ox.ac.uk/cream-pbs|to.be.set", 
     "panda_siteID": "ANALY_OX", 
     "panda_site_name": "UKI-SOUTHGRID-OX-HEP", 
-    "queue_comment": "HC.Blacklist.set.online", 
-    "queue_status": "online", 
+    "queue_comment": "HC.Blacklist.set.brokeroff", 
+    "queue_status": "brokeroff", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -2286,7 +2265,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPC", 
@@ -2307,7 +2286,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -2328,7 +2307,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -2349,7 +2328,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "PSNC", 
@@ -2370,7 +2349,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPSC", 
@@ -2391,7 +2370,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IllinoisHEP", 
@@ -2412,7 +2391,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -2433,7 +2412,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-LANCS-HEP", 
@@ -2454,7 +2433,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -2475,7 +2454,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GoeGrid", 
@@ -2496,7 +2475,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-GLASGOW", 
@@ -2517,7 +2496,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RRC-KI", 
@@ -2538,7 +2517,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -2554,12 +2533,12 @@
     "panda_queue_CE": "lcgce09.gridpp.rl.ac.uk/cream-pbs|lcgce09.gridpp.rl.ac.uk", 
     "panda_siteID": "RAL-LCG2", 
     "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "online", 
+    "queue_comment": "ELOG.30963", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -2580,7 +2559,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -2601,7 +2580,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CHARMM", 
@@ -2622,7 +2601,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-SCINET-T2", 
@@ -2643,7 +2622,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-HH", 
@@ -2664,7 +2643,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UAM-LCG2", 
@@ -2685,7 +2664,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-VICTORIA-WESTGRID-T2", 
@@ -2706,7 +2685,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-BOLOGNA-T3", 
@@ -2727,7 +2706,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-MILANO-ATLASC", 
@@ -2743,12 +2722,12 @@
     "panda_queue_CE": "ce-cream.mi.infn.it/cream-pbs|ce-cream.mi.infn.it", 
     "panda_siteID": "INFN-MILANO-ATLASC", 
     "panda_site_name": "INFN-MILANO-ATLASC", 
-    "queue_comment": "elog:30736", 
-    "queue_status": "online", 
+    "queue_comment": "30862", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-07-NIPNE", 
@@ -2769,7 +2748,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -2790,7 +2769,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-07-NIPNE", 
@@ -2811,7 +2790,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -2832,7 +2811,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -2853,7 +2832,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LBNL_DSD_ITB", 
@@ -2874,7 +2853,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -2895,7 +2874,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Nebraska", 
@@ -2916,7 +2895,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -2937,7 +2916,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TW-FTT", 
@@ -2958,7 +2937,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -2979,7 +2958,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IFIC-LCG2", 
@@ -3000,7 +2979,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-GLASGOW", 
@@ -3021,7 +3000,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DukeT3", 
@@ -3042,7 +3021,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -3063,7 +3042,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WISC-ATLAS", 
@@ -3084,7 +3063,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -3105,7 +3084,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-ECDF", 
@@ -3126,7 +3105,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "csTCDie", 
@@ -3147,7 +3126,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -3168,7 +3147,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SARA-MATRIX", 
@@ -3189,7 +3168,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ZA-UJ", 
@@ -3210,7 +3189,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -3229,9 +3208,9 @@
     "queue_comment": "elog.28951", 
     "queue_status": "online", 
     "queue_status_control": "manual", 
-    "queue_type": "PRODUCTION_QUEUE", 
+    "queue_type": "SPECIAL_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-LANCS-HEP", 
@@ -3252,7 +3231,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ifae", 
@@ -3273,7 +3252,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -3294,7 +3273,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IllinoisHEP", 
@@ -3315,7 +3294,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -3334,9 +3313,9 @@
     "queue_comment": "empty.comment", 
     "queue_status": "offline", 
     "queue_status_control": "auto", 
-    "queue_type": "PRODUCTION_QUEUE", 
+    "queue_type": "SPECIAL_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -3357,7 +3336,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SARA-MATRIX", 
@@ -3378,7 +3357,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -3399,7 +3378,7 @@
     "queue_status_control": "auto", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Taiwan-LCG2", 
@@ -3420,7 +3399,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -3441,7 +3420,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-07-NIPNE", 
@@ -3457,12 +3436,12 @@
     "panda_queue_CE": "tbit01.nipne.ro/jobmanager-lcgpbs|tbit01.nipne.ro", 
     "panda_siteID": "ANALY_ROMANIA07", 
     "panda_site_name": "NIPNE", 
-    "queue_comment": "HC.Blacklist.set.online", 
-    "queue_status": "online", 
+    "queue_comment": "HC.Blacklist.set.brokeroff", 
+    "queue_status": "brokeroff", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "praguelcg2", 
@@ -3483,7 +3462,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPSC", 
@@ -3504,7 +3483,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-02-NIPNE", 
@@ -3525,7 +3504,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-QMUL", 
@@ -3546,7 +3525,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ru-Moscow-FIAN-LCG2", 
@@ -3567,7 +3546,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-BHAM-HEP", 
@@ -3588,7 +3567,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-LANCS-HEP", 
@@ -3609,7 +3588,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -3630,7 +3609,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-GLASGOW", 
@@ -3651,7 +3630,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -3672,7 +3651,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -3693,7 +3672,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -3714,7 +3693,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -3735,7 +3714,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-GENOVA", 
@@ -3756,7 +3735,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-HH", 
@@ -3777,7 +3756,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WT2", 
@@ -3798,7 +3777,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IllinoisHEP", 
@@ -3819,7 +3798,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -3840,7 +3819,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTD-HEP", 
@@ -3861,7 +3840,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-DURHAM", 
@@ -3877,12 +3856,12 @@
     "panda_queue_CE": "ce01.dur.scotgrid.ac.uk/jobmanager-lcgpbs|ce01.dur.scotgrid.ac.uk", 
     "panda_siteID": "UKI-SCOTGRID-DURHAM", 
     "panda_site_name": "UKI-SCOTGRID-DURHAM", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "test", 
+    "queue_comment": "30869", 
+    "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LIP-Lisbon", 
@@ -3903,7 +3882,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TW-FTT", 
@@ -3924,7 +3903,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -3945,7 +3924,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPC", 
@@ -3966,7 +3945,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Australia-ATLAS", 
@@ -3987,7 +3966,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TUDresden-ZIH", 
@@ -4008,7 +3987,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IL-TAU-HEP", 
@@ -4029,7 +4008,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -4050,7 +4029,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-BOLOGNA-T3", 
@@ -4071,7 +4050,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-RALPP", 
@@ -4092,7 +4071,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4113,7 +4092,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4134,7 +4113,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4155,7 +4134,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4176,7 +4155,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -4197,7 +4176,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GoeGrid", 
@@ -4218,7 +4197,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-ROMA3", 
@@ -4239,7 +4218,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MPPMU", 
@@ -4260,7 +4239,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -4281,7 +4260,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4302,7 +4281,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4323,7 +4302,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4344,7 +4323,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -4365,7 +4344,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WISC-ATLAS", 
@@ -4386,7 +4365,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -4402,12 +4381,12 @@
     "panda_queue_CE": "lcgce08.gridpp.rl.ac.uk/cream-pbs|lcgce08.gridpp.rl.ac.uk", 
     "panda_siteID": "RAL-LCG2", 
     "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "online", 
+    "queue_comment": "ELOG.30963", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-SHEF-HEP", 
@@ -4428,7 +4407,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -4449,7 +4428,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -4465,12 +4444,12 @@
     "panda_queue_CE": "node74.datagrid.cea.fr:8443/cream-pbs|to.be.set", 
     "panda_siteID": "ANALY_GRIF-IRFU", 
     "panda_site_name": "GRIF-IRFU", 
-    "queue_comment": "HC.Blacklist.set.online", 
-    "queue_status": "online", 
+    "queue_comment": "HC.Blacklist.set.brokeroff", 
+    "queue_status": "brokeroff", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Nebraska", 
@@ -4491,7 +4470,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-ALBERTA-WESTGRID-T2", 
@@ -4512,7 +4491,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -4533,7 +4512,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPC", 
@@ -4554,7 +4533,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-QMUL", 
@@ -4575,7 +4554,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -4596,7 +4575,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WISC-ATLAS", 
@@ -4617,7 +4596,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPC", 
@@ -4638,7 +4617,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTD-HEP", 
@@ -4659,7 +4638,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -4680,7 +4659,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "JINR-LCG2", 
@@ -4701,7 +4680,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CYFRONET-LCG2", 
@@ -4722,7 +4701,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LAPP", 
@@ -4743,7 +4722,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ITEP", 
@@ -4764,7 +4743,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LRZ-LMU", 
@@ -4785,7 +4764,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -4806,7 +4785,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UCSC", 
@@ -4827,7 +4806,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LIP-Coimbra", 
@@ -4848,7 +4827,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Nebraska-Lincoln", 
@@ -4869,7 +4848,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -4890,7 +4869,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -4911,7 +4890,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -4932,7 +4911,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -4953,7 +4932,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TRIUMF-LCG2", 
@@ -4974,7 +4953,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "pic", 
@@ -4995,7 +4974,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-RHUL", 
@@ -5016,7 +4995,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ru-Moscow-SINP-LCG2", 
@@ -5037,7 +5016,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TW-FTT", 
@@ -5058,7 +5037,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TECHNION-HEP", 
@@ -5079,7 +5058,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-ALBERTA-WESTGRID-T2", 
@@ -5100,7 +5079,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-CAM-HEP", 
@@ -5121,7 +5100,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WT2", 
@@ -5142,7 +5121,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPSC", 
@@ -5163,7 +5142,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-MAN-HEP", 
@@ -5184,7 +5163,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-RHUL", 
@@ -5205,7 +5184,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TOKYO-LCG2", 
@@ -5226,7 +5205,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-LIV-HEP", 
@@ -5247,7 +5226,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-DURHAM", 
@@ -5263,12 +5242,12 @@
     "panda_queue_CE": "ce02.dur.scotgrid.ac.uk/jobmanager-lcgpbs|ce02.dur.scotgrid.ac.uk", 
     "panda_siteID": "UKI-SCOTGRID-DURHAM", 
     "panda_site_name": "UKI-SCOTGRID-DURHAM", 
-    "queue_comment": "empty.comment", 
-    "queue_status": "test", 
+    "queue_comment": "ELOG.30876", 
+    "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NIKHEF-ELPROD", 
@@ -5289,7 +5268,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -5310,7 +5289,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TR-10-ULAKBIM", 
@@ -5331,7 +5310,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CPPM", 
@@ -5352,7 +5331,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-OX-HEP", 
@@ -5373,7 +5352,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5394,7 +5373,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5415,7 +5394,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5436,7 +5415,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5457,7 +5436,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TRIUMF-LCG2", 
@@ -5478,7 +5457,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -5499,7 +5478,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IFIC-LCG2", 
@@ -5520,7 +5499,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -5541,7 +5520,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -5562,7 +5541,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5583,7 +5562,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5604,7 +5583,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5625,7 +5604,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -5646,7 +5625,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -5667,7 +5646,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-16-UAIC", 
@@ -5688,7 +5667,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CSCS-LCG2", 
@@ -5709,7 +5688,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NIKHEF-ELPROD", 
@@ -5730,7 +5709,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -5751,7 +5730,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -5772,7 +5751,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-SCINET-T2", 
@@ -5793,7 +5772,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNI-FREIBURG", 
@@ -5814,7 +5793,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Nebraska", 
@@ -5835,7 +5814,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BEIJING-LCG2", 
@@ -5851,12 +5830,12 @@
     "panda_queue_CE": "lcg002.ihep.ac.cn/jobmanager-lcgpbs|lcg002.ihep.ac.cn", 
     "panda_siteID": "ANALY_BEIJING", 
     "panda_site_name": "BEIJING-LCG2", 
-    "queue_comment": "HC.Blacklist.set.online", 
-    "queue_status": "online", 
+    "queue_comment": "HC.Blacklist.set.brokeroff", 
+    "queue_status": "brokeroff", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-RALPP", 
@@ -5877,7 +5856,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -5898,7 +5877,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Nebraska-Lincoln", 
@@ -5919,7 +5898,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-IC-HEP", 
@@ -5940,7 +5919,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -5959,9 +5938,9 @@
     "queue_comment": "elog.28951", 
     "queue_status": "online", 
     "queue_status_control": "manual", 
-    "queue_type": "PRODUCTION_QUEUE", 
+    "queue_type": "SPECIAL_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-MILANO-ATLASC", 
@@ -5977,12 +5956,12 @@
     "panda_queue_CE": "t2-ce-02.mi.infn.it/jobmanager-lcgcondor|t2-ce-02.mi.infn.it", 
     "panda_siteID": "INFN-MILANO-ATLASC", 
     "panda_site_name": "INFN-MILANO-ATLASC", 
-    "queue_comment": "elog:30736", 
+    "queue_comment": "empty.comment", 
     "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Brandeis-Atlas-T3", 
@@ -6003,7 +5982,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SARA-MATRIX", 
@@ -6024,7 +6003,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RU-Protvino-IHEP", 
@@ -6045,7 +6024,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ZA-UJ", 
@@ -6066,7 +6045,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-IC-HEP", 
@@ -6087,7 +6066,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-OX-HEP", 
@@ -6108,7 +6087,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNI-FREIBURG", 
@@ -6129,7 +6108,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -6150,7 +6129,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -6171,7 +6150,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -6192,7 +6171,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "AGLT2", 
@@ -6213,7 +6192,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -6234,7 +6213,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NIKHEF-ELPROD", 
@@ -6255,7 +6234,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -6276,7 +6255,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -6290,14 +6269,14 @@
     "is_atlas_site": 1, 
     "panda_queue": "IN2P3-CC-cccreamceli02-long-bqs", 
     "panda_queue_CE": "cccreamceli02.in2p3.fr/cream-bqs|cccreamceli02.in2p3.fr", 
-    "panda_siteID": "LYON", 
+    "panda_siteID": "IN2P3-CC", 
     "panda_site_name": "IN2P3-CC", 
-    "queue_comment": "empty.comment", 
+    "queue_comment": "THE.ELOG.NUMBER.30956", 
     "queue_status": "online", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ITEP", 
@@ -6318,7 +6297,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TRIUMF-LCG2", 
@@ -6339,7 +6318,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RU-Protvino-IHEP", 
@@ -6360,7 +6339,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -6381,7 +6360,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -6402,7 +6381,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -6423,7 +6402,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNI-DORTMUND", 
@@ -6444,7 +6423,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC-T2", 
@@ -6465,7 +6444,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-Brunel", 
@@ -6486,7 +6465,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LIP-Coimbra", 
@@ -6507,7 +6486,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -6528,7 +6507,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CSCS-LCG2", 
@@ -6549,7 +6528,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -6570,7 +6549,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -6591,7 +6570,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -6612,7 +6591,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ru-PNPI", 
@@ -6633,7 +6612,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "pic", 
@@ -6654,7 +6633,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Taiwan-LCG2", 
@@ -6675,7 +6654,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UFlorida-HPC", 
@@ -6696,7 +6675,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-VICTORIA-WESTGRID-T2", 
@@ -6717,7 +6696,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "JINR-LCG2", 
@@ -6738,7 +6717,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-ECDF", 
@@ -6759,7 +6738,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WT2", 
@@ -6780,7 +6759,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "JINR-LCG2", 
@@ -6801,7 +6780,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-MAN-HEP", 
@@ -6822,7 +6801,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -6843,7 +6822,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-ZN", 
@@ -6864,7 +6843,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-UCL-HEP", 
@@ -6885,7 +6864,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -6906,7 +6885,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TRIUMF-LCG2", 
@@ -6927,7 +6906,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -6948,7 +6927,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-GLASGOW", 
@@ -6969,7 +6948,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -6990,7 +6969,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-ALBERTA-WESTGRID-T2", 
@@ -7011,7 +6990,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -7032,7 +7011,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -7053,7 +7032,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -7074,7 +7053,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -7095,7 +7074,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WEIZMANN-LCG2", 
@@ -7116,7 +7095,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPC", 
@@ -7137,7 +7116,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-GLASGOW", 
@@ -7158,7 +7137,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -7179,7 +7158,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-OX-HEP", 
@@ -7200,7 +7179,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RU-Protvino-IHEP", 
@@ -7221,7 +7200,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-ECDF", 
@@ -7242,7 +7221,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WEIZMANN-LCG2", 
@@ -7263,7 +7242,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LRZ-LMU", 
@@ -7284,7 +7263,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TTU", 
@@ -7305,7 +7284,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "pic", 
@@ -7326,7 +7305,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Taiwan-LCG2", 
@@ -7347,7 +7326,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-ROMA1", 
@@ -7368,7 +7347,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-CAM-HEP", 
@@ -7389,7 +7368,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NCG-INGRID-PT", 
@@ -7410,7 +7389,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -7431,7 +7410,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-ECDF", 
@@ -7452,7 +7431,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ifae", 
@@ -7473,7 +7452,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -7494,7 +7473,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-UCL-HEP", 
@@ -7515,7 +7494,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-IC-HEP", 
@@ -7536,7 +7515,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -7557,7 +7536,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Taiwan-LCG2", 
@@ -7578,7 +7557,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -7599,7 +7578,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NERSC-PDSF", 
@@ -7620,7 +7599,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -7641,7 +7620,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -7662,7 +7641,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -7683,7 +7662,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-NAPOLI-ATLAS", 
@@ -7704,7 +7683,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -7725,7 +7704,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -7746,7 +7725,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LRZ-LMU", 
@@ -7767,7 +7746,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Nebraska", 
@@ -7788,7 +7767,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ANLASC", 
@@ -7809,7 +7788,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-MILANO-ATLASC", 
@@ -7825,12 +7804,12 @@
     "panda_queue_CE": "t2-ce-01.mi.infn.it/jobmanager-lcgpbs|t2-ce-01.mi.infn.it", 
     "panda_siteID": "INFN-MILANO-ATLASC", 
     "panda_site_name": "INFN-MILANO-ATLASC", 
-    "queue_comment": "elog:30736", 
-    "queue_status": "online", 
+    "queue_comment": "30862", 
+    "queue_status": "offline", 
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-QMUL", 
@@ -7851,7 +7830,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -7872,7 +7851,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TECHNION-HEP", 
@@ -7893,7 +7872,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Firefly", 
@@ -7914,7 +7893,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "wuppertalprod", 
@@ -7935,7 +7914,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -7956,7 +7935,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -7977,7 +7956,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -7998,7 +7977,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MPPMU", 
@@ -8019,7 +7998,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-02-NIPNE", 
@@ -8040,7 +8019,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -8061,7 +8040,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CPPM", 
@@ -8082,7 +8061,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-ROMA1", 
@@ -8103,7 +8082,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -8124,7 +8103,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IllinoisHEP", 
@@ -8145,7 +8124,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-IC-HEP", 
@@ -8166,7 +8145,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNI-FREIBURG", 
@@ -8187,7 +8166,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "AGLT2", 
@@ -8208,7 +8187,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-14-ITIM", 
@@ -8229,7 +8208,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -8250,7 +8229,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-BHAM-HEP", 
@@ -8271,7 +8250,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "AGLT2", 
@@ -8292,7 +8271,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-FRASCATI", 
@@ -8313,7 +8292,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TRIUMF-LCG2", 
@@ -8334,7 +8313,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -8355,7 +8334,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "TOKYO-LCG2", 
@@ -8376,7 +8355,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -8397,7 +8376,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -8418,7 +8397,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -8439,7 +8418,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "pic", 
@@ -8460,7 +8439,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -8481,7 +8460,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -8502,7 +8481,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -8523,7 +8502,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -8544,7 +8523,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SOUTHGRID-BHAM-HEP", 
@@ -8565,7 +8544,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "JINR-LCG2", 
@@ -8586,28 +8565,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
-  }, 
-  {
-    "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
-    "agis_gocdb_site_name": "RAL-LCG2", 
-    "agis_ssb_site_name": "RAL-LCG2", 
-    "cloud": "UK", 
-    "country": "United Kingdom", 
-    "ddm_site_name": "RAL-LCG2", 
-    "is_atlas_analysis_site": 1, 
-    "is_atlas_production_site": 1, 
-    "is_atlas_site": 1, 
-    "panda_queue": "RAL-LCG2-lcgce06-grid3000M-pbs", 
-    "panda_queue_CE": "lcgce06.gridpp.rl.ac.uk/cream-pbs|lcgce06.gridpp.rl.ac.uk", 
-    "panda_siteID": "RAL-LCG2", 
-    "panda_site_name": "RAL-LCG2", 
-    "queue_comment": "WillBeReinstalledAsCREAM", 
-    "queue_status": "offline", 
-    "queue_status_control": "manual", 
-    "queue_type": "PRODUCTION_QUEUE", 
-    "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SARA-MATRIX", 
@@ -8628,7 +8586,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC-T2", 
@@ -8649,7 +8607,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RO-02-NIPNE", 
@@ -8670,7 +8628,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WISC-ATLAS", 
@@ -8691,7 +8649,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WT2", 
@@ -8712,7 +8670,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-IC-HEP", 
@@ -8733,7 +8691,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPC", 
@@ -8754,7 +8712,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-ZN", 
@@ -8775,7 +8733,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -8796,7 +8754,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LRZ-LMU", 
@@ -8817,7 +8775,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SFU-LCG2", 
@@ -8838,7 +8796,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-SCINET-T2", 
@@ -8859,7 +8817,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-LIV-HEP", 
@@ -8880,7 +8838,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-LIV-HEP", 
@@ -8901,7 +8859,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LRZ-LMU", 
@@ -8922,7 +8880,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LBNE_DAYA", 
@@ -8943,7 +8901,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SFU-LCG2", 
@@ -8964,7 +8922,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DESY-HH", 
@@ -8985,7 +8943,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -9006,7 +8964,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NCG-INGRID-PT", 
@@ -9027,7 +8985,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -9048,7 +9006,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -9069,7 +9027,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -9090,7 +9048,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SFU-LCG2", 
@@ -9111,7 +9069,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -9132,7 +9090,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -9153,7 +9111,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-MAN-HEP", 
@@ -9174,7 +9132,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -9195,7 +9153,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -9216,7 +9174,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "ru-Moscow-SINP-LCG2", 
@@ -9237,7 +9195,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RRC-KI", 
@@ -9258,7 +9216,28 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
+  }, 
+  {
+    "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
+    "agis_gocdb_site_name": "IN2P3-CC", 
+    "agis_ssb_site_name": "IN2P3-CC", 
+    "cloud": "FR", 
+    "country": "France", 
+    "ddm_site_name": "IN2P3-CC", 
+    "is_atlas_analysis_site": 1, 
+    "is_atlas_production_site": 1, 
+    "is_atlas_site": 1, 
+    "panda_queue": "IN2P3-CC-cclcgceli02-long-bqs", 
+    "panda_queue_CE": "cclcgceli02.in2p3.fr/jobmanager-bqs|cclcgceli02.in2p3.fr", 
+    "panda_siteID": "LYON", 
+    "panda_site_name": "IN2P3-CC", 
+    "queue_comment": "empty.comment", 
+    "queue_status": "offline", 
+    "queue_status_control": "auto", 
+    "queue_type": "PRODUCTION_QUEUE", 
+    "tier": "T1", 
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WT2", 
@@ -9279,7 +9258,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GoeGrid", 
@@ -9300,7 +9279,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RRC-KI", 
@@ -9321,7 +9300,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UTA_SWT2", 
@@ -9342,7 +9321,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -9363,7 +9342,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CYFRONET-LCG2", 
@@ -9384,7 +9363,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -9405,7 +9384,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -9426,7 +9405,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "csTCDie", 
@@ -9447,7 +9426,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -9468,7 +9447,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -9489,7 +9468,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "RAL-LCG2", 
@@ -9510,7 +9489,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -9531,7 +9510,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "PSNC", 
@@ -9552,7 +9531,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "WISC-ATLAS", 
@@ -9573,7 +9552,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LBNE_DAYA", 
@@ -9594,7 +9573,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -9615,7 +9594,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CA-VICTORIA-WESTGRID-T2", 
@@ -9636,7 +9615,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IndianaU", 
@@ -9657,7 +9636,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BNL-ATLAS", 
@@ -9678,7 +9657,7 @@
     "queue_status_control": "auto", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-T1", 
@@ -9699,7 +9678,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "GRIF", 
@@ -9720,7 +9699,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -9741,7 +9720,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -9762,7 +9741,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -9783,7 +9762,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "OU_OCHEP_SWT2", 
@@ -9804,7 +9783,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-GLASGOW", 
@@ -9825,7 +9804,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-SCOTGRID-GLASGOW", 
@@ -9846,7 +9825,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "praguelcg2", 
@@ -9867,7 +9846,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -9888,7 +9867,7 @@
     "queue_status_control": "manual", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-NAPOLI-ATLAS", 
@@ -9909,7 +9888,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -9930,7 +9909,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-ROMA1", 
@@ -9951,7 +9930,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BEIJING-LCG2", 
@@ -9972,7 +9951,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC-T2", 
@@ -9993,7 +9972,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IFIC-LCG2", 
@@ -10009,12 +9988,12 @@
     "panda_queue_CE": "ce03.ific.uv.es/cream-pbs|to.be.set", 
     "panda_siteID": "ANALY_IFIC", 
     "panda_site_name": "IFIC-LCG2", 
-    "queue_comment": "HC.Blacklist.set.online", 
-    "queue_status": "online", 
+    "queue_comment": "HC.Blacklist.set.brokeroff", 
+    "queue_status": "brokeroff", 
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "USCMS-FNAL", 
@@ -10035,7 +10014,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-NORTHGRID-SHEF-HEP", 
@@ -10056,7 +10035,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CERN-PROD", 
@@ -10075,9 +10054,9 @@
     "queue_comment": "empty.comment", 
     "queue_status": "test", 
     "queue_status_control": "manual", 
-    "queue_type": "PRODUCTION_QUEUE", 
+    "queue_type": "SPECIAL_QUEUE", 
     "tier": "T0", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "CYFRONET-LCG2", 
@@ -10098,7 +10077,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-LPC", 
@@ -10119,7 +10098,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -10140,7 +10119,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UKI-LT2-UCL-HEP", 
@@ -10161,7 +10140,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNI-FREIBURG", 
@@ -10182,7 +10161,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "BU_ATLAS_Tier2", 
@@ -10203,7 +10182,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MWT2_UC", 
@@ -10224,7 +10203,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -10245,7 +10224,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -10266,7 +10245,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CPPM", 
@@ -10287,7 +10266,7 @@
     "queue_status_control": "auto", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "LIP-Lisbon", 
@@ -10308,7 +10287,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-NAPOLI-ATLAS", 
@@ -10329,7 +10308,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "IN2P3-CC", 
@@ -10350,7 +10329,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -10371,7 +10350,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NDGF-T1", 
@@ -10392,7 +10371,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Hampton PPCF ATLAS", 
@@ -10413,7 +10392,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "Hampton PPCF ATLAS", 
@@ -10434,7 +10413,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "wuppertalprod", 
@@ -10455,7 +10434,7 @@
     "queue_status_control": "manual", 
     "queue_type": "ANALYSIS_QUEUE", 
     "tier": "T2D", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "FZK-LCG2", 
@@ -10476,7 +10455,7 @@
     "queue_status_control": "manual", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T1", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SE-SNIC-T2", 
@@ -10497,7 +10476,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "PRODUCTION_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "DK-NBI-T3", 
@@ -10518,7 +10497,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "MaiGRID", 
@@ -10539,7 +10518,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "NO-NORGRID-T2", 
@@ -10560,7 +10539,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T2", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SDU-LCG2", 
@@ -10581,7 +10560,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "SMU", 
@@ -10602,7 +10581,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNI-BONN", 
@@ -10623,7 +10602,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNI-SIEGEN-HEP", 
@@ -10644,7 +10623,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNIBE-LHEP", 
@@ -10665,7 +10644,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNICPH-NBI", 
@@ -10686,7 +10665,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "UNIGE-DPNC", 
@@ -10707,7 +10686,7 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }, 
   {
     "agis_gocdb_or_oim_site_name": "INFN-TRIESTE", 
@@ -10728,6 +10707,6 @@
     "queue_status_control": "no.queue.status.control", 
     "queue_type": "SPECIAL_QUEUE", 
     "tier": "T3", 
-    "timestamp": "2011-10-28 09:30:52"
+    "timestamp": "2011-10-31 09:30:43"
   }
 ]
