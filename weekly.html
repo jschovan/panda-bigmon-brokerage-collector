@@ -18,7 +18,7 @@
 				text: ''
 			},
 			subtitle: {
-				text: 'Last updated: 2011-10-31 09:23 (UTC)'
+				text: 'Last updated: 2011-11-01 07:53 (UTC)'
 			},
 			tooltip: {
 				formatter: function() {
@@ -53,37 +53,37 @@
 	$(document).ready(function() {
 	    options.chart.renderTo = "container1";
 		options.title.text = "Category A,B,C,E Analy - Weekly";
-		options.series[0].data = [   ['A', 3413] , ['B', 6] , ['C', 49030] , ['E', 69978] ];
+		options.series[0].data = [   ['A', 3193] , ['B', 20] , ['C', 44602] , ['E', 74227] ];
 		chart1 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container2";
 		options.title.text = "Top 10 sites of Category A - Weekly";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 1292, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 936, color: '#6298FF'} , {name: 'IllinoisHEP (US)', y: 293, color: '#00006B'} , {name: 'wuppertalprod (DE)', y: 288, color: '#000000'} , {name: 'AGLT2 (US)', y: 249, color: '#00006B'} , {name: 'GRIF-IRFU (FR)', y: 80, color: '#0055A5'} , {name: 'FZK-LCG2 (DE)', y: 37, color: '#000000'} , {name: 'CERN-PROD (CERN)', y: 31, color: '#AE3C51'} , {name: 'DESY-HH (DE)', y: 29, color: '#000000'} , {name: 'MWT2_UC (US)', y: 23, color: '#00006B'} , {name: 'others', y: 155, color: '#CCCCCC'} ];
+		options.series[0].data = [   {name: 'NDGF-T1 (ND)', y: 936, color: '#6298FF'} , {name: 'BNL-ATLAS (US)', y: 913, color: '#00006B'} , {name: 'AGLT2 (US)', y: 315, color: '#00006B'} , {name: 'IllinoisHEP (US)', y: 293, color: '#00006B'} , {name: 'wuppertalprod (DE)', y: 288, color: '#000000'} , {name: 'FZK-LCG2 (DE)', y: 123, color: '#000000'} , {name: 'GRIF-IRFU (FR)', y: 64, color: '#0055A5'} , {name: 'CERN-PROD (CERN)', y: 35, color: '#AE3C51'} , {name: 'DESY-HH (DE)', y: 30, color: '#000000'} , {name: 'IN2P3-CC-T2 (FR)', y: 28, color: '#0055A5'} , {name: 'others', y: 168, color: '#CCCCCC'} ];
 		chart2 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container3";
 		options.title.text = "Cloud Analy of Category B - Weekly";
-		options.series[0].data = [   {name: 'US', y: 6, color: '#00006B'} ];
+		options.series[0].data = [   {name: 'US', y: 9, color: '#00006B'} , {name: 'DE', y: 8, color: '#000000'} , {name: 'FR', y: 3, color: '#0055A5'} ];
 		chart3 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container4";
 		options.title.text = "Top 20 sites of Category C - Weekly";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 4159, color: '#00006B'} , {name: 'NIKHEF-ELPROD (NL)', y: 2510, color: '#D97529'} , {name: 'DESY-HH (DE)', y: 1775, color: '#000000'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 1624, color: '#356C20'} , {name: 'AGLT2 (US)', y: 1600, color: '#00006B'} , {name: 'RAL-LCG2 (UK)', y: 1579, color: '#356C20'} , {name: 'NDGF-T1 (ND)', y: 1567, color: '#6298FF'} , {name: 'MWT2_UC (US)', y: 1520, color: '#00006B'} , {name: 'IN2P3-CC-T2 (FR)', y: 1438, color: '#0055A5'} , {name: 'INFN-T1 (IT)', y: 1413, color: '#009246'} , {name: 'UKI-LT2-RHUL (UK)', y: 1276, color: '#356C20'} , {name: 'DESY-ZN (DE)', y: 1155, color: '#000000'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 1126, color: '#356C20'} , {name: 'TOKYO-LCG2 (FR)', y: 1112, color: '#0055A5'} , {name: 'wuppertalprod (DE)', y: 1038, color: '#000000'} , {name: 'UNI-FREIBURG (DE)', y: 1008, color: '#000000'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 979, color: '#356C20'} , {name: 'IFIC-LCG2 (ES)', y: 921, color: '#EDBF00'} , {name: 'FZK-LCG2 (DE)', y: 912, color: '#000000'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 910, color: '#009246'} , {name: 'others', y: 19408, color: '#CCCCCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 3483, color: '#00006B'} , {name: 'NIKHEF-ELPROD (NL)', y: 2281, color: '#D97529'} , {name: 'DESY-HH (DE)', y: 2015, color: '#000000'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 1515, color: '#356C20'} , {name: 'NDGF-T1 (ND)', y: 1491, color: '#6298FF'} , {name: 'MWT2_UC (US)', y: 1485, color: '#00006B'} , {name: 'AGLT2 (US)', y: 1344, color: '#00006B'} , {name: 'RAL-LCG2 (UK)', y: 1180, color: '#356C20'} , {name: 'TOKYO-LCG2 (FR)', y: 1179, color: '#0055A5'} , {name: 'IN2P3-CC-T2 (FR)', y: 1178, color: '#0055A5'} , {name: 'DESY-ZN (DE)', y: 1126, color: '#000000'} , {name: 'UKI-LT2-RHUL (UK)', y: 1109, color: '#356C20'} , {name: 'INFN-T1 (IT)', y: 1098, color: '#009246'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 1064, color: '#356C20'} , {name: 'wuppertalprod (DE)', y: 995, color: '#000000'} , {name: 'FZK-LCG2 (DE)', y: 956, color: '#000000'} , {name: 'UKI-LT2-QMUL (UK)', y: 951, color: '#356C20'} , {name: 'UNI-FREIBURG (DE)', y: 919, color: '#000000'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 882, color: '#356C20'} , {name: 'UKI-NORTHGRID-LIV-HEP (UK)', y: 832, color: '#356C20'} , {name: 'others', y: 17519, color: '#CCCCCC'} ];
 		chart4 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container5";
 		options.title.text = "Cloud Analy of Category C - Weekly";
-		options.series[0].data = [   {name: 'UK', y: 9954, color: '#356C20'} , {name: 'DE', y: 9572, color: '#000000'} , {name: 'US', y: 9538, color: '#00006B'} , {name: 'FR', y: 5461, color: '#0055A5'} , {name: 'NL', y: 4535, color: '#D97529'} , {name: 'IT', y: 3370, color: '#009246'} , {name: 'CA', y: 2548, color: '#FF1F1F'} , {name: 'ES', y: 1633, color: '#EDBF00'} , {name: 'ND', y: 1567, color: '#6298FF'} , {name: 'CERN', y: 564, color: '#AE3C51'} , {name: 'TW', y: 288, color: '#89000F'} ];
+		options.series[0].data = [   {name: 'UK', y: 9389, color: '#356C20'} , {name: 'DE', y: 9358, color: '#000000'} , {name: 'US', y: 8259, color: '#00006B'} , {name: 'FR', y: 4761, color: '#0055A5'} , {name: 'NL', y: 3966, color: '#D97529'} , {name: 'IT', y: 2896, color: '#009246'} , {name: 'CA', y: 2347, color: '#FF1F1F'} , {name: 'ND', y: 1491, color: '#6298FF'} , {name: 'ES', y: 1321, color: '#EDBF00'} , {name: 'CERN', y: 592, color: '#AE3C51'} , {name: 'TW', y: 222, color: '#89000F'} ];
 		chart5 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container6";
 		options.title.text = "Top 20 sites of Category E - Weekly";
-		options.series[0].data = [   {name: 'CYFRONET-LCG2 (DE)', y: 8985, color: '#000000'} , {name: 'MPPMU (DE)', y: 5597, color: '#000000'} , {name: 'GRIF-LPNHE (FR)', y: 3039, color: '#0055A5'} , {name: 'IN2P3-CC (FR)', y: 2726, color: '#0055A5'} , {name: 'FZK-LCG2 (DE)', y: 2424, color: '#000000'} , {name: 'CERN-PROD (CERN)', y: 2281, color: '#AE3C51'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 2263, color: '#356C20'} , {name: 'NDGF-T1 (ND)', y: 2216, color: '#6298FF'} , {name: 'IN2P3-CC-T2 (FR)', y: 2006, color: '#0055A5'} , {name: 'GoeGrid (DE)', y: 1870, color: '#000000'} , {name: 'TW-FTT (TW)', y: 1827, color: '#89000F'} , {name: 'SFU-LCG2 (CA)', y: 1824, color: '#FF1F1F'} , {name: 'INFN-T1 (IT)', y: 1765, color: '#009246'} , {name: 'wuppertalprod (DE)', y: 1511, color: '#000000'} , {name: 'praguelcg2 (DE)', y: 1413, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 1403, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 1392, color: '#000000'} , {name: 'RAL-LCG2 (UK)', y: 1243, color: '#356C20'} , {name: 'NIKHEF-ELPROD (NL)', y: 1224, color: '#D97529'} , {name: 'UKI-LT2-QMUL (UK)', y: 1167, color: '#356C20'} , {name: 'others', y: 21802, color: '#CCCCCC'} ];
+		options.series[0].data = [   {name: 'CYFRONET-LCG2 (DE)', y: 9676, color: '#000000'} , {name: 'MPPMU (DE)', y: 6428, color: '#000000'} , {name: 'GRIF-LPNHE (FR)', y: 3165, color: '#0055A5'} , {name: 'IN2P3-CC (FR)', y: 2791, color: '#0055A5'} , {name: 'FZK-LCG2 (DE)', y: 2538, color: '#000000'} , {name: 'CERN-PROD (CERN)', y: 2450, color: '#AE3C51'} , {name: 'NDGF-T1 (ND)', y: 2383, color: '#6298FF'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 2379, color: '#356C20'} , {name: 'IN2P3-CC-T2 (FR)', y: 2074, color: '#0055A5'} , {name: 'GoeGrid (DE)', y: 1919, color: '#000000'} , {name: 'TW-FTT (TW)', y: 1872, color: '#89000F'} , {name: 'SFU-LCG2 (CA)', y: 1853, color: '#FF1F1F'} , {name: 'wuppertalprod (DE)', y: 1822, color: '#000000'} , {name: 'INFN-T1 (IT)', y: 1813, color: '#009246'} , {name: 'DESY-ZN (DE)', y: 1464, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 1418, color: '#00006B'} , {name: 'praguelcg2 (DE)', y: 1413, color: '#000000'} , {name: 'RAL-LCG2 (UK)', y: 1303, color: '#356C20'} , {name: 'WT2 (US)', y: 1241, color: '#00006B'} , {name: 'NIKHEF-ELPROD (NL)', y: 1232, color: '#D97529'} , {name: 'others', y: 22993, color: '#CCCCCC'} ];
 		chart6 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container7";
 		options.title.text = "Cloud Analy of Category E - Weekly";
-		options.series[0].data = [   {name: 'DE', y: 25840, color: '#000000'} , {name: 'FR', y: 10042, color: '#0055A5'} , {name: 'UK', y: 8066, color: '#356C20'} , {name: 'CA', y: 5671, color: '#FF1F1F'} , {name: 'US', y: 5110, color: '#00006B'} , {name: 'IT', y: 4216, color: '#009246'} , {name: 'NL', y: 3075, color: '#D97529'} , {name: 'CERN', y: 2281, color: '#AE3C51'} , {name: 'ND', y: 2216, color: '#6298FF'} , {name: 'TW', y: 1827, color: '#89000F'} , {name: 'ES', y: 1634, color: '#EDBF00'} ];
+		options.series[0].data = [   {name: 'DE', y: 28000, color: '#000000'} , {name: 'FR', y: 10643, color: '#0055A5'} , {name: 'UK', y: 8443, color: '#356C20'} , {name: 'CA', y: 5827, color: '#FF1F1F'} , {name: 'US', y: 5387, color: '#00006B'} , {name: 'IT', y: 4341, color: '#009246'} , {name: 'NL', y: 3220, color: '#D97529'} , {name: 'CERN', y: 2450, color: '#AE3C51'} , {name: 'ND', y: 2383, color: '#6298FF'} , {name: 'TW', y: 1872, color: '#89000F'} , {name: 'ES', y: 1661, color: '#EDBF00'} ];
 		chart7 = new Highcharts.Chart(options);
 		
 	});

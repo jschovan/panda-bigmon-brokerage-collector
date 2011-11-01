@@ -36,7 +36,7 @@
 					}
 				},
 				title: {
-					text: 'JobDef Count',
+					text: 'Effective Logs Number',
 					style: {
 						color: '#89A5E4'
 					}
@@ -60,7 +60,7 @@
 			}],
 			
 			tooltip: {
-				crosshairs: [ true, true],
+				crosshairs: [ {color: '#FF8888'}, {color: '#FF8888'} ],
 				formatter: function() {
 					return ''+
 						this.series.name+': '+this.y+
@@ -91,6 +91,9 @@
 			chart: {
 				renderTo: 'container1',
 				type: 'spline'
+			},
+			credits: {
+				enabled: false
 			},
 			rangeSelector: {
 				buttons: [{
@@ -124,7 +127,7 @@
 				height: 30
 			},
 			title: {
-				text: 'Panda Brokerage Monitor Logs',
+				text: 'Panda Brokerage Monitor Logs - All effective logs number',
 				floating: true,
 				align: 'right',
 				x: -20,
@@ -137,6 +140,7 @@
 				name: 'All',
 				data: [],
 				tooltip: {
+					crosshairs: [ {color: '#FF8888'}, {color: '#FF8888'} ],
 					yDecimals: 0
 				}
 			}]
@@ -154,9 +158,9 @@
 </head>
 <body>
 
-<div id='container' style='width:100%; height:480px;'>
+<div id='container' style='width:100%; height:400px;'>
 </div>
-<div id='container1' style='width:100%; height:480px;'>
+<div id='container1' style='width:100%; height:400px;'>
 </div>
 </body>
 </html>

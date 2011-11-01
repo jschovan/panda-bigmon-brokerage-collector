@@ -55,6 +55,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfile.html", last
     series_data2 = ""
     series_data3 = ""
     series_data4 = ""
+    series_data5 = ""
     skip = len(records)-12*last_hours
     r = 0
     for c in records:
