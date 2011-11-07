@@ -30,6 +30,8 @@ def parse_document(document):
         if not is_this_category(buf[0], 'INFOR') or is_this_category(buf[1],'Pack'):
             continue
         else:
+            if buf[1] == 'None': # Not get datetime info
+                continue
             buf_datetime = buf[1]+" "+buf[2]
             if from_date is None:
                 from_date = buf_datetime

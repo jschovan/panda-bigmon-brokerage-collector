@@ -21,7 +21,7 @@ db = dailyDB()
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' action=exclude ', ' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
 QUERY_HOUR = 1
-QUERY_LIMIT = 10000
+QUERY_LIMIT = 11000
 DEBUG = 0
 
 class Test:
