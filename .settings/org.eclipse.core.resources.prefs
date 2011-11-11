@@ -1,13 +1,19 @@
-#Fri Oct 28 14:44:29 CEST 2011
+#Fri Nov 11 08:59:03 CET 2011
 eclipse.preferences.version=1
 encoding//lib/BSXPath/BSXPath.py=utf-8
 encoding/charts_month.py=utf-8
+encoding/charts_monthV2.py=utf-8
 encoding/charts_season.py=utf-8
+encoding/charts_seasonV2.py=utf-8
 encoding/charts_week.py=utf-8
+encoding/charts_weekV2.py=utf-8
 encoding/charts_year.py=utf-8
+encoding/charts_yearV2.py=utf-8
 encoding/my_logfile.py=utf-8
+encoding/my_logfileV2.py=utf-8
 encoding/pack_analy_brokerage_log.py=utf-8
 encoding/parse_analy_brokerage_log.py=utf-8
+encoding/parse_analy_brokerage_logV2.py=utf-8
 encoding/parse_logfile.py=utf-8
 encoding/parse_table_pd2p_log.py=utf-8
 encoding/test_bsxpath.py=utf-8

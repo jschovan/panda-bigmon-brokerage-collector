@@ -46,6 +46,15 @@ fjson = open('panda_queues.json','r')
 data = fjson.read()
 dic = json.loads(data)
 fjson.close()
+
+fjson = open('unprocess.json','r')
+data = fjson.read()
+records = json.loads(data)
+fjson.close()
+print "Records"
+for r in records:
+    print r,":",records[r]
+
 # print dic[10]['cloud'],dic[10]['panda_siteID']
 
 con = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')

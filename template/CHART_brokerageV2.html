@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='refresh' content='600'>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript'>
+	var chart;
+	var options = {
+			chart: {
+				renderTo: '',
+				plotBackgroundColor: null,
+				plotBorderWidth: 1,
+				plotShadow: false
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: 'Last updated: #LAST_UPDATED# (UTC)'
+			},
+			tooltip: {
+				formatter: function() {
+					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+				}
+			},
+			credits: {
+				enabled: false
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#000000',
+						connecterColor: '#000000',
+						formatter: function() {
+							return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+						}
+					},
+					showInLegend: true
+				}
+			},
+			series: [{
+				type: 'pie',
+				name: 'Panda Brokerage Job',
+				data: []
+			}]
+		};
+		
+	$(document).ready(function() {
+	    options.chart.renderTo = "container1";
+		options.title.text = "#TITLE_TEXT1#";
+		options.series[0].data = [ #SERIES_DATA1# ];
+		chart1 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container2";
+		options.title.text = "#TITLE_TEXT2#";
+		options.series[0].data = [ #SERIES_DATA2# ];
+		chart2 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container3";
+		options.title.text = "#TITLE_TEXT3#";
+		options.series[0].data = [ #SERIES_DATA3# ];
+		chart3 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container4";
+		options.title.text = "#TITLE_TEXT4#";
+		options.series[0].data = [ #SERIES_DATA4# ];
+		chart4 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container5";
+		options.title.text = "#TITLE_TEXT5#";
+		options.series[0].data = [ #SERIES_DATA5# ];
+		chart5 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container6";
+		options.title.text = "#TITLE_TEXT6#";
+		options.series[0].data = [ #SERIES_DATA6# ];
+		chart6 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container7";
+		options.title.text = "#TITLE_TEXT7#";
+		options.series[0].data = [ #SERIES_DATA7# ];
+		chart7 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container8";
+		options.title.text = "#TITLE_TEXT8#";
+		options.series[0].data = [ #SERIES_DATA8# ];
+		chart8 = new Highcharts.Chart(options);
+		
+	});
+</script>
+</head>
+<body>
+<a href='index.html'>[Back]</a>
+<div id='container1' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container8' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container2' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container3' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container4' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container5' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container6' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container7' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+</body>
+</html>
