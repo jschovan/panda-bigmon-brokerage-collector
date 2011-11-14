@@ -57,9 +57,9 @@ class dailyDBV2(object):
         cursor.close()
         return True
     
-    def is_exist_item(self, logDate, category, site, dnUser):
+    def is_exist_item(self, logDate, jobSet, category, site, dnUser):
         cursor = self._db.cursor()
-        sql = "SELECT dailyLogId FROM dailyLogV2 WHERE logDate='%s' AND category='%s' AND site='%s' AND dnUser='%s'"%(logDate,category,site,dnUser)
+        sql = "SELECT dailyLogId FROM dailyLogV2 WHERE logDate='%s' AND jobSet='%s' AND category='%s' AND site='%s' AND dnUser='%s'"%(logDate,jobSet,category,site,dnUser)
         cursor.execute(sql)
         rs = cursor.fetchone()
         if rs is not None:
@@ -71,8 +71,8 @@ class dailyDBV2(object):
         
     def add_logs(self,logs):
         cursor = self._db.cursor()
-        sql = "INSERT INTO dailyLogV2 ( dailyLogId, logDate, category, site, cloud, dnUser, jobdefCount, jobCount, country) " + \
-                  "VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9)"
+        sql = "INSERT INTO dailyLogV2 ( dailyLogId, logDate, jobSet, category, site, cloud, dnUser, jobdefCount, jobCount, country) " + \
+                  "VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10 )"
         cursor.executemany(sql, logs)
         self._db.commit()
         cursor.close()
@@ -88,7 +88,7 @@ class dailyDBV2(object):
         
     def increase_buf_count(self,logs):
         cursor = self._db.cursor()
-        sql = "UPDATE dailyLogV2 SET jobdefCount = jobdefCount + 1, jobCount = jobCount + :1 WHERE logDate = :2 AND category = :3 AND site = :4 AND dnUser = :5 "
+        sql = "UPDATE dailyLogV2 SET jobdefCount = jobdefCount + 1, jobCount = jobCount + :1 WHERE logDate = :2 AND jobSet=:3 AND category = :4 AND site = :5 AND dnUser = :6 "
         cursor.executemany(sql, logs)
         self._db.commit()
         cursor.close()

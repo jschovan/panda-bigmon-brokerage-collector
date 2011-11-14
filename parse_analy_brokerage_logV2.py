@@ -68,11 +68,11 @@ def get_sitecloud_name(dic, siteID):
             break
     return (site_name,cloud)
 
-def is_in_buf(records, logDate, category, site, dnUser):
+def is_in_buf(records, logDate, jobSet, category, site, dnUser):
     found = False
     idx = 0
     for record in records:
-        if record[1]==logDate and record[2]==category and record[3]==site and record[5]==dnUser:
+        if record[1]==logDate and record[2]==jobSet and record[3]==category and record[4]==site and record[6]==dnUser:
             found = True
             break
         idx += 1
@@ -247,10 +247,11 @@ def parse_document(document):
             message_country = message_buf[1].split('=')[1].strip()
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_jobdef)
             if records.has_key(reckey):
+                records[reckey]['jobSet'] = message_jobset
                 records[reckey]['nJobs'] = message_njobs
                 records[reckey]['country'] = message_country
             else:
-                records[reckey] = {'nJobs':message_njobs,'country':message_country}
+                records[reckey] = {'jobSet':message_jobset,'nJobs':message_njobs,'country':message_country}
             
         # exclude : add at 2011-10-26
         elif is_this_category(cell_message, ' action=exclude '):
@@ -261,10 +262,11 @@ def parse_document(document):
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_site)
             if ex_records.has_key(reckey):
                 ex_records[reckey]['logDate'] = logDate
+                ex_records[reckey]['jobSet'] = message_jobset
                 ex_records[reckey]['category'] = message_category
                 ex_records[reckey]['site'] = message_site
             else:
-                ex_records[reckey] = {'logDate':logDate, 'category':message_category, 'site':message_site}
+                ex_records[reckey] = {'logDate':logDate,'jobSet':message_jobset,'category':message_category,'site':message_site}
         
         ## choose
         elif is_this_category(cell_message, ' action=choose '):
@@ -308,10 +310,11 @@ def parse_document(document):
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_jobdef)
             if records.has_key(reckey):
                 records[reckey]['logDate'] = logDate
+                records[reckey]['jobSet'] = message_jobset
                 records[reckey]['category'] = message_category
                 records[reckey]['site'] = message_site
             else:
-                records[reckey] = {'logDate':logDate, 'category':message_category, 'site':message_site}
+                records[reckey] = {'logDate':logDate,'jobSet':message_jobset,'category':message_category,'site':message_site}
             
             if not records[reckey].has_key('nJobs'):
                 records[reckey]['nJobs'] = "1"
@@ -364,11 +367,12 @@ def parse_document(document):
         rec_idx = None
         dnUser = rec.split('|')[0]
         logDate = records[rec]['logDate']
+        jobSet = records[rec]['jobSet']
         category = records[rec]['category']
         country = records[rec]['country']
         nJobs = records[rec]['nJobs']
         site_name,cloud = get_sitecloud_name(dic,records[rec]['site'])
-        dailyLogId = db.is_exist_item(logDate, category, site_name, dnUser)
+        dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
         
         if country == '--':
             json_string = "%s\"%s\":%s\n"%(jcom,rec,json.dumps(records[rec]))
@@ -378,16 +382,16 @@ def parse_document(document):
                      
         sum_nJobs += int(nJobs)
         if dailyLogId is None:
-            rec_idx = is_in_buf(eff_records, logDate, category, site_name, dnUser)
+            rec_idx = is_in_buf(eff_records, logDate, jobSet, category, site_name, dnUser)
         if dailyLogId is not None:
             record = (int(nJobs),dailyLogId)
             exist_records.append(record)
         elif rec_idx is not None:
-            record = ( int(nJobs), logDate, category, site_name, dnUser)
+            record = ( int(nJobs), logDate, jobSet, category, site_name, dnUser)
             in_buf_records.append(record)
         else:
             maxId += 1
-            record = (maxId, logDate, category, site_name, cloud, dnUser, '1', nJobs, country)
+            record = (maxId, logDate, jobSet, category, site_name, cloud, dnUser, '1', nJobs, country)
             eff_records.append(record)
             
     fjson.write("}\n")
@@ -400,22 +404,23 @@ def parse_document(document):
         rec_idx = None
         dnUser = rec.split('|')[0]
         logDate = ex_records[rec]['logDate']
+        jobSet = ex_records[rec]['jobSet']
         category = ex_records[rec]['category']
         country = "--"
         nJobs = "1"
         site_name,cloud = get_sitecloud_name(dic,ex_records[rec]['site'])
-        dailyLogId = db.is_exist_item(logDate, category, site_name, dnUser)
+        dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
         if dailyLogId is None:
-            rec_idx = is_in_buf(eff_records, logDate, category, site_name, dnUser)
+            rec_idx = is_in_buf(eff_records, logDate, jobSet, category, site_name, dnUser)
         if dailyLogId is not None:
             record = (int(nJobs),dailyLogId)
             exist_records.append(record)
         elif rec_idx is not None:
-            record = (int(nJobs), logDate, category, site_name, dnUser )
+            record = (int(nJobs), logDate, jobSet, category, site_name, dnUser )
             in_buf_records.append(record)
         else:
             maxId += 1
-            record = (maxId, logDate, category, site_name, cloud, dnUser, '1', nJobs, country)
+            record = (maxId, logDate, jobSet, category, site_name, cloud, dnUser, '1', nJobs, country)
             eff_records.append(record)
 
     db.set_last_updated_time(set_last) # set when all done.
@@ -455,7 +460,7 @@ def run():
     logs_count = len(eff_records)+len(exist_records)+len(in_buf_records)
     last_time = db.get_last_updated_time()
     
-    print u'INFOR: %s Limit: %d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsLost: %d'%(last_time,QUERY_LIMIT,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
+    print u'INFOR: %s Limit: %d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(last_time,QUERY_LIMIT,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
     
 if __name__ == "__main__":
     

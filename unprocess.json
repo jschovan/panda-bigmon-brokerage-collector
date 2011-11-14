@@ -1,51 +1,109 @@
 {
-"Nazim_Huseynov|3929|3930":{"country": "ru", "nJobs": "1"}
-,"Nazim_Huseynov|3945|3946":{"country": "ru", "nJobs": "14"}
-,"Maria_Emilie_Dano_Hoffmann|126|127":{"country": "dk", "nJobs": "4"}
-,"Rocco_Mandrysch|18000|18002":{"country": "de", "nJobs": "176"}
-,"Paola_Giovannini|1826|1827":{"country": "de", "nJobs": "2"}
-,"Nazim_Huseynov|3941|3942":{"country": "ru", "nJobs": "3"}
-,"Nazim_Huseynov|3925|3926":{"country": "ru", "nJobs": "18"}
-,"Susan_Cheatham|1467|1468":{"country": "uk", "nJobs": "1"}
-,"adrian_lewis|5073|5074":{"country": "uk", "nJobs": "1"}
-,"Olaf_Nackenhorst|6521|6522":{"country": "de", "nJobs": "2"}
-,"stewart_martin-haugh|3894|3895":{"country": "None", "nJobs": "1"}
-,"Olaf_Nackenhorst|6509|6510":{"country": "de", "nJobs": "7"}
-,"Markus_Mechtel|1987|1988":{"country": "de", "nJobs": "4"}
-,"Michel_Trottier-Mcdonald|14604|14605":{"country": "ca", "nJobs": "1"}
-,"Nazim_Huseynov|3923|3924":{"country": "ru", "nJobs": "1"}
-,"Nazim_Huseynov|3921|3922":{"country": "ru", "nJobs": "9"}
-,"Silvia_Behar_Harpaz|15106|15107":{"country": "None", "nJobs": "3999"}
-,"Nazim_Huseynov|3927|3928":{"country": "ru", "nJobs": "2"}
-,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|500|501":{"country": "pt", "nJobs": "1"}
-,"Olaf_Nackenhorst|6511|6512":{"country": "de", "nJobs": "20"}
-,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|498|499":{"country": "pt", "nJobs": "1"}
-,"paul_thompson|34329|34330":{"country": "uk", "nJobs": "1"}
-,"Olaf_Nackenhorst|6518|6519":{"country": "de", "nJobs": "1"}
-,"Paul_Nilsson|11520|11452":{"category": "A", "country": "--", "nJobs": "1", "logDate": "2011-11-11", "site": "ANALY_LANCS"}
-,"Olaf_Nackenhorst|6513|6514":{"country": "de", "nJobs": "1"}
-,"Olaf_Nackenhorst|6518|6520":{"country": "de", "nJobs": "8"}
-,"Nazim_Huseynov|3931|3932":{"country": "ru", "nJobs": "1"}
-,"Muhammad_Saleem|5965|5966":{"country": "us", "nJobs": "1"}
-,"Nazim_Huseynov|3933|3934":{"country": "ru", "nJobs": "1"}
-,"Maria_Emilie_Dano_Hoffmann|124|125":{"country": "dk", "nJobs": "7"}
-,"Olaf_Nackenhorst|6527|6528":{"country": "de", "nJobs": "7"}
-,"Nazim_Huseynov|3937|3938":{"country": "ru", "nJobs": "4"}
-,"Olaf_Nackenhorst|6507|6508":{"country": "de", "nJobs": "9"}
-,"Nazim_Huseynov|3935|3936":{"country": "ru", "nJobs": "7"}
-,"Olaf_Nackenhorst|6505|6506":{"country": "de", "nJobs": "10"}
-,"Olaf_Nackenhorst|6523|6524":{"country": "de", "nJobs": "23"}
-,"Teresa_Spreitzer|5061|5062":{"country": "ca", "nJobs": "76"}
-,"adrian_lewis|5075|5076":{"country": "uk", "nJobs": "15"}
-,"neil_cooper-smith|2220|2221":{"country": "uk", "nJobs": "5"}
-,"Olaf_Nackenhorst|6529|6530":{"country": "de", "nJobs": "41"}
-,"Nazim_Huseynov|3939|3940":{"country": "ru", "nJobs": "2"}
-,"Susan_Cheatham|1463|1466":{"country": "uk", "nJobs": "3"}
-,"Susan_Cheatham|1463|1465":{"country": "uk", "nJobs": "1"}
-,"Susan_Cheatham|1463|1464":{"country": "uk", "nJobs": "18"}
-,"Olaf_Nackenhorst|6515|6516":{"country": "de", "nJobs": "13"}
-,"Olaf_Nackenhorst|6515|6517":{"country": "de", "nJobs": "8"}
-,"Nazim_Huseynov|3943|3944":{"country": "ru", "nJobs": "8"}
-,"Olaf_Nackenhorst|6525|6526":{"country": "de", "nJobs": "8"}
-,"neil_cooper-smith|2218|2219":{"country": "uk", "nJobs": "7"}
+"Anton_Rikard_Sandstroem|8300|8302":{"country": "de", "nJobs": "7", "jobSet": "8300"}
+,"Anton_Rikard_Sandstroem|8300|8301":{"country": "de", "nJobs": "422", "jobSet": "8300"}
+,"Vladimir_Lyubushkin|2921|2922":{"country": "None", "nJobs": "4", "jobSet": "2921"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4378":{"country": "us", "nJobs": "13", "jobSet": "4377"}
+,"Andreas_Reinsch|9459|9460":{"country": "us", "nJobs": "1", "jobSet": "9459"}
+,"Xin_Chen|13098|13099":{"country": "None", "nJobs": "1", "jobSet": "13098"}
+,"Nikola_Makovec|30037|30038":{"country": "fr", "nJobs": "1", "jobSet": "30037"}
+,"Xin_Chen|13038|13039":{"country": "None", "nJobs": "1", "jobSet": "13038"}
+,"Constantinos_Melachrinos|3218|3219":{"country": "None", "nJobs": "6", "jobSet": "3218"}
+,"Monica_Verducci|3170|3171":{"country": "de", "nJobs": "6", "jobSet": "3170"}
+,"Frederic_Derue|38586|38594":{"country": "fr", "nJobs": "104", "jobSet": "38586"}
+,"jack_goddard|4669|4670":{"country": "uk", "nJobs": "30", "jobSet": "4669"}
+,"Adam_Trzupek_-_Atlas|3540|3541":{"country": "pl", "nJobs": "1", "jobSet": "3540"}
+,"Thomas_Schwindt|48510|48522":{"country": "de", "nJobs": "58", "jobSet": "48510"}
+,"Nikola_Makovec|30079|30080":{"country": "fr", "nJobs": "2", "jobSet": "30079"}
+,"Hyeon_Jin_Kim|5406|5407":{"country": "se", "nJobs": "2", "jobSet": "5406"}
+,"Andrew_Haas|191|192":{"country": "us", "nJobs": "262", "jobSet": "191"}
+,"Zinonas_Zinonos|no.jobset|3480":{"country": "None", "nJobs": "11", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3481":{"country": "None", "nJobs": "9", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3482":{"country": "None", "nJobs": "10", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3483":{"country": "None", "nJobs": "1", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3484":{"country": "None", "nJobs": "2", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3485":{"country": "None", "nJobs": "2", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3486":{"country": "None", "nJobs": "8", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3487":{"country": "None", "nJobs": "1", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3488":{"country": "None", "nJobs": "10", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3489":{"country": "None", "nJobs": "1", "jobSet": "no.jobset"}
+,"Hyeon_Jin_Kim|5408|5409":{"country": "se", "nJobs": "2", "jobSet": "5408"}
+,"jack_goddard|4671|4672":{"country": "uk", "nJobs": "1", "jobSet": "4671"}
+,"Biagio_Di_Micco|1098|1099":{"country": "it", "nJobs": "4", "jobSet": "1098"}
+,"Constantinos_Melachrinos|3220|3221":{"country": "None", "nJobs": "1", "jobSet": "3220"}
+,"Anton_Rikard_Sandstroem|8282|8283":{"country": "de", "nJobs": "1", "jobSet": "8282"}
+,"Constantinos_Melachrinos|3214|3215":{"country": "None", "nJobs": "1", "jobSet": "3214"}
+,"Anton_Rikard_Sandstroem|8289|8290":{"country": "de", "nJobs": "1", "jobSet": "8289"}
+,"Jacob_Groth-Jensen|1894|1895":{"category": "A", "country": "--", "site": "ANALY_FZU", "logDate": "2011-11-14", "nJobs": "1", "jobSet": "1894"}
+,"Xin_Chen|13036|13037":{"country": "None", "nJobs": "1", "jobSet": "13036"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4380":{"country": "us", "nJobs": "8", "jobSet": "4377"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4394|4395":{"country": "us", "nJobs": "1", "jobSet": "4394"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4382":{"country": "us", "nJobs": "17", "jobSet": "4377"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4383":{"country": "us", "nJobs": "30", "jobSet": "4377"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4384":{"country": "us", "nJobs": "1", "jobSet": "4377"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4385":{"country": "us", "nJobs": "37", "jobSet": "4377"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4386":{"country": "us", "nJobs": "7", "jobSet": "4377"}
+,"Adam_Trzupek_-_Atlas|3538|3539":{"country": "pl", "nJobs": "2", "jobSet": "3538"}
+,"Adam_Trzupek_-_Atlas|3544|3545":{"country": "pl", "nJobs": "1", "jobSet": "3544"}
+,"karoline_selbach|606|607":{"country": "uk", "nJobs": "1", "jobSet": "606"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4387|4389":{"country": "us", "nJobs": "1", "jobSet": "4387"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4387|4388":{"country": "us", "nJobs": "12", "jobSet": "4387"}
+,"Anton_Rikard_Sandstroem|8286|8287":{"country": "de", "nJobs": "16", "jobSet": "8286"}
+,"Hannah_Arnold|2018|2019":{"country": "de", "nJobs": "1", "jobSet": "2018"}
+,"Masato_Aoki|82858|82859":{"country": "jp", "nJobs": "3", "jobSet": "82858"}
+,"Anton_Rikard_Sandstroem|8286|8288":{"country": "de", "nJobs": "5", "jobSet": "8286"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4396|4397":{"country": "us", "nJobs": "1", "jobSet": "4396"}
+,"Matthias_Werner|1048|1049":{"country": "None", "nJobs": "8", "jobSet": "1048"}
+,"Hyeon_Jin_Kim|5412|5413":{"country": "se", "nJobs": "6", "jobSet": "5412"}
+,"Andreas_Reinsch|9455|9456":{"country": "us", "nJobs": "1", "jobSet": "9455"}
+,"vanessa.arnal|892|893":{"country": "None", "nJobs": "1", "jobSet": "892"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4387|4390":{"country": "us", "nJobs": "4", "jobSet": "4387"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4387|4391":{"country": "us", "nJobs": "1", "jobSet": "4387"}
+,"Lawrence_Lee_Jr|5651|5652":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC", "logDate": "2011-11-14", "nJobs": "1", "jobSet": "5651"}
+,"Zinonas_Zinonos|no.jobset|3477":{"country": "None", "nJobs": "1", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3479":{"country": "None", "nJobs": "29", "jobSet": "no.jobset"}
+,"Zinonas_Zinonos|no.jobset|3478":{"country": "None", "nJobs": "7", "jobSet": "no.jobset"}
+,"Pavol_Federic|11395|11396":{"country": "sk", "nJobs": "1", "jobSet": "11395"}
+,"Andreas_Reinsch|9457|9458":{"country": "us", "nJobs": "2", "jobSet": "9457"}
+,"Frederic_Derue|38642|38643":{"category": "C", "country": "--", "site": "ANALY_INFN-NAPOLI", "logDate": "2011-11-14", "nJobs": "1", "jobSet": "38642"}
+,"Vladyslav_Shtabovenko|248|249":{"country": "None", "nJobs": "1", "jobSet": "248"}
+,"karoline_selbach|604|605":{"country": "uk", "nJobs": "7", "jobSet": "604"}
+,"Constantinos_Melachrinos|3216|3217":{"country": "None", "nJobs": "1", "jobSet": "3216"}
+,"Chang_Wei_Loh|44920|44921":{"country": "ca", "nJobs": "28", "jobSet": "44920"}
+,"Anton_Rikard_Sandstroem|8293|8295":{"country": "de", "nJobs": "69", "jobSet": "8293"}
+,"Anton_Rikard_Sandstroem|8293|8294":{"country": "de", "nJobs": "3530", "jobSet": "8293"}
+,"Marcello_Barisonzi|10473|10474":{"country": "de", "nJobs": "11", "jobSet": "10473"}
+,"Constantinos_Melachrinos|3212|3213":{"country": "None", "nJobs": "1", "jobSet": "3212"}
+,"Matthias_Werner|1036|1037":{"country": "None", "nJobs": "1", "jobSet": "1036"}
+,"Xin_Chen|13094|13095":{"country": "None", "nJobs": "1", "jobSet": "13094"}
+,"Andreas_Salzburger|7563|7564":{"country": "None", "nJobs": "4", "jobSet": "7563"}
+,"Nikola_Makovec|29711|29712":{"country": "fr", "nJobs": "13", "jobSet": "29711"}
+,"Shu_Li|26729|26730":{"country": "cn", "nJobs": "1", "jobSet": "26729"}
+,"Masato_Aoki|82860|82861":{"country": "jp", "nJobs": "62", "jobSet": "82860"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4381":{"country": "us", "nJobs": "41", "jobSet": "4377"}
+,"Monica_Verducci|3167|3169":{"country": "de", "nJobs": "5", "jobSet": "3167"}
+,"Monica_Verducci|3167|3168":{"country": "de", "nJobs": "5", "jobSet": "3167"}
+,"Anton_Rikard_Sandstroem|8298|8299":{"country": "de", "nJobs": "17", "jobSet": "8298"}
+,"Tomoe_Kishimoto|10767|10768":{"country": "jp", "nJobs": "87", "jobSet": "10767"}
+,"arturos_Sanchez_Pineda|9196|9197":{"country": "None", "nJobs": "1", "jobSet": "9196"}
+,"Anton_Rikard_Sandstroem|8296|8297":{"country": "de", "nJobs": "198", "jobSet": "8296"}
+,"Claudio_Heller|4915|4916":{"country": "de", "nJobs": "5", "jobSet": "4915"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4398|4399":{"country": "us", "nJobs": "2", "jobSet": "4398"}
+,"Zinonas_Zinonos|no.jobset|3490":{"country": "None", "nJobs": "1", "jobSet": "no.jobset"}
+,"Vladimir_Lyubushkin|2929|2930":{"country": "None", "nJobs": "4", "jobSet": "2929"}
+,"Anton_Rikard_Sandstroem|8284|8285":{"country": "de", "nJobs": "1", "jobSet": "8284"}
+,"Anton_Rikard_Sandstroem|8291|8292":{"country": "de", "nJobs": "4", "jobSet": "8291"}
+,"Adam_Trzupek_-_Atlas|3542|3543":{"country": "pl", "nJobs": "1", "jobSet": "3542"}
+,"Petr_Balek|3041|3042":{"country": "None", "nJobs": "1", "jobSet": "3041"}
+,"Tobias_Heck|437|438":{"country": "de", "nJobs": "1", "jobSet": "437"}
+,"John_Alexander_Backus_Mayes|1100|1104":{"country": "None", "nJobs": "10", "jobSet": "1100"}
+,"Matthias_Werner|1034|1035":{"country": "None", "nJobs": "1", "jobSet": "1034"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4377|4379":{"country": "us", "nJobs": "16", "jobSet": "4377"}
+,"Hyeon_Jin_Kim|5410|5411":{"country": "se", "nJobs": "1", "jobSet": "5410"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4392|4393":{"country": "us", "nJobs": "7", "jobSet": "4392"}
+,"Xin_Chen|13096|13097":{"country": "None", "nJobs": "1", "jobSet": "13096"}
+,"Roberto_Di_Nardo|462|463":{"country": "it", "nJobs": "1", "jobSet": "462"}
+,"Xin_Chen|13040|13041":{"country": "None", "nJobs": "1", "jobSet": "13040"}
+,"John_Wilson_Penwell|129|130":{"country": "None", "nJobs": "46", "jobSet": "129"}
+,"Constantinos_Melachrinos|3230|3231":{"country": "None", "nJobs": "7", "jobSet": "3230"}
+,"arturos_Sanchez_Pineda|9190|9191":{"country": "None", "nJobs": "1", "jobSet": "9190"}
 }
