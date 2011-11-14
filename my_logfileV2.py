@@ -41,8 +41,9 @@ def parse_document(document):
             processed,all = buf[6].split('/')
             nJobs = buf[8]
             parsingTime = buf[10]
+            unprocessed = buf[12]
             
-            records.append((buf_datetime,processed,all,parsingTime,nJobs))
+            records.append((buf_datetime,processed,all,parsingTime,nJobs,unprocessed))
                        
     return (from_date, to_date, records)
 
@@ -58,6 +59,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfileV2.html", la
     series_data3 = ""
     series_data4 = ""
     series_data5 = ""
+    series_data6 = ""
     skip = len(records)-12*last_hours
     r = 0
     for c in records:
@@ -71,6 +73,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfileV2.html", la
         si = int(si)
         series_data4 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data4,comm1,sy,sm,sd,sh,si,c[2])
         series_data5 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data5,comm1,sy,sm,sd,sh,si,c[4])
+        series_data6 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data6,comm1,sy,sm,sd,sh,si,c[5])
         comm1 = ","
         r += 1
         if r<skip:
@@ -91,6 +94,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfileV2.html", la
     data = data.replace('#SERIES_DATA3#',series_data3)
     data = data.replace('#SERIES_DATA4#',series_data4)
     data = data.replace('#SERIES_DATA5#',series_data5)
+    data = data.replace('#SERIES_DATA6#',series_data6)
         
     of = open(doc_file, 'w')
     print >>of, data
