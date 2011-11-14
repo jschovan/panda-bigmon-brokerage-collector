@@ -18,7 +18,7 @@
 				text: ''
 			},
 			subtitle: {
-				text: 'Last updated: 2011-11-14 11:54 (UTC)'
+				text: 'Last updated: 2011-11-14 13:23 (UTC)'
 			},
 			tooltip: {
 				formatter: function() {
@@ -51,65 +51,225 @@
 		};
 		
 	$(document).ready(function() {
-	    options.chart.renderTo = "container1";
-		options.title.text = "Category A,B,C,E Analy - Seasonly";
-		options.series[0].data = [   ['A', 476] , ['B', 24] , ['C', 2443] , ['E', 2782] ];
-		chart1 = new Highcharts.Chart(options);
+	    options.chart.renderTo = "container00";
+		options.title.text = "Category A,B,C on Jobs - Seasonly";
+		options.series[0].data = [   ['A-User selected a site', 7209] , ['B-User selected a cloud', 52] , ['C-Panda decides destination', 142749] ];
+		chart00 = new Highcharts.Chart(options);
 		
-		options.chart.renderTo = "container2";
-		options.title.text = "Top 10 sites of Category A - Seasonly";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 291, color: '#00006B'} , {name: 'FZK-LCG2 (DE)', y: 132, color: '#000000'} , {name: 'praguelcg2 (DE)', y: 31, color: '#000000'} , {name: 'IllinoisHEP (US)', y: 12, color: '#00006B'} , {name: 'WT2 (US)', y: 8, color: '#00006B'} , {name: 'UNI-FREIBURG (DE)', y: 1, color: '#000000'} , {name: 'CERN-PROD (CERN)', y: 1, color: '#AE3C51'} ];
-		chart2 = new Highcharts.Chart(options);
+		options.chart.renderTo = "container01";
+		options.title.text = "Category A,B,C on jobDef - Seasonly";
+		options.series[0].data = [   ['A-User selected a site', 664] , ['B-User selected a cloud', 43] , ['C-Panda decides destination', 3716] ];
+		chart01 = new Highcharts.Chart(options);
 		
-		options.chart.renderTo = "container3";
-		options.title.text = "Cloud Analy of Category B - Seasonly";
-		options.series[0].data = [   {name: 'IT', y: 24, color: '#009246'} ];
-		chart3 = new Highcharts.Chart(options);
+		options.chart.renderTo = "container02";
+		options.title.text = "Category A,B,C on jobSet - Seasonly";
+		options.series[0].data = [   ['A-User selected a site', 664] , ['B-User selected a cloud', 43] , ['C-Panda decides destination', 3093] ];
+		chart02 = new Highcharts.Chart(options);
+				
+	    options.chart.renderTo = "container10";
+		options.title.text = "Category A (User selected a site) on Jobs - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'praguelcg2 (DE)', y: 3926, color: '#000000'} , {name: 'WT2 (US)', y: 1346, color: '#00006B'} , {name: 'UNI-FREIBURG (DE)', y: 1000, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 405, color: '#00006B'} , {name: 'FZK-LCG2 (DE)', y: 255, color: '#000000'} , {name: 'CERN-PROD (CERN)', y: 225, color: '#AE3C51'} , {name: 'TW-FTT (TW)', y: 40, color: '#89000F'} , {name: 'IllinoisHEP (US)', y: 12, color: '#00006B'} ];
+		chart10 = new Highcharts.Chart(options);
 		
-		options.chart.renderTo = "container4";
-		options.title.text = "Top 20 sites of Category C - Seasonly";
-		options.series[0].data = [   {name: 'DESY-HH (DE)', y: 180, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 136, color: '#00006B'} , {name: 'MWT2_UC (US)', y: 136, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 133, color: '#000000'} , {name: 'NIKHEF-ELPROD (NL)', y: 128, color: '#D97529'} , {name: 'LRZ-LMU (DE)', y: 108, color: '#000000'} , {name: 'BU_ATLAS_Tier2 (US)', y: 89, color: '#00006B'} , {name: 'IN2P3-CC-T2 (FR)', y: 88, color: '#0055A5'} , {name: 'IN2P3-CC (FR)', y: 82, color: '#0055A5'} , {name: 'NDGF-T1 (ND)', y: 80, color: '#6298FF'} , {name: 'AGLT2 (US)', y: 78, color: '#00006B'} , {name: 'INFN-ROMA1 (IT)', y: 73, color: '#009246'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 60, color: '#009246'} , {name: 'UKI-LT2-RHUL (UK)', y: 53, color: '#356C20'} , {name: 'UKI-LT2-QMUL (UK)', y: 51, color: '#356C20'} , {name: 'IN2P3-LAPP (FR)', y: 50, color: '#0055A5'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 46, color: '#356C20'} , {name: 'wuppertalprod (DE)', y: 45, color: '#000000'} , {name: 'IFIC-LCG2 (ES)', y: 45, color: '#EDBF00'} , {name: 'TOKYO-LCG2 (FR)', y: 44, color: '#0055A5'} , {name: 'others', y: 738, color: '#CCCCCC'} ];
-		chart4 = new Highcharts.Chart(options);
+		options.chart.renderTo = "container11";
+		options.title.text = "Category A (User selected a site) on jobDef - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 405, color: '#00006B'} , {name: 'FZK-LCG2 (DE)', y: 181, color: '#000000'} , {name: 'praguelcg2 (DE)', y: 54, color: '#000000'} , {name: 'IllinoisHEP (US)', y: 12, color: '#00006B'} , {name: 'WT2 (US)', y: 8, color: '#00006B'} , {name: 'CERN-PROD (CERN)', y: 2, color: '#AE3C51'} , {name: 'UNI-FREIBURG (DE)', y: 1, color: '#000000'} , {name: 'TW-FTT (TW)', y: 1, color: '#89000F'} ];
+		chart11 = new Highcharts.Chart(options);
 		
-		options.chart.renderTo = "container5";
-		options.title.text = "Cloud Analy of Category C - Seasonly";
-		options.series[0].data = [   {name: 'DE', y: 583, color: '#000000'} , {name: 'US', y: 531, color: '#00006B'} , {name: 'FR', y: 363, color: '#0055A5'} , {name: 'UK', y: 333, color: '#356C20'} , {name: 'IT', y: 187, color: '#009246'} , {name: 'NL', y: 171, color: '#D97529'} , {name: 'CA', y: 103, color: '#FF1F1F'} , {name: 'ND', y: 80, color: '#6298FF'} , {name: 'ES', y: 60, color: '#EDBF00'} , {name: 'CERN', y: 16, color: '#AE3C51'} , {name: 'TW', y: 16, color: '#89000F'} ];
-		chart5 = new Highcharts.Chart(options);
+		options.chart.renderTo = "container12";
+		options.title.text = "Category A (User selected a site) on jobSet - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 405, color: '#00006B'} , {name: 'FZK-LCG2 (DE)', y: 181, color: '#000000'} , {name: 'praguelcg2 (DE)', y: 54, color: '#000000'} , {name: 'IllinoisHEP (US)', y: 12, color: '#00006B'} , {name: 'WT2 (US)', y: 8, color: '#00006B'} , {name: 'CERN-PROD (CERN)', y: 2, color: '#AE3C51'} , {name: 'UNI-FREIBURG (DE)', y: 1, color: '#000000'} , {name: 'TW-FTT (TW)', y: 1, color: '#89000F'} ];
+		chart12 = new Highcharts.Chart(options);
+				
+	    options.chart.renderTo = "container20";
+		options.title.text = "Category A (User selected a site) on Jobs - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'DE', y: 5181, color: '#000000'} , {name: 'US', y: 1763, color: '#00006B'} , {name: 'CERN', y: 225, color: '#AE3C51'} , {name: 'TW', y: 40, color: '#89000F'} ];
+		chart20 = new Highcharts.Chart(options);
 		
-		options.chart.renderTo = "container6";
-		options.title.text = "Top 20 sites of Category E - Seasonly";
-		options.series[0].data = [   {name: 'GRIF-LPNHE (FR)', y: 332, color: '#0055A5'} , {name: 'CERN-PROD (CERN)', y: 298, color: '#AE3C51'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 290, color: '#356C20'} , {name: 'NIKHEF-ELPROD (NL)', y: 260, color: '#D97529'} , {name: 'pic (ES)', y: 219, color: '#EDBF00'} , {name: 'GoeGrid (DE)', y: 109, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 97, color: '#00006B'} , {name: 'wuppertalprod (DE)', y: 94, color: '#000000'} , {name: 'UKI-SCOTGRID-ECDF (UK)', y: 71, color: '#356C20'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 65, color: '#356C20'} , {name: 'MWT2_UC (US)', y: 62, color: '#00006B'} , {name: 'CYFRONET-LCG2 (DE)', y: 58, color: '#000000'} , {name: 'INFN-T1 (IT)', y: 54, color: '#009246'} , {name: 'SARA-MATRIX (NL)', y: 53, color: '#D97529'} , {name: 'RU-Protvino-IHEP (NL)', y: 50, color: '#D97529'} , {name: 'TRIUMF-LCG2 (CA)', y: 50, color: '#FF1F1F'} , {name: 'IN2P3-CC-T2 (FR)', y: 46, color: '#0055A5'} , {name: 'NDGF-T1 (ND)', y: 45, color: '#6298FF'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 43, color: '#356C20'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 37, color: '#356C20'} , {name: 'others', y: 449, color: '#CCCCCC'} ];
-		chart6 = new Highcharts.Chart(options);
+		options.chart.renderTo = "container21";
+		options.title.text = "Category A (User selected a site) on jobDef - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'US', y: 425, color: '#00006B'} , {name: 'DE', y: 236, color: '#000000'} , {name: 'CERN', y: 2, color: '#AE3C51'} , {name: 'TW', y: 1, color: '#89000F'} ];
+		chart21 = new Highcharts.Chart(options);
 		
-		options.chart.renderTo = "container7";
-		options.title.text = "Cloud Analy of Category E - Seasonly";
-		options.series[0].data = [   {name: 'UK', y: 640, color: '#356C20'} , {name: 'FR', y: 466, color: '#0055A5'} , {name: 'NL', y: 411, color: '#D97529'} , {name: 'DE', y: 342, color: '#000000'} , {name: 'CERN', y: 298, color: '#AE3C51'} , {name: 'ES', y: 219, color: '#EDBF00'} , {name: 'US', y: 214, color: '#00006B'} , {name: 'CA', y: 65, color: '#FF1F1F'} , {name: 'IT', y: 60, color: '#009246'} , {name: 'ND', y: 45, color: '#6298FF'} , {name: 'TW', y: 22, color: '#89000F'} ];
-		chart7 = new Highcharts.Chart(options);
+		options.chart.renderTo = "container22";
+		options.title.text = "Category A (User selected a site) on jobSet - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'US', y: 425, color: '#00006B'} , {name: 'DE', y: 236, color: '#000000'} , {name: 'CERN', y: 2, color: '#AE3C51'} , {name: 'TW', y: 1, color: '#89000F'} ];
+		chart22 = new Highcharts.Chart(options);
+				
+	    options.chart.renderTo = "container30";
+		options.title.text = "Category B (User selected a cloud) on Jobs - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'IT (IT)', y: 52, color: '#009246'} ];
+		chart30 = new Highcharts.Chart(options);
 		
+		options.chart.renderTo = "container31";
+		options.title.text = "Category A (User selected a site) on jobDef - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'IT (IT)', y: 43, color: '#009246'} ];
+		chart31 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container32";
+		options.title.text = "Category B (User selected a cloud) on jobSet - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'IT (IT)', y: 43, color: '#009246'} ];
+		chart32 = new Highcharts.Chart(options);
+				
+	    options.chart.renderTo = "container40";
+		options.title.text = "Category B (User selected a cloud) on Jobs - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'IT', y: 52, color: '#009246'} ];
+		chart40 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container41";
+		options.title.text = "Category B (User selected a cloud) on jobDef - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'IT', y: 43, color: '#009246'} ];
+		chart41 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container42";
+		options.title.text = "Category B (User selected a cloud) on jobSet - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'IT', y: 43, color: '#009246'} ];
+		chart42 = new Highcharts.Chart(options);
+				
+	    options.chart.renderTo = "container50";
+		options.title.text = "Category C (Panda decides destination) on Jobs - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 16948, color: '#00006B'} , {name: 'INFN-T1 (IT)', y: 9865, color: '#009246'} , {name: 'IN2P3-CC-T2 (FR)', y: 9452, color: '#0055A5'} , {name: 'NDGF-T1 (ND)', y: 7709, color: '#6298FF'} , {name: 'MWT2_UC (US)', y: 7224, color: '#00006B'} , {name: 'SARA-MATRIX (NL)', y: 6843, color: '#D97529'} , {name: 'DESY-HH (DE)', y: 5984, color: '#000000'} , {name: 'RAL-LCG2 (UK)', y: 5911, color: '#356C20'} , {name: 'IN2P3-CC (FR)', y: 5526, color: '#0055A5'} , {name: 'NIKHEF-ELPROD (NL)', y: 5138, color: '#D97529'} , {name: 'DESY-ZN (DE)', y: 4482, color: '#000000'} , {name: 'UKI-LT2-RHUL (UK)', y: 4376, color: '#356C20'} , {name: 'UKI-LT2-QMUL (UK)', y: 3720, color: '#356C20'} , {name: 'BU_ATLAS_Tier2 (US)', y: 2961, color: '#00006B'} , {name: 'INFN-ROMA1 (IT)', y: 2854, color: '#009246'} , {name: 'UKI-NORTHGRID-SHEF-HEP (UK)', y: 2362, color: '#356C20'} , {name: 'INFN-MILANO-ATLASC (IT)', y: 2321, color: '#009246'} , {name: 'IFIC-LCG2 (ES)', y: 2283, color: '#EDBF00'} , {name: 'LRZ-LMU (DE)', y: 2261, color: '#000000'} , {name: 'AGLT2 (US)', y: 2188, color: '#00006B'} , {name: 'others', y: 32341, color: '#CCCCCC'} ];
+		chart50 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container51";
+		options.title.text = "Category C (Panda decides destination) on jobDef - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'DESY-HH (DE)', y: 271, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 204, color: '#00006B'} , {name: 'NIKHEF-ELPROD (NL)', y: 203, color: '#D97529'} , {name: 'MWT2_UC (US)', y: 195, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 194, color: '#000000'} , {name: 'INFN-ROMA1 (IT)', y: 133, color: '#009246'} , {name: 'NDGF-T1 (ND)', y: 129, color: '#6298FF'} , {name: 'BU_ATLAS_Tier2 (US)', y: 128, color: '#00006B'} , {name: 'LRZ-LMU (DE)', y: 121, color: '#000000'} , {name: 'IN2P3-CC (FR)', y: 109, color: '#0055A5'} , {name: 'AGLT2 (US)', y: 106, color: '#00006B'} , {name: 'IN2P3-CC-T2 (FR)', y: 106, color: '#0055A5'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 92, color: '#009246'} , {name: 'UKI-LT2-RHUL (UK)', y: 88, color: '#356C20'} , {name: 'UKI-LT2-QMUL (UK)', y: 80, color: '#356C20'} , {name: 'wuppertalprod (DE)', y: 69, color: '#000000'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 68, color: '#356C20'} , {name: 'IN2P3-LAPP (FR)', y: 64, color: '#0055A5'} , {name: 'CYFRONET-LCG2 (DE)', y: 61, color: '#000000'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 61, color: '#356C20'} , {name: 'others', y: 1234, color: '#CCCCCC'} ];
+		chart51 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container52";
+		options.title.text = "Category C (Panda decides destination) on jobSet - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'DESY-HH (DE)', y: 271, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 204, color: '#00006B'} , {name: 'NIKHEF-ELPROD (NL)', y: 203, color: '#D97529'} , {name: 'MWT2_UC (US)', y: 195, color: '#00006B'} , {name: 'DESY-ZN (DE)', y: 194, color: '#000000'} , {name: 'INFN-ROMA1 (IT)', y: 133, color: '#009246'} , {name: 'NDGF-T1 (ND)', y: 129, color: '#6298FF'} , {name: 'BU_ATLAS_Tier2 (US)', y: 128, color: '#00006B'} , {name: 'LRZ-LMU (DE)', y: 121, color: '#000000'} , {name: 'IN2P3-CC (FR)', y: 109, color: '#0055A5'} , {name: 'IN2P3-CC-T2 (FR)', y: 106, color: '#0055A5'} , {name: 'AGLT2 (US)', y: 106, color: '#00006B'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 92, color: '#009246'} , {name: 'UKI-LT2-RHUL (UK)', y: 88, color: '#356C20'} , {name: 'UKI-LT2-QMUL (UK)', y: 80, color: '#356C20'} , {name: 'wuppertalprod (DE)', y: 69, color: '#000000'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 68, color: '#356C20'} , {name: 'IN2P3-LAPP (FR)', y: 64, color: '#0055A5'} , {name: 'IFIC-LCG2 (ES)', y: 61, color: '#EDBF00'} , {name: 'CYFRONET-LCG2 (DE)', y: 61, color: '#000000'} , {name: 'others', y: 1234, color: '#CCCCCC'} ];
+		chart52 = new Highcharts.Chart(options);
+				
+	    options.chart.renderTo = "container60";
+		options.title.text = "Category C (Panda decides destination) on Jobs - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'US', y: 32237, color: '#00006B'} , {name: 'FR', y: 21786, color: '#0055A5'} , {name: 'UK', y: 21511, color: '#356C20'} , {name: 'DE', y: 20250, color: '#000000'} , {name: 'IT', y: 15969, color: '#009246'} , {name: 'NL', y: 14229, color: '#D97529'} , {name: 'ND', y: 7709, color: '#6298FF'} , {name: 'CA', y: 3614, color: '#FF1F1F'} , {name: 'ES', y: 2850, color: '#EDBF00'} , {name: 'CERN', y: 1992, color: '#AE3C51'} , {name: 'TW', y: 602, color: '#89000F'} ];
+		chart60 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container61";
+		options.title.text = "Category C (Panda decides destination) on jobDef - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'DE', y: 855, color: '#000000'} , {name: 'US', y: 786, color: '#00006B'} , {name: 'UK', y: 531, color: '#356C20'} , {name: 'FR', y: 511, color: '#0055A5'} , {name: 'IT', y: 312, color: '#009246'} , {name: 'NL', y: 277, color: '#D97529'} , {name: 'CA', y: 180, color: '#FF1F1F'} , {name: 'ND', y: 129, color: '#6298FF'} , {name: 'ES', y: 84, color: '#EDBF00'} , {name: 'CERN', y: 32, color: '#AE3C51'} , {name: 'TW', y: 19, color: '#89000F'} ];
+		chart61 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container62";
+		options.title.text = "Category C (Panda decides destination) on jobSet - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'DE', y: 808, color: '#000000'} , {name: 'US', y: 730, color: '#00006B'} , {name: 'FR', y: 483, color: '#0055A5'} , {name: 'UK', y: 474, color: '#356C20'} , {name: 'IT', y: 301, color: '#009246'} , {name: 'NL', y: 273, color: '#D97529'} , {name: 'CA', y: 171, color: '#FF1F1F'} , {name: 'ND', y: 129, color: '#6298FF'} , {name: 'ES', y: 80, color: '#EDBF00'} , {name: 'CERN', y: 32, color: '#AE3C51'} , {name: 'TW', y: 19, color: '#89000F'} ];
+		chart62 = new Highcharts.Chart(options);
+				
+		options.chart.renderTo = "container70";
+		options.title.text = "Category E (User excluded a site) on jobSet - Excluded / Non-Excluded - Seasonly";
+		options.series[0].data = [ ['Excluded', 1160 ],['Non-Excluded', 2601] ];
+		chart70 = new Highcharts.Chart(options);
+				
+		options.chart.renderTo = "container80";
+		options.title.text = "Category E (User excluded a site) on jobSet - Top 20 Sites - Seasonly";
+		options.series[0].data = [   {name: 'GRIF-LPNHE (FR)', y: 470, color: '#0055A5'} , {name: 'NIKHEF-ELPROD (NL)', y: 391, color: '#D97529'} , {name: 'CERN-PROD (CERN)', y: 386, color: '#AE3C51'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 351, color: '#356C20'} , {name: 'pic (ES)', y: 275, color: '#EDBF00'} , {name: 'GoeGrid (DE)', y: 233, color: '#000000'} , {name: 'wuppertalprod (DE)', y: 171, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 160, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 140, color: '#6298FF'} , {name: 'MWT2_UC (US)', y: 127, color: '#00006B'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 100, color: '#356C20'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 86, color: '#356C20'} , {name: 'RAL-LCG2 (UK)', y: 81, color: '#356C20'} , {name: 'UKI-LT2-RHUL (UK)', y: 78, color: '#356C20'} , {name: 'CYFRONET-LCG2 (DE)', y: 64, color: '#000000'} , {name: 'UKI-SCOTGRID-ECDF (UK)', y: 60, color: '#356C20'} , {name: 'INFN-T1 (IT)', y: 60, color: '#009246'} , {name: 'SARA-MATRIX (NL)', y: 59, color: '#D97529'} , {name: 'UNI-FREIBURG (DE)', y: 57, color: '#000000'} , {name: 'RU-Protvino-IHEP (NL)', y: 56, color: '#D97529'} , {name: 'others', y: 641, color: '#CCCCCC'} ];
+		chart80 = new Highcharts.Chart(options);
+				
+		options.chart.renderTo = "container90";
+		options.title.text = "Category E (User excluded a site) on jobSet - Per Cloud - Seasonly";
+		options.series[0].data = [   {name: 'FR', y: 517, color: '#0055A5'} , {name: 'UK', y: 495, color: '#356C20'} , {name: 'NL', y: 478, color: '#D97529'} , {name: 'DE', y: 423, color: '#000000'} , {name: 'CERN', y: 386, color: '#AE3C51'} , {name: 'ES', y: 275, color: '#EDBF00'} , {name: 'US', y: 197, color: '#00006B'} , {name: 'ND', y: 140, color: '#6298FF'} , {name: 'CA', y: 70, color: '#FF1F1F'} , {name: 'IT', y: 61, color: '#009246'} , {name: 'TW', y: 56, color: '#89000F'} ];
+		chart90 = new Highcharts.Chart(options);
+				
+		options.chart.renderTo = "container100";
+		options.title.text = "Country on Jobs - Seasonly";
+		options.series[0].data = [   ['None', 76582] , ['us', 24487] , ['fr', 14712] , ['de', 10043] , ['ca', 7518] , ['jp', 7425] , ['it', 3122] , ['pl', 1922] , ['au', 1813] , ['uk', 1676] , ['es', 386] , ['se', 145] , ['cn', 71] , ['tw', 58] , ['sk', 35] , ['ch', 11] , ['ru', 4] ];
+		chart100 = new Highcharts.Chart(options);
+				
+		options.chart.renderTo = "container101";
+		options.title.text = "Country on jobDef - Seasonly";
+		options.series[0].data = [   ['None', 1405] , ['jp', 1051] , ['fr', 796] , ['us', 448] , ['de', 409] , ['it', 79] , ['uk', 71] , ['ca', 55] , ['au', 27] , ['es', 18] , ['se', 16] , ['pl', 15] , ['ch', 11] , ['sk', 9] , ['cn', 9] , ['tw', 3] , ['ru', 1] ];
+		chart101 = new Highcharts.Chart(options);
+				
+		options.chart.renderTo = "container102";
+		options.title.text = "Country on jobSet - Seasonly";
+		options.series[0].data = [   ['None', 1249] , ['jp', 994] , ['fr', 686] , ['us', 374] , ['de', 303] , ['uk', 56] , ['it', 52] , ['ca', 42] , ['au', 25] , ['se', 16] , ['ch', 11] , ['sk', 9] , ['pl', 6] , ['cn', 5] , ['es', 4] , ['tw', 2] , ['ru', 1] ];
+		chart102 = new Highcharts.Chart(options);
+				
 	});
 </script>
 </head>
 <body>
 <a href='index.html'>[Back]</a>
-<div id='container1' style='width:100%; height:480px;'>
+<div id='container00' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
-<div id='container2' style='width:100%; height:480px;'>
+<div id='container01' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
-<div id='container3' style='width:100%; height:480px;'>
+<div id='container02' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
-<div id='container4' style='width:100%; height:480px;'>
+<div id='container10' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
-<div id='container5' style='width:100%; height:480px;'>
+<div id='container11' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
-<div id='container6' style='width:100%; height:480px;'>
+<div id='container12' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
-<div id='container7' style='width:100%; height:480px;'>
+<div id='container20' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container21' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container22' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container30' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container31' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container32' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container40' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container41' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container42' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container50' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container51' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container52' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container60' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container61' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container62' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container70' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container80' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container90' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container100' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container101' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container102' style='width:100%; height:480px;'>
 </div>
 <a href='index.html'>[Back]</a>
 </body>
