@@ -223,6 +223,8 @@ def parse_document(document):
                 message_jobset = tmp_job[0].split('=')[1].strip()
             if is_this_category(tmp_job[0],'jobdef'):
                 message_jobdef = tmp_job[0].split('=')[1].strip()
+        if message_jobset=='no.jobset' or message_jobdef=='no.jobdef':
+            print "Error: %s %s %s %s %s %s"%(message_date,message_time,message_dn,message_jobset,message_jobdef,tmp_message[2])
         ###print;print;print
         #print u'DEBUG: date time=', message_date, message_time
         #print u'DEBUG: dn=', message_dn
@@ -319,33 +321,7 @@ def parse_document(document):
             if not records[reckey].has_key('nJobs'):
                 records[reckey]['nJobs'] = "1"
                 records[reckey]['country'] = '--'
-        """      
-        ## append to records it belong to
-        if message_category in ['A','B','C','E']:
-            logDate = str("%s-%s"%(log_year, message_date))
-            rec_idx = None
-            site_name,cloud = get_sitecloud_name(dic,message_site)
-            dailyLogId = db.is_exist_item(logDate, message_category, site_name, message_dn)
-            if dailyLogId is None:
-                rec_idx = is_in_buf(records, logDate, message_category, site_name, message_dn)
-                
-            if dailyLogId is not None:
-                exist_records.append([dailyLogId])
-            elif rec_idx is not None:
-                record = (logDate, message_category, site_name, message_dn)
-                in_buf_records.append(record)
-            else:
-                maxId += 1
-                count = 1               
-                record = (maxId, logDate, message_category, site_name, \
-                  cloud, message_dn, count)
-                records.append(record)
-        
-        if DEBUG==1:
-            print "========="
-            print "DEBUG:",message_category,": ",row
-            print "========="
-    """
+
     eff_records = []
     exist_records = []
     in_buf_records = []

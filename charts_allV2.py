@@ -94,7 +94,7 @@ CHARTS = [
              "select cloud, count(distinct jobSet) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"]
           ],
           [
-            ["Category E (User excluded a site) on jobSet - Excluded / Non-Excluded - %s",
+            ["Category E (User excluded a site) on distinct jobSet - Excluded / Non-Excluded - %s",
              "select count(distinct jobSet) nums from %s where category='E' and logDate > '%s'",
              "select count(distinct jobSet) nums from %s where category!='E' and logDate > '%s' and jobSet not in (select distinct jobSet from %s where category='E' and logDate > '%s')"]
           ],
