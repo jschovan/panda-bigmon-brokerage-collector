@@ -107,11 +107,11 @@ CHARTS = [
              "select cloud, count(distinct jobSet) nums from %s where category='E' and logDate > '%s' group by cloud order by nums DESC"]
           ],
           [
-            ["Country on Jobs - %s",
+            ["Jobs submitted by Country - %s",
              "select country, sum(jobCount) nums from %s where category in ('A','B','C') and logDate > '%s' group by country order by nums DESC"],
-            ["Country on jobDef - %s",
+            ["jobDef submitted by Country - %s",
              "select country, sum(jobdefCount) nums from %s where category in ('A','B','C') and logDate > '%s' group by country order by nums DESC"],
-            ["Country on jobSet - %s",
+            ["jobSet submitted by Country - %s",
              "select country, count(distinct jobSet) nums from %s where category in ('A','B','C') and logDate > '%s' group by country order by nums DESC"]
           ]
           ]

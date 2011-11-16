@@ -120,9 +120,6 @@ def parse_document(document):
     data = fjson.read()
     records = json.loads(data)
     fjson.close()
-    """
-    print "DEBUG:",unrecords
-    """
     
     # records = {}
     ex_records = {}
@@ -139,6 +136,9 @@ def parse_document(document):
         maxId = 0
     processed_rows = 0
     
+    error_skip =0
+    ferror = open("last_errors.txt",'w')
+
     for row_counter in xrange(len(rows)):
         record = ()
         ex_rec = ()
@@ -208,10 +208,7 @@ def parse_document(document):
         # Break when reach the last_time
         if (last_time is not None) and (this_time <= last_time):
             break
-               
-        # print 'Debug:',message_date,message_time,row_counter,cell_message
-        processed_rows += 1
-        
+                       
         tmp_message = str(cell_message.replace('&nbsp;', ' ')).split(' : ')
         message_dn = tmp_message[0].split('=')[1].replace("\\\'","").strip().replace(' ','_')
         tmp_job = tmp_message[1].split(' ')
@@ -224,14 +221,11 @@ def parse_document(document):
             if is_this_category(tmp_job[0],'jobdef'):
                 message_jobdef = tmp_job[0].split('=')[1].strip()
         if message_jobset=='no.jobset' or message_jobdef=='no.jobdef':
-            print "Error: %s %s %s %s %s %s"%(message_date,message_time,message_dn,message_jobset,message_jobdef,tmp_message[2])
-        ###print;print;print
-        #print u'DEBUG: date time=', message_date, message_time
-        #print u'DEBUG: dn=', message_dn
-        #print u'DEBUG: jobset=', message_jobset
-        #print u'DEBUG: jobdef=', message_jobdef
-        #print u'DEBUG: ln113: tmp_message[1]=', tmp_message[1]
-        #print u'DEBUG: ln113: tmp_message[2]=', tmp_message[2]
+            error_skip += 1
+            ferror.write("Error: %s %s %s %s %s\n"%(message_date,message_time,message_dn,tmp_message[1],tmp_message[2]))
+            continue
+
+        processed_rows += 1
         
         ## skip
         if is_this_category(cell_message, ' action=skip '):
@@ -321,6 +315,8 @@ def parse_document(document):
             if not records[reckey].has_key('nJobs'):
                 records[reckey]['nJobs'] = "1"
                 records[reckey]['country'] = '--'
+    
+    ferror.close()
 
     eff_records = []
     exist_records = []
@@ -351,6 +347,7 @@ def parse_document(document):
         dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
         
         if country == '--':
+            lost_nJobs += int(nJobs)
             json_string = "%s\"%s\":%s\n"%(jcom,rec,json.dumps(records[rec]))
             fjson.write(json_string)
             jcom = ","
@@ -399,28 +396,18 @@ def parse_document(document):
             record = (maxId, logDate, jobSet, category, site_name, cloud, dnUser, '1', nJobs, country)
             eff_records.append(record)
 
-    db.set_last_updated_time(set_last) # set when all done.
     if (this_time is not None) and not (this_time <= last_time):
         print "Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
-    """
-    print "=== Effective ==="
-    for rec in eff_records:
-        print rec
-    print "=== Exist ==="
-    for rec in exist_records:
-        print rec
-    print "=== In Buffer ==="
-    for rec in in_buf_records:
-        print rec
-    """
+    if error_skip > 0:
+        print "WARNING: Missing jobSet/jobDef skiped = %d"%error_skip
 
-    return (processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
+    return (set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
 
 def run():
     #t1 = time.time()
     document = get_document()
     t2 = time.time()
-    processed_rows,sum_nJobs,lost_nJobs,eff_records,exist_records,in_buf_records = parse_document(document)
+    set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records,exist_records,in_buf_records = parse_document(document)
     t3 = time.time()
 
     db.add_logs(eff_records)
@@ -428,15 +415,16 @@ def run():
     db.increase_buf_count(in_buf_records)
 
     #t4 = time.time()
+    db.set_last_updated_time(set_last) # set when all done.
     
     #time_get = t2-t1
     time_parse = t3-t2
     #time_db = t4-t3
     
     logs_count = len(eff_records)+len(exist_records)+len(in_buf_records)
-    last_time = db.get_last_updated_time()
+    #last_time = db.get_last_updated_time()
     
-    print u'INFOR: %s Limit: %d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(last_time,QUERY_LIMIT,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
+    print u'INFOR: %s Limit: %d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
     
 if __name__ == "__main__":
     

@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Panda Brokerage Monitor V2</title>
-<meta http-equiv='refresh' content='300'>
+<meta http-equiv='refresh' content='180'>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
 <script type='text/javascript' src='js/highcharts.js'></script>
@@ -97,6 +97,10 @@
 			},
 			rangeSelector: {
 				buttons: [{
+					type: 'minute',
+					count: 240,
+					text: '4h'
+				},{
 					type: 'day',
 					count: 1,
 					text: '1d'
@@ -155,6 +159,10 @@
 			},
 			rangeSelector: {
 				buttons: [{
+					type: 'minute',
+					count: 240,
+					text: '4h'
+				},{
 					type: 'day',
 					count: 1,
 					text: '1d'
@@ -213,6 +221,10 @@
 			},
 			rangeSelector: {
 				buttons: [{
+					type: 'minute',
+					count: 240,
+					text: '4h'
+				},{
 					type: 'day',
 					count: 1,
 					text: '1d'
@@ -290,14 +302,14 @@
 <div id='container' style='width:100%; height:300px;'>
 </div>
 <hr><br>
+<div id='container1' style='width:100%; height:250px;'>
+</div>
+<hr><br>
 <div id='container2' style='width:100%; height:250px;'>
 </div>
 <hr><br>
 <div id='container3' style='width:100%; height:250px;'>
 </div>
 <hr><br>
-<div id='container1' style='width:100%; height:250px;'>
-</div>
-<hr>
 </body>
 </html>
