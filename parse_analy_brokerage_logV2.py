@@ -137,7 +137,7 @@ def parse_document(document):
     processed_rows = 0
     
     error_skip =0
-    ferror = open("last_errors.txt",'w')
+    ferror = open("last_errors.txt",'a')
 
     for row_counter in xrange(len(rows)):
         record = ()
