@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+         data.addColumn('string','Excluded?');
+ data.addColumn('number','excluded');
+ data.addColumn('number','nonexcluded');
+
+		data.addRows(1)
+ data.setCell(0,0,'Yes/No');
+ data.setCell(0,1,14664);
+ data.setCell(0,2,25855);
+
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+  </head>
+
+  <body>
+    Title: E_Weekly<br>
+    Last Updated: 2011-11-18 13:24<br>
+    Json file: <a href="E_Weekly.json">E_Weekly.json</a><br>
+    <div id='table_div'></div>
+  </body>
+</html>
+

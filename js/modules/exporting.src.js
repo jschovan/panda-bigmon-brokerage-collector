@@ -1,5 +1,5 @@
 /**
- * @license Highstock JS v1.0.1 (2011-10-25)
+ * @license Highcharts JS v2.1.9 (2011-11-11)
  * Exporting module
  *
  * (c) 2010-2011 Torstein Hønsi
@@ -16,6 +16,7 @@
 var HC = Highcharts,
 	Chart = HC.Chart,
 	addEvent = HC.addEvent,
+	removeEvent = HC.removeEvent,
 	createElement = HC.createElement,
 	discardElement = HC.discardElement,
 	css = HC.css,
@@ -104,6 +105,7 @@ defaultOptions.exporting = {
 	type: 'image/png',
 	url: 'http://export.highcharts.com/',
 	width: 800,
+	enableImages: false,
 	buttons: {
 		exportButton: {
 			//enabled: true,
@@ -139,21 +141,16 @@ defaultOptions.exporting = {
 						type: 'image/svg+xml'
 					});
 				}
-			}
-			// Enable this block to add "View SVG" to the dropdown menu
-			/*
-			,{
-
+			}/*, {
 				text: 'View SVG',
-				onclick: function () {
+				onclick: function() {
 					var svg = this.getSVG()
 						.replace(/</g, '\n&lt;')
 						.replace(/>/g, '&gt;');
 
-					doc.body.innerHTML = '<pre>' + svg + '</pre>';
+					doc.body.innerHTML = '<pre>'+ svg +'</pre>';
 				}
-			} // */
-			]
+			}*/]
 
 		},
 		printButton: {
@@ -185,6 +182,9 @@ extend(Chart.prototype, {
 			sandbox,
 			svg,
 			seriesOptions,
+			config,
+			pointOptions,
+			pointMarker,
 			options = merge(chart.options, additionalOptions); // copy the options and add extra options
 
 		// IE compatibility hack for generating SVG content that it doesn't really understand
@@ -214,26 +214,56 @@ extend(Chart.prototype, {
 			forExport: true
 		});
 		options.exporting.enabled = false; // hide buttons in print
-		options.chart.plotBackgroundImage = null; // the converter doesn't handle images
+
+		if (!options.exporting.enableImages) {
+			options.chart.plotBackgroundImage = null; // the converter doesn't handle images
+		}
 
 		// prepare for replicating the chart
 		options.series = [];
 		each(chart.series, function (serie) {
-			seriesOptions = merge(serie.options, {
-				animation: false, // turn off animation
-				showCheckbox: false,
-				visible: serie.visible
-			});
-	
-			if (!seriesOptions.isInternal) { // used for the navigator series that has its own option set
-			
+			seriesOptions = serie.options;
+
+			seriesOptions.animation = false; // turn off animation
+			seriesOptions.showCheckbox = false;
+			seriesOptions.visible = serie.visible;
+
+			if (!options.exporting.enableImages) {
 				// remove image markers
 				if (seriesOptions && seriesOptions.marker && /^url\(/.test(seriesOptions.marker.symbol)) {
 					seriesOptions.marker.symbol = 'circle';
 				}
-	
-				options.series.push(seriesOptions);
 			}
+
+			seriesOptions.data = [];
+
+			each(serie.data, function (point) {
+
+				// extend the options by those values that can be expressed in a number or array config
+				config = point.config;
+				pointOptions = {
+					x: point.x,
+					y: point.y,
+					name: point.name
+				};
+
+				if (typeof config === 'object' && point.config && config.constructor !== Array) {
+					extend(pointOptions, config);
+				}
+
+				pointOptions.visible = point.visible;
+				seriesOptions.data.push(pointOptions); // copy fresh updated data
+
+				if (!options.exporting.enableImages) {
+					// remove image markers
+					pointMarker = point.config && point.config.marker;
+					if (pointMarker && /^url\(/.test(pointMarker.symbol)) {
+						delete pointMarker.symbol;
+					}
+				}
+			});
+
+			options.series.push(seriesOptions);
 		});
 
 		// generate the chart copy
@@ -269,9 +299,9 @@ extend(Chart.prototype, {
 			.replace(/jQuery[0-9]+="[^"]+"/g, '')
 			.replace(/isTracker="[^"]+"/g, '')
 			.replace(/url\([^#]+#/g, 'url(#')
-			/*.replace(/<svg /, '<svg xmlns:xlink="http://www.w3.org/1999/xlink" ')
-			.replace(/ href=/, ' xlink:href=')
-			.replace(/preserveAspectRatio="none">/g, 'preserveAspectRatio="none"/>')*/
+			.replace(/<svg /, '<svg xmlns:xlink="http://www.w3.org/1999/xlink" ')
+			.replace(/ href=/g, ' xlink:href=')
+			/*.replace(/preserveAspectRatio="none">/g, 'preserveAspectRatio="none"/>')*/
 			/* This fails in IE < 8
 			.replace(/([0-9]+)\.([0-9]+)/g, function(s1, s2, s3) { // round off to save weight
 				return s2 +'.'+ s3[0];
@@ -286,6 +316,12 @@ extend(Chart.prototype, {
 			.replace(/class=([^" ]+)/g, 'class="$1"')
 			.replace(/ transform /g, ' ')
 			.replace(/:(path|rect)/g, '$1')
+			.replace(/<img ([^>]*)>/gi, '<image $1 />')
+			.replace(/<\/image>/g, '') // remove closing tags for images as they'll never have any content
+			.replace(/<image ([^>]*)([^\/])>/gi, '<image $1$2 />') // closes image tags for firefox
+			.replace(/width=(\d+)/g, 'width="$1"')
+			.replace(/height=(\d+)/g, 'height="$1"')
+			.replace(/hc-svg-href="/g, 'xlink:href="')
 			.replace(/style="([^"]+)"/g, function (s) {
 				return s.toLowerCase();
 			});
@@ -464,8 +500,13 @@ extend(Chart.prototype, {
 						item.onclick.apply(chart, arguments);
 					};
 
+					// Keep references to menu divs to be able to destroy them
+					chart.exportDivElements.push(div);
 				}
 			});
+
+			// Keep references to menu and innerMenu div to be able to destroy them
+			chart.exportDivElements.push(innerMenu, menu);
 
 			chart.exportMenuWidth = menu.offsetWidth;
 			chart.exportMenuHeight = menu.offsetHeight;
@@ -498,6 +539,9 @@ extend(Chart.prototype, {
 			btnOptions = merge(chart.options.navigation.buttonOptions, options),
 			onclick = btnOptions.onclick,
 			menuItems = btnOptions.menuItems,
+			/*position = chart.getAlignment(btnOptions),
+			buttonLeft = position.x,
+			buttonTop = position.y,*/
 			buttonWidth = btnOptions.width,
 			buttonHeight = btnOptions.height,
 			box,
@@ -512,6 +556,12 @@ extend(Chart.prototype, {
 				stroke: btnOptions.symbolStroke,
 				fill: btnOptions.symbolFill
 			};
+
+		// Keeps references to the button elements
+		if (!chart.exportDivElements) {
+			chart.exportDivElements = [];
+			chart.exportSVGElements = [];
+		}
 
 		if (btnOptions.enabled === false) {
 			return;
@@ -570,6 +620,8 @@ extend(Chart.prototype, {
 			.on('click', revert)
 			.add();
 
+		//addEvent(button.element, 'click', revert);
+
 		// add the click event
 		if (menuItems) {
 			onclick = function () {
@@ -598,8 +650,39 @@ extend(Chart.prototype, {
 				zIndex: 20
 			})).add();
 
+		// Keep references to the renderer element so to be able to destroy them later.
+		chart.exportSVGElements.push(box, button, symbol);
+	},
 
+	/**
+	 * Destroy the buttons.
+	 */
+	destroyExport: function () {
+		var i,
+			chart = this,
+			elem;
 
+		// Destroy the extra buttons added
+		for (i = 0; i < chart.exportSVGElements.length; i++) {
+			elem = chart.exportSVGElements[i];
+			// Destroy and null the svg/vml elements
+			elem.onclick = elem.ontouchstart = null;
+			chart.exportSVGElements[i] = elem.destroy();
+		}
+
+		// Destroy the divs for the menu
+		for (i = 0; i < chart.exportDivElements.length; i++) {
+			elem = chart.exportDivElements[i];
+
+			// Remove the event handler
+			removeEvent(elem, 'mouseleave');
+
+			// Remove inline events
+			chart.exportDivElements[i] = elem.onmouseout = elem.onmouseover = elem.ontouchstart = elem.onclick = null;
+
+			// Destroy the div by moving to garbage bin
+			discardElement(elem);
+		}
 	}
 });
 
@@ -664,7 +747,11 @@ Chart.prototype.callbacks.push(function (chart) {
 		for (n in buttons) {
 			chart.addButton(buttons[n]);
 		}
+
+		// Destroy the export elements at chart destroy
+		addEvent(chart, 'destroy', chart.destroyExport);
 	}
+
 });
 
 

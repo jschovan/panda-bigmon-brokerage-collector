@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+         data.addColumn('string','Cloud');
+ data.addColumn('number','JobSet');
+ data.addColumn('number','DnUser');
+
+		data.addRows(11)
+ data.setCell(0,0,'FR');
+ data.setCell(0,1,7236);
+ data.setCell(0,2,87);
+ data.setCell(1,0,'NL');
+ data.setCell(1,1,5500);
+ data.setCell(1,2,69);
+ data.setCell(2,0,'CERN');
+ data.setCell(2,1,5965);
+ data.setCell(2,2,46);
+ data.setCell(3,0,'TW');
+ data.setCell(3,1,1593);
+ data.setCell(3,2,20);
+ data.setCell(4,0,'CA');
+ data.setCell(4,1,3181);
+ data.setCell(4,2,50);
+ data.setCell(5,0,'DE');
+ data.setCell(5,1,7470);
+ data.setCell(5,2,94);
+ data.setCell(6,0,'ND');
+ data.setCell(6,1,3258);
+ data.setCell(6,2,55);
+ data.setCell(7,0,'IT');
+ data.setCell(7,1,3876);
+ data.setCell(7,2,47);
+ data.setCell(8,0,'US');
+ data.setCell(8,1,5027);
+ data.setCell(8,2,97);
+ data.setCell(9,0,'UK');
+ data.setCell(9,1,7012);
+ data.setCell(9,2,99);
+ data.setCell(10,0,'ES');
+ data.setCell(10,1,2422);
+ data.setCell(10,2,27);
+
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+  </head>
+
+  <body>
+    Title: ECloud_Seasonly<br>
+    Last Updated: 2011-11-18 13:24<br>
+    Json file: <a href="ECloud_Seasonly.json">ECloud_Seasonly.json</a><br>
+    <div id='table_div'></div>
+  </body>
+</html>
+

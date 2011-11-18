@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        #ADDCOLUMNS#
+		#SETCELLS#
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+  </head>
+
+  <body>
+    Title: #TITLE#<br>
+    Last Updated: #LAST_UPDATED#<br>
+    Json file: <a href="#JSONFILE#">#JSONFILE#</a><br>
+    <div id='table_div'></div>
+  </body>
+</html>

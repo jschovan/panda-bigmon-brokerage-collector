@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+         data.addColumn('string','Category');
+ data.addColumn('number','Jobs');
+ data.addColumn('number','JobDef');
+ data.addColumn('number','JobSet');
+
+		data.addRows(3)
+ data.setCell(0,0,'A');
+ data.setCell(0,1,75178);
+ data.setCell(0,2,10254);
+ data.setCell(0,3,10168);
+ data.setCell(1,0,'C');
+ data.setCell(1,1,1496540);
+ data.setCell(1,2,59462);
+ data.setCell(1,3,35026);
+ data.setCell(2,0,'B');
+ data.setCell(2,1,2085);
+ data.setCell(2,2,310);
+ data.setCell(2,3,303);
+
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+  </head>
+
+  <body>
+    Title: ABC_Monthly<br>
+    Last Updated: 2011-11-18 13:24<br>
+    Json file: <a href="ABC_Monthly.json">ABC_Monthly.json</a><br>
+    <div id='table_div'></div>
+  </body>
+</html>
+

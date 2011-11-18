@@ -1,11 +1,16 @@
 /**
- * @license Highstock JS v1.0.1 (2011-10-25)
+ * @license Highcharts JS v2.1.9 (2011-11-11)
  * Prototype adapter
  *
  * @author Michael Nelson, Torstein Hønsi.
  *
  * Feel free to use and modify this script.
  * Highcharts license: www.highcharts.com/license.
+ */
+
+/*
+ * Known issues:
+ *    - Some grid lines land in wrong position - http://jsfiddle.net/highcharts/jaRhY/28
  */
 
 // JSLint options:

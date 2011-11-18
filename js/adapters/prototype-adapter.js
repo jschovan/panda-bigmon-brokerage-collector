@@ -1,5 +1,5 @@
 /*
- Highstock JS v1.0.1 (2011-10-25)
+ Highcharts JS v2.1.9 (2011-11-11)
  Prototype adapter
 
  @author Michael Nelson, Torstein H?nsi.

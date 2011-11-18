@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+         data.addColumn('string','Site');
+ data.addColumn('number','Jobs');
+ data.addColumn('number','JobDef');
+ data.addColumn('number','JobSet');
+
+		data.addRows(5)
+ data.setCell(0,0,'CERN');
+ data.setCell(0,1,1);
+ data.setCell(0,2,1);
+ data.setCell(0,3,1);
+ data.setCell(1,0,'FR');
+ data.setCell(1,1,378);
+ data.setCell(1,2,1);
+ data.setCell(1,3,1);
+ data.setCell(2,0,'DE');
+ data.setCell(2,1,68);
+ data.setCell(2,2,2);
+ data.setCell(2,3,2);
+ data.setCell(3,0,'IT');
+ data.setCell(3,1,785);
+ data.setCell(3,2,284);
+ data.setCell(3,3,278);
+ data.setCell(4,0,'US');
+ data.setCell(4,1,853);
+ data.setCell(4,2,22);
+ data.setCell(4,3,21);
+
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+  </head>
+
+  <body>
+    Title: BSite_Seasonly<br>
+    Last Updated: 2011-11-18 13:24<br>
+    Json file: <a href="BSite_Seasonly.json">BSite_Seasonly.json</a><br>
+    <div id='table_div'></div>
+  </body>
+</html>
+

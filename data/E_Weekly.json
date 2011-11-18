@@ -1,0 +1,1 @@
+{"lastUpdate": "2011-11-18 13:24", "data": {"Yes/No": {"nonexcluded": 25855, "excluded": 14664}}, "columns": {"field2": {"type": "number", "name": "nonexcluded"}, "field0": {"type": "string", "name": "Excluded?"}, "field1": {"type": "number", "name": "excluded"}}}

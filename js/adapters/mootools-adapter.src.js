@@ -1,5 +1,5 @@
 /**
- * @license Highstock JS v1.0.1 (2011-10-25)
+ * @license Highcharts JS v2.1.9 (2011-11-11)
  * MooTools adapter
  *
  * (c) 2010-2011 Torstein Hønsi
@@ -206,8 +206,11 @@ win.HighchartsAdapter = {
 	},
 
 	removeEvent: function (el, type, fn) {
+		if (typeof el === 'string') {
+			// el.removeEvents below apperantly calls this method again. Do not quite understand why, so for now just bail out.
+			return;
+		}
 		win.HighchartsAdapter.extendWithEvents(el);
-
 		if (type) {
 			if (type === 'unload') { // Moo self destructs before custom unload events
 				type = 'beforeunload';

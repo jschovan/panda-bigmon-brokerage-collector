@@ -10,7 +10,8 @@ import simplejson as json
 interval_days = [7,30,90,365] # Weekly,monthly,seasonly,and yearly
 pnames = ["Weekly","Monthly","Seasonly","Yearly"]
 fnames = ["weeklyV2.html","monthlyV2.html","seasonlyV2.html","yearlyV2.html"]
-nTop = 20
+NTOP = 20
+aTop = 10
 tabname = "dailylogV2"
 db = dailyDBV2()
 DATEFORMAT = "%Y-%m-%d"
@@ -36,8 +37,8 @@ ADC_COLOR = {
              'UK': '#356C20',
              'US': '#00006B'
              }
-CHARTS = [
-          [
+CHARTS = {
+          "ABC":[
             ["Category A,B,C on Jobs - %s",
              "select category,sum(jobCount) from %s where  logDate > '%s' and category in ('A','B','C') group by category order by category"],
             ["Category A,B,C on jobDef - %s",
@@ -45,7 +46,7 @@ CHARTS = [
             ["Category A,B,C on jobSet - %s",
              "select category,count(distinct jobSet) from %s where  logDate > '%s' and category in ('A','B','C') group by category order by category"]
           ],
-          [
+          "ASite":[
             ["Category A (User selected a site) on Jobs - Top %d Sites - %s",
              "select site, sum(jobCount) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC"],
             ["Category A (User selected a site) on jobDef - Top %d Sites - %s",
@@ -53,7 +54,7 @@ CHARTS = [
             ["Category A (User selected a site) on jobSet - Top %d Sites - %s",
              "select site, count(distinct jobSet) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC"]
           ],
-          [
+          "ACloud":[
             ["Category A (User selected a site) on Jobs - Per Cloud - %s",
              "select cloud, sum(jobCount) nums from %s where category='A' and logDate > '%s' group by cloud order by nums DESC"],
             ["Category A (User selected a site) on jobDef - Per Cloud - %s",
@@ -61,7 +62,7 @@ CHARTS = [
             ["Category A (User selected a site) on jobSet - Per Cloud - %s",
              "select cloud, count(distinct jobSet) nums from %s where category='A' and logDate > '%s' group by cloud order by nums DESC"]
           ],
-          [
+          "BSite":[
             ["Category B (User selected a cloud) on Jobs - Top %d Sites - %s",
              "select site, sum(jobCount) nums from %s where category='B' and logDate > '%s' group by site order by nums DESC"],
             ["Category B (User selected a cloud) on jobDef - Top %d Sites - %s",
@@ -69,7 +70,7 @@ CHARTS = [
             ["Category B (User selected a cloud) on jobSet - Top %d Sites - %s",
              "select site, count(distinct jobSet) nums from %s where category='B' and logDate > '%s' group by site order by nums DESC"]
           ],
-          [
+          "BCloud":[
             ["Category B (User selected a cloud) on Jobs - Per Cloud - %s",
              "select cloud, sum(jobCount) nums from %s where category='B' and logDate > '%s' group by cloud order by nums DESC"],
             ["Category B (User selected a cloud) on jobDef - Per Cloud - %s",
@@ -77,36 +78,36 @@ CHARTS = [
             ["Category B (User selected a cloud) on jobSet - Per Cloud - %s",
              "select cloud, count(distinct jobSet) nums from %s where category='B' and logDate > '%s' group by cloud order by nums DESC"]
           ],
-          [
+          "CSite":[
             ["Category C (Panda decides destination) on Jobs - Top %d Sites - %s",
              "select site, sum(jobCount) nums from %s where category='C' and logDate > '%s' group by site order by nums DESC"],
             ["Category C (Panda decides destination) on jobDef - Top %d Sites - %s",
-             "select site, sum(jobDefCount) nums from %s where category='C' and logDate > '%s' group by site order by nums DESC"],
-            ["Category C (Panda decides destination) on jobSet - Top %d Sites - %s",
-             "select site, count(distinct jobSet) nums from %s where category='C' and logDate > '%s' group by site order by nums DESC"]
+             "select site, sum(jobDefCount) nums from %s where category='C' and logDate > '%s' group by site order by nums DESC"]
           ],
-          [
+          "CCloud":[
             ["Category C (Panda decides destination) on Jobs - Per Cloud - %s",
              "select cloud, sum(jobCount) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"],
             ["Category C (Panda decides destination) on jobDef - Per Cloud - %s",
-             "select cloud, sum(jobdefCount) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"],
-            ["Category C (Panda decides destination) on jobSet - Per Cloud - %s",
-             "select cloud, count(distinct jobSet) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"]
+             "select cloud, sum(jobdefCount) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"]
           ],
-          [
+          "E":[
             ["Category E (User excluded a site) on distinct jobSet - Excluded / Non-Excluded - %s",
              "select count(distinct jobSet) nums from %s where category='E' and logDate > '%s'",
              "select count(distinct jobSet) nums from %s where category!='E' and logDate > '%s' and jobSet not in (select distinct jobSet from %s where category='E' and logDate > '%s')"]
           ],
-          [
+          "ESite":[
             ["Category E (User excluded a site) on jobSet - Top %d Sites - %s",
-             "select site, count(distinct jobSet) nums from %s where category='E' and logDate > '%s' group by site order by nums DESC"]
+             "select site, count(distinct jobSet) nums from %s where category='E' and logDate > '%s' group by site order by nums DESC"],
+            ["Category E (User excluded a site) on distinct DnUser - Top %d Sites - %s",
+             "select site, count(distinct dnUser) nums from %s where category='E' and logDate > '%s' group by site order by nums DESC"]
           ],
-          [
+          "ECloud":[
             ["Category E (User excluded a site) on jobSet - Per Cloud - %s",
-             "select cloud, count(distinct jobSet) nums from %s where category='E' and logDate > '%s' group by cloud order by nums DESC"]
+             "select cloud, count(distinct jobSet) nums from %s where category='E' and logDate > '%s' group by cloud order by nums DESC"],
+            ["Category E (User excluded a site) on distinct DnUser - Per Cloud - %s",
+             "select cloud, count(distinct dnUser) nums from %s where category='E' and logDate > '%s' group by cloud order by nums DESC"]
           ],
-          [
+          "Country":[
             ["Jobs submitted by Country - %s",
              "select country, sum(jobCount) nums from %s where category in ('A','B','C') and logDate > '%s' group by country order by nums DESC"],
             ["jobDef submitted by Country - %s",
@@ -114,7 +115,7 @@ CHARTS = [
             ["jobSet submitted by Country - %s",
              "select country, count(distinct jobSet) nums from %s where category in ('A','B','C') and logDate > '%s' group by country order by nums DESC"]
           ]
-          ]
+          }
 
 last_updated = db.get_last_updated_time()
 query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days[0]*24*60*60))
@@ -124,29 +125,64 @@ data = fjson.read()
 dic = json.loads(data)
 fjson.close()
 
+def get_dic_dic_siteid():
+    global dic
+    dic_dic={}
+    for queueinfo in dic:
+        sitename=queueinfo['agis_ssb_site_name']
+        pandasiteid=queueinfo['panda_siteID']
+        cloud=queueinfo['cloud']
+        dic_dic[pandasiteid]={'sitename':sitename, 'cloud':cloud, 'pandasiteid': pandasiteid}
+    return dic_dic
+dic_dic_siteid = get_dic_dic_siteid()
+
+def get_dic_dic_ATLASsitename():
+    global dic
+    dic_dic={}
+    for queueinfo in dic:
+        sitename=queueinfo['agis_ssb_site_name']
+        pandasiteid=queueinfo['panda_siteID']
+        cloud=queueinfo['cloud']
+        dic_dic[sitename]={'sitename':sitename, 'cloud':cloud, 'pandasiteid': pandasiteid}
+    return dic_dic
+dic_dic_ATLASsitename = get_dic_dic_ATLASsitename()
+
+def merge_dic_dics():
+    global dic_dic_siteid, dic_dic_ATLASsitename
+    dic_dic_merged=dic_dic_siteid
+    dic_dic_merged.update(dic_dic_ATLASsitename)
+    return dic_dic_merged
+dic_dic_merged=merge_dic_dics()
+
+
 def get_cloud_name(site):
+    global dic_dic_merged
     cloud = site
-    for site_dic in dic:
-        if site_dic['agis_ssb_site_name']==site:
-            cloud = site_dic['cloud']
-            break
+    
+    try: 
+        cloud=dic_dic_merged[site]['cloud']
+        #print u'ln153', u'site', site, 'cloud', cloud
+    except KeyError:
+        cloud=site
     return cloud
 
-def parse_document_category(idx1,idx2):
-    # data = open('template/P1_week.html').read()
-    # title_text = CHARTS[0][1]
+def parse_document_category(idx1,idx2,jsonfile,field):
+    global db,tabname,query_from,CHARTS,CATENAME
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
     rs = db.query(sql%(tabname,query_from))
     for row in rs:
-        series_data = "%s %s ['%s', %d]"%(series_data,comm,CATENAME[row[0]],row[1])
+        series_data = "%s %s {name:'%s', y:%d}"%(series_data,comm,CATENAME[row[0]],row[1])
+        if jsonfile['data'].has_key(row[0]):
+            jsonfile['data'][row[0]][field] = row[1]
+        else:
+            jsonfile['data'][row[0]] = {field: row[1]}
         comm = ","
-    return series_data
+    return series_data,jsonfile
 
-def parse_document_site(idx1,idx2,show_others=True):
-    # data = open('template/P1_week.html').read()
-    # title_text = CHARTS[idx][1]
+def parse_document_site(idx1,idx2,jsonfile,field,nTop=NTOP,show_others=True):
+    global db,tabname,query_from,CHARTS,ADC_COLOR
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
@@ -156,36 +192,48 @@ def parse_document_site(idx1,idx2,show_others=True):
     for row in rs:
         limit += 1
         if limit <= nTop:
-            # series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
             cloud = get_cloud_name(row[0])
-            color = ADC_COLOR[cloud]
-            series_data = "%s %s {name: '%s (%s)', y: %d, color: '%s'}"%(series_data,comm,row[0],cloud,row[1],color)
+            if ADC_COLOR.has_key(cloud):
+                color = ADC_COLOR[cloud]
+            else:
+                color = "#555555"
+            series_data = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data,comm,row[0],row[1],color)
             comm = ","
         else:
             others += row[1]
+            
+        if jsonfile['data'].has_key(row[0]):
+            jsonfile['data'][row[0]][field] = row[1]
+        else:
+            jsonfile['data'][row[0]] = {field: row[1]}
+            
     if others > 0 and show_others:
-        # series_data = "%s %s ['others', %d]"%(series_data,comm,others)
         series_data = "%s %s {name: 'others', y: %d, color: '#CCCCCC'}"%(series_data,comm,others)
-    # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
-    return series_data
+    return series_data,jsonfile
 
-def parse_document_cloud(idx1,idx2):
-    # data = open('template/P1_week.html').read()
-    # title_text = CHARTS[idx][1]
+def parse_document_cloud(idx1,idx2,jsonfile,field):
+    global db,tabname,query_from,CHARTS,ADC_COLOR
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
     rs = db.query(sql%(tabname,query_from))
     for row in rs:
-        color = ADC_COLOR[row[0]]
+        if ADC_COLOR.has_key(row[0]):
+            color = ADC_COLOR[row[0]]
+        else:
+            color = "#555555"
         series_data = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data,comm,row[0],row[1],color)
         comm = ","
-    # data = data.replace('#TITLE_TEXT#',title_text).replace('#LAST_UPDATED#',last_updated).replace('#SERIES_DATA#',series_data)
-    return series_data
+            
+        if jsonfile['data'].has_key(row[0]):
+            jsonfile['data'][row[0]][field] = row[1]
+        else:
+            jsonfile['data'][row[0]] = {field: row[1]}
+            
+    return series_data,jsonfile
 
-def parse_document_excluded(idx1,idx2):
-    # data = open('template/P1_week.html').read()
-    # title_text = CHARTS[idx][1]
+def parse_document_excluded(idx1,idx2,jsonfile):
+    global db,tabname,query_from,CHARTS
     series_data = ""
     sql1 = CHARTS[idx1][idx2][1]
     sql2 = CHARTS[idx1][idx2][2]
@@ -193,102 +241,281 @@ def parse_document_excluded(idx1,idx2):
     rs2 = db.query(sql2%(tabname,query_from,tabname,query_from))
     excluded = rs1[0][0]
     nonexcluded = rs2[0][0]
-    series_data = "['Excluded', %s ],['Non-Excluded', %s]"%(excluded,nonexcluded)
+    series_data = "{name:'Excluded', y:%s },{name:'Non-Excluded', y:%s}"%(excluded,nonexcluded)
+            
+    jsonfile['data']['Yes/No'] = {'excluded': excluded,'nonexcluded': nonexcluded}
+            
 
-    return series_data
+    return series_data,jsonfile
 
-def parse_document_country(idx1,idx2):
-    # data = open('template/P1_week.html').read()
-    # title_text = CHARTS[0][1]
+def parse_document_country(idx1,idx2,jsonfile,field):
+    global db,tabname,query_from,CHARTS
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
     rs = db.query(sql%(tabname,query_from))
     for row in rs:
-        series_data = "%s %s ['%s', %d]"%(series_data,comm,row[0],row[1])
+        series_data = "%s %s {name:'%s', y:%d}"%(series_data,comm,row[0],row[1])
         comm = ","
-    return series_data
+            
+        if jsonfile['data'].has_key(row[0]):
+            jsonfile['data'][row[0]][field] = row[1]
+        else:
+            jsonfile['data'][row[0]] = {field: row[1]}
+            
+    return series_data,jsonfile
 
 def write_document(document, FILENAME='weeklyV2.html'):
     of = open(FILENAME, 'w')
     print >>of, document
     of.close()
+    
+def write_jsonfile(jsonfile, fname):
+    of = open("data/%s.json"%fname, 'w')
+    json_string = json.dumps(jsonfile)
+    of.write(json_string)
+    of.close()
+
+def write_tablehtml(jsonfile,fname):
+    global last_updated
+    htmlfile = "data/%s.html"%fname
+    jfile = "%s.json"%fname
+    data = open('template/TABLE_brokerageV2.html').read()
+    data = data.replace('#LAST_UPDATED#',last_updated)
+    data = data.replace('#JSONFILE#',jfile)
+    data = data.replace('#TITLE#',fname)
+    
+    addcolumns = ""
+    setcells = ""
+    
+    columns = len(jsonfile['columns'])
+    for i in range(0,columns):
+        fld = 'field%d'%i
+        addcolumns = "%s data.addColumn('%s','%s');\n"%(addcolumns,jsonfile['columns'][fld]['type'],jsonfile['columns'][fld]['name'])
+    rows = len(jsonfile['data'])
+    setcells = "data.addRows(%d)\n"%rows
+    i = 0
+    for k,v in jsonfile['data'].items():
+        setcells = "%s data.setCell(%d,0,'%s');\n"%(setcells,i,k)
+        for j in range(1,columns):
+            fld = 'field%d'%j
+            col = jsonfile['columns'][fld]['name']
+            setcells = "%s data.setCell(%d,%d,%s);\n"%(setcells,i,j,v[col])
+        i += 1
+    
+    data = data.replace('#ADDCOLUMNS#',addcolumns)
+    data = data.replace('#SETCELLS#',setcells)
+
+    write_document(data,htmlfile)
+    
 
 def run(fidx):
+    global last_updated,CHARTS,pnames,fnames,NTOP,aTop
     data = open('template/CHART_brokerageV2.html').read()
     data = data.replace('#LAST_UPDATED#',last_updated)
 
-    data = data.replace('#TITLE_TEXT00#',CHARTS[0][0][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT01#',CHARTS[0][1][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT02#',CHARTS[0][2][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT00#',CHARTS["ABC"][0][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT01#',CHARTS["ABC"][1][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT02#',CHARTS["ABC"][2][0]%pnames[fidx])
+    data = data.replace('#CREDITS_HREF0#',"data/ABC_%s.html"%pnames[fidx])
     
-    data = data.replace('#TITLE_TEXT10#',CHARTS[1][0][0]%(nTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT11#',CHARTS[1][1][0]%(nTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT12#',CHARTS[1][2][0]%(nTop,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT10#',CHARTS["ASite"][0][0]%(aTop,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT11#',CHARTS["ASite"][1][0]%(aTop,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT12#',CHARTS["ASite"][2][0]%(aTop,pnames[fidx]))
+    data = data.replace('#CREDITS_HREF1#',"data/ASite_%s.html"%pnames[fidx])
 
-    data = data.replace('#TITLE_TEXT20#',CHARTS[2][0][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT21#',CHARTS[2][1][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT22#',CHARTS[2][2][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT20#',CHARTS["ACloud"][0][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT21#',CHARTS["ACloud"][1][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT22#',CHARTS["ACloud"][2][0]%pnames[fidx])
+    data = data.replace('#CREDITS_HREF2#',"data/ACloud_%s.html"%pnames[fidx])
     
-    data = data.replace('#TITLE_TEXT30#',CHARTS[3][0][0]%(nTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT31#',CHARTS[3][1][0]%(nTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT32#',CHARTS[3][2][0]%(nTop,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT30#',CHARTS["BSite"][0][0]%(NTOP,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT31#',CHARTS["BSite"][1][0]%(NTOP,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT32#',CHARTS["BSite"][2][0]%(NTOP,pnames[fidx]))
+    data = data.replace('#CREDITS_HREF3#',"data/BSite_%s.html"%pnames[fidx])
 
-    data = data.replace('#TITLE_TEXT40#',CHARTS[4][0][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT41#',CHARTS[4][1][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT42#',CHARTS[4][2][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT40#',CHARTS["BCloud"][0][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT41#',CHARTS["BCloud"][1][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT42#',CHARTS["BCloud"][2][0]%pnames[fidx])
+    data = data.replace('#CREDITS_HREF4#',"data/BCloud_%s.html"%pnames[fidx])
     
-    data = data.replace('#TITLE_TEXT50#',CHARTS[5][0][0]%(nTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT51#',CHARTS[5][1][0]%(nTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT52#',CHARTS[5][2][0]%(nTop,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT50#',CHARTS["CSite"][0][0]%(NTOP,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT51#',CHARTS["CSite"][1][0]%(NTOP,pnames[fidx]))
+    data = data.replace('#CREDITS_HREF5#',"data/CSite_%s.html"%pnames[fidx])
 
-    data = data.replace('#TITLE_TEXT60#',CHARTS[6][0][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT61#',CHARTS[6][1][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT62#',CHARTS[6][2][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT60#',CHARTS["CCloud"][0][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT61#',CHARTS["CCloud"][1][0]%pnames[fidx])
+    data = data.replace('#CREDITS_HREF6#',"data/CCloud_%s.html"%pnames[fidx])
     
-    data = data.replace('#TITLE_TEXT70#',CHARTS[7][0][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT80#',CHARTS[8][0][0]%(nTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT90#',CHARTS[9][0][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT70#',CHARTS["E"][0][0]%pnames[fidx])
+    data = data.replace('#CREDITS_HREF7#',"data/E_%s.html"%pnames[fidx])
+    
+    data = data.replace('#TITLE_TEXT80#',CHARTS["ESite"][0][0]%(NTOP,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT81#',CHARTS["ESite"][1][0]%(NTOP,pnames[fidx]))
+    data = data.replace('#CREDITS_HREF8#',"data/ESite_%s.html"%pnames[fidx])
+    
+    data = data.replace('#TITLE_TEXT90#',CHARTS["ECloud"][0][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT91#',CHARTS["ECloud"][1][0]%pnames[fidx])
+    data = data.replace('#CREDITS_HREF9#',"data/ECloud_%s.html"%pnames[fidx])
 
-    data = data.replace('#TITLE_TEXT100#',CHARTS[10][0][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT101#',CHARTS[10][1][0]%pnames[fidx])
-    data = data.replace('#TITLE_TEXT102#',CHARTS[10][2][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT100#',CHARTS["Country"][0][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT101#',CHARTS["Country"][1][0]%pnames[fidx])
+    data = data.replace('#TITLE_TEXT102#',CHARTS["Country"][2][0]%pnames[fidx])
+    data = data.replace('#CREDITS_HREF10#',"data/Country_%s.html"%pnames[fidx])
     
-    series_data00 = parse_document_category(0,0)
-    series_data01 = parse_document_category(0,1)
-    series_data02 = parse_document_category(0,2)
+    ABC_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Category', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'},
+                            'field3':{'name':'JobSet', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data00,ABC_json = parse_document_category("ABC",0,ABC_json,'Jobs')
+    series_data01,ABC_json = parse_document_category("ABC",1,ABC_json,'JobDef')
+    series_data02,ABC_json = parse_document_category("ABC",2,ABC_json,'JobSet')
+    write_jsonfile(ABC_json,"ABC_%s"%pnames[fidx])
+    write_tablehtml(ABC_json,"ABC_%s"%pnames[fidx])
     
-    series_data10 = parse_document_site(1,0)
-    series_data11 = parse_document_site(1,1)
-    series_data12 = parse_document_site(1,2)
+    ASite_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Site', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'},
+                            'field3':{'name':'JobSet', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data10,ASite_json = parse_document_site("ASite",0,ASite_json,'Jobs',aTop)
+    series_data11,ASite_json = parse_document_site("ASite",1,ASite_json,'JobDef',aTop)
+    series_data12,ASite_json = parse_document_site("ASite",2,ASite_json,'JobSet',aTop)
+    write_jsonfile(ASite_json,"ASite_%s"%pnames[fidx])
+    write_tablehtml(ASite_json,"ASite_%s"%pnames[fidx])
     
-    series_data20 = parse_document_cloud(2,0)
-    series_data21 = parse_document_cloud(2,1)
-    series_data22 = parse_document_cloud(2,2)
+    ACloud_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Cloud', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'},
+                            'field3':{'name':'JobSet', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data20,ACloud_json = parse_document_cloud("ACloud",0,ACloud_json,'Jobs')
+    series_data21,ACloud_json = parse_document_cloud("ACloud",1,ACloud_json,'JobDef')
+    series_data22,ACloud_json = parse_document_cloud("ACloud",2,ACloud_json,'JobSet')
+    write_jsonfile(ACloud_json,"ACloud_%s"%pnames[fidx])
+    write_tablehtml(ACloud_json,"ACloud_%s"%pnames[fidx])
     
-    series_data30 = parse_document_site(3,0)
-    series_data31 = parse_document_site(3,1)
-    series_data32 = parse_document_site(3,2)
+    BSite_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Site', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'},
+                            'field3':{'name':'JobSet', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data30,BSite_json = parse_document_site("BSite",0,BSite_json,'Jobs')
+    series_data31,BSite_json = parse_document_site("BSite",1,BSite_json,'JobDef')
+    series_data32,BSite_json = parse_document_site("BSite",2,BSite_json,'JobSet')
+    write_jsonfile(BSite_json,"BSite_%s"%pnames[fidx])
+    write_tablehtml(BSite_json,"BSite_%s"%pnames[fidx])
     
-    series_data40 = parse_document_cloud(4,0)
-    series_data41 = parse_document_cloud(4,1)
-    series_data42 = parse_document_cloud(4,2)
+    BCloud_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Cloud', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'},
+                            'field3':{'name':'JobSet', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data40,BCloud_json = parse_document_cloud("BCloud",0,BCloud_json,'Jobs')
+    series_data41,BCloud_json = parse_document_cloud("BCloud",1,BCloud_json,'JobDef')
+    series_data42,BCloud_json = parse_document_cloud("BCloud",2,BCloud_json,'JobSet')
+    write_jsonfile(BCloud_json,"BCloud_%s"%pnames[fidx])
+    write_tablehtml(BCloud_json,"BCloud_%s"%pnames[fidx])
     
-    series_data50 = parse_document_site(5,0)
-    series_data51 = parse_document_site(5,1)
-    series_data52 = parse_document_site(5,2)
+    CSite_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Site', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data50,CSite_json = parse_document_site("CSite",0,CSite_json,'Jobs')
+    series_data51,CSite_json = parse_document_site("CSite",1,CSite_json,'JobDef')
+    write_jsonfile(CSite_json,"CSite_%s"%pnames[fidx])
+    write_tablehtml(CSite_json,"CSite_%s"%pnames[fidx])
     
-    series_data60 = parse_document_cloud(6,0)
-    series_data61 = parse_document_cloud(6,1)
-    series_data62 = parse_document_cloud(6,2)
+    CCloud_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Cloud', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data60,CCloud_json = parse_document_cloud("CCloud",0,CCloud_json,'Jobs')
+    series_data61,CCloud_json = parse_document_cloud("CCloud",1,CCloud_json,'JobDef')
+    write_jsonfile(CCloud_json,"CCloud_%s"%pnames[fidx])
+    write_tablehtml(CCloud_json,"CCloud_%s"%pnames[fidx])
     
-    series_data70 = parse_document_excluded(7,0)
-    series_data80 = parse_document_site(8,0)
-    series_data90 = parse_document_cloud(9,0)
+    E_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Excluded?', 'type': 'string'},
+                            'field1':{'name':'excluded', 'type':'number'},
+                            'field2':{'name':'nonexcluded', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data70,E_json = parse_document_excluded("E",0,E_json)
+    write_jsonfile(E_json,"E_%s"%pnames[fidx])
+    write_tablehtml(E_json,"E_%s"%pnames[fidx])
     
-    series_data100 = parse_document_country(10,0)
-    series_data101 = parse_document_country(10,1)
-    series_data102 = parse_document_country(10,2)
+    ESite_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Site', 'type': 'string'},
+                            'field1':{'name':'JobSet', 'type':'number'},
+                            'field2':{'name':'DnUser', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data80,ESite_json = parse_document_site("ESite",0,ESite_json,'JobSet')
+    series_data81,ESite_json = parse_document_site("ESite",1,ESite_json,'DnUser')
+    write_jsonfile(ESite_json,"ESite_%s"%pnames[fidx])
+    write_tablehtml(ESite_json,"ESite_%s"%pnames[fidx])
+    
+    ECloud_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Cloud', 'type': 'string'},
+                            'field1':{'name':'JobSet', 'type':'number'},
+                            'field2':{'name':'DnUser', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data90,ECloud_json = parse_document_cloud("ECloud",0,ECloud_json,'JobSet')
+    series_data91,ECloud_json = parse_document_cloud("ECloud",1,ECloud_json,'DnUser')
+    write_jsonfile(ECloud_json,"ECloud_%s"%pnames[fidx])
+    write_tablehtml(ECloud_json,"ECloud_%s"%pnames[fidx])
+    
+    Country_json = {'lastUpdate':last_updated,
+                'columns': {
+                            'field0':{'name':'Country', 'type': 'string'},
+                            'field1':{'name':'Jobs', 'type':'number'},
+                            'field2':{'name':'JobDef', 'type':'number'},
+                            'field3':{'name':'JobSet', 'type':'number'}
+                            },
+                'data': {}
+                }
+    series_data100,Country_json = parse_document_country("Country",0,Country_json,'Jobs')
+    series_data101,Country_json = parse_document_country("Country",1,Country_json,'JobDef')
+    series_data102,Country_json = parse_document_country("Country",2,Country_json,'JobSet')
+    write_jsonfile(Country_json,"Country_%s"%pnames[fidx])
+    write_tablehtml(Country_json,"Country_%s"%pnames[fidx])
     
     data = data.replace('#SERIES_DATA00#',series_data00)
     data = data.replace('#SERIES_DATA01#',series_data01)
@@ -312,15 +539,17 @@ def run(fidx):
     
     data = data.replace('#SERIES_DATA50#',series_data50)
     data = data.replace('#SERIES_DATA51#',series_data51)
-    data = data.replace('#SERIES_DATA52#',series_data52)
     
     data = data.replace('#SERIES_DATA60#',series_data60)
     data = data.replace('#SERIES_DATA61#',series_data61)
-    data = data.replace('#SERIES_DATA62#',series_data62)
     
     data = data.replace('#SERIES_DATA70#',series_data70)
+    
     data = data.replace('#SERIES_DATA80#',series_data80)
+    data = data.replace('#SERIES_DATA81#',series_data81)
+    
     data = data.replace('#SERIES_DATA90#',series_data90)
+    data = data.replace('#SERIES_DATA91#',series_data91)
 
     data = data.replace('#SERIES_DATA100#',series_data100)
     data = data.replace('#SERIES_DATA101#',series_data101)

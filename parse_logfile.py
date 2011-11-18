@@ -52,22 +52,59 @@ def is_this_category(string, category_pattern):
     else:
         return True
     
+def get_dic_dic_siteid():
+    global dic
+    dic_dic={}
+    for queueinfo in dic:
+        sitename=queueinfo['agis_ssb_site_name']
+        pandasiteid=queueinfo['panda_siteID']
+        cloud=queueinfo['cloud']
+        dic_dic[pandasiteid]={'sitename':sitename, 'cloud':cloud, 'pandasiteid': pandasiteid}
+    return dic_dic
+dic_dic_siteid = get_dic_dic_siteid()
+
+def get_dic_dic_ATLASsitename():
+    global dic
+    dic_dic={}
+    for queueinfo in dic:
+        sitename=queueinfo['agis_ssb_site_name']
+        pandasiteid=queueinfo['panda_siteID']
+        cloud=queueinfo['cloud']
+        dic_dic[sitename]={'sitename':sitename, 'cloud':cloud, 'pandasiteid': pandasiteid}
+    return dic_dic
+dic_dic_ATLASsitename = get_dic_dic_ATLASsitename()
+
+def merge_dic_dics():
+    global dic_dic_siteid, dic_dic_ATLASsitename
+    dic_dic_merged=dic_dic_siteid
+    dic_dic_merged.update(dic_dic_ATLASsitename)
+    return dic_dic_merged
+dic_dic_merged=merge_dic_dics()
+
 def get_cloud_name(site):
+    global dic_dic_merged
     cloud = site
-    for site_dic in dic:
-        if site_dic['agis_ssb_site_name']==site:
-            cloud = site_dic['cloud']
-            break
+    
+    try: 
+        cloud=dic_dic_merged[site]['cloud']
+        #print u'ln153', u'site', site, 'cloud', cloud
+    except KeyError:
+        cloud=site
     return cloud
 
 def get_sitecloud_name(dic, siteID):
+    global dic_dic_merged
     cloud = siteID
     site_name = siteID
-    for site_dic in dic:
-        if site_dic['panda_siteID']==siteID:
-            cloud = site_dic['cloud']
-            site_name = site_dic['agis_ssb_site_name']
-            break
+    
+    try: 
+        cloud=dic_dic_merged[siteID]['cloud']
+    except KeyError:
+        cloud=siteID
+    try: 
+        site_name=dic_dic_merged[siteID]['sitename']
+    except KeyError:
+        site_name=siteID
     return (site_name,cloud)
 
 def is_in_buf(records, logDate, category, site, dnUser):

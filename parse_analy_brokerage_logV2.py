@@ -24,6 +24,12 @@ QUERY_HOUR = 1
 QUERY_LIMIT = 11000
 DEBUG = 0
 
+# get cloud name
+fjson = open('panda_queues.json','r')
+data = fjson.read()
+dic = json.loads(data)
+fjson.close()
+
 class Test:
     def __init__(self):
         self.contents = ''
@@ -33,6 +39,7 @@ class Test:
 
 
 def get_URL():
+    global QUERY_HOUR,QUERY_LIMIT
     return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=%d&limit=%d'%(QUERY_HOUR,QUERY_LIMIT)
     #return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=pd2p&hours=2&limit=500'
     ##return 'http://panda.cern.ch/server/pandamon/query?mode=mon&hours=48&name=panda.mon.prod&type=pd2p&limit=20000'
@@ -58,14 +65,48 @@ def is_this_category(string, category_pattern):
     else:
         return True
     
-def get_sitecloud_name(dic, siteID):
+def get_dic_dic_siteid():
+    global dic
+    dic_dic={}
+    for queueinfo in dic:
+        sitename=queueinfo['agis_ssb_site_name']
+        pandasiteid=queueinfo['panda_siteID']
+        cloud=queueinfo['cloud']
+        dic_dic[pandasiteid]={'sitename':sitename, 'cloud':cloud, 'pandasiteid': pandasiteid}
+    return dic_dic
+dic_dic_siteid = get_dic_dic_siteid()
+
+def get_dic_dic_ATLASsitename():
+    global dic
+    dic_dic={}
+    for queueinfo in dic:
+        sitename=queueinfo['agis_ssb_site_name']
+        pandasiteid=queueinfo['panda_siteID']
+        cloud=queueinfo['cloud']
+        dic_dic[sitename]={'sitename':sitename, 'cloud':cloud, 'pandasiteid': pandasiteid}
+    return dic_dic
+dic_dic_ATLASsitename = get_dic_dic_ATLASsitename()
+
+def merge_dic_dics():
+    global dic_dic_siteid, dic_dic_ATLASsitename
+    dic_dic_merged=dic_dic_siteid
+    dic_dic_merged.update(dic_dic_ATLASsitename)
+    return dic_dic_merged
+dic_dic_merged=merge_dic_dics()
+
+def get_sitecloud_name(siteID):
+    global dic_dic_merged
     cloud = siteID
     site_name = siteID
-    for site_dic in dic:
-        if site_dic['panda_siteID']==siteID:
-            cloud = site_dic['cloud']
-            site_name = site_dic['agis_ssb_site_name']
-            break
+    
+    try: 
+        cloud=dic_dic_merged[siteID]['cloud']
+    except KeyError:
+        cloud=siteID
+    try: 
+        site_name=dic_dic_merged[siteID]['sitename']
+    except KeyError:
+        site_name=siteID
     return (site_name,cloud)
 
 def is_in_buf(records, logDate, jobSet, category, site, dnUser):
@@ -102,6 +143,7 @@ def get_log_year(p_year,p_date,p_time=''):
     
 
 def parse_document(document):
+    global db
     BSXdocument = BSXPathEvaluator(document)
     
     XPath_table = './/*[@id="main"]/p[2]/table'
@@ -109,11 +151,6 @@ def parse_document(document):
     XPath_table_header = '%s/tr[1]' % (XPath_table_body)
     XPath_table_lines = '%s/tr' % (XPath_table_body)
     rows = BSXdocument.getItemList(XPath_table_lines)[1:]
-    # get cloud name
-    fjson = open('panda_queues.json','r')
-    data = fjson.read()
-    dic = json.loads(data)
-    fjson.close()
     
     # Load unprocessed records
     fjson = open('unprocess.json','r')
@@ -324,7 +361,7 @@ def parse_document(document):
     sum_nJobs = 0
     lost_nJobs = 0
     
-    fjson = open("unprocess.json",'w')
+    fjson = open("unprocess.json.new",'w')
     fjson.write("{\n")
     jcom = ""
     
@@ -343,7 +380,7 @@ def parse_document(document):
         category = records[rec]['category']
         country = records[rec]['country']
         nJobs = records[rec]['nJobs']
-        site_name,cloud = get_sitecloud_name(dic,records[rec]['site'])
+        site_name,cloud = get_sitecloud_name(records[rec]['site'])
         dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
         
         if country == '--':
@@ -369,6 +406,8 @@ def parse_document(document):
             
     fjson.write("}\n")
     fjson.close()
+    os.unlink("unprocess.json")
+    os.rename("unprocess.json.new", "unprocess.json")
     
     ## for Excluded        
     for rec in ex_records:
@@ -381,7 +420,7 @@ def parse_document(document):
         category = ex_records[rec]['category']
         country = "--"
         nJobs = "1"
-        site_name,cloud = get_sitecloud_name(dic,ex_records[rec]['site'])
+        site_name,cloud = get_sitecloud_name(ex_records[rec]['site'])
         dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
         if dailyLogId is None:
             rec_idx = is_in_buf(eff_records, logDate, jobSet, category, site_name, dnUser)
@@ -404,6 +443,7 @@ def parse_document(document):
     return (set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
 
 def run():
+    global db
     #t1 = time.time()
     document = get_document()
     t2 = time.time()
@@ -428,13 +468,6 @@ def run():
     
 if __name__ == "__main__":
     
-    #if len(sys.argv) < 2:
-    #    print "ERROR: too few input parameters"
-    #    print "USAGE: python   parse_table_pd2p_log.py   OUTPUT_FILENAME_PREFIX"
-    #    exit(1)
-    #else:
-    #    OUTPUT_FILENAME_PREFIX = sys.argv[1]
-
     run()
     
 
