@@ -19,7 +19,7 @@ cd ${WORKDIR}
 
 # publish data
 cp ${WORKDIR}/DAILYLOGV2.py ${PUBDIR}/DAILYLOGV2.py
-tee ${LOGDIR}/log.verify_values.${DATESTRING} ${PUBDIR}/log.verify_values.txt
+cp ${LOGDIR}/log.verify_values.${DATESTRING} ${PUBDIR}/log.verify_values.txt
 
 # bzip files
 bzip2 ${LOGDIR}/log.verifyDB.${DATESTRING} ${LOGDIR}/log.verify_values.${DATESTRING}
