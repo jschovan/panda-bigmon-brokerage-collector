@@ -1,8 +1,10 @@
 import cx_Oracle, sys
 from datetime import datetime
 
-
-WORKDIR='/data/jschovan/PandaBrokerageMon/verify_values'
+## adcmon
+#WORKDIR='/data/jschovan/PandaBrokerageMon/verify_values'
+## lxplus
+WORKDIR='/afs/cern.ch/user/j/jschovan/scratch0/trunk/helpers/verify_values'
 
 class dailyDB(object):
     

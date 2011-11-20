@@ -1,13 +1,18 @@
 #!/bin/bash
 # run on adcmon.cern.ch
 
+# adcmon
 WORKDIR=/data/jschovan/PandaBrokerageMon/verify_values
 PUBDIR=/var/www/html/PandaBrokerageMon/verify_values
+# lxplus
+WORKDIR=/afs/cern.ch/user/j/jschovan/scratch0/PandaBrokerageMon/verify_values
+PUBDIR=${WORKDIR}/pub
+
 LOGDIR=${WORKDIR}/logs
 DATESTRING=$(date +%F.%H%M%S)
 INDEX=${PUBDIR}/index.html
 
-mkdir -p ${LOGDIR}
+mkdir -p ${LOGDIR} ${PUBDIR}
 
 cd ${WORKDIR}
 
@@ -30,7 +35,7 @@ echo -n >>${INDEX}
 for file in $(ls .); 
 do
     lsl=$(ls -l $file)
-    html="<div>$(echo $lsl | sed -e "s#$file#<a href=\"./$file\">$file</a>#g")</div>"
+    html="<div>$(echo $lsl | sed -e "s#$file#<a href=\"./$file\">$file</a>#g" | awk '{printf $5 " " $6 " " $7 " " $8 " " $9 " " $10;}')</div>"
     echo $html >> ${INDEX}
 done
 
