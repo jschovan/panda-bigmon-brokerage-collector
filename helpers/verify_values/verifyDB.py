@@ -1,6 +1,9 @@
 import cx_Oracle, sys
 from datetime import datetime
- 
+
+
+WORKDIR='/data/jschovan/PandaBrokerageMon/verify_values'
+
 class dailyDB(object):
     
     _db = None
@@ -11,6 +14,7 @@ class dailyDB(object):
         self._db = cx_Oracle.connect(self._connect)
         
     def print_tables(self):
+        global WORKDIR
         # dailyLogV2
         cursor = self._db.cursor()
 
@@ -59,7 +63,7 @@ class dailyDB(object):
 
 
         for t in tables:
-            f='/tmp/jschovan/%s.py' % t
+            f='%s/%s.py' % (WORKDIR, t)
             print u'dump', t, f; sys.stdout.flush()
             fo=open(f,'w')
             sql="SELECT * FROM %s -- where ROWNUM<10" % t
@@ -87,10 +91,32 @@ class dailyDB(object):
         return rs
 
 
-db=dailyDB()
+def run():
+    db=dailyDB()
+    
+    print u'### db.print_tables()'
+    print db.print_tables()
+    
+    print u'EOF'
 
-print u'### db.print_tables()'
-print db.print_tables()
 
-print u'EOF'
+
+
+def main():
+    global WORKDIR
+    args = sys.argv[1:]
+    if len(args) < 1:
+        print 'usage: verify_values.py WORKDIR'
+        sys.exit(-1)
+    
+    WORKDIR=args[0]
+    
+    run()
+    
+    print;print;print
+
+
+if __name__ == '__main__':
+    main()
+
 
