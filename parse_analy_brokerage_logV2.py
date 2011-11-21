@@ -258,8 +258,9 @@ def parse_document(document):
             if is_this_category(tmp_job[0],'jobdef'):
                 message_jobdef = tmp_job[0].split('=')[1].strip()
         if message_jobset=='no.jobset' or message_jobdef=='no.jobdef':
-            error_skip += 1
-            ferror.write("Error: %s %s %s %s %s\n"%(message_date,message_time,message_dn,tmp_message[1],tmp_message[2]))
+            if not is_this_category(cell_message, ' action=skip '):
+                error_skip += 1
+                ferror.write("Error: %s %s %s %s %s\n"%(message_date,message_time,message_dn,tmp_message[1],tmp_message[2]))
             continue
 
         processed_rows += 1

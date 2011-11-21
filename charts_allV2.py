@@ -7,6 +7,8 @@ import pycurl
 import time
 import simplejson as json
 
+from ADC_colors import ADC_COLOR
+
 interval_days = [7,30,90,365] # Weekly,monthly,seasonly,and yearly
 pnames = ["Weekly","Monthly","Seasonly","Yearly"]
 fnames = ["weeklyV2.html","monthlyV2.html","seasonlyV2.html","yearlyV2.html"]
@@ -24,19 +26,6 @@ CATENAME = {
             'E': 'E-User excluded a site'
             }
 
-ADC_COLOR = {
-             'CA': '#FF1F1F',
-             'CERN': '#AE3C51',
-             'DE': '#000000',
-             'ES': '#EDBF00',
-             'FR': '#0055A5',
-             'IT': '#009246',
-             'ND': '#6298FF',
-             'NL': '#D97529',
-             'TW': '#89000F',
-             'UK': '#356C20',
-             'US': '#00006B'
-             }
 CHARTS = {
           "ABC":[
             ["Category A,B,C on Jobs - %s",
@@ -189,26 +178,33 @@ def parse_document_site(idx1,idx2,jsonfile,field,nTop=NTOP,show_others=True):
     rs = db.query(sql%(tabname,query_from))
     limit = 0
     others = 0
+    cloudIdx = {}
     for row in rs:
         limit += 1
+        cloud = get_cloud_name(row[0])
         if limit <= nTop:
-            cloud = get_cloud_name(row[0])
             if ADC_COLOR.has_key(cloud):
-                color = ADC_COLOR[cloud]
+                try:
+                    cloudIdx[cloud] += 4
+                except KeyError:
+                    cloudIdx[cloud] = 0
+                cidx = cloudIdx[cloud]%30
+                color = ADC_COLOR[cloud][cidx]
             else:
-                color = "#555555"
-            series_data = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data,comm,row[0],row[1],color)
+                color = "#55FF55"
+            series_data = "%s %s {name: '%s (%s)', y: %d, color: '%s'}"%(series_data,comm,row[0],cloud,row[1],color)
             comm = ","
         else:
             others += row[1]
             
-        if jsonfile['data'].has_key(row[0]):
-            jsonfile['data'][row[0]][field] = row[1]
+        jkey = '%s(%s)'%(row[0],cloud)
+        if jsonfile['data'].has_key(jkey):
+            jsonfile['data'][jkey][field] = row[1]
         else:
-            jsonfile['data'][row[0]] = {field: row[1]}
+            jsonfile['data'][jkey] = {field: row[1]}
             
     if others > 0 and show_others:
-        series_data = "%s %s {name: 'others', y: %d, color: '#CCCCCC'}"%(series_data,comm,others)
+        series_data = "%s %s {name: 'others', y: %d, color: '#CCFFCC'}"%(series_data,comm,others)
     return series_data,jsonfile
 
 def parse_document_cloud(idx1,idx2,jsonfile,field):
@@ -219,9 +215,9 @@ def parse_document_cloud(idx1,idx2,jsonfile,field):
     rs = db.query(sql%(tabname,query_from))
     for row in rs:
         if ADC_COLOR.has_key(row[0]):
-            color = ADC_COLOR[row[0]]
+            color = ADC_COLOR[row[0]][0]
         else:
-            color = "#555555"
+            color = "#55FF55"
         series_data = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data,comm,row[0],row[1],color)
         comm = ","
             
@@ -241,7 +237,7 @@ def parse_document_excluded(idx1,idx2,jsonfile):
     rs2 = db.query(sql2%(tabname,query_from,tabname,query_from))
     excluded = rs1[0][0]
     nonexcluded = rs2[0][0]
-    series_data = "{name:'Excluded', y:%s },{name:'Non-Excluded', y:%s}"%(excluded,nonexcluded)
+    series_data = "{name:'Excluded', y:%s, color:'#DD0000' },{name:'Non-Excluded', y:%s, color: '#0000DD'}"%(excluded,nonexcluded)
             
     jsonfile['data']['Yes/No'] = {'excluded': excluded,'nonexcluded': nonexcluded}
             
