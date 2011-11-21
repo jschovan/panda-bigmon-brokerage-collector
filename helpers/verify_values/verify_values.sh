@@ -16,6 +16,8 @@ mkdir -p ${LOGDIR} ${PUBDIR}
 
 cd ${WORKDIR}
 
+echo "Running at ${DATESTRING}."
+
 # get data from DB
 /usr/bin/time python verifyDB.py ${WORKDIR} 2>&1 | tee ${LOGDIR}/log.verifyDB.${DATESTRING}
 
