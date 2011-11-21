@@ -32,7 +32,7 @@ bzip2 ${LOGDIR}/log.verifyDB.${DATESTRING} ${LOGDIR}/log.verify_values.${DATESTR
 # create index
 cd ${PUBDIR}
 echo -n >>${INDEX}
-for file in $(ls .); 
+for file in $(ls . | grep -v "index.html"); 
 do
     lsl=$(ls -l $file)
     html="<div>$(echo $lsl | sed -e "s#$file#<a href=\"./$file\">$file</a>#g" | awk '{printf $5 " " $6 " " $7 " " $8 " " $9 " " $10;}')</div>"
