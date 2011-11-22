@@ -3,6 +3,7 @@
 ,"sarah_williams|16079|16080":{"country": "uk", "nJobs": "4", "jobSet": "16079"}
 ,"sarah_williams|16079|16081":{"country": "uk", "nJobs": "1", "jobSet": "16079"}
 ,"Mel_Shochet|1465|1467":{"country": "us", "nJobs": "18", "jobSet": "1465"}
+,"Lauren_Alexandra_Tompkins|5367|5368":{"country": "us", "nJobs": "160", "jobSet": "5367"}
 ,"mirkoantonio_casolino|1653|1654":{"category": "A", "country": "--", "site": "ANALY_INFN-NAPOLI", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "1653"}
 ,"neil_cooper-smith|2302|2303":{"country": "uk", "nJobs": "28", "jobSet": "2302"}
 ,"Toshi_Sumida|19744|19745":{"country": "None", "nJobs": "3999", "jobSet": "19744"}
@@ -18,7 +19,7 @@
 ,"Andreas_Reinsch|9655|9656":{"country": "us", "nJobs": "4", "jobSet": "9655"}
 ,"Oleg_Zenin|4402|4403":{"country": "ru", "nJobs": "4", "jobSet": "4402"}
 ,"Thomas_Schwindt|48510|48522":{"country": "de", "nJobs": "58", "jobSet": "48510"}
-,"Yasuyuki_Okumura|55132|55133":{"country": "None", "nJobs": "1", "jobSet": "55132"}
+,"Oleg_Zenin|4910|4911":{"country": "ru", "nJobs": "12", "jobSet": "4910"}
 ,"Christopher_Young|5881|5882":{"country": "uk", "nJobs": "1", "jobSet": "5881"}
 ,"Yasuyuki_Okumura|55186|55187":{"country": "None", "nJobs": "8", "jobSet": "55186"}
 ,"Keita_Hanawa|20715|20716":{"country": "jp", "nJobs": "9", "jobSet": "20715"}
@@ -26,24 +27,33 @@
 ,"Maximilian_Goblirsch-Kolb|6807|6808":{"category": "C", "country": "--", "site": "ANALY_DESY-ZN", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6807"}
 ,"Lauren_Alexandra_Tompkins|5371|5372":{"country": "us", "nJobs": "16", "jobSet": "5371"}
 ,"Yousuke_Kataoka|8250|8251":{"country": "None", "nJobs": "4", "jobSet": "8250"}
+,"Oleg_Zenin|4946|4947":{"country": "ru", "nJobs": "14", "jobSet": "4946"}
 ,"Dominick_Olivito|4166|4167":{"country": "us", "nJobs": "1", "jobSet": "4166"}
 ,"Oleg_Zenin|4600|4601":{"country": "ru", "nJobs": "3", "jobSet": "4600"}
 ,"Yousuke_Kataoka|8244|8245":{"country": "None", "nJobs": "18", "jobSet": "8244"}
 ,"Yuta_Suzuki|44727|44728":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44727"}
 ,"Johanna_Bronner|7018|7019":{"country": "de", "nJobs": "6", "jobSet": "7018"}
 ,"Oleg_Zenin|4680|4681":{"country": "ru", "nJobs": "1", "jobSet": "4680"}
+,"vanessa.arnal|1444|1445":{"country": "None", "nJobs": "1", "jobSet": "1444"}
+,"Yousuke_Kataoka|8278|8279":{"country": "None", "nJobs": "1", "jobSet": "8278"}
 ,"Yasuyuki_Okumura|55604|55605":{"country": "None", "nJobs": "1", "jobSet": "55604"}
+,"Sarka_Todorova|1581|1583":{"country": "None", "nJobs": "200", "jobSet": "1581"}
 ,"Ippei_Watanabe|14633|14634":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14633"}
 ,"Soumya_Mohapatra|14118|14119":{"country": "None", "nJobs": "15", "jobSet": "14118"}
 ,"Mel_Shochet|1480|1482":{"country": "us", "nJobs": "18", "jobSet": "1480"}
+,"Yousuke_Kataoka|8280|8281":{"country": "None", "nJobs": "1", "jobSet": "8280"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4716|4718":{"country": "us", "nJobs": "11", "jobSet": "4716"}
 ,"Kevin_Sapp|936|937":{"country": "None", "nJobs": "4", "jobSet": "936"}
 ,"paul_thompson|37935|37936":{"country": "uk", "nJobs": "6", "jobSet": "37935"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4716|4717":{"country": "us", "nJobs": "25", "jobSet": "4716"}
 ,"Christopher_Young|5837|5838":{"country": "uk", "nJobs": "1", "jobSet": "5837"}
 ,"Christopher_Young|5837|5839":{"country": "uk", "nJobs": "1", "jobSet": "5837"}
 ,"Oleg_Zenin|4398|4399":{"country": "ru", "nJobs": "4", "jobSet": "4398"}
-,"vossebeld_joost|57009|57010":{"country": "uk", "nJobs": "2", "jobSet": "57009"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|815|816":{"country": "pt", "nJobs": "1", "jobSet": "815"}
+,"Mahsana_Ahsan|4397|4398":{"country": "None", "nJobs": "27", "jobSet": "4397"}
 ,"Yasuyuki_Okumura|55332|55333":{"country": "None", "nJobs": "56", "jobSet": "55332"}
-,"Yasuyuki_Okumura|55499|55500":{"country": "None", "nJobs": "13", "jobSet": "55499"}
+,"Yu_Suzuki|5180|5181":{"country": "jp", "nJobs": "264", "jobSet": "5180"}
+,"Yu_Suzuki|5174|5175":{"country": "jp", "nJobs": "264", "jobSet": "5174"}
 ,"Wei-Cheng_Wong|4979|4981":{"category": "C", "country": "--", "site": "ANALY_INFN-MILANO-ATLASC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4979"}
 ,"Wei-Cheng_Wong|4979|4980":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4979"}
 ,"Wei-Cheng_Wong|4979|4982":{"category": "C", "country": "--", "site": "ANALY_LANCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4979"}
@@ -53,14 +63,17 @@
 ,"Yu_Suzuki|5162|5163":{"country": "jp", "nJobs": "264", "jobSet": "5162"}
 ,"Thomas_Schwindt|50057|50060":{"country": "de", "nJobs": "1", "jobSet": "50057"}
 ,"Andreas_Wildauer|5081|5082":{"country": "None", "nJobs": "1", "jobSet": "5081"}
+,"Oleg_Zenin|4796|4797":{"country": "None", "nJobs": "1", "jobSet": "4796"}
 ,"paul_thompson|37794|37795":{"country": "uk", "nJobs": "1", "jobSet": "37794"}
 ,"Konstantinos_Nikolopoulos|6854|6855":{"country": "None", "nJobs": "1", "jobSet": "6854"}
 ,"Yasuyuki_Okumura|55404|55405":{"country": "None", "nJobs": "1", "jobSet": "55404"}
 ,"Yasuyuki_Okumura|55495|55496":{"country": "None", "nJobs": "3", "jobSet": "55495"}
 ,"Christopher_Young|5850|5851":{"country": "uk", "nJobs": "1", "jobSet": "5850"}
 ,"Yasuyuki_Okumura|55495|55498":{"country": "None", "nJobs": "10", "jobSet": "55495"}
+,"Joseph_David_Price|14928|14929":{"country": "None", "nJobs": "1", "jobSet": "14928"}
 ,"Yuta_Suzuki|44021|44022":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44021"}
 ,"David_Lopez_Mateos|7592|7593":{"country": "None", "nJobs": "2", "jobSet": "7592"}
+,"Lea_Michaela_Caminada|197|214":{"country": "None", "nJobs": "6", "jobSet": "197"}
 ,"Oleg_Zenin|4660|4661":{"country": "ru", "nJobs": "2", "jobSet": "4660"}
 ,"Benjamin_Auerbach|403|404":{"country": "None", "nJobs": "128", "jobSet": "403"}
 ,"paul_thompson|37586|37587":{"country": "uk", "nJobs": "3", "jobSet": "37586"}
@@ -74,27 +87,31 @@
 ,"sarah_williams|21847|21851":{"category": "C", "country": "--", "site": "ANALY_GRIF-LAL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "21847"}
 ,"sarah_williams|21847|21852":{"category": "C", "country": "--", "site": "ANALY_RALPP", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "21847"}
 ,"Oleg_Zenin|4626|4627":{"country": "ru", "nJobs": "59", "jobSet": "4626"}
+,"vossebeld_joost|57045|57047":{"country": "uk", "nJobs": "3", "jobSet": "57045"}
 ,"Yasuyuki_Okumura|55246|55247":{"country": "None", "nJobs": "1", "jobSet": "55246"}
-,"Kevin_Michael_Mercurio|140|143":{"country": "None", "nJobs": "2", "jobSet": "140"}
 ,"paul_thompson|37459|37460":{"country": "uk", "nJobs": "1", "jobSet": "37459"}
 ,"paul_thompson|37459|37461":{"country": "uk", "nJobs": "8", "jobSet": "37459"}
 ,"Dominick_Olivito|4028|4031":{"country": "us", "nJobs": "39", "jobSet": "4028"}
 ,"Mel_Shochet|1501|1503":{"country": "us", "nJobs": "18", "jobSet": "1501"}
 ,"paul_thompson|39284|39285":{"country": "uk", "nJobs": "1", "jobSet": "39284"}
-,"Christopher_Young|5852|5853":{"country": "uk", "nJobs": "1", "jobSet": "5852"}
+,"Oleg_Zenin|4586|4587":{"country": "ru", "nJobs": "2", "jobSet": "4586"}
+,"Christopher_Young|5873|5874":{"country": "uk", "nJobs": "1", "jobSet": "5873"}
 ,"Christopher_Young|5873|5875":{"country": "uk", "nJobs": "2", "jobSet": "5873"}
 ,"Christopher_Young|5915|5916":{"country": "uk", "nJobs": "2", "jobSet": "5915"}
 ,"Oleg_Zenin|4578|4579":{"country": "ru", "nJobs": "13", "jobSet": "4578"}
 ,"Toshi_Sumida|19750|19751":{"country": "None", "nJobs": "1177", "jobSet": "19750"}
 ,"Yousuke_Kataoka|8210|8211":{"country": "None", "nJobs": "2", "jobSet": "8210"}
+,"Oleg_Zenin|4898|4899":{"country": "ru", "nJobs": "23", "jobSet": "4898"}
 ,"Oleg_Zenin|4668|4669":{"country": "ru", "nJobs": "4", "jobSet": "4668"}
 ,"Oleg_Zenin|4694|4695":{"country": "ru", "nJobs": "21", "jobSet": "4694"}
+,"Joseph_David_Price|14924|14925":{"country": "None", "nJobs": "1", "jobSet": "14924"}
 ,"Yasuyuki_Okumura|55382|55383":{"country": "None", "nJobs": "1", "jobSet": "55382"}
 ,"Chang_Wei_Loh|45726|45730":{"country": "ca", "nJobs": "1", "jobSet": "45726"}
 ,"neil_cooper-smith|2662|2663":{"country": "uk", "nJobs": "1", "jobSet": "2662"}
 ,"Ohad_Silbert|4507|4508":{"country": "il", "nJobs": "1", "jobSet": "4507"}
 ,"Yuta_Suzuki|44673|44674":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44673"}
 ,"Yasuyuki_Okumura|55536|55537":{"country": "None", "nJobs": "29", "jobSet": "55536"}
+,"Oleg_Zenin|4918|4919":{"country": "ru", "nJobs": "11", "jobSet": "4918"}
 ,"Serguei_Yanush|36055|36056":{"category": "C", "country": "--", "site": "ANALY_CERN_XROOTD", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36055"}
 ,"Yasuyuki_Okumura|55673|55679":{"country": "None", "nJobs": "3", "jobSet": "55673"}
 ,"Yasuyuki_Okumura|55252|55253":{"country": "None", "nJobs": "2", "jobSet": "55252"}
@@ -103,9 +120,13 @@
 ,"Lei_Zhang|1949|1950":{"country": "tw", "nJobs": "3", "jobSet": "1949"}
 ,"Lei_Zhang|1949|1951":{"country": "tw", "nJobs": "1", "jobSet": "1949"}
 ,"Christopher_Young|5937|5938":{"country": "uk", "nJobs": "27", "jobSet": "5937"}
+,"vanessa.arnal|1434|1435":{"country": "None", "nJobs": "1", "jobSet": "1434"}
+,"Rajivalochan_Subramaniam|3336|3337":{"country": "None", "nJobs": "3618", "jobSet": "3336"}
 ,"matthew_rose|2762|2763":{"country": "None", "nJobs": "8", "jobSet": "2762"}
 ,"Yuta_Suzuki|44471|44472":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44471"}
 ,"Vladyslav_Shtabovenko|288|289":{"country": "None", "nJobs": "87", "jobSet": "288"}
+,"Yousuke_Kataoka|8260|8261":{"country": "None", "nJobs": "5", "jobSet": "8260"}
+,"Yousuke_Kataoka|8234|8235":{"country": "None", "nJobs": "17", "jobSet": "8234"}
 ,"Alex_Long|804|805":{"country": "None", "nJobs": "12", "jobSet": "804"}
 ,"Alex_Long|804|806":{"country": "None", "nJobs": "3", "jobSet": "804"}
 ,"paul_thompson|37770|37771":{"country": "uk", "nJobs": "15", "jobSet": "37770"}
@@ -114,24 +135,35 @@
 ,"Ludovica_Aperio_Bella|563|564":{"country": "fr", "nJobs": "2", "jobSet": "563"}
 ,"Joseph_David_Price|13746|13747":{"country": "None", "nJobs": "5", "jobSet": "13746"}
 ,"Oleg_Zenin|4702|4703":{"country": "ru", "nJobs": "4", "jobSet": "4702"}
+,"Sebastian_Stern|5491|5498":{"country": "de", "nJobs": "100", "jobSet": "5491"}
+,"william_buttinger|2210|2211":{"country": "uk", "nJobs": "3", "jobSet": "2210"}
 ,"Jeremiah_Jet_Goodson|66357|66358":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66357"}
 ,"Maximilian_Goblirsch-Kolb|6793|6794":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6793"}
 ,"Oleg_Zenin|4664|4665":{"country": "ru", "nJobs": "16", "jobSet": "4664"}
 ,"Christopher_Young|5921|5922":{"country": "uk", "nJobs": "2", "jobSet": "5921"}
+,"Viviana_Cavaliere|8910|8914":{"country": "None", "nJobs": "319", "jobSet": "8910"}
 ,"Jeremiah_Jet_Goodson|66349|66350":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66349"}
 ,"Jeremiah_Jet_Goodson|66353|66354":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66353"}
 ,"Toshi_Sumida|19808|19809":{"country": "None", "nJobs": "1", "jobSet": "19808"}
 ,"Andrew_Haas|255|256":{"country": "us", "nJobs": "31", "jobSet": "255"}
 ,"Maximilian_Goblirsch-Kolb|6875|6876":{"country": "de", "nJobs": "4", "jobSet": "6875"}
 ,"Yasuyuki_Okumura|55517|55518":{"country": "None", "nJobs": "3", "jobSet": "55517"}
-,"matthew_rose|2774|2775":{"country": "None", "nJobs": "4", "jobSet": "2774"}
+,"Yasuyuki_Okumura|55759|55760":{"country": "None", "nJobs": "38", "jobSet": "55759"}
 ,"Christopher_Young|5854|5855":{"country": "uk", "nJobs": "2", "jobSet": "5854"}
+,"Paul_Nilsson|11560|11471":{"category": "A", "country": "--", "site": "ANALY_LANCS", "logDate": "2011-11-21", "nJobs": "1", "jobSet": "11560"}
 ,"Jeremiah_Jet_Goodson|65957|65958":{"category": "C", "country": "--", "site": "ANALY_CSCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "65957"}
+,"Joseph_David_Price|14854|14863":{"country": "None", "nJobs": "1", "jobSet": "14854"}
+,"Joseph_David_Price|14854|14862":{"country": "None", "nJobs": "1", "jobSet": "14854"}
+,"Joseph_David_Price|14854|14861":{"country": "None", "nJobs": "1", "jobSet": "14854"}
+,"Joseph_David_Price|14854|14860":{"country": "None", "nJobs": "2", "jobSet": "14854"}
 ,"andrew_mehta|24132|24133":{"country": "uk", "nJobs": "1", "jobSet": "24132"}
+,"Joseph_David_Price|14854|14866":{"country": "None", "nJobs": "1", "jobSet": "14854"}
 ,"Serguei_Yanush|36023|36024":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36023"}
+,"Joseph_David_Price|14854|14864":{"country": "None", "nJobs": "1", "jobSet": "14854"}
 ,"Mark_J_Tibbetts|2650|2651":{"country": "None", "nJobs": "2", "jobSet": "2650"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4581|4584":{"country": "us", "nJobs": "1752", "jobSet": "4581"}
 ,"Yasuyuki_Okumura|55232|55233":{"country": "None", "nJobs": "5", "jobSet": "55232"}
-,"Mark_J_Tibbetts|2570|2578":{"category": "C", "country": "--", "site": "ANALY_INFN-NAPOLI", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
+,"Oleg_Zenin|4598|4599":{"country": "ru", "nJobs": "3", "jobSet": "4598"}
 ,"Daniel_Damiani|5312|5313":{"country": "us", "nJobs": "1", "jobSet": "5312"}
 ,"Yuta_Suzuki|44503|44504":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44503"}
 ,"David_Lopez_Mateos|7594|7595":{"country": "None", "nJobs": "2", "jobSet": "7594"}
@@ -154,23 +186,29 @@
 ,"Yasuyuki_Okumura|55479|55480":{"country": "None", "nJobs": "13", "jobSet": "55479"}
 ,"Christopher_Young|5858|5860":{"country": "uk", "nJobs": "1", "jobSet": "5858"}
 ,"Jeremiah_Jet_Goodson|66276|66277":{"category": "C", "country": "--", "site": "ANALY_IHEP", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66276"}
-,"Oleg_Zenin|4706|4707":{"country": "ru", "nJobs": "1", "jobSet": "4706"}
+,"neil_cooper-smith|2666|2667":{"country": "uk", "nJobs": "1", "jobSet": "2666"}
 ,"sarah_livermore|12132|12133":{"country": "us", "nJobs": "82", "jobSet": "12132"}
+,"Marino_Romano|5502|5503":{"country": "None", "nJobs": "7", "jobSet": "5502"}
 ,"Oleg_Zenin|4684|4685":{"country": "ru", "nJobs": "9", "jobSet": "4684"}
+,"Oleg_Zenin|4732|4733":{"country": "None", "nJobs": "1", "jobSet": "4732"}
 ,"Hannah_Arnold|2102|2103":{"country": "de", "nJobs": "17", "jobSet": "2102"}
 ,"Yu_Suzuki|5150|5151":{"country": "jp", "nJobs": "264", "jobSet": "5150"}
 ,"Maximilian_Goblirsch-Kolb|6889|6890":{"country": "de", "nJobs": "28", "jobSet": "6889"}
 ,"Yasuyuki_Okumura|55780|55781":{"country": "None", "nJobs": "10", "jobSet": "55780"}
 ,"Toshi_Sumida|19816|19817":{"country": "None", "nJobs": "6", "jobSet": "19816"}
+,"Joseph_David_Price|14891|14892":{"country": "None", "nJobs": "1", "jobSet": "14891"}
 ,"Yasuyuki_Okumura|55566|55571":{"country": "None", "nJobs": "4", "jobSet": "55566"}
 ,"adrian_lewis|5157|5158":{"country": "uk", "nJobs": "1", "jobSet": "5157"}
+,"Rodger_Mantifel|2712|2713":{"country": "ca", "nJobs": "1", "jobSet": "2712"}
 ,"Yasuyuki_Okumura|55812|55813":{"country": "None", "nJobs": "1", "jobSet": "55812"}
 ,"Christopher_Young|5893|5894":{"country": "uk", "nJobs": "19", "jobSet": "5893"}
 ,"neil_cooper-smith|2901|2902":{"country": "uk", "nJobs": "3", "jobSet": "2901"}
 ,"Lei_Zhang|1931|1932":{"country": "tw", "nJobs": "3", "jobSet": "1931"}
 ,"Yasuyuki_Okumura|55468|55472":{"country": "None", "nJobs": "12", "jobSet": "55468"}
 ,"Lei_Zhang|1838|1839":{"country": "tw", "nJobs": "1", "jobSet": "1838"}
+,"Oleg_Zenin|4816|4817":{"country": "ru", "nJobs": "8", "jobSet": "4816"}
 ,"Yasuyuki_Okumura|55434|55435":{"country": "None", "nJobs": "1", "jobSet": "55434"}
+,"Daniel_Damiani|5342|5343":{"country": "us", "nJobs": "2", "jobSet": "5342"}
 ,"Maximilian_Goblirsch-Kolb|6845|6846":{"category": "C", "country": "--", "site": "ANALY_CYF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6845"}
 ,"paul_thompson|37651|37652":{"country": "uk", "nJobs": "2", "jobSet": "37651"}
 ,"Ippei_Watanabe|14811|14812":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14811"}
@@ -178,13 +216,20 @@
 ,"Toshi_Sumida|19731|19732":{"country": "None", "nJobs": "75", "jobSet": "19731"}
 ,"Junpei_Nonaka|585|587":{"country": "jp", "nJobs": "1001", "jobSet": "585"}
 ,"Christopher_Young|5878|5879":{"country": "uk", "nJobs": "1", "jobSet": "5878"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|776|777":{"country": "pt", "nJobs": "3", "jobSet": "776"}
+,"Yousuke_Kataoka|8266|8267":{"country": "None", "nJobs": "508", "jobSet": "8266"}
 ,"Yasuyuki_Okumura|55650|55651":{"country": "None", "nJobs": "4", "jobSet": "55650"}
+,"Joseph_David_Price|14958|14959":{"country": "None", "nJobs": "1", "jobSet": "14958"}
+,"Nicolas_Bousson|3800|3801":{"country": "fr", "nJobs": "2", "jobSet": "3800"}
 ,"Andrew_Haas|261|262":{"country": "us", "nJobs": "50", "jobSet": "261"}
 ,"sarah_williams|21847|21849":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "21847"}
 ,"sarah_williams|21847|21848":{"category": "C", "country": "--", "site": "ANALY_BEIJING", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "21847"}
 ,"Oleg_Zenin|4582|4583":{"country": "ru", "nJobs": "14", "jobSet": "4582"}
+,"Oleg_Zenin|4768|4769":{"country": "ru", "nJobs": "1", "jobSet": "4768"}
+,"Oleg_Zenin|4896|4897":{"country": "ru", "nJobs": "12", "jobSet": "4896"}
 ,"Daniel_Damiani|5308|5310":{"country": "us", "nJobs": "1", "jobSet": "5308"}
 ,"Daniel_Damiani|5308|5311":{"country": "us", "nJobs": "31", "jobSet": "5308"}
+,"Muhammad_Saleem|6417|6418":{"country": "us", "nJobs": "31", "jobSet": "6417"}
 ,"vossebeld_joost|57033|57034":{"country": "uk", "nJobs": "1", "jobSet": "57033"}
 ,"Toshi_Sumida|19806|19807":{"country": "None", "nJobs": "1", "jobSet": "19806"}
 ,"Yasuyuki_Okumura|55778|55779":{"country": "None", "nJobs": "38", "jobSet": "55778"}
@@ -192,18 +237,31 @@
 ,"Nabil_Ghodbane|14667|14668":{"country": "fr", "nJobs": "19", "jobSet": "14667"}
 ,"matthew_rose|2794|2795":{"country": "None", "nJobs": "3", "jobSet": "2794"}
 ,"Stephen_Jacob_Sekula|5871|5872":{"category": "C", "country": "--", "site": "ANALY_LONG_BNL_ATLAS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5871"}
+,"Aaron_Angerami|3441|3442":{"country": "us", "nJobs": "445", "jobSet": "3441"}
 ,"Soeren_Stamm|164|165":{"category": "C", "country": "--", "site": "ANALY_DESY-ZN", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "164"}
 ,"Toshi_Sumida|19714|19715":{"country": "None", "nJobs": "1400", "jobSet": "19714"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|766|767":{"country": "pt", "nJobs": "4", "jobSet": "766"}
 ,"vossebeld_joost|56991|56992":{"country": "uk", "nJobs": "1", "jobSet": "56991"}
+,"Mahsana_Ahsan|4429|4434":{"country": "None", "nJobs": "9", "jobSet": "4429"}
+,"Mahsana_Ahsan|4429|4435":{"country": "None", "nJobs": "8", "jobSet": "4429"}
+,"Mahsana_Ahsan|4429|4436":{"country": "None", "nJobs": "5", "jobSet": "4429"}
+,"Mahsana_Ahsan|4429|4437":{"country": "None", "nJobs": "10", "jobSet": "4429"}
+,"Mahsana_Ahsan|4429|4430":{"country": "None", "nJobs": "12", "jobSet": "4429"}
+,"Mahsana_Ahsan|4429|4431":{"country": "None", "nJobs": "3", "jobSet": "4429"}
+,"Mahsana_Ahsan|4429|4432":{"country": "None", "nJobs": "4", "jobSet": "4429"}
+,"Joseph_David_Price|15557|15558":{"country": "None", "nJobs": "1", "jobSet": "15557"}
 ,"Enrique_Kajomovitz|2964|2965":{"category": "C", "country": "--", "site": "ANALY_ARC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2964"}
 ,"Giacinto_Piacquadio|4009|4010":{"country": "None", "nJobs": "1", "jobSet": "4009"}
-,"Yasuyuki_Okumura|55158|55159":{"country": "None", "nJobs": "1", "jobSet": "55158"}
+,"Nicolas_Bousson|3793|3795":{"country": "fr", "nJobs": "270", "jobSet": "3793"}
+,"Nicolas_Bousson|3793|3794":{"country": "fr", "nJobs": "30", "jobSet": "3793"}
 ,"Yasuyuki_Okumura|55414|55415":{"country": "None", "nJobs": "3", "jobSet": "55414"}
+,"Joseph_David_Price|14832|14833":{"country": "None", "nJobs": "2", "jobSet": "14832"}
 ,"Wei-Cheng_Wong|4983|4984":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4983"}
 ,"Wei-Cheng_Wong|4983|4985":{"category": "C", "country": "--", "site": "ANALY_DESY-ZN", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4983"}
 ,"Wei-Cheng_Wong|4983|4986":{"category": "C", "country": "--", "site": "ANALY_LANCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4983"}
 ,"arturos_Sanchez_Pineda|11185|11186":{"country": "None", "nJobs": "1", "jobSet": "11185"}
 ,"Philip_Chang|11897|11898":{"country": "None", "nJobs": "1", "jobSet": "11897"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|811|812":{"country": "pt", "nJobs": "3", "jobSet": "811"}
 ,"neil_cooper-smith|3117|3118":{"country": "uk", "nJobs": "1", "jobSet": "3117"}
 ,"Lei_Zhang|1865|1866":{"country": "tw", "nJobs": "1", "jobSet": "1865"}
 ,"Yasuyuki_Okumura|55622|55623":{"country": "None", "nJobs": "4", "jobSet": "55622"}
@@ -211,24 +269,30 @@
 ,"Yasuyuki_Okumura|55630|55631":{"country": "None", "nJobs": "1", "jobSet": "55630"}
 ,"Marius_Cornelis_Van_Woerden|11815|11816":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "11815"}
 ,"vossebeld_joost|56981|56982":{"country": "uk", "nJobs": "2", "jobSet": "56981"}
+,"Joseph_David_Price|14834|14836":{"country": "None", "nJobs": "1", "jobSet": "14834"}
 ,"Dimitrios_Varouchas|2495|2496":{"country": "None", "nJobs": "5", "jobSet": "2495"}
 ,"Toshi_Sumida|19755|19756":{"country": "None", "nJobs": "2", "jobSet": "19755"}
+,"Joseph_David_Price|14834|14835":{"country": "None", "nJobs": "1", "jobSet": "14834"}
+,"Benjamin_Auerbach|409|410":{"country": "None", "nJobs": "1", "jobSet": "409"}
 ,"andrew_mehta|24140|24141":{"country": "uk", "nJobs": "1", "jobSet": "24140"}
+,"Oleg_Zenin|4938|4939":{"country": "ru", "nJobs": "2", "jobSet": "4938"}
 ,"Mahsana_Ahsan|4391|4393":{"country": "None", "nJobs": "1", "jobSet": "4391"}
 ,"Mahsana_Ahsan|4391|4392":{"country": "None", "nJobs": "1", "jobSet": "4391"}
 ,"Mahsana_Ahsan|4391|4396":{"country": "None", "nJobs": "226", "jobSet": "4391"}
 ,"Mahsana_Ahsan|4391|4395":{"country": "None", "nJobs": "14", "jobSet": "4391"}
 ,"Mahsana_Ahsan|4391|4394":{"country": "None", "nJobs": "11", "jobSet": "4391"}
-,"paul_thompson|37658|37659":{"country": "uk", "nJobs": "7", "jobSet": "37658"}
+,"sarah_livermore|12138|12139":{"country": "us", "nJobs": "2", "jobSet": "12138"}
 ,"Oleg_Zenin|4648|4649":{"country": "ru", "nJobs": "1", "jobSet": "4648"}
 ,"Yasuyuki_Okumura|55268|55269":{"country": "None", "nJobs": "8", "jobSet": "55268"}
 ,"Christopher_Young|5856|5857":{"country": "uk", "nJobs": "1", "jobSet": "5856"}
 ,"Serguei_Yanush|36299|36300":{"category": "C", "country": "--", "site": "ANALY_RHUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36299"}
+,"Mahsana_Ahsan|4417|4418":{"country": "None", "nJobs": "42", "jobSet": "4417"}
 ,"Yousuke_Kataoka|8240|8241":{"country": "None", "nJobs": "7", "jobSet": "8240"}
 ,"Chang_Wei_Loh|45765|45766":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45765"}
 ,"Yousuke_Kataoka|8224|8225":{"country": "None", "nJobs": "508", "jobSet": "8224"}
 ,"vossebeld_joost|57025|57026":{"country": "uk", "nJobs": "2", "jobSet": "57025"}
 ,"Yasuyuki_Okumura|55457|55458":{"country": "None", "nJobs": "4", "jobSet": "55457"}
+,"Nicolas_Bousson|3785|3786":{"country": "fr", "nJobs": "2", "jobSet": "3785"}
 ,"Ippei_Watanabe|14807|14808":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14807"}
 ,"Chang_Wei_Loh|45672|45673":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45672"}
 ,"Yu_Suzuki|5146|5147":{"country": "jp", "nJobs": "264", "jobSet": "5146"}
@@ -237,18 +301,19 @@
 ,"Christopher_Young|5941|5942":{"country": "uk", "nJobs": "3", "jobSet": "5941"}
 ,"paul_thompson|37786|37787":{"country": "uk", "nJobs": "6", "jobSet": "37786"}
 ,"Mel_Shochet|1495|1497":{"country": "us", "nJobs": "18", "jobSet": "1495"}
-,"vossebeld_joost|56983|56984":{"country": "uk", "nJobs": "1", "jobSet": "56983"}
+,"Oleg_Zenin|4682|4683":{"country": "ru", "nJobs": "39", "jobSet": "4682"}
 ,"Maximilian_Goblirsch-Kolb|6883|6884":{"country": "de", "nJobs": "10", "jobSet": "6883"}
 ,"Christopher_Young|5840|5842":{"country": "uk", "nJobs": "1", "jobSet": "5840"}
 ,"Christopher_Young|5840|5841":{"country": "uk", "nJobs": "1", "jobSet": "5840"}
 ,"Vladimir_Lyubushkin|3529|3530":{"country": "None", "nJobs": "2", "jobSet": "3529"}
 ,"Lei_Zhang|1867|1868":{"country": "tw", "nJobs": "1", "jobSet": "1867"}
-,"Yasuyuki_Okumura|55608|55609":{"country": "None", "nJobs": "12", "jobSet": "55608"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|794|795":{"country": "pt", "nJobs": "12", "jobSet": "794"}
 ,"Yasuyuki_Okumura|55368|55369":{"country": "None", "nJobs": "1", "jobSet": "55368"}
 ,"vossebeld_joost|57052|57053":{"country": "uk", "nJobs": "2", "jobSet": "57052"}
 ,"Yuta_Suzuki|44715|44716":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44715"}
 ,"Ippei_Watanabe|14647|14648":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14647"}
 ,"Yasuyuki_Okumura|55677|55678":{"country": "None", "nJobs": "25", "jobSet": "55677"}
+,"vossebeld_joost|57140|57141":{"country": "uk", "nJobs": "2", "jobSet": "57140"}
 ,"Konstantinos_Nikolopoulos|6844|6845":{"country": "None", "nJobs": "1", "jobSet": "6844"}
 ,"paul_thompson|37442|37444":{"country": "uk", "nJobs": "1", "jobSet": "37442"}
 ,"paul_thompson|37442|37445":{"country": "uk", "nJobs": "1", "jobSet": "37442"}
@@ -257,49 +322,58 @@
 ,"Yu_Suzuki|5142|5143":{"country": "jp", "nJobs": "1", "jobSet": "5142"}
 ,"Yuta_Suzuki|44063|44064":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44063"}
 ,"Soeren_Stamm|152|153":{"category": "C", "country": "--", "site": "ANALY_GRIF-LPNHE", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "152"}
+,"Yousuke_Kataoka|8256|8257":{"country": "None", "nJobs": "327", "jobSet": "8256"}
 ,"vossebeld_joost|56987|56988":{"country": "uk", "nJobs": "1", "jobSet": "56987"}
+,"Veit_Scharf|3582|3585":{"country": "de", "nJobs": "454", "jobSet": "3582"}
 ,"Yasuyuki_Okumura|55568|55569":{"country": "None", "nJobs": "29", "jobSet": "55568"}
+,"Oleg_Zenin|4892|4893":{"country": "ru", "nJobs": "3", "jobSet": "4892"}
 ,"David_Lopez_Mateos|7586|7587":{"country": "None", "nJobs": "2", "jobSet": "7586"}
-,"Mahsana_Ahsan|4397|4398":{"country": "None", "nJobs": "27", "jobSet": "4397"}
 ,"Yasuyuki_Okumura|55618|55619":{"country": "None", "nJobs": "12", "jobSet": "55618"}
 ,"Yasuyuki_Okumura|55634|55635":{"country": "None", "nJobs": "4", "jobSet": "55634"}
 ,"Maximilian_Goblirsch-Kolb|6733|6734":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6733"}
+,"Yasuyuki_Okumura|55499|55500":{"country": "None", "nJobs": "13", "jobSet": "55499"}
 ,"Yasuyuki_Okumura|55566|55567":{"country": "None", "nJobs": "3", "jobSet": "55566"}
 ,"Oleg_Zenin|4666|4667":{"country": "ru", "nJobs": "7", "jobSet": "4666"}
+,"Philippe_Calfayan|12479|12480":{"country": "de", "nJobs": "1", "jobSet": "12479"}
 ,"Yasuyuki_Okumura|55116|55117":{"country": "None", "nJobs": "193", "jobSet": "55116"}
 ,"Yasuyuki_Okumura|55420|55427":{"country": "None", "nJobs": "2", "jobSet": "55420"}
+,"Joseph_David_Price|14868|14871":{"country": "None", "nJobs": "1", "jobSet": "14868"}
 ,"Yasuyuki_Okumura|55344|55345":{"country": "None", "nJobs": "1", "jobSet": "55344"}
 ,"Yasuyuki_Okumura|55755|55756":{"country": "None", "nJobs": "38", "jobSet": "55755"}
 ,"Yasuyuki_Okumura|55420|55422":{"country": "None", "nJobs": "1", "jobSet": "55420"}
 ,"Yasuyuki_Okumura|55420|55421":{"country": "None", "nJobs": "1", "jobSet": "55420"}
 ,"Soeren_Stamm|200|201":{"category": "C", "country": "--", "site": "ANALY_INFN-FRASCATI", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "200"}
-,"Mel_Shochet|1492|1494":{"country": "us", "nJobs": "18", "jobSet": "1492"}
+,"Jeremiah_Jet_Goodson|66231|66232":{"category": "C", "country": "--", "site": "ANALY_CSCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66231"}
 ,"Yasuyuki_Okumura|55596|55597":{"country": "None", "nJobs": "1", "jobSet": "55596"}
 ,"Yasuyuki_Okumura|55272|55273":{"country": "None", "nJobs": "2", "jobSet": "55272"}
 ,"vossebeld_joost|57011|57012":{"country": "uk", "nJobs": "17", "jobSet": "57011"}
 ,"Kevin_Michael_Mercurio|140|141":{"country": "None", "nJobs": "1", "jobSet": "140"}
 ,"Kevin_Michael_Mercurio|140|142":{"country": "None", "nJobs": "2", "jobSet": "140"}
-,"Yasuyuki_Okumura|55290|55291":{"country": "None", "nJobs": "1", "jobSet": "55290"}
+,"Kevin_Michael_Mercurio|140|143":{"country": "None", "nJobs": "2", "jobSet": "140"}
 ,"Kevin_Michael_Mercurio|140|144":{"country": "None", "nJobs": "11", "jobSet": "140"}
 ,"Yasuyuki_Okumura|55468|55469":{"country": "None", "nJobs": "1", "jobSet": "55468"}
 ,"Lei_Zhang|1892|1893":{"country": "tw", "nJobs": "1", "jobSet": "1892"}
 ,"Yasuyuki_Okumura|55202|55203":{"country": "None", "nJobs": "3", "jobSet": "55202"}
+,"Joseph_David_Price|14914|14915":{"country": "None", "nJobs": "1", "jobSet": "14914"}
 ,"Yasuyuki_Okumura|55258|55259":{"country": "None", "nJobs": "3", "jobSet": "55258"}
 ,"Yasuyuki_Okumura|55557|55558":{"country": "None", "nJobs": "11", "jobSet": "55557"}
 ,"Toshi_Sumida|19737|19738":{"country": "None", "nJobs": "5", "jobSet": "19737"}
 ,"Vladimir_Lyubushkin|3475|3476":{"country": "None", "nJobs": "3", "jobSet": "3475"}
+,"Maximilian_Goblirsch-Kolb|7030|7031":{"country": "de", "nJobs": "88", "jobSet": "7030"}
 ,"Ippei_Watanabe|14771|14772":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14771"}
 ,"Andrew_Haas|257|258":{"country": "us", "nJobs": "29", "jobSet": "257"}
-,"neil_cooper-smith|2666|2667":{"country": "uk", "nJobs": "1", "jobSet": "2666"}
+,"Oleg_Zenin|4706|4707":{"country": "ru", "nJobs": "1", "jobSet": "4706"}
 ,"Lei_Zhang|1851|1853":{"country": "tw", "nJobs": "1", "jobSet": "1851"}
 ,"Lei_Zhang|1851|1852":{"country": "tw", "nJobs": "1", "jobSet": "1851"}
 ,"Lei_Zhang|1851|1855":{"country": "tw", "nJobs": "1", "jobSet": "1851"}
 ,"Lei_Zhang|1851|1854":{"country": "tw", "nJobs": "1", "jobSet": "1851"}
 ,"Lei_Zhang|1851|1857":{"country": "tw", "nJobs": "1", "jobSet": "1851"}
 ,"Lei_Zhang|1851|1856":{"country": "tw", "nJobs": "1", "jobSet": "1851"}
+,"Yasuyuki_Okumura|55418|55419":{"country": "None", "nJobs": "1", "jobSet": "55418"}
 ,"Pedro_Jorge|1323|1324":{"country": "pt", "nJobs": "1", "jobSet": "1323"}
 ,"Daniel_Damiani|5308|5309":{"country": "us", "nJobs": "1", "jobSet": "5308"}
 ,"Yasuyuki_Okumura|55455|55456":{"country": "None", "nJobs": "4", "jobSet": "55455"}
+,"Joseph_David_Price|14912|14913":{"country": "None", "nJobs": "1", "jobSet": "14912"}
 ,"Yasuyuki_Okumura|55699|55700":{"country": "None", "nJobs": "22", "jobSet": "55699"}
 ,"lucy_kogan|2931|2932":{"category": "C", "country": "--", "site": "ANALY_SHEF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2931"}
 ,"paul_thompson|37409|37410":{"country": "uk", "nJobs": "4", "jobSet": "37409"}
@@ -308,20 +382,26 @@
 ,"Mel_Shochet|1483|1485":{"country": "us", "nJobs": "18", "jobSet": "1483"}
 ,"Ohad_Silbert|4505|4506":{"country": "il", "nJobs": "1", "jobSet": "4505"}
 ,"Yasuyuki_Okumura|55366|55367":{"country": "None", "nJobs": "1", "jobSet": "55366"}
+,"Yu_Suzuki|5172|5173":{"country": "jp", "nJobs": "264", "jobSet": "5172"}
 ,"neil_cooper-smith|2961|2962":{"country": "uk", "nJobs": "20", "jobSet": "2961"}
 ,"Ippei_Watanabe|14659|14660":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14659"}
+,"Yasuyuki_Okumura|55244|55245":{"country": "None", "nJobs": "1", "jobSet": "55244"}
 ,"Yousuke_Kataoka|8230|8231":{"country": "None", "nJobs": "1", "jobSet": "8230"}
+,"Eric_Fitzgerald|1952|1953":{"country": "None", "nJobs": "2", "jobSet": "1952"}
 ,"lucy_kogan|2941|2942":{"category": "C", "country": "--", "site": "ANALY_ECDF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2941"}
 ,"lucy_kogan|2873|2874":{"country": "uk", "nJobs": "1", "jobSet": "2873"}
-,"Daniele_Zanzi|11272|11287":{"country": "de", "nJobs": "76", "jobSet": "11272"}
+,"Serguei_Yanush|36187|36188":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC_LONG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36187"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|772|773":{"country": "pt", "nJobs": "3", "jobSet": "772"}
 ,"Yasuyuki_Okumura|55216|55217":{"country": "None", "nJobs": "1", "jobSet": "55216"}
 ,"Wei-Cheng_Wong|4942|4947":{"category": "C", "country": "--", "site": "ANALY_JINR", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4942"}
-,"Jeremiah_Jet_Goodson|66329|66330":{"category": "C", "country": "--", "site": "ANALY_BEIJING", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66329"}
+,"Wei-Cheng_Wong|4942|4944":{"country": "us", "nJobs": "2", "jobSet": "4942"}
 ,"Christopher_Young|5827|5828":{"country": "uk", "nJobs": "1", "jobSet": "5827"}
 ,"Yasuyuki_Okumura|55330|55331":{"country": "None", "nJobs": "1", "jobSet": "55330"}
 ,"lucy_kogan|2899|2900":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2899"}
 ,"Stephen_Jacob_Sekula|5908|5909":{"category": "C", "country": "--", "site": "ANALY_NET2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5908"}
+,"Oleg_Zenin|4932|4933":{"country": "ru", "nJobs": "10", "jobSet": "4932"}
 ,"Tomoe_Kishimoto|10878|10879":{"country": "jp", "nJobs": "3121", "jobSet": "10878"}
+,"Yasuyuki_Okumura|55402|55403":{"country": "None", "nJobs": "1", "jobSet": "55402"}
 ,"Yuta_Suzuki|40072|40078":{"country": "jp", "nJobs": "2477", "jobSet": "40072"}
 ,"andrew_mehta|24123|24124":{"country": "uk", "nJobs": "1", "jobSet": "24123"}
 ,"Kristin_Lohwasser|6720|6721":{"country": "de", "nJobs": "8", "jobSet": "6720"}
@@ -329,6 +409,7 @@
 ,"Konstantinos_Nikolopoulos|6830|6831":{"country": "None", "nJobs": "1", "jobSet": "6830"}
 ,"Chang_Wei_Loh|45926|45930":{"country": "ca", "nJobs": "1861", "jobSet": "45926"}
 ,"Christopher_Young|5829|5830":{"country": "uk", "nJobs": "2", "jobSet": "5829"}
+,"Kanishka_Rao|23803|23811":{"country": "None", "nJobs": "146", "jobSet": "23803"}
 ,"Yasuyuki_Okumura|55314|55315":{"country": "None", "nJobs": "5", "jobSet": "55314"}
 ,"Yasuyuki_Okumura|55320|55321":{"country": "None", "nJobs": "2", "jobSet": "55320"}
 ,"sarah_livermore|12134|12135":{"country": "us", "nJobs": "24", "jobSet": "12134"}
@@ -336,29 +417,37 @@
 ,"Yasuyuki_Okumura|55236|55237":{"country": "None", "nJobs": "3", "jobSet": "55236"}
 ,"Konstantinos_Nikolopoulos|6858|6859":{"country": "None", "nJobs": "1", "jobSet": "6858"}
 ,"Maximilian_Goblirsch-Kolb|6887|6888":{"country": "de", "nJobs": "10", "jobSet": "6887"}
+,"Mahsana_Ahsan|4419|4420":{"country": "None", "nJobs": "1", "jobSet": "4419"}
 ,"Christopher_Young|5917|5918":{"country": "uk", "nJobs": "19", "jobSet": "5917"}
 ,"Ippei_Watanabe|14789|14790":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14789"}
 ,"Pedro_Jorge|1325|1326":{"country": "pt", "nJobs": "2", "jobSet": "1325"}
 ,"paul_thompson|37647|37648":{"country": "uk", "nJobs": "42", "jobSet": "37647"}
+,"Oleg_Zenin|4676|4677":{"country": "ru", "nJobs": "2", "jobSet": "4676"}
 ,"Yasuyuki_Okumura|55763|55764":{"country": "None", "nJobs": "1", "jobSet": "55763"}
 ,"Yasuyuki_Okumura|55763|55765":{"country": "None", "nJobs": "2", "jobSet": "55763"}
-,"William_Davey|2751|2752":{"category": "C", "country": "--", "site": "ANALY_MWT2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2751"}
 ,"Krzysztof_Sliwa|1454|1455":{"country": "us", "nJobs": "1", "jobSet": "1454"}
 ,"Serguei_Yanush|36305|36306":{"category": "C", "country": "--", "site": "ANALY_INFN-GENOVA", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36305"}
 ,"paul_thompson|37768|37769":{"country": "uk", "nJobs": "1", "jobSet": "37768"}
 ,"Maximilian_Goblirsch-Kolb|6743|6744":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6743"}
 ,"Stephen_Jacob_Sekula|5901|5902":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5901"}
 ,"lucy_kogan|2911|2912":{"category": "C", "country": "--", "site": "ANALY_IFIC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2911"}
+,"Joseph_David_Price|14910|14911":{"country": "None", "nJobs": "1", "jobSet": "14910"}
+,"Joseph_David_Price|14881|14882":{"country": "None", "nJobs": "1", "jobSet": "14881"}
 ,"Yasuyuki_Okumura|55408|55409":{"country": "None", "nJobs": "1", "jobSet": "55408"}
 ,"Holger_Schulz|925|926":{"country": "de", "nJobs": "1", "jobSet": "925"}
-,"Yasuyuki_Okumura|55266|55267":{"country": "None", "nJobs": "5", "jobSet": "55266"}
+,"Yasuyuki_Okumura|55432|55437":{"country": "None", "nJobs": "3", "jobSet": "55432"}
 ,"Louis_Bianchini|3292|3293":{"country": "None", "nJobs": "1", "jobSet": "3292"}
 ,"Christopher_Young|5961|5962":{"country": "uk", "nJobs": "11", "jobSet": "5961"}
+,"Frederic_Derue|39380|39385":{"country": "fr", "nJobs": "222", "jobSet": "39380"}
 ,"Arturo_Sanchez|11179|11180":{"country": "None", "nJobs": "1", "jobSet": "11179"}
 ,"Lei_Zhang|1844|1845":{"country": "tw", "nJobs": "1", "jobSet": "1844"}
 ,"Lei_Zhang|1844|1846":{"country": "tw", "nJobs": "1", "jobSet": "1844"}
 ,"Toshi_Sumida|19820|19821":{"country": "None", "nJobs": "1", "jobSet": "19820"}
+,"Mahsana_Ahsan|4424|4428":{"country": "None", "nJobs": "8", "jobSet": "4424"}
 ,"Yasuyuki_Okumura|55648|55649":{"country": "None", "nJobs": "4", "jobSet": "55648"}
+,"Mahsana_Ahsan|4424|4425":{"country": "None", "nJobs": "8", "jobSet": "4424"}
+,"Mahsana_Ahsan|4424|4426":{"country": "None", "nJobs": "2", "jobSet": "4424"}
+,"Mahsana_Ahsan|4424|4427":{"country": "None", "nJobs": "11", "jobSet": "4424"}
 ,"Yasuyuki_Okumura|55517|55521":{"country": "None", "nJobs": "12", "jobSet": "55517"}
 ,"Yasuyuki_Okumura|55276|55277":{"country": "None", "nJobs": "1", "jobSet": "55276"}
 ,"Yuta_Suzuki|44711|44712":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44711"}
@@ -368,44 +457,53 @@
 ,"Konstantinos_Nikolopoulos|6828|6829":{"country": "None", "nJobs": "1", "jobSet": "6828"}
 ,"Lei_Zhang|1871|1872":{"country": "tw", "nJobs": "3", "jobSet": "1871"}
 ,"Toshi_Sumida|19768|19769":{"country": "None", "nJobs": "1", "jobSet": "19768"}
+,"Yuta_Suzuki|44505|44506":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44505"}
 ,"Ippei_Watanabe|14863|14864":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14863"}
 ,"Kevin_Sapp|930|931":{"country": "None", "nJobs": "2", "jobSet": "930"}
 ,"Christopher_Young|5909|5910":{"country": "uk", "nJobs": "1", "jobSet": "5909"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|809|810":{"country": "pt", "nJobs": "63", "jobSet": "809"}
 ,"Lei_Zhang|1873|1875":{"country": "tw", "nJobs": "1", "jobSet": "1873"}
 ,"Lei_Zhang|1873|1874":{"country": "tw", "nJobs": "1", "jobSet": "1873"}
+,"Oleg_Zenin|4804|4805":{"country": "None", "nJobs": "7", "jobSet": "4804"}
 ,"Serguei_Yanush|36201|36202":{"category": "C", "country": "--", "site": "ANALY_FZU", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36201"}
 ,"Johanna_Bronner|7063|7065":{"country": "de", "nJobs": "800", "jobSet": "7063"}
 ,"Yasuyuki_Okumura|55294|55295":{"country": "None", "nJobs": "1", "jobSet": "55294"}
 ,"Ippei_Watanabe|14951|14952":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14951"}
+,"Frederic_Derue|39386|39387":{"country": "fr", "nJobs": "126", "jobSet": "39386"}
 ,"Yuta_Suzuki|44349|44350":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44349"}
 ,"Yuta_Suzuki|44065|44066":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44065"}
 ,"Konstantinos_Nikolopoulos|6850|6851":{"country": "None", "nJobs": "1", "jobSet": "6850"}
 ,"Soeren_Stamm|218|219":{"category": "C", "country": "--", "site": "ANALY_TOKYO", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "218"}
 ,"Yousuke_Kataoka|8220|8221":{"country": "None", "nJobs": "1", "jobSet": "8220"}
+,"Joseph_David_Price|14964|14965":{"country": "None", "nJobs": "1", "jobSet": "14964"}
 ,"Yasuyuki_Okumura|55548|55554":{"country": "None", "nJobs": "17", "jobSet": "55548"}
 ,"Andreas_Reinsch|9902|9903":{"country": "us", "nJobs": "7", "jobSet": "9902"}
-,"neil_cooper-smith|3070|3071":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "3070"}
+,"caterina_doglioni|5967|5968":{"country": "None", "nJobs": "2", "jobSet": "5967"}
 ,"Oleg_Zenin|4592|4593":{"country": "ru", "nJobs": "4", "jobSet": "4592"}
 ,"Ippei_Watanabe|14617|14618":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14617"}
 ,"Yasuyuki_Okumura|55300|55301":{"country": "None", "nJobs": "56", "jobSet": "55300"}
 ,"Yasuyuki_Okumura|55665|55666":{"country": "None", "nJobs": "22", "jobSet": "55665"}
+,"Yu_Suzuki|5176|5177":{"country": "jp", "nJobs": "264", "jobSet": "5176"}
+,"Oleg_Zenin|4756|4757":{"country": "None", "nJobs": "5", "jobSet": "4756"}
 ,"Yasuyuki_Okumura|55745|55746":{"country": "None", "nJobs": "38", "jobSet": "55745"}
 ,"Ohad_Silbert|3585|3586":{"country": "il", "nJobs": "1", "jobSet": "3585"}
+,"Joseph_David_Price|14974|14975":{"country": "None", "nJobs": "1", "jobSet": "14974"}
 ,"Yasuyuki_Okumura|55713|55714":{"country": "None", "nJobs": "3", "jobSet": "55713"}
 ,"Yasuyuki_Okumura|55146|55147":{"country": "None", "nJobs": "2", "jobSet": "55146"}
 ,"Oleg_Zenin|4672|4673":{"country": "ru", "nJobs": "1", "jobSet": "4672"}
 ,"Yasuyuki_Okumura|55717|55718":{"country": "None", "nJobs": "38", "jobSet": "55717"}
+,"vanessa.arnal|1436|1437":{"country": "None", "nJobs": "1", "jobSet": "1436"}
 ,"Christian_Jung|10709|10710":{"category": "C", "country": "--", "site": "ANALY_IL-TAU-HEP", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10709"}
 ,"Christian_Jung|10709|10711":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10709"}
 ,"Yasuyuki_Okumura|55348|55349":{"country": "None", "nJobs": "1", "jobSet": "55348"}
 ,"Vladimir_Lyubushkin|3527|3528":{"country": "None", "nJobs": "42", "jobSet": "3527"}
-,"Wei-Cheng_Wong|4942|4944":{"country": "us", "nJobs": "2", "jobSet": "4942"}
 ,"Mel_Shochet|1507|1509":{"country": "us", "nJobs": "18", "jobSet": "1507"}
 ,"Junpei_Nonaka|597|599":{"country": "jp", "nJobs": "1001", "jobSet": "597"}
+,"Joseph_David_Price|14829|14830":{"country": "None", "nJobs": "1", "jobSet": "14829"}
 ,"Yuta_Suzuki|44713|44714":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44713"}
 ,"Stephen_Jacob_Sekula|6016|6017":{"category": "C", "country": "--", "site": "ANALY_ROMANIA07", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6016"}
 ,"Ludovica_Aperio_Bella|552|553":{"country": "fr", "nJobs": "10", "jobSet": "552"}
-,"Yasuyuki_Okumura|55376|55377":{"country": "None", "nJobs": "1", "jobSet": "55376"}
+,"Oleg_Zenin|4762|4763":{"country": "ru", "nJobs": "1", "jobSet": "4762"}
 ,"Christian_Jung|10829|10830":{"category": "C", "country": "--", "site": "ANALY_ARC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10829"}
 ,"paul_thompson|37421|37423":{"country": "uk", "nJobs": "214", "jobSet": "37421"}
 ,"paul_thompson|37421|37422":{"country": "uk", "nJobs": "4", "jobSet": "37421"}
@@ -413,18 +511,24 @@
 ,"Yasuyuki_Okumura|55552|55553":{"country": "None", "nJobs": "6", "jobSet": "55552"}
 ,"Mel_Shochet|1489|1491":{"country": "us", "nJobs": "18", "jobSet": "1489"}
 ,"Yasuyuki_Okumura|55574|55575":{"country": "None", "nJobs": "29", "jobSet": "55574"}
+,"Oleg_Zenin|4802|4803":{"country": "None", "nJobs": "9", "jobSet": "4802"}
 ,"Yuta_Suzuki|44401|44402":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44401"}
 ,"Konstantinos_Nikolopoulos|6834|6835":{"country": "None", "nJobs": "1", "jobSet": "6834"}
 ,"vossebeld_joost|57048|57049":{"country": "uk", "nJobs": "1", "jobSet": "57048"}
+,"Arturo_Sanchez|12521|12522":{"country": "None", "nJobs": "1", "jobSet": "12521"}
 ,"Yasuyuki_Okumura|55316|55317":{"country": "None", "nJobs": "2", "jobSet": "55316"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|792|793":{"country": "pt", "nJobs": "7", "jobSet": "792"}
 ,"sarah_williams|21847|21853":{"category": "C", "country": "--", "site": "ANALY_RAL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "21847"}
 ,"Mel_Shochet|1516|1518":{"country": "us", "nJobs": "18", "jobSet": "1516"}
 ,"Yasuyuki_Okumura|55449|55450":{"country": "None", "nJobs": "4", "jobSet": "55449"}
 ,"vossebeld_joost|57054|57055":{"country": "uk", "nJobs": "7", "jobSet": "57054"}
 ,"Christian_Jung|10715|10716":{"category": "C", "country": "--", "site": "ANALY_RHUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10715"}
+,"Paul_Nilsson|11556|11469":{"category": "A", "country": "--", "site": "ANALY_LANCS", "logDate": "2011-11-21", "nJobs": "1", "jobSet": "11556"}
 ,"matthew_rose|2786|2787":{"country": "None", "nJobs": "4", "jobSet": "2786"}
 ,"Christopher_Young|5935|5936":{"country": "uk", "nJobs": "1", "jobSet": "5935"}
 ,"matthew_jackson|8844|8845":{"country": "uk", "nJobs": "1", "jobSet": "8844"}
+,"Joseph_David_Price|14883|14884":{"country": "None", "nJobs": "1", "jobSet": "14883"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4590|4592":{"country": "us", "nJobs": "5", "jobSet": "4590"}
 ,"matthew_jackson|8844|8846":{"country": "uk", "nJobs": "1", "jobSet": "8844"}
 ,"Yuta_Suzuki|44545|44546":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44545"}
 ,"Toshi_Sumida|19735|19736":{"country": "None", "nJobs": "75", "jobSet": "19735"}
@@ -434,52 +538,69 @@
 ,"Marius_Cornelis_Van_Woerden|11815|11838":{"category": "C", "country": "--", "site": "ANALY_LPC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "11815"}
 ,"Yasuyuki_Okumura|55747|55748":{"country": "None", "nJobs": "3", "jobSet": "55747"}
 ,"Yasuyuki_Okumura|55416|55417":{"country": "None", "nJobs": "1", "jobSet": "55416"}
+,"Oleg_Zenin|4750|4751":{"country": "None", "nJobs": "20", "jobSet": "4750"}
 ,"paul_thompson|37656|37657":{"country": "uk", "nJobs": "15", "jobSet": "37656"}
 ,"Marius_Cornelis_Van_Woerden|11815|11831":{"category": "C", "country": "--", "site": "ANALY_INFN-NAPOLI", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "11815"}
 ,"Konstantinos_Nikolopoulos|6836|6837":{"country": "None", "nJobs": "1", "jobSet": "6836"}
 ,"Yasuyuki_Okumura|55144|55145":{"country": "None", "nJobs": "13", "jobSet": "55144"}
 ,"Oleg_Zenin|4718|4719":{"country": "ru", "nJobs": "3", "jobSet": "4718"}
 ,"Yasuyuki_Okumura|55178|55179":{"country": "None", "nJobs": "2", "jobSet": "55178"}
+,"Oleg_Zenin|4902|4903":{"country": "ru", "nJobs": "90", "jobSet": "4902"}
 ,"Yasuyuki_Okumura|55453|55454":{"country": "None", "nJobs": "4", "jobSet": "55453"}
 ,"Yuta_Suzuki|44553|44554":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44553"}
+,"Joseph_David_Price|14943|14944":{"country": "None", "nJobs": "1", "jobSet": "14943"}
 ,"Yuta_Suzuki|44669|44670":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44669"}
 ,"Toshi_Sumida|19810|19811":{"country": "None", "nJobs": "1", "jobSet": "19810"}
+,"Oleg_Zenin|4748|4749":{"country": "None", "nJobs": "11", "jobSet": "4748"}
+,"Joseph_David_Price|14885|14886":{"country": "None", "nJobs": "1", "jobSet": "14885"}
+,"Lei_Zhang|1876|1879":{"country": "tw", "nJobs": "1", "jobSet": "1876"}
 ,"sarah_livermore|12144|12145":{"country": "us", "nJobs": "7", "jobSet": "12144"}
 ,"vossebeld_joost|57001|57002":{"country": "uk", "nJobs": "4", "jobSet": "57001"}
 ,"Oleg_Zenin|4722|4723":{"country": "ru", "nJobs": "1", "jobSet": "4722"}
+,"caterina_doglioni|5971|5973":{"country": "None", "nJobs": "19", "jobSet": "5971"}
+,"caterina_doglioni|5971|5972":{"country": "None", "nJobs": "1", "jobSet": "5971"}
+,"Joseph_David_Price|14968|14969":{"country": "None", "nJobs": "1", "jobSet": "14968"}
 ,"Yuta_Suzuki|44059|44060":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44059"}
+,"Oleg_Zenin|4800|4801":{"country": "None", "nJobs": "10", "jobSet": "4800"}
 ,"Peter_Martin_Kluit|3149|3150":{"country": "None", "nJobs": "1", "jobSet": "3149"}
 ,"Holger_Schulz|922|924":{"country": "de", "nJobs": "7", "jobSet": "922"}
 ,"Holger_Schulz|922|923":{"country": "de", "nJobs": "2", "jobSet": "922"}
+,"Oleg_Zenin|4758|4759":{"country": "None", "nJobs": "19", "jobSet": "4758"}
 ,"Yuta_Suzuki|44649|44650":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44649"}
 ,"Chang_Wei_Loh|45706|45707":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45706"}
-,"Christopher_Young|5873|5874":{"country": "uk", "nJobs": "1", "jobSet": "5873"}
+,"Christopher_Young|5852|5853":{"country": "uk", "nJobs": "1", "jobSet": "5852"}
 ,"Oleg_Zenin|4654|4655":{"country": "ru", "nJobs": "1", "jobSet": "4654"}
 ,"Yasuyuki_Okumura|55802|55803":{"country": "None", "nJobs": "7", "jobSet": "55802"}
 ,"Jeremiah_Jet_Goodson|66070|66071":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66070"}
+,"Joseph_David_Price|14868|14869":{"country": "None", "nJobs": "1", "jobSet": "14868"}
 ,"Yu_Suzuki|5144|5145":{"country": "jp", "nJobs": "1", "jobSet": "5144"}
 ,"Christopher_Young|5820|5822":{"country": "uk", "nJobs": "1", "jobSet": "5820"}
 ,"Christopher_Young|5820|5821":{"country": "uk", "nJobs": "1", "jobSet": "5820"}
 ,"Yasuyuki_Okumura|55735|55736":{"country": "None", "nJobs": "4", "jobSet": "55735"}
 ,"Christopher_Young|5955|5956":{"country": "uk", "nJobs": "1", "jobSet": "5955"}
-,"Yasuyuki_Okumura|55176|55177":{"country": "None", "nJobs": "8", "jobSet": "55176"}
+,"Yasuyuki_Okumura|55376|55377":{"country": "None", "nJobs": "1", "jobSet": "55376"}
 ,"Oleg_Zenin|4692|4693":{"country": "ru", "nJobs": "4", "jobSet": "4692"}
+,"Oleg_Zenin|4958|4959":{"country": "ru", "nJobs": "2", "jobSet": "4958"}
 ,"Chang_Wei_Loh|45926|45929":{"country": "ca", "nJobs": "4000", "jobSet": "45926"}
 ,"Mel_Shochet|1474|1476":{"country": "us", "nJobs": "18", "jobSet": "1474"}
 ,"Viviana_Cavaliere|8736|8738":{"country": "None", "nJobs": "363", "jobSet": "8736"}
 ,"Viviana_Cavaliere|8736|8739":{"country": "None", "nJobs": "339", "jobSet": "8736"}
 ,"Ippei_Watanabe|14565|14566":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14565"}
 ,"Jeremiah_Jet_Goodson|66080|66081":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66080"}
+,"Noel_Dawe|2497|2499":{"country": "ca", "nJobs": "671", "jobSet": "2497"}
 ,"Stephen_Jacob_Sekula|5861|5862":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5861"}
 ,"Christopher_Young|5867|5868":{"country": "uk", "nJobs": "1", "jobSet": "5867"}
 ,"Yuta_Suzuki|44663|44664":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44663"}
+,"Rajivalochan_Subramaniam|3458|3459":{"country": "None", "nJobs": "1", "jobSet": "3458"}
 ,"Yasuyuki_Okumura|55180|55181":{"country": "None", "nJobs": "1", "jobSet": "55180"}
 ,"Yasuyuki_Okumura|55663|55664":{"country": "None", "nJobs": "22", "jobSet": "55663"}
 ,"Yasuyuki_Okumura|55462|55463":{"country": "None", "nJobs": "4", "jobSet": "55462"}
 ,"Yasuyuki_Okumura|55671|55672":{"country": "None", "nJobs": "24", "jobSet": "55671"}
 ,"Oleg_Zenin|4584|4585":{"country": "ru", "nJobs": "2", "jobSet": "4584"}
 ,"Christian_Jung|10791|10792":{"category": "C", "country": "--", "site": "ANALY_VICTORIA-WG1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10791"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|784|785":{"country": "pt", "nJobs": "1", "jobSet": "784"}
 ,"paul_thompson|37749|37750":{"country": "uk", "nJobs": "15", "jobSet": "37749"}
+,"vanessa.arnal|1442|1443":{"country": "None", "nJobs": "1", "jobSet": "1442"}
 ,"Yuriy_Davygora|11350|11351":{"country": "None", "nJobs": "1", "jobSet": "11350"}
 ,"Ludovica_Aperio_Bella|558|559":{"country": "fr", "nJobs": "5", "jobSet": "558"}
 ,"Yuta_Suzuki|44603|44604":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44603"}
@@ -494,35 +615,54 @@
 ,"Yasuyuki_Okumura|55542|55543":{"country": "None", "nJobs": "6", "jobSet": "55542"}
 ,"Yasuyuki_Okumura|55739|55740":{"country": "None", "nJobs": "4", "jobSet": "55739"}
 ,"Yuta_Suzuki|44571|44572":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44571"}
+,"Oleg_Zenin|4894|4895":{"country": "ru", "nJobs": "7", "jobSet": "4894"}
 ,"Yasuyuki_Okumura|55548|55549":{"country": "None", "nJobs": "11", "jobSet": "55548"}
-,"Yasuyuki_Okumura|55788|55789":{"country": "None", "nJobs": "1", "jobSet": "55788"}
 ,"Andrew_Haas|241|242":{"country": "us", "nJobs": "1", "jobSet": "241"}
 ,"Oleg_Zenin|4700|4701":{"country": "ru", "nJobs": "6", "jobSet": "4700"}
 ,"Mel_Shochet|1471|1473":{"country": "us", "nJobs": "18", "jobSet": "1471"}
+,"Oleg_Zenin|4754|4755":{"country": "None", "nJobs": "1", "jobSet": "4754"}
 ,"Yasuyuki_Okumura|55721|55722":{"country": "None", "nJobs": "38", "jobSet": "55721"}
 ,"Christopher_Young|5814|5815":{"country": "uk", "nJobs": "1", "jobSet": "5814"}
 ,"Christopher_Young|5814|5816":{"country": "uk", "nJobs": "1", "jobSet": "5814"}
 ,"Yu_Suzuki|5154|5155":{"country": "jp", "nJobs": "264", "jobSet": "5154"}
 ,"Jeremiah_Jet_Goodson|66268|66269":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66268"}
+,"Kevin_Michael_Mercurio|155|160":{"country": "None", "nJobs": "4", "jobSet": "155"}
+,"Kevin_Michael_Mercurio|155|159":{"country": "None", "nJobs": "1", "jobSet": "155"}
+,"Kevin_Michael_Mercurio|155|158":{"country": "None", "nJobs": "1", "jobSet": "155"}
+,"Kevin_Michael_Mercurio|155|161":{"country": "None", "nJobs": "2", "jobSet": "155"}
 ,"paul_thompson|37429|37430":{"country": "uk", "nJobs": "6", "jobSet": "37429"}
+,"Kevin_Michael_Mercurio|155|156":{"country": "None", "nJobs": "1", "jobSet": "155"}
+,"Kevin_Michael_Mercurio|155|162":{"country": "None", "nJobs": "1", "jobSet": "155"}
+,"Kevin_Michael_Mercurio|155|163":{"country": "None", "nJobs": "4", "jobSet": "155"}
 ,"Yasuyuki_Okumura|55814|55815":{"country": "None", "nJobs": "1", "jobSet": "55814"}
+,"Oleg_Zenin|4736|4737":{"country": "None", "nJobs": "2", "jobSet": "4736"}
 ,"andrew_mehta|24763|24764":{"country": "uk", "nJobs": "2", "jobSet": "24763"}
 ,"Yasuyuki_Okumura|55140|55141":{"country": "None", "nJobs": "13", "jobSet": "55140"}
 ,"Ippei_Watanabe|14819|14820":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14819"}
 ,"Yasuyuki_Okumura|55798|55799":{"country": "None", "nJobs": "11", "jobSet": "55798"}
+,"Oleg_Zenin|4738|4739":{"country": "None", "nJobs": "2", "jobSet": "4738"}
 ,"Christian_Jung|10817|10818":{"category": "C", "country": "--", "site": "ANALY_TOKYO", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10817"}
 ,"paul_thompson|37597|37598":{"country": "uk", "nJobs": "4", "jobSet": "37597"}
 ,"Yasuyuki_Okumura|55280|55281":{"country": "None", "nJobs": "5", "jobSet": "55280"}
 ,"Yousuke_Kataoka|8236|8237":{"country": "None", "nJobs": "1", "jobSet": "8236"}
+,"vossebeld_joost|57009|57010":{"country": "uk", "nJobs": "2", "jobSet": "57009"}
 ,"Yasuyuki_Okumura|55524|55525":{"country": "None", "nJobs": "15", "jobSet": "55524"}
+,"Yousuke_Kataoka|8282|8283":{"country": "None", "nJobs": "7", "jobSet": "8282"}
 ,"Yuta_Suzuki|44015|44016":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44015"}
+,"Oleg_Zenin|4742|4743":{"country": "None", "nJobs": "1", "jobSet": "4742"}
 ,"Konstantinos_Nikolopoulos|6846|6847":{"country": "None", "nJobs": "1", "jobSet": "6846"}
 ,"Yasuyuki_Okumura|55580|55581":{"country": "None", "nJobs": "38", "jobSet": "55580"}
+,"Chang_Wei_Loh|46037|46039":{"country": "ca", "nJobs": "5", "jobSet": "46037"}
+,"Chang_Wei_Loh|46037|46038":{"country": "ca", "nJobs": "15", "jobSet": "46037"}
+,"Jacobus_Onderwaater|1536|1537":{"country": "None", "nJobs": "8", "jobSet": "1536"}
 ,"Yasuyuki_Okumura|55138|55139":{"country": "None", "nJobs": "56", "jobSet": "55138"}
 ,"Yasuyuki_Okumura|55757|55758":{"country": "None", "nJobs": "38", "jobSet": "55757"}
+,"Maximilian_Goblirsch-Kolb|7024|7025":{"country": "de", "nJobs": "231", "jobSet": "7024"}
 ,"Maximilian_Goblirsch-Kolb|6751|6752":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC-T2_LONG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6751"}
 ,"Yuta_Suzuki|44577|44578":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44577"}
+,"Thomas_Schwindt|51752|51795":{"country": "de", "nJobs": "1", "jobSet": "51752"}
 ,"Mark_J_Tibbetts|2644|2645":{"country": "None", "nJobs": "25", "jobSet": "2644"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|762|763":{"country": "pt", "nJobs": "13", "jobSet": "762"}
 ,"vossebeld_joost|56995|56996":{"country": "uk", "nJobs": "1", "jobSet": "56995"}
 ,"Yuta_Suzuki|44683|44684":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44683"}
 ,"David_Lopez_Mateos|7608|7609":{"country": "None", "nJobs": "23", "jobSet": "7608"}
@@ -530,8 +670,10 @@
 ,"Yasuyuki_Okumura|55770|55771":{"country": "None", "nJobs": "38", "jobSet": "55770"}
 ,"paul_thompson|37755|37756":{"country": "uk", "nJobs": "8", "jobSet": "37755"}
 ,"Mel_Shochet|1453|1455":{"country": "us", "nJobs": "18", "jobSet": "1453"}
+,"Oleg_Zenin|4766|4767":{"country": "ru", "nJobs": "7", "jobSet": "4766"}
 ,"Mark_J_Tibbetts|2591|2592":{"category": "C", "country": "--", "site": "ANALY_LANCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2591"}
 ,"Mark_J_Tibbetts|2591|2593":{"category": "C", "country": "--", "site": "ANALY_wuppertalprod", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2591"}
+,"Yousuke_Kataoka|8284|8285":{"country": "None", "nJobs": "1", "jobSet": "8284"}
 ,"Soeren_Stamm|184|185":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "184"}
 ,"Lei_Zhang|1836|1837":{"country": "tw", "nJobs": "1", "jobSet": "1836"}
 ,"paul_thompson|37462|37463":{"country": "uk", "nJobs": "3", "jobSet": "37462"}
@@ -544,38 +686,54 @@
 ,"Toshi_Sumida|19818|19819":{"country": "None", "nJobs": "4", "jobSet": "19818"}
 ,"Christopher_Young|5864|5866":{"country": "uk", "nJobs": "1", "jobSet": "5864"}
 ,"Christopher_Young|5864|5865":{"country": "uk", "nJobs": "1", "jobSet": "5864"}
+,"Nicolas_Bousson|3798|3799":{"country": "fr", "nJobs": "2", "jobSet": "3798"}
 ,"Yasuyuki_Okumura|55396|55397":{"country": "None", "nJobs": "1", "jobSet": "55396"}
 ,"Mark_J_Tibbetts|2537|2538":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC-T2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2537"}
 ,"Yasuyuki_Okumura|55719|55720":{"country": "None", "nJobs": "4", "jobSet": "55719"}
+,"Benjamin_Auerbach|413|414":{"country": "None", "nJobs": "1", "jobSet": "413"}
 ,"Yasuyuki_Okumura|55162|55163":{"country": "None", "nJobs": "1", "jobSet": "55162"}
 ,"Mark_J_Tibbetts|2646|2647":{"country": "None", "nJobs": "7", "jobSet": "2646"}
 ,"Joseph_David_Price|13968|13969":{"country": "None", "nJobs": "166", "jobSet": "13968"}
 ,"Yasuyuki_Okumura|55610|55611":{"country": "None", "nJobs": "38", "jobSet": "55610"}
-,"Junpei_Nonaka|591|593":{"country": "jp", "nJobs": "1001", "jobSet": "591"}
+,"Jeremiah_Jet_Goodson|66233|66234":{"category": "C", "country": "--", "site": "ANALY_LIP-Lisbon", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66233"}
+,"Michele_Petteni_edr-461|6911|6912":{"category": "C", "country": "--", "site": "ANALY_NIKHEF-ELPROD", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6911"}
+,"Oleg_Zenin|4924|4925":{"country": "ru", "nJobs": "1", "jobSet": "4924"}
+,"Claudio_Heller|4925|4926":{"country": "de", "nJobs": "1", "jobSet": "4925"}
 ,"Toshi_Sumida|19761|19763":{"country": "None", "nJobs": "862", "jobSet": "19761"}
 ,"Chang_Wei_Loh|45801|45802":{"category": "C", "country": "--", "site": "ANALY_ALBERTA-WG1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45801"}
+,"Oleg_Zenin|4914|4915":{"country": "ru", "nJobs": "29", "jobSet": "4914"}
 ,"Yasuyuki_Okumura|55142|55143":{"country": "None", "nJobs": "13", "jobSet": "55142"}
+,"Joseph_David_Price|14960|14961":{"country": "None", "nJobs": "22", "jobSet": "14960"}
 ,"Ippei_Watanabe|14887|14888":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14887"}
 ,"Mel_Shochet|1450|1452":{"country": "us", "nJobs": "18", "jobSet": "1450"}
 ,"Yuta_Suzuki|44499|44500":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44499"}
+,"Joseph_David_Price|14868|14875":{"country": "None", "nJobs": "1", "jobSet": "14868"}
+,"Joseph_David_Price|14868|14874":{"country": "None", "nJobs": "1", "jobSet": "14868"}
+,"Joseph_David_Price|14868|14877":{"country": "None", "nJobs": "1", "jobSet": "14868"}
+,"Joseph_David_Price|14868|14876":{"country": "None", "nJobs": "1", "jobSet": "14868"}
 ,"Michele_Petteni_edr-461|6919|6920":{"category": "C", "country": "--", "site": "ANALY_LIP-Coimbra", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6919"}
-,"Jeremiah_Jet_Goodson|66231|66232":{"category": "C", "country": "--", "site": "ANALY_CSCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66231"}
+,"Joseph_David_Price|14868|14870":{"country": "None", "nJobs": "1", "jobSet": "14868"}
+,"Mel_Shochet|1492|1494":{"country": "us", "nJobs": "18", "jobSet": "1492"}
+,"Joseph_David_Price|14868|14872":{"country": "None", "nJobs": "1", "jobSet": "14868"}
+,"Oleg_Zenin|4906|4907":{"country": "ru", "nJobs": "9", "jobSet": "4906"}
 ,"Konstantinos_Nikolopoulos|6852|6853":{"country": "None", "nJobs": "1", "jobSet": "6852"}
+,"Joseph_David_Price|14868|14878":{"country": "None", "nJobs": "1", "jobSet": "14868"}
 ,"Serguei_Yanush|36267|36268":{"category": "C", "country": "--", "site": "ANALY_SHEF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36267"}
 ,"Maximilian_Goblirsch-Kolb|6775|6776":{"category": "C", "country": "--", "site": "ANALY_NIKHEF-ELPROD", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6775"}
 ,"Jeremiah_Jet_Goodson|66068|66069":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66068"}
 ,"Rajivalochan_Subramaniam|3122|3123":{"country": "None", "nJobs": "2993", "jobSet": "3122"}
+,"Oleg_Zenin|4942|4943":{"country": "ru", "nJobs": "1", "jobSet": "4942"}
 ,"Jeremiah_Jet_Goodson|66190|66191":{"category": "C", "country": "--", "site": "ANALY_FREIBURG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66190"}
 ,"Yasuyuki_Okumura|55326|55327":{"country": "None", "nJobs": "1", "jobSet": "55326"}
 ,"Christopher_Young|5899|5900":{"country": "uk", "nJobs": "1", "jobSet": "5899"}
 ,"Serguei_Yanush|36291|36292":{"category": "C", "country": "--", "site": "ANALY_INFN-MILANO-ATLASC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36291"}
 ,"Lei_Zhang|1894|1895":{"country": "tw", "nJobs": "1", "jobSet": "1894"}
 ,"Mel_Shochet|1486|1488":{"country": "us", "nJobs": "18", "jobSet": "1486"}
-,"Yasuyuki_Okumura|55418|55419":{"country": "None", "nJobs": "1", "jobSet": "55418"}
+,"Eirik_Gramstad|9274|9275":{"country": "no", "nJobs": "1", "jobSet": "9274"}
 ,"Andrew_Haas|269|270":{"country": "us", "nJobs": "2", "jobSet": "269"}
 ,"Kanishka_Rao|23690|23691":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "23690"}
 ,"Caleb_Lampen|41623|41629":{"country": "None", "nJobs": "1", "jobSet": "41623"}
-,"Yasuyuki_Okumura|55402|55403":{"country": "None", "nJobs": "1", "jobSet": "55402"}
+,"Yasuyuki_Okumura|55290|55291":{"country": "None", "nJobs": "1", "jobSet": "55290"}
 ,"Oleg_Zenin|4580|4581":{"country": "ru", "nJobs": "2", "jobSet": "4580"}
 ,"Ippei_Watanabe|14637|14638":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14637"}
 ,"Yasuyuki_Okumura|55743|55744":{"country": "None", "nJobs": "38", "jobSet": "55743"}
@@ -586,11 +744,13 @@
 ,"Oleg_Zenin|4616|4617":{"country": "ru", "nJobs": "27", "jobSet": "4616"}
 ,"Theodota-Lagouri|3639|3640":{"country": "es", "nJobs": "20", "jobSet": "3639"}
 ,"Yasuyuki_Okumura|55602|55603":{"country": "None", "nJobs": "38", "jobSet": "55602"}
+,"Rajivalochan_Subramaniam|3278|3279":{"country": "None", "nJobs": "3", "jobSet": "3278"}
 ,"Jacobus_Onderwaater|1414|1415":{"country": "None", "nJobs": "1", "jobSet": "1414"}
 ,"Kevin_Michael_Mercurio|131|133":{"country": "None", "nJobs": "5", "jobSet": "131"}
 ,"Kevin_Michael_Mercurio|131|132":{"country": "None", "nJobs": "4", "jobSet": "131"}
 ,"Kevin_Michael_Mercurio|131|135":{"country": "None", "nJobs": "2", "jobSet": "131"}
 ,"Kevin_Michael_Mercurio|131|134":{"country": "None", "nJobs": "3", "jobSet": "131"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|778|779":{"country": "pt", "nJobs": "6", "jobSet": "778"}
 ,"Yasuyuki_Okumura|55192|55193":{"country": "None", "nJobs": "3", "jobSet": "55192"}
 ,"Yousuke_Kataoka|8248|8249":{"country": "None", "nJobs": "82", "jobSet": "8248"}
 ,"paul_thompson|37454|37455":{"country": "uk", "nJobs": "1", "jobSet": "37454"}
@@ -599,6 +759,7 @@
 ,"paul_thompson|37582|37583":{"country": "uk", "nJobs": "49", "jobSet": "37582"}
 ,"Toshi_Sumida|19780|19781":{"country": "None", "nJobs": "3", "jobSet": "19780"}
 ,"Yasuyuki_Okumura|55322|55323":{"country": "None", "nJobs": "56", "jobSet": "55322"}
+,"Joseph_David_Price|14887|14888":{"country": "None", "nJobs": "1", "jobSet": "14887"}
 ,"Yasuyuki_Okumura|55794|55795":{"country": "None", "nJobs": "1", "jobSet": "55794"}
 ,"Oleg_Zenin|4590|4591":{"country": "ru", "nJobs": "1", "jobSet": "4590"}
 ,"paul_thompson|37599|37601":{"country": "uk", "nJobs": "1", "jobSet": "37599"}
@@ -607,13 +768,17 @@
 ,"paul_thompson|37633|37636":{"country": "uk", "nJobs": "1", "jobSet": "37633"}
 ,"paul_thompson|37633|37635":{"country": "uk", "nJobs": "3", "jobSet": "37633"}
 ,"paul_thompson|37633|37634":{"country": "uk", "nJobs": "4", "jobSet": "37633"}
+,"Oleg_Zenin|4764|4765":{"country": "ru", "nJobs": "1", "jobSet": "4764"}
 ,"Yasuyuki_Okumura|55218|55219":{"country": "None", "nJobs": "1", "jobSet": "55218"}
 ,"Yuta_Suzuki|44193|44194":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44193"}
 ,"Konstantinos_Nikolopoulos|6842|6843":{"country": "None", "nJobs": "1", "jobSet": "6842"}
 ,"Yasuyuki_Okumura|55212|55213":{"country": "None", "nJobs": "8", "jobSet": "55212"}
 ,"Christopher_Young|5889|5890":{"country": "uk", "nJobs": "14", "jobSet": "5889"}
+,"arturos_Sanchez_Pineda|12189|12190":{"country": "None", "nJobs": "2", "jobSet": "12189"}
+,"Philippe_Calfayan|12464|12465":{"country": "de", "nJobs": "1", "jobSet": "12464"}
 ,"Mel_Shochet|1504|1506":{"country": "us", "nJobs": "18", "jobSet": "1504"}
 ,"Yasuyuki_Okumura|55557|55562":{"country": "None", "nJobs": "17", "jobSet": "55557"}
+,"Eric_Fitzgerald|1954|1955":{"country": "None", "nJobs": "6", "jobSet": "1954"}
 ,"Yasuyuki_Okumura|55284|55285":{"country": "None", "nJobs": "1", "jobSet": "55284"}
 ,"vossebeld_joost|57017|57018":{"country": "uk", "nJobs": "3", "jobSet": "57017"}
 ,"Oleg_Zenin|4636|4637":{"country": "ru", "nJobs": "1", "jobSet": "4636"}
@@ -624,30 +789,39 @@
 ,"Oleg_Zenin|4602|4603":{"country": "ru", "nJobs": "3", "jobSet": "4602"}
 ,"Antonio_Salvucci_antonios@nikhef.nl|1613|1614":{"country": "None", "nJobs": "2", "jobSet": "1613"}
 ,"paul_thompson|37654|37655":{"country": "uk", "nJobs": "4", "jobSet": "37654"}
+,"Oleg_Zenin|4968|4969":{"country": "ru", "nJobs": "2", "jobSet": "4968"}
 ,"Yu_Suzuki|5152|5153":{"country": "jp", "nJobs": "264", "jobSet": "5152"}
 ,"paul_thompson|37584|37585":{"country": "uk", "nJobs": "7", "jobSet": "37584"}
 ,"vossebeld_joost|57035|57036":{"country": "uk", "nJobs": "1", "jobSet": "57035"}
 ,"Yasuyuki_Okumura|55194|55195":{"country": "None", "nJobs": "2", "jobSet": "55194"}
 ,"Yasuyuki_Okumura|55338|55339":{"country": "None", "nJobs": "1", "jobSet": "55338"}
+,"Toshi_Sumida|19828|19829":{"country": "None", "nJobs": "43", "jobSet": "19828"}
 ,"Yasuyuki_Okumura|55318|55319":{"country": "None", "nJobs": "2", "jobSet": "55318"}
 ,"Yu_Suzuki|5138|5139":{"country": "jp", "nJobs": "1", "jobSet": "5138"}
 ,"Jeremiah_Jet_Goodson|65984|65985":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "65984"}
 ,"Yasuyuki_Okumura|55288|55289":{"country": "None", "nJobs": "1", "jobSet": "55288"}
 ,"Daniel_Damiani|5299|5300":{"country": "us", "nJobs": "1", "jobSet": "5299"}
 ,"Daniel_Damiani|5299|5301":{"country": "us", "nJobs": "1", "jobSet": "5299"}
-,"Yuta_Suzuki|44505|44506":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44505"}
+,"Yousuke_Kataoka|8258|8259":{"country": "None", "nJobs": "93", "jobSet": "8258"}
+,"Oleg_Zenin|4812|4813":{"country": "ru", "nJobs": "4", "jobSet": "4812"}
 ,"Yasuyuki_Okumura|55681|55682":{"country": "None", "nJobs": "22", "jobSet": "55681"}
 ,"David_Lopez_Mateos|7612|7613":{"country": "None", "nJobs": "22", "jobSet": "7612"}
 ,"Yasuyuki_Okumura|55681|55687":{"country": "None", "nJobs": "3", "jobSet": "55681"}
 ,"Yasuyuki_Okumura|55782|55783":{"country": "None", "nJobs": "11", "jobSet": "55782"}
 ,"Oleg_Zenin|4642|4643":{"country": "ru", "nJobs": "2", "jobSet": "4642"}
 ,"matthew_rose|2788|2789":{"country": "None", "nJobs": "8", "jobSet": "2788"}
+,"william_buttinger|2204|2209":{"country": "uk", "nJobs": "8", "jobSet": "2204"}
+,"william_buttinger|2204|2208":{"country": "uk", "nJobs": "50", "jobSet": "2204"}
 ,"Oleg_Zenin|4714|4715":{"country": "ru", "nJobs": "6", "jobSet": "4714"}
 ,"Christopher_Young|5886|5888":{"country": "uk", "nJobs": "1", "jobSet": "5886"}
 ,"paul_thompson|37752|37754":{"country": "uk", "nJobs": "9", "jobSet": "37752"}
 ,"paul_thompson|37752|37753":{"country": "uk", "nJobs": "1", "jobSet": "37752"}
 ,"Christopher_Young|5886|5887":{"country": "uk", "nJobs": "1", "jobSet": "5886"}
 ,"Chang_Wei_Loh|45716|45717":{"category": "C", "country": "--", "site": "ANALY_AGLT2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45716"}
+,"Joseph_David_Price|14843|14852":{"country": "None", "nJobs": "3", "jobSet": "14843"}
+,"Joseph_David_Price|14843|14853":{"country": "None", "nJobs": "1", "jobSet": "14843"}
+,"Joseph_David_Price|14843|14850":{"country": "None", "nJobs": "3", "jobSet": "14843"}
+,"Joseph_David_Price|14843|14851":{"country": "None", "nJobs": "1", "jobSet": "14843"}
 ,"Yasuyuki_Okumura|55796|55797":{"country": "None", "nJobs": "38", "jobSet": "55796"}
 ,"Maximilian_Goblirsch-Kolb|6881|6882":{"country": "de", "nJobs": "6", "jobSet": "6881"}
 ,"Yasuyuki_Okumura|55492|55497":{"country": "None", "nJobs": "10", "jobSet": "55492"}
@@ -660,15 +834,20 @@
 ,"Alex_Long|807|808":{"country": "None", "nJobs": "57", "jobSet": "807"}
 ,"Oleg_Zenin|4564|4565":{"country": "ru", "nJobs": "6", "jobSet": "4564"}
 ,"Toshi_Sumida|19786|19787":{"country": "None", "nJobs": "1", "jobSet": "19786"}
+,"Oleg_Zenin|4954|4955":{"country": "ru", "nJobs": "1", "jobSet": "4954"}
 ,"Yasuyuki_Okumura|55808|55809":{"country": "None", "nJobs": "9", "jobSet": "55808"}
 ,"paul_thompson|37644|37645":{"country": "uk", "nJobs": "2", "jobSet": "37644"}
-,"Yasuyuki_Okumura|55378|55379":{"country": "None", "nJobs": "1", "jobSet": "55378"}
+,"Yasuyuki_Okumura|55214|55215":{"country": "None", "nJobs": "2", "jobSet": "55214"}
 ,"Stephen_Jacob_Sekula|5941|5942":{"category": "C", "country": "--", "site": "ANALY_GRIF-LPNHE", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5941"}
+,"Johanna_Bronner|7094|7096":{"country": "de", "nJobs": "927", "jobSet": "7094"}
 ,"Yasuyuki_Okumura|55515|55520":{"country": "None", "nJobs": "10", "jobSet": "55515"}
+,"Rodger_Mantifel|2710|2711":{"country": "ca", "nJobs": "1", "jobSet": "2710"}
 ,"Yasuyuki_Okumura|55242|55243":{"country": "None", "nJobs": "5", "jobSet": "55242"}
 ,"Yuta_Suzuki|44061|44062":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44061"}
+,"Oleg_Zenin|4752|4753":{"country": "None", "nJobs": "11", "jobSet": "4752"}
 ,"Yasuyuki_Okumura|55451|55452":{"country": "None", "nJobs": "4", "jobSet": "55451"}
 ,"Serguei_Yanush|36111|36112":{"category": "C", "country": "--", "site": "ANALY_INFN-ROMA1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36111"}
+,"Joseph_David_Price|14898|14899":{"country": "None", "nJobs": "1", "jobSet": "14898"}
 ,"paul_thompson|37796|37797":{"country": "uk", "nJobs": "15", "jobSet": "37796"}
 ,"Pedro_Jorge|1321|1322":{"country": "pt", "nJobs": "3", "jobSet": "1321"}
 ,"matthew_rose|2784|2785":{"country": "None", "nJobs": "8", "jobSet": "2784"}
@@ -678,6 +857,7 @@
 ,"Junpei_Nonaka|588|590":{"country": "jp", "nJobs": "1001", "jobSet": "588"}
 ,"Mark_J_Tibbetts|2617|2618":{"country": "None", "nJobs": "1", "jobSet": "2617"}
 ,"andrew_mehta|25181|25182":{"country": "uk", "nJobs": "2", "jobSet": "25181"}
+,"neil_cooper-smith|2899|2900":{"country": "uk", "nJobs": "17", "jobSet": "2899"}
 ,"matthew_jackson|8312|8322":{"country": "uk", "nJobs": "45", "jobSet": "8312"}
 ,"Andrew_Haas|253|254":{"country": "us", "nJobs": "262", "jobSet": "253"}
 ,"Yasuyuki_Okumura|55513|55514":{"country": "None", "nJobs": "3", "jobSet": "55513"}
@@ -688,18 +868,24 @@
 ,"Yasuyuki_Okumura|55749|55750":{"country": "None", "nJobs": "38", "jobSet": "55749"}
 ,"David_Lopez_Mateos|7614|7615":{"country": "None", "nJobs": "19", "jobSet": "7614"}
 ,"matthew_rose|2776|2777":{"country": "None", "nJobs": "3", "jobSet": "2776"}
-,"Yasuyuki_Okumura|55136|55137":{"country": "None", "nJobs": "56", "jobSet": "55136"}
+,"Serguei_Yanush|34537|34538":{"country": "None", "nJobs": "50", "jobSet": "34537"}
 ,"David_Lopez_Mateos|7584|7585":{"country": "None", "nJobs": "2", "jobSet": "7584"}
 ,"Enrique_Kajomovitz|2966|2967":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC-T2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2966"}
+,"Joseph_David_Price|14970|14971":{"country": "None", "nJobs": "1", "jobSet": "14970"}
 ,"Ippei_Watanabe|14891|14892":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14891"}
+,"Oleg_Zenin|4956|4957":{"country": "ru", "nJobs": "48", "jobSet": "4956"}
 ,"Oleg_Zenin|4374|4375":{"country": "ru", "nJobs": "1", "jobSet": "4374"}
 ,"Yasuyuki_Okumura|55490|55494":{"country": "None", "nJobs": "10", "jobSet": "55490"}
 ,"Yasuyuki_Okumura|55490|55491":{"country": "None", "nJobs": "3", "jobSet": "55490"}
 ,"Fernando_Monticelli|2635|2636":{"country": "None", "nJobs": "68", "jobSet": "2635"}
 ,"Fernando_Monticelli|2635|2637":{"country": "None", "nJobs": "776", "jobSet": "2635"}
+,"Muhammad_Saleem|6415|6416":{"country": "us", "nJobs": "15", "jobSet": "6415"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|754|755":{"country": "pt", "nJobs": "8", "jobSet": "754"}
 ,"Stephen_Jacob_Sekula|6022|6023":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6022"}
 ,"Yasuyuki_Okumura|55530|55531":{"country": "None", "nJobs": "13", "jobSet": "55530"}
 ,"vossebeld_joost|57050|57051":{"country": "uk", "nJobs": "2", "jobSet": "57050"}
+,"Joseph_David_Price|14889|14890":{"country": "None", "nJobs": "1", "jobSet": "14889"}
+,"Yu_Suzuki|5168|5169":{"country": "jp", "nJobs": "264", "jobSet": "5168"}
 ,"Toshi_Sumida|19822|19823":{"country": "None", "nJobs": "1", "jobSet": "19822"}
 ,"Christopher_Young|5848|5849":{"country": "uk", "nJobs": "4", "jobSet": "5848"}
 ,"Ippei_Watanabe|14933|14934":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14933"}
@@ -708,17 +894,18 @@
 ,"Yasuyuki_Okumura|55118|55119":{"country": "None", "nJobs": "193", "jobSet": "55118"}
 ,"Yousuke_Kataoka|8212|8213":{"country": "None", "nJobs": "5", "jobSet": "8212"}
 ,"Vladimir_Lyubushkin|3473|3474":{"country": "None", "nJobs": "4", "jobSet": "3473"}
-,"Toshi_Sumida|19746|19747":{"country": "None", "nJobs": "1173", "jobSet": "19746"}
+,"Lei_Zhang|1880|1884":{"country": "tw", "nJobs": "1", "jobSet": "1880"}
 ,"Giacinto_Piacquadio|4011|4012":{"country": "None", "nJobs": "1", "jobSet": "4011"}
-,"matthew_rose|2768|2769":{"country": "None", "nJobs": "2", "jobSet": "2768"}
+,"Joseph_David_Price|13968|13970":{"country": "None", "nJobs": "36", "jobSet": "13968"}
 ,"Petr_Balek|3053|3054":{"country": "None", "nJobs": "1", "jobSet": "3053"}
-,"Yuta_Suzuki|41201|41202":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41201"}
+,"Joseph_David_Price|14937|14938":{"country": "None", "nJobs": "1", "jobSet": "14937"}
 ,"Soeren_Stamm|116|117":{"category": "C", "country": "--", "site": "ANALY_LIV", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "116"}
 ,"Oleg_Zenin|4678|4679":{"country": "ru", "nJobs": "1", "jobSet": "4678"}
 ,"Oleg_Zenin|4662|4663":{"country": "ru", "nJobs": "1", "jobSet": "4662"}
 ,"Mel_Shochet|1510|1512":{"country": "us", "nJobs": "18", "jobSet": "1510"}
 ,"David_Lopez_Mateos|7590|7591":{"country": "None", "nJobs": "2", "jobSet": "7590"}
-,"Mark_J_Tibbetts|2621|2622":{"country": "None", "nJobs": "28", "jobSet": "2621"}
+,"Yousuke_Kataoka|8276|8277":{"country": "None", "nJobs": "17", "jobSet": "8276"}
+,"Joseph_David_Price|14934|14935":{"country": "None", "nJobs": "1", "jobSet": "14934"}
 ,"matthew_rose|2790|2791":{"country": "None", "nJobs": "4", "jobSet": "2790"}
 ,"Lei_Zhang|1936|1937":{"country": "tw", "nJobs": "1", "jobSet": "1936"}
 ,"Christopher_Young|5843|5844":{"country": "uk", "nJobs": "1", "jobSet": "5843"}
@@ -731,12 +918,14 @@
 ,"Allison_McCarn|9078|9082":{"country": "us", "nJobs": "437", "jobSet": "9078"}
 ,"Allison_McCarn|9078|9083":{"country": "us", "nJobs": "359", "jobSet": "9078"}
 ,"Caleb_Lampen|41592|41601":{"country": "None", "nJobs": "1", "jobSet": "41592"}
-,"Caleb_Lampen|41592|41600":{"category": "C", "country": "--", "site": "ANALY_TECHNION-HEP", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41592"}
-,"Yasuyuki_Okumura|55459|55461":{"country": "None", "nJobs": "12", "jobSet": "55459"}
-,"Yasuyuki_Okumura|55459|55460":{"country": "None", "nJobs": "1", "jobSet": "55459"}
+,"Peter_Martin_Kluit|3141|3142":{"country": "None", "nJobs": "4", "jobSet": "3141"}
+,"Yasuyuki_Okumura|55546|55547":{"country": "None", "nJobs": "29", "jobSet": "55546"}
+,"Caleb_Lampen|41592|41602":{"category": "C", "country": "--", "site": "ANALY_TRIUMF", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41592"}
 ,"Caleb_Lampen|41592|41604":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41592"}
 ,"Oleg_Zenin|4568|4569":{"country": "ru", "nJobs": "11", "jobSet": "4568"}
 ,"Christopher_Young|5957|5958":{"country": "uk", "nJobs": "1", "jobSet": "5957"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|813|814":{"country": "pt", "nJobs": "4", "jobSet": "813"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|786|787":{"country": "pt", "nJobs": "2", "jobSet": "786"}
 ,"Jeremiah_Jet_Goodson|66237|66238":{"category": "C", "country": "--", "site": "ANALY_BEIJING", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66237"}
 ,"matthew_rose|2770|2771":{"country": "None", "nJobs": "9", "jobSet": "2770"}
 ,"Oleg_Zenin|4566|4567":{"country": "ru", "nJobs": "18", "jobSet": "4566"}
@@ -747,11 +936,17 @@
 ,"William_Davey|2594|2595":{"country": "de", "nJobs": "1", "jobSet": "2594"}
 ,"Valerio_Ippolito|2814|2815":{"country": "it", "nJobs": "1", "jobSet": "2814"}
 ,"robert_cantrill|706|707":{"country": "uk", "nJobs": "665", "jobSet": "706"}
+,"Nicolas_Bousson|3787|3788":{"country": "fr", "nJobs": "2", "jobSet": "3787"}
 ,"Toshi_Sumida|19733|19734":{"country": "None", "nJobs": "5", "jobSet": "19733"}
 ,"Yuta_Suzuki|44679|44680":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44679"}
 ,"matthew_jackson|8871|8872":{"country": "uk", "nJobs": "2", "jobSet": "8871"}
+,"caterina_doglioni|5969|5970":{"country": "None", "nJobs": "24", "jobSet": "5969"}
 ,"Yuta_Suzuki|44347|44348":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44347"}
+,"Joseph_David_Price|14843|14845":{"country": "None", "nJobs": "2", "jobSet": "14843"}
+,"Joseph_David_Price|14843|14844":{"country": "None", "nJobs": "2", "jobSet": "14843"}
 ,"Daniel_Damiani|5296|5297":{"country": "us", "nJobs": "14", "jobSet": "5296"}
+,"Joseph_David_Price|14843|14846":{"country": "None", "nJobs": "6", "jobSet": "14843"}
+,"Joseph_David_Price|14843|14849":{"country": "None", "nJobs": "1", "jobSet": "14843"}
 ,"Daniel_Damiani|5296|5298":{"country": "us", "nJobs": "3", "jobSet": "5296"}
 ,"Yasuyuki_Okumura|55224|55225":{"country": "None", "nJobs": "5", "jobSet": "55224"}
 ,"Yasuyuki_Okumura|55804|55805":{"country": "None", "nJobs": "3", "jobSet": "55804"}
@@ -760,7 +955,7 @@
 ,"andrew_mehta|24125|24127":{"country": "uk", "nJobs": "3", "jobSet": "24125"}
 ,"Yasuyuki_Okumura|55384|55385":{"country": "None", "nJobs": "1", "jobSet": "55384"}
 ,"Yasuyuki_Okumura|55522|55528":{"country": "None", "nJobs": "10", "jobSet": "55522"}
-,"Yasuyuki_Okumura|55511|55512":{"country": "None", "nJobs": "13", "jobSet": "55511"}
+,"Pawel_Malecki|1995|1996":{"country": "pl", "nJobs": "1", "jobSet": "1995"}
 ,"Yasuyuki_Okumura|55522|55523":{"country": "None", "nJobs": "3", "jobSet": "55522"}
 ,"Stephen_Jacob_Sekula|5910|5912":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5910"}
 ,"Stephen_Jacob_Sekula|5910|5911":{"category": "C", "country": "--", "site": "ANALY_CYF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5910"}
@@ -775,31 +970,40 @@
 ,"Marius_Cornelis_Van_Woerden|11761|11766":{"category": "C", "country": "--", "site": "ANALY_ARC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "11761"}
 ,"Soeren_Stamm|146|147":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "146"}
 ,"Ippei_Watanabe|14559|14560":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14559"}
+,"Philip_Chang|11939|11940":{"country": "None", "nJobs": "180", "jobSet": "11939"}
 ,"Maximilian_Goblirsch-Kolb|6761|6762":{"category": "C", "country": "--", "site": "ANALY_SHEF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6761"}
+,"Nils_Ruthmann|3154|3155":{"country": "de", "nJobs": "7", "jobSet": "3154"}
+,"Joseph_David_Price|14854|14867":{"country": "None", "nJobs": "1", "jobSet": "14854"}
 ,"David_Lopez_Mateos|7620|7621":{"country": "None", "nJobs": "14", "jobSet": "7620"}
-,"Oleg_Zenin|4586|4587":{"country": "ru", "nJobs": "2", "jobSet": "4586"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|774|775":{"country": "pt", "nJobs": "5", "jobSet": "774"}
 ,"Yasuyuki_Okumura|55800|55801":{"country": "None", "nJobs": "7", "jobSet": "55800"}
+,"Joseph_David_Price|14854|14865":{"country": "None", "nJobs": "1", "jobSet": "14854"}
 ,"Oleg_Zenin|4698|4699":{"country": "ru", "nJobs": "5", "jobSet": "4698"}
+,"william_buttinger|2238|2239":{"country": "uk", "nJobs": "1", "jobSet": "2238"}
+,"Joseph_David_Price|14829|14831":{"country": "None", "nJobs": "1", "jobSet": "14829"}
 ,"Joseph_David_Price|13758|13763":{"country": "None", "nJobs": "10", "jobSet": "13758"}
 ,"Joseph_David_Price|13758|13762":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "13758"}
 ,"Joseph_David_Price|13758|13760":{"country": "None", "nJobs": "53", "jobSet": "13758"}
 ,"Joseph_David_Price|13758|13766":{"country": "None", "nJobs": "36", "jobSet": "13758"}
 ,"Joseph_David_Price|13758|13764":{"country": "None", "nJobs": "22", "jobSet": "13758"}
 ,"Jeremiah_Jet_Goodson|66272|66273":{"category": "C", "country": "--", "site": "ANALY_DESY-ZN", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66272"}
+,"Joshua_Moss|6944|6950":{"country": "None", "nJobs": "243", "jobSet": "6944"}
 ,"Christopher_Young|5825|5826":{"country": "uk", "nJobs": "1", "jobSet": "5825"}
 ,"Yasuyuki_Okumura|55501|55502":{"country": "None", "nJobs": "13", "jobSet": "55501"}
 ,"Oleg_Zenin|4544|4545":{"country": "ru", "nJobs": "2", "jobSet": "4544"}
 ,"Yasuyuki_Okumura|55400|55401":{"country": "None", "nJobs": "1", "jobSet": "55400"}
 ,"Christopher_Young|5903|5904":{"country": "uk", "nJobs": "3", "jobSet": "5903"}
 ,"Yasuyuki_Okumura|55540|55541":{"country": "None", "nJobs": "13", "jobSet": "55540"}
+,"Oleg_Zenin|4948|4949":{"country": "ru", "nJobs": "3", "jobSet": "4948"}
 ,"Yasuyuki_Okumura|55423|55424":{"country": "None", "nJobs": "1", "jobSet": "55423"}
 ,"Yasuyuki_Okumura|55423|55428":{"country": "None", "nJobs": "2", "jobSet": "55423"}
-,"Yasuyuki_Okumura|55244|55245":{"country": "None", "nJobs": "1", "jobSet": "55244"}
+,"Joseph_David_Price|14879|14880":{"country": "None", "nJobs": "1", "jobSet": "14879"}
 ,"Lauren_Alexandra_Tompkins|5369|5370":{"country": "us", "nJobs": "176", "jobSet": "5369"}
 ,"Vladimir_Lyubushkin|3447|3448":{"country": "None", "nJobs": "1", "jobSet": "3447"}
 ,"Serguei_Yanush|36051|36052":{"category": "C", "country": "--", "site": "ANALY_GOEGRID", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36051"}
 ,"Giacinto_Piacquadio|3987|3988":{"category": "C", "country": "--", "site": "ANALY_CPPM", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "3987"}
 ,"Yasuyuki_Okumura|55134|55135":{"country": "None", "nJobs": "1", "jobSet": "55134"}
+,"lucy_kogan|2953|2954":{"category": "C", "country": "--", "site": "ANALY_MANC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2953"}
 ,"Yasuyuki_Okumura|55118|55122":{"country": "None", "nJobs": "19", "jobSet": "55118"}
 ,"Dimitrios_Varouchas|2497|2498":{"country": "None", "nJobs": "1", "jobSet": "2497"}
 ,"Christopher_Young|5959|5960":{"country": "uk", "nJobs": "1", "jobSet": "5959"}
@@ -808,8 +1012,9 @@
 ,"Oleg_Zenin|4502|4503":{"country": "ru", "nJobs": "1", "jobSet": "4502"}
 ,"Serguei_Yanush|36229|36230":{"country": "None", "nJobs": "50", "jobSet": "36229"}
 ,"Yasuyuki_Okumura|55430|55431":{"country": "None", "nJobs": "1", "jobSet": "55430"}
+,"Fernando_Monticelli|2638|2645":{"country": "None", "nJobs": "33", "jobSet": "2638"}
 ,"Yasuyuki_Okumura|55430|55436":{"country": "None", "nJobs": "3", "jobSet": "55430"}
-,"Serguei_Yanush|36187|36188":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC_LONG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36187"}
+,"Daniele_Zanzi|11272|11287":{"country": "de", "nJobs": "76", "jobSet": "11272"}
 ,"Yuta_Suzuki|44179|44180":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44179"}
 ,"Maximilian_Goblirsch-Kolb|6877|6878":{"country": "de", "nJobs": "3", "jobSet": "6877"}
 ,"Lei_Zhang|1847|1849":{"country": "tw", "nJobs": "1", "jobSet": "1847"}
@@ -818,24 +1023,32 @@
 ,"Jeremiah_Jet_Goodson|66054|66055":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66054"}
 ,"Yousuke_Kataoka|8218|8219":{"country": "None", "nJobs": "19", "jobSet": "8218"}
 ,"Yasuyuki_Okumura|55282|55283":{"country": "None", "nJobs": "1", "jobSet": "55282"}
+,"Joseph_David_Price|14906|14907":{"country": "None", "nJobs": "1", "jobSet": "14906"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|750|751":{"country": "pt", "nJobs": "18", "jobSet": "750"}
 ,"Yasuyuki_Okumura|55508|55509":{"country": "None", "nJobs": "13", "jobSet": "55508"}
 ,"Yasuyuki_Okumura|55790|55791":{"country": "None", "nJobs": "1", "jobSet": "55790"}
+,"Joseph_David_Price|14893|14894":{"country": "None", "nJobs": "1", "jobSet": "14893"}
 ,"Lei_Zhang|1860|1861":{"country": "tw", "nJobs": "2", "jobSet": "1860"}
 ,"Wei-Cheng_Wong|4987|4988":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC_LONG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4987"}
 ,"Yousuke_Kataoka|8216|8217":{"country": "None", "nJobs": "25", "jobSet": "8216"}
 ,"matthew_jackson|8855|8856":{"country": "uk", "nJobs": "1", "jobSet": "8855"}
+,"vanessa.arnal|1432|1433":{"country": "None", "nJobs": "1", "jobSet": "1432"}
 ,"Oleg_Zenin|4728|4729":{"country": "ru", "nJobs": "6", "jobSet": "4728"}
 ,"Yasuyuki_Okumura|55126|55127":{"country": "None", "nJobs": "1", "jobSet": "55126"}
 ,"Yasuyuki_Okumura|55410|55411":{"country": "None", "nJobs": "1", "jobSet": "55410"}
+,"Yousuke_Kataoka|8268|8269":{"country": "None", "nJobs": "3", "jobSet": "8268"}
 ,"Yasuyuki_Okumura|55701|55704":{"country": "None", "nJobs": "3", "jobSet": "55701"}
 ,"Yasuyuki_Okumura|55701|55702":{"country": "None", "nJobs": "22", "jobSet": "55701"}
+,"Kanishka_Rao|23688|23689":{"category": "C", "country": "--", "site": "ANALY_INFN-ROMA1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "23688"}
 ,"David_Lopez_Mateos|7604|7605":{"country": "None", "nJobs": "23", "jobSet": "7604"}
 ,"matthew_jackson|8853|8854":{"country": "uk", "nJobs": "1", "jobSet": "8853"}
 ,"helen_hayward|22865|22867":{"country": "uk", "nJobs": "6", "jobSet": "22865"}
 ,"Yasuyuki_Okumura|55582|55583":{"country": "None", "nJobs": "6", "jobSet": "55582"}
+,"Thomas_Schwindt|52453|52465":{"category": "C", "country": "--", "site": "ANALY_SLAC", "logDate": "2011-11-22", "nJobs": "1", "jobSet": "52453"}
 ,"lucy_kogan|2861|2862":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2861"}
 ,"Yasuyuki_Okumura|55164|55165":{"country": "None", "nJobs": "13", "jobSet": "55164"}
 ,"Aaron_Angerami|3439|3440":{"country": "us", "nJobs": "445", "jobSet": "3439"}
+,"Oleg_Zenin|4740|4741":{"country": "None", "nJobs": "3", "jobSet": "4740"}
 ,"Christian_Jung|10713|10714":{"category": "C", "country": "--", "site": "ANALY_RHUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10713"}
 ,"Kevin_Sapp|934|935":{"country": "None", "nJobs": "2", "jobSet": "934"}
 ,"Yasuyuki_Okumura|55228|55229":{"country": "None", "nJobs": "3", "jobSet": "55228"}
@@ -845,16 +1058,22 @@
 ,"Yasuyuki_Okumura|55210|55211":{"country": "None", "nJobs": "1", "jobSet": "55210"}
 ,"Stephen_Jacob_Sekula|5981|5982":{"category": "C", "country": "--", "site": "ANALY_FZU", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5981"}
 ,"Yasuyuki_Okumura|55334|55335":{"country": "None", "nJobs": "56", "jobSet": "55334"}
+,"Oleg_Zenin|4970|4971":{"country": "ru", "nJobs": "1", "jobSet": "4970"}
 ,"Toshi_Sumida|19814|19815":{"country": "None", "nJobs": "1", "jobSet": "19814"}
 ,"Yousuke_Kataoka|8232|8233":{"country": "None", "nJobs": "1", "jobSet": "8232"}
 ,"Yuta_Suzuki|44549|44550":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44549"}
 ,"Oleg_Zenin|4688|4689":{"country": "ru", "nJobs": "42", "jobSet": "4688"}
 ,"sarah_williams|21862|21863":{"country": "uk", "nJobs": "10", "jobSet": "21862"}
+,"Oleg_Zenin|4724|4725":{"country": "ru", "nJobs": "1", "jobSet": "4724"}
+,"Oleg_Zenin|4770|4771":{"country": "ru", "nJobs": "8", "jobSet": "4770"}
 ,"paul_thompson|37449|37450":{"country": "uk", "nJobs": "34", "jobSet": "37449"}
 ,"paul_thompson|37449|37451":{"country": "uk", "nJobs": "2", "jobSet": "37449"}
 ,"paul_thompson|39286|39287":{"country": "uk", "nJobs": "1", "jobSet": "39286"}
-,"Yasuyuki_Okumura|55214|55215":{"country": "None", "nJobs": "2", "jobSet": "55214"}
+,"Yasuyuki_Okumura|55378|55379":{"country": "None", "nJobs": "1", "jobSet": "55378"}
 ,"Yasuyuki_Okumura|55390|55391":{"country": "None", "nJobs": "1", "jobSet": "55390"}
+,"Nicolas_Bousson|3782|3784":{"country": "fr", "nJobs": "274", "jobSet": "3782"}
+,"Nicolas_Bousson|3782|3783":{"country": "fr", "nJobs": "26", "jobSet": "3782"}
+,"Yousuke_Kataoka|8274|8275":{"country": "None", "nJobs": "1", "jobSet": "8274"}
 ,"Yasuyuki_Okumura|55470|55473":{"country": "None", "nJobs": "12", "jobSet": "55470"}
 ,"Yasuyuki_Okumura|55470|55471":{"country": "None", "nJobs": "1", "jobSet": "55470"}
 ,"Maximilian_Goblirsch-Kolb|6781|6782":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6781"}
@@ -865,25 +1084,35 @@
 ,"Michele_Petteni_edr-461|6945|6946":{"category": "C", "country": "--", "site": "ANALY_LPC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6945"}
 ,"Yasuyuki_Okumura|55340|55341":{"country": "None", "nJobs": "5", "jobSet": "55340"}
 ,"Mark_J_Tibbetts|2547|2548":{"category": "C", "country": "--", "site": "ANALY_wuppertalprod", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2547"}
+,"Yu_Suzuki|5178|5179":{"country": "jp", "nJobs": "264", "jobSet": "5178"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|764|765":{"country": "pt", "nJobs": "4", "jobSet": "764"}
 ,"Yasuyuki_Okumura|55669|55670":{"country": "None", "nJobs": "22", "jobSet": "55669"}
 ,"Yasuyuki_Okumura|55584|55585":{"country": "None", "nJobs": "12", "jobSet": "55584"}
 ,"Yuta_Suzuki|44607|44608":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44607"}
 ,"Yasuyuki_Okumura|55412|55413":{"country": "None", "nJobs": "1", "jobSet": "55412"}
 ,"Yasuyuki_Okumura|55230|55231":{"country": "None", "nJobs": "8", "jobSet": "55230"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4719|4720":{"country": "us", "nJobs": "7", "jobSet": "4719"}
 ,"paul_thompson|37457|37458":{"country": "uk", "nJobs": "9", "jobSet": "37457"}
-,"Serguei_Yanush|34537|34538":{"country": "None", "nJobs": "50", "jobSet": "34537"}
+,"Yasuyuki_Okumura|55136|55137":{"country": "None", "nJobs": "56", "jobSet": "55136"}
 ,"Oleg_Zenin|4628|4629":{"country": "ru", "nJobs": "2", "jobSet": "4628"}
 ,"vossebeld_joost|57021|57022":{"country": "uk", "nJobs": "2", "jobSet": "57021"}
+,"Eric_Fitzgerald|1964|1965":{"country": "None", "nJobs": "11", "jobSet": "1964"}
+,"Oleg_Zenin|4620|4621":{"country": "ru", "nJobs": "1", "jobSet": "4620"}
+,"Oleg_Zenin|4904|4905":{"country": "ru", "nJobs": "1", "jobSet": "4904"}
 ,"Andreas_Wildauer|4703|4704":{"country": "None", "nJobs": "1", "jobSet": "4703"}
+,"Jeremiah_Jet_Goodson|66541|66571":{"country": "us", "nJobs": "115", "jobSet": "66541"}
 ,"Andreas_Reinsch|9669|9670":{"country": "us", "nJobs": "1", "jobSet": "9669"}
 ,"Matthias_Lungwitz|39899|39900":{"country": "de", "nJobs": "29", "jobSet": "39899"}
 ,"Lei_Zhang|1954|1955":{"country": "tw", "nJobs": "1", "jobSet": "1954"}
+,"Joseph_David_Price|15554|15555":{"country": "None", "nJobs": "1", "jobSet": "15554"}
 ,"sarah_williams|21854|21855":{"category": "C", "country": "--", "site": "ANALY_CYF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "21854"}
 ,"Yasuyuki_Okumura|55154|55155":{"country": "None", "nJobs": "1", "jobSet": "55154"}
-,"Toshi_Sumida|19788|19789":{"country": "None", "nJobs": "1", "jobSet": "19788"}
+,"Christopher_Young|5878|5880":{"country": "uk", "nJobs": "1", "jobSet": "5878"}
 ,"Yasuyuki_Okumura|55640|55641":{"country": "None", "nJobs": "1", "jobSet": "55640"}
 ,"Jeremiah_Jet_Goodson|66062|66063":{"category": "C", "country": "--", "site": "ANALY_MWT2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66062"}
-,"lucy_kogan|2953|2954":{"category": "C", "country": "--", "site": "ANALY_MANC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2953"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|770|771":{"country": "pt", "nJobs": "6", "jobSet": "770"}
+,"Johanna_Bronner|7099|7101":{"country": "de", "nJobs": "927", "jobSet": "7099"}
+,"Yousuke_Kataoka|8272|8273":{"country": "None", "nJobs": "1", "jobSet": "8272"}
 ,"Yasuyuki_Okumura|55532|55533":{"country": "None", "nJobs": "15", "jobSet": "55532"}
 ,"Maximilian_Goblirsch-Kolb|6871|6872":{"country": "de", "nJobs": "3", "jobSet": "6871"}
 ,"Yasuyuki_Okumura|55614|55615":{"country": "None", "nJobs": "4", "jobSet": "55614"}
@@ -896,20 +1125,23 @@
 ,"Stephen_Jacob_Sekula|5905|5907":{"category": "C", "country": "--", "site": "ANALY_GRIF-LPNHE", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5905"}
 ,"Jeremiah_Jet_Goodson|66011|66012":{"country": "us", "nJobs": "11", "jobSet": "66011"}
 ,"paul_thompson|37937|37938":{"country": "uk", "nJobs": "1", "jobSet": "37937"}
-,"Michele_Petteni_edr-461|6911|6912":{"category": "C", "country": "--", "site": "ANALY_NIKHEF-ELPROD", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6911"}
 ,"Lei_Zhang|1947|1948":{"country": "tw", "nJobs": "1", "jobSet": "1947"}
 ,"Johanna_Bronner|7016|7017":{"country": "de", "nJobs": "383", "jobSet": "7016"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|790|791":{"country": "pt", "nJobs": "2", "jobSet": "790"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|768|769":{"country": "pt", "nJobs": "2", "jobSet": "768"}
 ,"Yasuyuki_Okumura|55715|55716":{"country": "None", "nJobs": "38", "jobSet": "55715"}
+,"Christian_Jung|11538|11541":{"country": "de", "nJobs": "15", "jobSet": "11538"}
 ,"Yasuyuki_Okumura|55188|55189":{"country": "None", "nJobs": "1", "jobSet": "55188"}
 ,"Jeffrey_Wetter|584|587":{"country": "None", "nJobs": "646", "jobSet": "584"}
 ,"Jeffrey_Wetter|584|586":{"country": "None", "nJobs": "4000", "jobSet": "584"}
-,"Christopher_Young|5876|5877":{"country": "uk", "nJobs": "2", "jobSet": "5876"}
+,"Christopher_Young|5897|5898":{"country": "uk", "nJobs": "2", "jobSet": "5897"}
 ,"Jeremiah_Jet_Goodson|66221|66222":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66221"}
 ,"Yasuyuki_Okumura|55667|55668":{"country": "None", "nJobs": "22", "jobSet": "55667"}
 ,"neil_cooper-smith|3072|3073":{"country": "uk", "nJobs": "1", "jobSet": "3072"}
 ,"Yasuyuki_Okumura|55705|55706":{"country": "None", "nJobs": "3", "jobSet": "55705"}
 ,"Yasuyuki_Okumura|55705|55709":{"country": "None", "nJobs": "21", "jobSet": "55705"}
 ,"Johanna_Bronner|7014|7015":{"country": "de", "nJobs": "5", "jobSet": "7014"}
+,"Joseph_David_Price|14908|14909":{"country": "None", "nJobs": "1", "jobSet": "14908"}
 ,"Yasuyuki_Okumura|55692|55693":{"country": "None", "nJobs": "3", "jobSet": "55692"}
 ,"Yousuke_Kataoka|8238|8239":{"country": "None", "nJobs": "1", "jobSet": "8238"}
 ,"Yasuyuki_Okumura|55564|55570":{"country": "None", "nJobs": "4", "jobSet": "55564"}
@@ -925,17 +1157,24 @@
 ,"Serguei_Yanush|36087|36088":{"category": "C", "country": "--", "site": "ANALY_AGLT2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36087"}
 ,"Yuta_Suzuki|44725|44726":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44725"}
 ,"Yousuke_Kataoka|8228|8229":{"country": "None", "nJobs": "4", "jobSet": "8228"}
-,"Toshi_Sumida|19729|19730":{"country": "None", "nJobs": "5", "jobSet": "19729"}
+,"Oleg_Zenin|4916|4917":{"country": "ru", "nJobs": "21", "jobSet": "4916"}
+,"Eirik_Gramstad|9272|9273":{"country": "no", "nJobs": "9", "jobSet": "9272"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4590|4591":{"country": "us", "nJobs": "66", "jobSet": "4590"}
 ,"Yasuyuki_Okumura|55166|55167":{"country": "None", "nJobs": "13", "jobSet": "55166"}
 ,"neil_cooper-smith|3082|3083":{"country": "uk", "nJobs": "1", "jobSet": "3082"}
 ,"Yuta_Suzuki|44551|44552":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44551"}
+,"Peter_Uchenna_Ezenweze_Onyisi|4590|4593":{"country": "us", "nJobs": "26", "jobSet": "4590"}
 ,"Christopher_Young|5939|5940":{"country": "uk", "nJobs": "6", "jobSet": "5939"}
 ,"Rocco_Mandrysch|18305|18307":{"country": "de", "nJobs": "32", "jobSet": "18305"}
 ,"Yasuyuki_Okumura|55392|55393":{"country": "None", "nJobs": "1", "jobSet": "55392"}
+,"Oleg_Zenin|4952|4953":{"country": "ru", "nJobs": "2", "jobSet": "4952"}
 ,"Mel_Shochet|1498|1500":{"country": "us", "nJobs": "18", "jobSet": "1498"}
 ,"Konstantinos_Nikolopoulos|6848|6849":{"country": "None", "nJobs": "1", "jobSet": "6848"}
 ,"matthew_rose|2780|2781":{"country": "None", "nJobs": "15", "jobSet": "2780"}
+,"Oleg_Zenin|4966|4967":{"country": "ru", "nJobs": "23", "jobSet": "4966"}
 ,"Yasuyuki_Okumura|55114|55115":{"country": "None", "nJobs": "19", "jobSet": "55114"}
+,"Lea_Michaela_Caminada|193|215":{"country": "None", "nJobs": "8", "jobSet": "193"}
+,"Holger_Schulz|938|939":{"country": "None", "nJobs": "6", "jobSet": "938"}
 ,"Ippei_Watanabe|14803|14804":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14803"}
 ,"Yasuyuki_Okumura|55638|55639":{"country": "None", "nJobs": "38", "jobSet": "55638"}
 ,"Katharina_Fiekas|6806|6807":{"country": "de", "nJobs": "24", "jobSet": "6806"}
@@ -945,17 +1184,21 @@
 ,"Oleg_Zenin|4710|4711":{"country": "ru", "nJobs": "1", "jobSet": "4710"}
 ,"Yasuyuki_Okumura|55578|55579":{"country": "None", "nJobs": "6", "jobSet": "55578"}
 ,"Christopher_Young|5945|5946":{"country": "uk", "nJobs": "1", "jobSet": "5945"}
+,"Yu_Suzuki|5170|5171":{"country": "jp", "nJobs": "264", "jobSet": "5170"}
+,"Mark_J_Tibbetts|2570|2572":{"category": "C", "country": "--", "site": "ANALY_FREIBURG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
 ,"Francesco_Conventi|745|746":{"category": "A", "country": "--", "site": "ANALY_INFN-NAPOLI", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "745"}
 ,"Mel_Shochet|1456|1458":{"country": "us", "nJobs": "10", "jobSet": "1456"}
 ,"Mark_J_Tibbetts|2551|2563":{"country": "None", "nJobs": "4", "jobSet": "2551"}
 ,"Toshi_Sumida|19792|19793":{"country": "None", "nJobs": "1", "jobSet": "19792"}
-,"Christopher_Young|5897|5898":{"country": "uk", "nJobs": "2", "jobSet": "5897"}
+,"Christopher_Young|5876|5877":{"country": "uk", "nJobs": "2", "jobSet": "5876"}
 ,"Yasuyuki_Okumura|55170|55171":{"country": "None", "nJobs": "2", "jobSet": "55170"}
 ,"Yuta_Suzuki|44661|44662":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44661"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|752|753":{"country": "pt", "nJobs": "6", "jobSet": "752"}
 ,"Christopher_Young|5919|5920":{"country": "uk", "nJobs": "6", "jobSet": "5919"}
 ,"Oleg_Zenin|4594|4595":{"country": "ru", "nJobs": "1", "jobSet": "4594"}
 ,"Yasuyuki_Okumura|55572|55573":{"country": "None", "nJobs": "6", "jobSet": "55572"}
 ,"Yasuyuki_Okumura|55434|55438":{"country": "None", "nJobs": "3", "jobSet": "55434"}
+,"Nicolas_Bousson|3805|3806":{"country": "fr", "nJobs": "8", "jobSet": "3805"}
 ,"Yasuyuki_Okumura|55606|55607":{"country": "None", "nJobs": "1", "jobSet": "55606"}
 ,"Maximilian_Goblirsch-Kolb|6787|6788":{"category": "C", "country": "--", "site": "ANALY_TOKYO", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6787"}
 ,"Yasuyuki_Okumura|55342|55343":{"country": "None", "nJobs": "5", "jobSet": "55342"}
@@ -966,23 +1209,29 @@
 ,"Theodota-Lagouri|3643|3644":{"category": "C", "country": "--", "site": "ANALY_IFIC", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "3643"}
 ,"Fernando_Monticelli|2638|2639":{"country": "None", "nJobs": "8", "jobSet": "2638"}
 ,"Yuta_Suzuki|44119|44120":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44119"}
+,"christian_gutschow|176|179":{"country": "uk", "nJobs": "38", "jobSet": "176"}
 ,"Yasuyuki_Okumura|55626|55627":{"country": "None", "nJobs": "38", "jobSet": "55626"}
 ,"Oleg_Zenin|4576|4577":{"country": "ru", "nJobs": "1", "jobSet": "4576"}
+,"Aaron_Angerami|3445|3446":{"country": "us", "nJobs": "445", "jobSet": "3445"}
 ,"Benjamin_Auerbach|407|408":{"country": "None", "nJobs": "1", "jobSet": "407"}
 ,"Yasuyuki_Okumura|55346|55347":{"country": "None", "nJobs": "2", "jobSet": "55346"}
 ,"Yasuyuki_Okumura|55174|55175":{"country": "None", "nJobs": "1", "jobSet": "55174"}
 ,"Lei_Zhang|1940|1945":{"country": "tw", "nJobs": "1", "jobSet": "1940"}
+,"Oleg_Zenin|4908|4909":{"country": "ru", "nJobs": "79", "jobSet": "4908"}
 ,"Mel_Shochet|1462|1464":{"country": "us", "nJobs": "10", "jobSet": "1462"}
 ,"Oleg_Zenin|4726|4727":{"country": "ru", "nJobs": "4", "jobSet": "4726"}
 ,"Oleg_Zenin|4704|4705":{"country": "ru", "nJobs": "16", "jobSet": "4704"}
+,"Joseph_David_Price|14954|14955":{"country": "None", "nJobs": "1", "jobSet": "14954"}
 ,"Kevin_Sapp|932|933":{"country": "None", "nJobs": "4", "jobSet": "932"}
 ,"neil_cooper-smith|2910|2911":{"country": "uk", "nJobs": "61", "jobSet": "2910"}
 ,"Christopher_Young|5905|5906":{"country": "uk", "nJobs": "19", "jobSet": "5905"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|817|818":{"country": "pt", "nJobs": "4", "jobSet": "817"}
 ,"Yasuyuki_Okumura|55226|55227":{"country": "None", "nJobs": "1", "jobSet": "55226"}
 ,"Jeremiah_Jet_Goodson|66249|66250":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66249"}
 ,"Toshi_Sumida|19718|19719":{"country": "None", "nJobs": "1400", "jobSet": "19718"}
 ,"Oleg_Zenin|4708|4709":{"country": "ru", "nJobs": "1", "jobSet": "4708"}
 ,"Ippei_Watanabe|14571|14572":{"country": "jp", "nJobs": "1", "jobSet": "14571"}
+,"Oleg_Zenin|4808|4809":{"country": "None", "nJobs": "2", "jobSet": "4808"}
 ,"David_Lopez_Mateos|7610|7611":{"country": "None", "nJobs": "47", "jobSet": "7610"}
 ,"Yasuyuki_Okumura|55786|55787":{"country": "None", "nJobs": "11", "jobSet": "55786"}
 ,"Yasuyuki_Okumura|55685|55686":{"country": "None", "nJobs": "22", "jobSet": "55685"}
@@ -990,7 +1239,9 @@
 ,"Yasuyuki_Okumura|55586|55587":{"country": "None", "nJobs": "38", "jobSet": "55586"}
 ,"Marius_Cornelis_Van_Woerden|11792|11793":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "11792"}
 ,"Stephen_Jacob_Sekula|6012|6013":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6012"}
+,"Joshua_Moss|6996|7036":{"country": "None", "nJobs": "539", "jobSet": "6996"}
 ,"Yasuyuki_Okumura|55592|55593":{"country": "None", "nJobs": "12", "jobSet": "55592"}
+,"Rodger_Mantifel|2720|2721":{"country": "ca", "nJobs": "54", "jobSet": "2720"}
 ,"Ippei_Watanabe|14829|14830":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14829"}
 ,"Konstantinos_Nikolopoulos|6840|6841":{"country": "None", "nJobs": "1", "jobSet": "6840"}
 ,"Yasuyuki_Okumura|55656|55657":{"country": "None", "nJobs": "1", "jobSet": "55656"}
@@ -998,20 +1249,34 @@
 ,"Enrique_Kajomovitz|2978|2979":{"category": "C", "country": "--", "site": "ANALY_NIKHEF-ELPROD", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2978"}
 ,"Soeren_Stamm|122|123":{"category": "C", "country": "--", "site": "ANALY_ALBERTA-WG1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "122"}
 ,"Maximilian_Goblirsch-Kolb|6735|6736":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6735"}
+,"Oleg_Zenin|4818|4819":{"country": "ru", "nJobs": "2", "jobSet": "4818"}
 ,"Christopher_Young|5901|5902":{"country": "uk", "nJobs": "7", "jobSet": "5901"}
 ,"neil_cooper-smith|3113|3114":{"country": "uk", "nJobs": "9", "jobSet": "3113"}
 ,"Jeremiah_Jet_Goodson|66219|66220":{"category": "C", "country": "--", "site": "ANALY_SLAC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66219"}
-,"vossebeld_joost|57045|57047":{"country": "uk", "nJobs": "3", "jobSet": "57045"}
+,"andrew_mehta|25247|25248":{"country": "uk", "nJobs": "2", "jobSet": "25247"}
 ,"vossebeld_joost|57045|57046":{"country": "uk", "nJobs": "19", "jobSet": "57045"}
+,"Mahsana_Ahsan|4421|4423":{"country": "None", "nJobs": "15", "jobSet": "4421"}
+,"Mahsana_Ahsan|4421|4422":{"country": "None", "nJobs": "49", "jobSet": "4421"}
+,"Eric_Fitzgerald|1614|1615":{"country": "None", "nJobs": "2", "jobSet": "1614"}
 ,"Yasuyuki_Okumura|55559|55563":{"country": "None", "nJobs": "17", "jobSet": "55559"}
+,"Joseph_David_Price|14868|14873":{"country": "None", "nJobs": "1", "jobSet": "14868"}
 ,"Yasuyuki_Okumura|55559|55560":{"country": "None", "nJobs": "11", "jobSet": "55559"}
 ,"Serguei_Yanush|36053|36054":{"category": "C", "country": "--", "site": "ANALY_FREIBURG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36053"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|748|749":{"country": "pt", "nJobs": "7", "jobSet": "748"}
+,"william_buttinger|2234|2237":{"country": "uk", "nJobs": "26", "jobSet": "2234"}
 ,"Giacinto_Piacquadio|3989|3990":{"country": "None", "nJobs": "1", "jobSet": "3989"}
+,"Viviana_Cavaliere|8910|8915":{"country": "None", "nJobs": "37", "jobSet": "8910"}
+,"Viviana_Cavaliere|8910|8912":{"country": "None", "nJobs": "363", "jobSet": "8910"}
+,"Viviana_Cavaliere|8910|8913":{"country": "None", "nJobs": "339", "jobSet": "8910"}
+,"Nicolas_Bousson|3802|3804":{"country": "fr", "nJobs": "75", "jobSet": "3802"}
+,"Nicolas_Bousson|3802|3803":{"country": "fr", "nJobs": "674", "jobSet": "3802"}
 ,"Oleg_Zenin|4690|4691":{"country": "ru", "nJobs": "13", "jobSet": "4690"}
 ,"Yasuyuki_Okumura|55486|55487":{"country": "None", "nJobs": "12", "jobSet": "55486"}
 ,"Yasuyuki_Okumura|55486|55489":{"country": "None", "nJobs": "3", "jobSet": "55486"}
 ,"Valerio_Rossetti|8663|8665":{"country": "es", "nJobs": "41", "jobSet": "8663"}
+,"Oleg_Zenin|4964|4965":{"country": "ru", "nJobs": "4", "jobSet": "4964"}
 ,"Yasuyuki_Okumura|55564|55565":{"country": "None", "nJobs": "3", "jobSet": "55564"}
+,"Carlos_Sandoval_Usme|9661|9662":{"country": "None", "nJobs": "6", "jobSet": "9661"}
 ,"Yasuyuki_Okumura|55356|55357":{"country": "None", "nJobs": "1", "jobSet": "55356"}
 ,"Yasuyuki_Okumura|55588|55589":{"country": "None", "nJobs": "38", "jobSet": "55588"}
 ,"Claire_David_mmq-301|2114|2115":{"country": "ca", "nJobs": "1", "jobSet": "2114"}
@@ -1020,23 +1285,31 @@
 ,"Fernando_Monticelli|2638|2650":{"country": "None", "nJobs": "53", "jobSet": "2638"}
 ,"Yasuyuki_Okumura|55652|55653":{"country": "None", "nJobs": "22", "jobSet": "55652"}
 ,"Yasuyuki_Okumura|55238|55239":{"country": "None", "nJobs": "2", "jobSet": "55238"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|780|781":{"country": "pt", "nJobs": "4", "jobSet": "780"}
 ,"Yasuyuki_Okumura|55761|55762":{"country": "None", "nJobs": "3", "jobSet": "55761"}
 ,"Mark_J_Tibbetts|2619|2620":{"country": "None", "nJobs": "4", "jobSet": "2619"}
+,"Yousuke_Kataoka|8286|8287":{"country": "None", "nJobs": "18", "jobSet": "8286"}
 ,"Yasuyuki_Okumura|55160|55161":{"country": "None", "nJobs": "13", "jobSet": "55160"}
 ,"Christopher_Young|5911|5912":{"country": "uk", "nJobs": "1", "jobSet": "5911"}
 ,"Yasuyuki_Okumura|55707|55708":{"country": "None", "nJobs": "3", "jobSet": "55707"}
-,"Ippei_Watanabe|14631|14632":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14631"}
+,"Louis_Bianchini|3290|3291":{"country": "None", "nJobs": "1", "jobSet": "3290"}
 ,"Yasuyuki_Okumura|55248|55249":{"country": "None", "nJobs": "1", "jobSet": "55248"}
 ,"Yasuyuki_Okumura|55250|55251":{"country": "None", "nJobs": "8", "jobSet": "55250"}
 ,"Christopher_Young|5923|5924":{"country": "uk", "nJobs": "1", "jobSet": "5923"}
+,"Eric_Fitzgerald|1956|1957":{"country": "None", "nJobs": "1", "jobSet": "1956"}
 ,"adam_barton|3179|3180":{"country": "uk", "nJobs": "1", "jobSet": "3179"}
+,"Aaron_Angerami|3443|3444":{"country": "us", "nJobs": "445", "jobSet": "3443"}
 ,"David_Lopez_Mateos|7600|7601":{"country": "None", "nJobs": "19", "jobSet": "7600"}
 ,"Christopher_Young|5931|5932":{"country": "uk", "nJobs": "1", "jobSet": "5931"}
 ,"vossebeld_joost|56985|56986":{"country": "uk", "nJobs": "1", "jobSet": "56985"}
+,"Yousuke_Kataoka|8270|8271":{"country": "None", "nJobs": "4", "jobSet": "8270"}
 ,"Daniel_Damiani|5316|5317":{"country": "us", "nJobs": "1", "jobSet": "5316"}
+,"Maximilian_Goblirsch-Kolb|7030|7032":{"country": "de", "nJobs": "592", "jobSet": "7030"}
 ,"Yasuyuki_Okumura|55114|55124":{"country": "None", "nJobs": "3", "jobSet": "55114"}
 ,"Yasuyuki_Okumura|55114|55121":{"country": "None", "nJobs": "193", "jobSet": "55114"}
 ,"Yousuke_Kataoka|8252|8253":{"country": "None", "nJobs": "289", "jobSet": "8252"}
+,"Maximilian_Goblirsch-Kolb|7017|7018":{"country": "de", "nJobs": "49", "jobSet": "7017"}
+,"Maximilian_Goblirsch-Kolb|7017|7019":{"country": "de", "nJobs": "70", "jobSet": "7017"}
 ,"Serguei_Yanush|36077|36078":{"country": "None", "nJobs": "50", "jobSet": "36077"}
 ,"Christopher_Young|5823|5824":{"country": "uk", "nJobs": "1", "jobSet": "5823"}
 ,"John_Wilson_Penwell|131|132":{"country": "None", "nJobs": "17", "jobSet": "131"}
@@ -1044,28 +1317,41 @@
 ,"Soeren_Stamm|182|183":{"category": "C", "country": "--", "site": "ANALY_DESY-ZN", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "182"}
 ,"Johanna_Bronner|7012|7013":{"country": "de", "nJobs": "7", "jobSet": "7012"}
 ,"sarah_livermore|12136|12137":{"country": "us", "nJobs": "6", "jobSet": "12136"}
+,"Oleg_Zenin|4798|4799":{"country": "None", "nJobs": "1", "jobSet": "4798"}
 ,"Oleg_Zenin|4624|4625":{"country": "ru", "nJobs": "10", "jobSet": "4624"}
 ,"Yasuyuki_Okumura|55254|55255":{"country": "None", "nJobs": "8", "jobSet": "55254"}
 ,"David_Lopez_Mateos|7598|7599":{"country": "None", "nJobs": "16", "jobSet": "7598"}
 ,"paul_thompson|37798|37799":{"country": "uk", "nJobs": "1", "jobSet": "37798"}
+,"Oleg_Zenin|4936|4937":{"country": "ru", "nJobs": "1", "jobSet": "4936"}
 ,"Christopher_Young|5927|5928":{"country": "uk", "nJobs": "7", "jobSet": "5927"}
-,"Yu_Suzuki|5136|5137":{"country": "jp", "nJobs": "264", "jobSet": "5136"}
+,"Jeremiah_Jet_Goodson|66587|66599":{"country": "us", "nJobs": "343", "jobSet": "66587"}
+,"Yasuyuki_Okumura|55260|55261":{"country": "None", "nJobs": "3", "jobSet": "55260"}
 ,"David_Lopez_Mateos|7588|7589":{"country": "None", "nJobs": "2", "jobSet": "7588"}
 ,"paul_thompson|37452|37453":{"country": "uk", "nJobs": "60", "jobSet": "37452"}
 ,"Lei_Zhang|1876|1877":{"country": "tw", "nJobs": "1", "jobSet": "1876"}
 ,"Lei_Zhang|1876|1878":{"country": "tw", "nJobs": "1", "jobSet": "1876"}
-,"Lei_Zhang|1876|1879":{"country": "tw", "nJobs": "1", "jobSet": "1876"}
+,"Oleg_Zenin|4744|4745":{"country": "None", "nJobs": "29", "jobSet": "4744"}
 ,"Christopher_Young|5913|5914":{"country": "uk", "nJobs": "14", "jobSet": "5913"}
+,"Oleg_Zenin|4922|4923":{"country": "ru", "nJobs": "5", "jobSet": "4922"}
 ,"Yasuyuki_Okumura|55336|55337":{"country": "None", "nJobs": "56", "jobSet": "55336"}
+,"Eric_Fitzgerald|1950|1951":{"country": "None", "nJobs": "11", "jobSet": "1950"}
+,"Joseph_David_Price|14922|14923":{"country": "None", "nJobs": "1", "jobSet": "14922"}
+,"Ippei_Watanabe|14843|14844":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14843"}
+,"Maximilian_Goblirsch-Kolb|7028|7029":{"country": "de", "nJobs": "168", "jobSet": "7028"}
 ,"Benjamin_Auerbach|405|406":{"country": "None", "nJobs": "128", "jobSet": "405"}
 ,"vossebeld_joost|56989|56990":{"country": "uk", "nJobs": "1", "jobSet": "56989"}
+,"Oleg_Zenin|4920|4921":{"country": "ru", "nJobs": "11", "jobSet": "4920"}
 ,"Yasuyuki_Okumura|55598|55599":{"country": "None", "nJobs": "4", "jobSet": "55598"}
 ,"Yasuyuki_Okumura|55306|55307":{"country": "None", "nJobs": "13", "jobSet": "55306"}
 ,"Chang_Wei_Loh|45670|45671":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC-T2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45670"}
+,"Toshi_Sumida|19729|19730":{"country": "None", "nJobs": "5", "jobSet": "19729"}
 ,"Ippei_Watanabe|14797|14798":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14797"}
+,"Oleg_Zenin|4806|4807":{"country": "None", "nJobs": "1", "jobSet": "4806"}
+,"Oleg_Zenin|4888|4889":{"country": "ru", "nJobs": "2", "jobSet": "4888"}
 ,"matthew_rose|2778|2779":{"country": "None", "nJobs": "2", "jobSet": "2778"}
 ,"Kevin_Michael_Mercurio|138|139":{"country": "None", "nJobs": "1", "jobSet": "138"}
 ,"matthew_jackson|8851|8852":{"country": "uk", "nJobs": "2", "jobSet": "8851"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|758|759":{"country": "pt", "nJobs": "1", "jobSet": "758"}
 ,"Yasuyuki_Okumura|55751|55752":{"country": "None", "nJobs": "4", "jobSet": "55751"}
 ,"neil_cooper-smith|2664|2665":{"country": "uk", "nJobs": "1", "jobSet": "2664"}
 ,"Yasuyuki_Okumura|55654|55655":{"country": "None", "nJobs": "1", "jobSet": "55654"}
@@ -1073,7 +1359,7 @@
 ,"Oleg_Zenin|4640|4641":{"country": "ru", "nJobs": "1", "jobSet": "4640"}
 ,"Oleg_Zenin|4670|4671":{"country": "ru", "nJobs": "8", "jobSet": "4670"}
 ,"Lei_Zhang|1862|1863":{"country": "tw", "nJobs": "3", "jobSet": "1862"}
-,"neil_cooper-smith|2899|2900":{"country": "uk", "nJobs": "17", "jobSet": "2899"}
+,"Junpei_Nonaka|591|593":{"country": "jp", "nJobs": "1001", "jobSet": "591"}
 ,"Lei_Zhang|1862|1864":{"country": "tw", "nJobs": "1", "jobSet": "1862"}
 ,"Oleg_Zenin|4574|4575":{"country": "ru", "nJobs": "2", "jobSet": "4574"}
 ,"Yasuyuki_Okumura|55308|55309":{"country": "None", "nJobs": "13", "jobSet": "55308"}
@@ -1087,32 +1373,36 @@
 ,"vossebeld_joost|57015|57016":{"country": "uk", "nJobs": "2", "jobSet": "57015"}
 ,"Toshi_Sumida|19725|19726":{"country": "None", "nJobs": "5", "jobSet": "19725"}
 ,"Toshi_Sumida|19727|19728":{"country": "None", "nJobs": "75", "jobSet": "19727"}
-,"Lei_Zhang|1880|1884":{"country": "tw", "nJobs": "1", "jobSet": "1880"}
+,"Toshi_Sumida|19746|19747":{"country": "None", "nJobs": "1173", "jobSet": "19746"}
 ,"Lei_Zhang|1880|1885":{"country": "tw", "nJobs": "1", "jobSet": "1880"}
 ,"Lei_Zhang|1880|1886":{"country": "tw", "nJobs": "1", "jobSet": "1880"}
 ,"Lei_Zhang|1880|1881":{"country": "tw", "nJobs": "1", "jobSet": "1880"}
 ,"Lei_Zhang|1880|1882":{"country": "tw", "nJobs": "1", "jobSet": "1880"}
 ,"Lei_Zhang|1880|1883":{"country": "tw", "nJobs": "1", "jobSet": "1880"}
 ,"Yasuyuki_Okumura|55206|55207":{"country": "None", "nJobs": "1", "jobSet": "55206"}
+,"Nicolas_Bousson|3796|3797":{"country": "fr", "nJobs": "2", "jobSet": "3796"}
 ,"Oleg_Zenin|4596|4597":{"country": "ru", "nJobs": "8", "jobSet": "4596"}
 ,"paul_thompson|37570|37571":{"country": "uk", "nJobs": "5", "jobSet": "37570"}
 ,"Chang_Wei_Loh|45692|45693":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45692"}
 ,"Yuta_Suzuki|44629|44630":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44629"}
+,"Nicolas_Bousson|3791|3792":{"country": "fr", "nJobs": "2", "jobSet": "3791"}
 ,"Jeremiah_Jet_Goodson|65949|65950":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "65949"}
 ,"matthew_jackson|8873|8874":{"country": "uk", "nJobs": "2", "jobSet": "8873"}
 ,"Yasuyuki_Okumura|55240|55241":{"country": "None", "nJobs": "1", "jobSet": "55240"}
 ,"Yasuyuki_Okumura|55628|55629":{"country": "None", "nJobs": "1", "jobSet": "55628"}
 ,"Yasuyuki_Okumura|55130|55131":{"country": "None", "nJobs": "1", "jobSet": "55130"}
+,"Oleg_Zenin|4930|4931":{"country": "ru", "nJobs": "2", "jobSet": "4930"}
 ,"Lei_Zhang|1933|1935":{"country": "tw", "nJobs": "1", "jobSet": "1933"}
 ,"Lei_Zhang|1933|1934":{"country": "tw", "nJobs": "1", "jobSet": "1933"}
 ,"paul_thompson|37649|37650":{"country": "uk", "nJobs": "1", "jobSet": "37649"}
 ,"Toshi_Sumida|19741|19743":{"country": "None", "nJobs": "999", "jobSet": "19741"}
+,"Benjamin_Auerbach|411|412":{"country": "None", "nJobs": "1", "jobSet": "411"}
 ,"Fernando_Monticelli|2638|2648":{"country": "None", "nJobs": "2", "jobSet": "2638"}
 ,"Fernando_Monticelli|2638|2649":{"country": "None", "nJobs": "15", "jobSet": "2638"}
 ,"Fernando_Monticelli|2638|2646":{"country": "None", "nJobs": "7", "jobSet": "2638"}
 ,"Fernando_Monticelli|2638|2647":{"country": "None", "nJobs": "10", "jobSet": "2638"}
 ,"Fernando_Monticelli|2638|2644":{"country": "None", "nJobs": "18", "jobSet": "2638"}
-,"Fernando_Monticelli|2638|2645":{"country": "None", "nJobs": "33", "jobSet": "2638"}
+,"Joseph_David_Price|14918|14919":{"country": "None", "nJobs": "2", "jobSet": "14918"}
 ,"Fernando_Monticelli|2638|2642":{"country": "None", "nJobs": "2", "jobSet": "2638"}
 ,"Fernando_Monticelli|2638|2643":{"country": "None", "nJobs": "11", "jobSet": "2638"}
 ,"Fernando_Monticelli|2638|2640":{"country": "None", "nJobs": "10", "jobSet": "2638"}
@@ -1121,23 +1411,27 @@
 ,"Yasuyuki_Okumura|55380|55381":{"country": "None", "nJobs": "1", "jobSet": "55380"}
 ,"Andrew_Haas|235|236":{"country": "us", "nJobs": "1", "jobSet": "235"}
 ,"Yasuyuki_Okumura|55707|55710":{"country": "None", "nJobs": "21", "jobSet": "55707"}
-,"Oleg_Zenin|4724|4725":{"country": "ru", "nJobs": "1", "jobSet": "4724"}
+,"Yasuyuki_Okumura|55788|55789":{"country": "None", "nJobs": "1", "jobSet": "55788"}
 ,"Krzysztof_Sliwa|1452|1453":{"country": "us", "nJobs": "1", "jobSet": "1452"}
 ,"Oleg_Zenin|4614|4615":{"country": "ru", "nJobs": "1", "jobSet": "4614"}
+,"Jeremiah_Jet_Goodson|66574|66582":{"country": "us", "nJobs": "618", "jobSet": "66574"}
+,"Mahsana_Ahsan|4429|4433":{"country": "None", "nJobs": "25", "jobSet": "4429"}
 ,"Marius_Cornelis_Van_Woerden|11809|11810":{"country": "None", "nJobs": "5", "jobSet": "11809"}
 ,"vossebeld_joost|56999|57000":{"country": "uk", "nJobs": "10", "jobSet": "56999"}
-,"Christopher_Young|5878|5880":{"country": "uk", "nJobs": "1", "jobSet": "5878"}
+,"Toshi_Sumida|19788|19789":{"country": "None", "nJobs": "1", "jobSet": "19788"}
 ,"Yasuyuki_Okumura|55310|55311":{"country": "None", "nJobs": "5", "jobSet": "55310"}
 ,"Toshi_Sumida|19782|19783":{"country": "None", "nJobs": "3", "jobSet": "19782"}
 ,"Tony_Kwan_skc-881|345|350":{"country": "ca", "nJobs": "21", "jobSet": "345"}
 ,"Christopher_Young|5907|5908":{"country": "uk", "nJobs": "6", "jobSet": "5907"}
-,"Joseph_David_Price|13968|13970":{"country": "None", "nJobs": "36", "jobSet": "13968"}
+,"matthew_rose|2768|2769":{"country": "None", "nJobs": "2", "jobSet": "2768"}
+,"Oleg_Zenin|4960|4961":{"country": "ru", "nJobs": "7", "jobSet": "4960"}
 ,"Yasuyuki_Okumura|55658|55659":{"country": "None", "nJobs": "17", "jobSet": "55658"}
 ,"Yasuyuki_Okumura|55644|55645":{"country": "None", "nJobs": "12", "jobSet": "55644"}
 ,"paul_thompson|37568|37569":{"country": "uk", "nJobs": "6", "jobSet": "37568"}
+,"Yasuyuki_Okumura|55158|55159":{"country": "None", "nJobs": "1", "jobSet": "55158"}
 ,"paul_thompson|37447|37448":{"country": "uk", "nJobs": "25", "jobSet": "37447"}
 ,"Yasuyuki_Okumura|55477|55478":{"country": "None", "nJobs": "13", "jobSet": "55477"}
-,"Yousuke_Kataoka|8234|8235":{"country": "None", "nJobs": "17", "jobSet": "8234"}
+,"Yasuyuki_Okumura|55176|55177":{"country": "None", "nJobs": "8", "jobSet": "55176"}
 ,"Yasuyuki_Okumura|55725|55726":{"country": "None", "nJobs": "38", "jobSet": "55725"}
 ,"Lei_Zhang|1940|1946":{"country": "tw", "nJobs": "1", "jobSet": "1940"}
 ,"Lei_Zhang|1940|1944":{"country": "tw", "nJobs": "1", "jobSet": "1940"}
@@ -1150,33 +1444,43 @@
 ,"Oleg_Zenin|4644|4645":{"country": "ru", "nJobs": "4", "jobSet": "4644"}
 ,"Yasuyuki_Okumura|55350|55351":{"country": "None", "nJobs": "1", "jobSet": "55350"}
 ,"Lei_Zhang|1869|1870":{"country": "tw", "nJobs": "1", "jobSet": "1869"}
+,"Joseph_David_Price|14972|14973":{"country": "None", "nJobs": "1", "jobSet": "14972"}
 ,"Yasuyuki_Okumura|55766|55767":{"country": "None", "nJobs": "1", "jobSet": "55766"}
 ,"Konstantinos_Nikolopoulos|6832|6833":{"country": "None", "nJobs": "1", "jobSet": "6832"}
 ,"Yasuyuki_Okumura|55505|55506":{"country": "None", "nJobs": "3", "jobSet": "55505"}
-,"Louis_Bianchini|3290|3291":{"country": "None", "nJobs": "1", "jobSet": "3290"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|760|761":{"country": "pt", "nJobs": "1", "jobSet": "760"}
+,"Ippei_Watanabe|14631|14632":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14631"}
 ,"Ippei_Watanabe|14925|14926":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14925"}
 ,"David_Lopez_Mateos|7596|7597":{"country": "None", "nJobs": "12", "jobSet": "7596"}
 ,"Yasuyuki_Okumura|55256|55257":{"country": "None", "nJobs": "1", "jobSet": "55256"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|756|757":{"country": "pt", "nJobs": "2", "jobSet": "756"}
 ,"Yasuyuki_Okumura|55398|55399":{"country": "None", "nJobs": "1", "jobSet": "55398"}
 ,"Mark_J_Tibbetts|2652|2653":{"country": "None", "nJobs": "1", "jobSet": "2652"}
 ,"Wei-Cheng_Wong|5010|5013":{"category": "C", "country": "--", "site": "ANALY_MWT2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5010"}
 ,"Wei-Cheng_Wong|5010|5012":{"category": "C", "country": "--", "site": "ANALY_LANCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5010"}
-,"Yasuyuki_Okumura|55260|55261":{"country": "None", "nJobs": "3", "jobSet": "55260"}
+,"Yu_Suzuki|5136|5137":{"country": "jp", "nJobs": "264", "jobSet": "5136"}
 ,"Giacinto_Piacquadio|4007|4008":{"country": "None", "nJobs": "6", "jobSet": "4007"}
 ,"Yasuyuki_Okumura|55544|55545":{"country": "None", "nJobs": "29", "jobSet": "55544"}
 ,"Wei-Cheng_Wong|5010|5014":{"category": "C", "country": "--", "site": "ANALY_FREIBURG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5010"}
 ,"Toshi_Sumida|19770|19771":{"country": "None", "nJobs": "15", "jobSet": "19770"}
-,"Kanishka_Rao|23688|23689":{"category": "C", "country": "--", "site": "ANALY_INFN-ROMA1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "23688"}
+,"Chang_Wei_Loh|45708|45709":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45708"}
+,"Rodger_Mantifel|2714|2715":{"country": "ca", "nJobs": "1", "jobSet": "2714"}
+,"Giacinto_Piacquadio|4013|4014":{"country": "None", "nJobs": "2", "jobSet": "4013"}
+,"Oleg_Zenin|4810|4811":{"country": "None", "nJobs": "1", "jobSet": "4810"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|788|789":{"country": "pt", "nJobs": "2", "jobSet": "788"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|796|797":{"country": "pt", "nJobs": "6", "jobSet": "796"}
 ,"vossebeld_joost|56997|56998":{"country": "uk", "nJobs": "2", "jobSet": "56997"}
+,"Yousuke_Kataoka|8290|8291":{"country": "None", "nJobs": "82", "jobSet": "8290"}
 ,"Yasuyuki_Okumura|55753|55754":{"country": "None", "nJobs": "4", "jobSet": "55753"}
 ,"Yasuyuki_Okumura|55172|55173":{"country": "None", "nJobs": "5", "jobSet": "55172"}
 ,"Yasuyuki_Okumura|55675|55676":{"country": "None", "nJobs": "17", "jobSet": "55675"}
 ,"Ippei_Watanabe|14967|14968":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14967"}
 ,"Yasuyuki_Okumura|55362|55363":{"country": "None", "nJobs": "1", "jobSet": "55362"}
+,"Yuta_Suzuki|41201|41202":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41201"}
 ,"Yasuyuki_Okumura|55555|55561":{"country": "None", "nJobs": "4", "jobSet": "55555"}
 ,"neil_cooper-smith|2927|2928":{"country": "uk", "nJobs": "41", "jobSet": "2927"}
 ,"Yuta_Suzuki|44183|44184":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44183"}
-,"Chang_Wei_Loh|45708|45709":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "45708"}
+,"Nicolas_Bousson|3807|3808":{"country": "fr", "nJobs": "8", "jobSet": "3807"}
 ,"paul_thompson|37639|37640":{"country": "uk", "nJobs": "1", "jobSet": "37639"}
 ,"paul_thompson|37639|37641":{"country": "uk", "nJobs": "1", "jobSet": "37639"}
 ,"Jeremiah_Jet_Goodson|66225|66226":{"category": "C", "country": "--", "site": "ANALY_BEIJING", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66225"}
@@ -1184,51 +1488,74 @@
 ,"Yasuyuki_Okumura|55304|55305":{"country": "None", "nJobs": "13", "jobSet": "55304"}
 ,"vossebeld_joost|57043|57044":{"country": "uk", "nJobs": "1", "jobSet": "57043"}
 ,"Yasuyuki_Okumura|55737|55738":{"country": "None", "nJobs": "38", "jobSet": "55737"}
+,"Oleg_Zenin|4890|4891":{"country": "ru", "nJobs": "107", "jobSet": "4890"}
 ,"Yasuyuki_Okumura|55370|55371":{"country": "None", "nJobs": "1", "jobSet": "55370"}
+,"vanessa.arnal|1440|1441":{"country": "None", "nJobs": "30", "jobSet": "1440"}
 ,"Toshi_Sumida|19784|19785":{"country": "None", "nJobs": "2", "jobSet": "19784"}
 ,"Jeremiah_Jet_Goodson|66245|66246":{"category": "C", "country": "--", "site": "ANALY_CSCS", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66245"}
 ,"andrew_mehta|24128|24129":{"country": "uk", "nJobs": "5", "jobSet": "24128"}
+,"Joseph_David_Price|14834|14838":{"country": "None", "nJobs": "1", "jobSet": "14834"}
+,"paul_thompson|37628|37629":{"country": "uk", "nJobs": "8", "jobSet": "37628"}
 ,"Serguei_Yanush|36239|36240":{"country": "None", "nJobs": "50", "jobSet": "36239"}
 ,"Philippe_Calfayan|12427|12428":{"country": "de", "nJobs": "1", "jobSet": "12427"}
 ,"Maximilian_Goblirsch-Kolb|6727|6728":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC-T2_LONG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6727"}
-,"Oleg_Zenin|4570|4571":{"country": "ru", "nJobs": "20", "jobSet": "4570"}
+,"neil_cooper-smith|3070|3071":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "3070"}
+,"Rodger_Mantifel|2716|2717":{"country": "ca", "nJobs": "1", "jobSet": "2716"}
 ,"Mel_Shochet|1477|1479":{"country": "us", "nJobs": "18", "jobSet": "1477"}
+,"Joseph_David_Price|14840|14842":{"country": "None", "nJobs": "8", "jobSet": "14840"}
 ,"Antonio_Salvucci_antonios@nikhef.nl|1615|1616":{"country": "None", "nJobs": "1", "jobSet": "1615"}
+,"Joseph_David_Price|14840|14841":{"country": "None", "nJobs": "1", "jobSet": "14840"}
 ,"Christopher_Young|5834|5835":{"country": "uk", "nJobs": "1", "jobSet": "5834"}
 ,"Christopher_Young|5834|5836":{"country": "uk", "nJobs": "1", "jobSet": "5834"}
 ,"Oleg_Zenin|4608|4609":{"country": "ru", "nJobs": "41", "jobSet": "4608"}
 ,"Yasuyuki_Okumura|55538|55539":{"country": "None", "nJobs": "13", "jobSet": "55538"}
 ,"Yuta_Suzuki|44563|44564":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44563"}
+,"Yousuke_Kataoka|8254|8255":{"country": "None", "nJobs": "288", "jobSet": "8254"}
+,"Dimitrios_Varouchas|2493|2494":{"country": "None", "nJobs": "1", "jobSet": "2493"}
+,"Oleg_Zenin|4944|4945":{"country": "ru", "nJobs": "16", "jobSet": "4944"}
+,"Maximilian_Goblirsch-Kolb|7020|7021":{"country": "de", "nJobs": "294", "jobSet": "7020"}
 ,"Christopher_Young|5951|5952":{"country": "uk", "nJobs": "7", "jobSet": "5951"}
 ,"Paul_Nilsson|11554|11468":{"category": "A", "country": "--", "site": "ANALY_CERN_XROOTD", "logDate": "2011-11-18", "nJobs": "1", "jobSet": "11554"}
 ,"Yasuyuki_Okumura|55646|55647":{"country": "None", "nJobs": "22", "jobSet": "55646"}
 ,"Viviana_Cavaliere|8736|8741":{"country": "None", "nJobs": "37", "jobSet": "8736"}
 ,"Viviana_Cavaliere|8736|8740":{"country": "None", "nJobs": "319", "jobSet": "8736"}
+,"Oleg_Zenin|4934|4935":{"country": "ru", "nJobs": "7", "jobSet": "4934"}
 ,"Yu_Suzuki|5160|5161":{"country": "jp", "nJobs": "264", "jobSet": "5160"}
 ,"Joseph_David_Price|13966|13967":{"country": "None", "nJobs": "79", "jobSet": "13966"}
 ,"paul_thompson|37574|37575":{"country": "uk", "nJobs": "1", "jobSet": "37574"}
 ,"paul_thompson|37574|37576":{"country": "uk", "nJobs": "1", "jobSet": "37574"}
 ,"Oleg_Zenin|4572|4573":{"country": "ru", "nJobs": "7", "jobSet": "4572"}
 ,"Ippei_Watanabe|14705|14706":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14705"}
+,"Johanna_Bronner|7087|7089":{"country": "de", "nJobs": "927", "jobSet": "7087"}
 ,"Serguei_Yanush|36099|36100":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36099"}
+,"Maximilian_Goblirsch-Kolb|7033|7034":{"country": "de", "nJobs": "3208", "jobSet": "7033"}
 ,"Yuta_Suzuki|44121|44122":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44121"}
 ,"Yasuyuki_Okumura|55632|55633":{"country": "None", "nJobs": "12", "jobSet": "55632"}
+,"Oleg_Zenin|4570|4571":{"country": "ru", "nJobs": "20", "jobSet": "4570"}
+,"Joseph_David_Price|14916|14917":{"country": "None", "nJobs": "3", "jobSet": "14916"}
+,"william_buttinger|2212|2217":{"country": "uk", "nJobs": "14", "jobSet": "2212"}
 ,"Yasuyuki_Okumura|55636|55637":{"country": "None", "nJobs": "38", "jobSet": "55636"}
+,"Eirik_Gramstad|9276|9277":{"country": "no", "nJobs": "7", "jobSet": "9276"}
+,"Mark_J_Tibbetts|2621|2622":{"country": "None", "nJobs": "28", "jobSet": "2621"}
 ,"Christopher_Young|5925|5926":{"country": "uk", "nJobs": "27", "jobSet": "5925"}
 ,"Yuta_Suzuki|44651|44652":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44651"}
 ,"Kevin_Michael_Mercurio|136|137":{"country": "None", "nJobs": "8", "jobSet": "136"}
 ,"matthew_rose|2782|2783":{"country": "None", "nJobs": "2", "jobSet": "2782"}
 ,"andrew_mehta|24119|24120":{"country": "uk", "nJobs": "4", "jobSet": "24119"}
 ,"Yuta_Suzuki|44627|44628":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44627"}
+,"Oleg_Zenin|4886|4887":{"country": "ru", "nJobs": "2", "jobSet": "4886"}
 ,"Oleg_Zenin|4720|4721":{"country": "ru", "nJobs": "17", "jobSet": "4720"}
 ,"Yasuyuki_Okumura|55298|55299":{"country": "None", "nJobs": "56", "jobSet": "55298"}
+,"Joseph_David_Price|14932|14933":{"country": "None", "nJobs": "1", "jobSet": "14932"}
 ,"Oleg_Zenin|4610|4611":{"country": "ru", "nJobs": "15", "jobSet": "4610"}
+,"Oleg_Zenin|4962|4963":{"country": "ru", "nJobs": "10", "jobSet": "4962"}
 ,"Yasuyuki_Okumura|55774|55775":{"country": "None", "nJobs": "38", "jobSet": "55774"}
 ,"Giacomo_Artoni|4810|4811":{"country": "it", "nJobs": "1", "jobSet": "4810"}
 ,"Yasuyuki_Okumura|55600|55601":{"country": "None", "nJobs": "4", "jobSet": "55600"}
 ,"Philippe_Calfayan|12429|12430":{"country": "de", "nJobs": "1", "jobSet": "12429"}
 ,"paul_thompson|37439|37440":{"country": "uk", "nJobs": "40", "jobSet": "37439"}
-,"Lauren_Alexandra_Tompkins|5367|5368":{"country": "us", "nJobs": "160", "jobSet": "5367"}
+,"Joseph_David_Price|14843|14847":{"country": "None", "nJobs": "1", "jobSet": "14843"}
+,"Eric_Fitzgerald|1958|1959":{"country": "None", "nJobs": "1", "jobSet": "1958"}
 ,"Tony_Kwan_skc-881|345|348":{"category": "C", "country": "--", "site": "ANALY_QMUL", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "345"}
 ,"Lei_Zhang|1952|1953":{"country": "tw", "nJobs": "1", "jobSet": "1952"}
 ,"Tony_Kwan_skc-881|345|347":{"category": "C", "country": "--", "site": "ANALY_LONG_BNL_ATLAS", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "345"}
@@ -1238,46 +1565,56 @@
 ,"Toshi_Sumida|19812|19813":{"country": "None", "nJobs": "8", "jobSet": "19812"}
 ,"Yasuyuki_Okumura|55590|55591":{"country": "None", "nJobs": "4", "jobSet": "55590"}
 ,"Yasuyuki_Okumura|55406|55407":{"country": "None", "nJobs": "1", "jobSet": "55406"}
-,"sarah_livermore|12138|12139":{"country": "us", "nJobs": "2", "jobSet": "12138"}
+,"paul_thompson|37658|37659":{"country": "uk", "nJobs": "7", "jobSet": "37658"}
 ,"Wesley_Ernst|1816|1817":{"country": "ca", "nJobs": "1", "jobSet": "1816"}
 ,"Stephen_Jacob_Sekula|6004|6005":{"category": "C", "country": "--", "site": "ANALY_IN2P3-CC-T2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6004"}
 ,"Rajivalochan_Subramaniam|3120|3121":{"country": "None", "nJobs": "2993", "jobSet": "3120"}
+,"Oleg_Zenin|4928|4929":{"country": "ru", "nJobs": "1", "jobSet": "4928"}
 ,"Giacomo_Artoni|4828|4829":{"country": "it", "nJobs": "1", "jobSet": "4828"}
+,"Oleg_Zenin|4746|4747":{"country": "None", "nJobs": "1", "jobSet": "4746"}
 ,"Ippei_Watanabe|14907|14908":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14907"}
 ,"Oleg_Zenin|4634|4635":{"country": "ru", "nJobs": "2", "jobSet": "4634"}
+,"Joseph_David_Price|14939|14940":{"country": "None", "nJobs": "1", "jobSet": "14939"}
 ,"Yasuyuki_Okumura|55394|55395":{"country": "None", "nJobs": "1", "jobSet": "55394"}
 ,"Mark_J_Tibbetts|2570|2577":{"category": "C", "country": "--", "site": "ANALY_SHEF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
 ,"Mark_J_Tibbetts|2570|2576":{"category": "C", "country": "--", "site": "ANALY_TOKYO", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
 ,"Mark_J_Tibbetts|2570|2575":{"category": "C", "country": "--", "site": "ANALY_FZK", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
 ,"Mark_J_Tibbetts|2570|2574":{"category": "C", "country": "--", "site": "ANALY_GRIF-LPNHE", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
 ,"Mark_J_Tibbetts|2570|2573":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
-,"Mark_J_Tibbetts|2570|2572":{"category": "C", "country": "--", "site": "ANALY_FREIBURG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
+,"Yasuyuki_Okumura|55608|55609":{"country": "None", "nJobs": "12", "jobSet": "55608"}
 ,"Mark_J_Tibbetts|2570|2571":{"category": "C", "country": "--", "site": "ANALY_INFN-MILANO-ATLASC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
+,"paul_thompson|39438|39439":{"country": "uk", "nJobs": "1", "jobSet": "39438"}
 ,"Maximilian_Goblirsch-Kolb|6765|6766":{"category": "C", "country": "--", "site": "ANALY_NIKHEF-ELPROD", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6765"}
-,"Yasuyuki_Okumura|55759|55760":{"country": "None", "nJobs": "38", "jobSet": "55759"}
+,"matthew_rose|2774|2775":{"country": "None", "nJobs": "4", "jobSet": "2774"}
 ,"Mark_J_Tibbetts|2570|2579":{"category": "C", "country": "--", "site": "ANALY_CPPM", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
-,"Oleg_Zenin|4598|4599":{"country": "ru", "nJobs": "3", "jobSet": "4598"}
-,"Peter_Martin_Kluit|3141|3142":{"country": "None", "nJobs": "4", "jobSet": "3141"}
+,"Mark_J_Tibbetts|2570|2578":{"category": "C", "country": "--", "site": "ANALY_INFN-NAPOLI", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2570"}
+,"Caleb_Lampen|41592|41600":{"category": "C", "country": "--", "site": "ANALY_TECHNION-HEP", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41592"}
 ,"Oleg_Zenin|4638|4639":{"country": "ru", "nJobs": "1", "jobSet": "4638"}
 ,"william_murray|6806|6807":{"country": "uk", "nJobs": "2", "jobSet": "6806"}
 ,"Yasuyuki_Okumura|55695|55696":{"country": "None", "nJobs": "25", "jobSet": "55695"}
-,"Yasuyuki_Okumura|55546|55547":{"country": "None", "nJobs": "29", "jobSet": "55546"}
-,"Caleb_Lampen|41592|41602":{"category": "C", "country": "--", "site": "ANALY_TRIUMF", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41592"}
+,"Yasuyuki_Okumura|55459|55461":{"country": "None", "nJobs": "12", "jobSet": "55459"}
+,"Yasuyuki_Okumura|55459|55460":{"country": "None", "nJobs": "1", "jobSet": "55459"}
 ,"Mark_J_Tibbetts|2551|2559":{"category": "C", "country": "--", "site": "ANALY_RHUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2551"}
 ,"Yasuyuki_Okumura|55198|55199":{"country": "None", "nJobs": "5", "jobSet": "55198"}
 ,"Christian_Jung|10741|10746":{"country": "de", "nJobs": "56", "jobSet": "10741"}
 ,"Yuta_Suzuki|41209|41210":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41209"}
 ,"Yasuyuki_Okumura|55505|55510":{"country": "None", "nJobs": "12", "jobSet": "55505"}
+,"Maximilian_Goblirsch-Kolb|7022|7023":{"country": "de", "nJobs": "199", "jobSet": "7022"}
 ,"Ippei_Watanabe|14709|14710":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14709"}
 ,"Yasuyuki_Okumura|55425|55429":{"country": "None", "nJobs": "2", "jobSet": "55425"}
 ,"Yasuyuki_Okumura|55425|55426":{"country": "None", "nJobs": "1", "jobSet": "55425"}
 ,"William_Davey|2751|2753":{"category": "C", "country": "--", "site": "ANALY_SARA", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2751"}
-,"Oleg_Zenin|4682|4683":{"country": "ru", "nJobs": "39", "jobSet": "4682"}
+,"William_Davey|2751|2752":{"category": "C", "country": "--", "site": "ANALY_MWT2", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2751"}
 ,"Yasuyuki_Okumura|55503|55504":{"country": "None", "nJobs": "3", "jobSet": "55503"}
 ,"Yasuyuki_Okumura|55503|55507":{"country": "None", "nJobs": "10", "jobSet": "55503"}
 ,"Serguei_Yanush|36213|36214":{"country": "None", "nJobs": "50", "jobSet": "36213"}
 ,"Yuta_Suzuki|44631|44632":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44631"}
 ,"Yasuyuki_Okumura|55222|55223":{"country": "None", "nJobs": "8", "jobSet": "55222"}
+,"Carlos_Sandoval_Usme|9663|9665":{"country": "None", "nJobs": "23", "jobSet": "9663"}
+,"Carlos_Sandoval_Usme|9663|9664":{"country": "None", "nJobs": "105", "jobSet": "9663"}
+,"Andrey_Loginov|23|25":{"country": "None", "nJobs": "167", "jobSet": "23"}
+,"Oleg_Zenin|4926|4927":{"country": "ru", "nJobs": "1", "jobSet": "4926"}
+,"Maximilian_Goblirsch-Kolb|7014|7015":{"country": "de", "nJobs": "2", "jobSet": "7014"}
 ,"Christopher_Young|5895|5896":{"country": "uk", "nJobs": "6", "jobSet": "5895"}
 ,"Yasuyuki_Okumura|55439|55440":{"country": "None", "nJobs": "4", "jobSet": "55439"}
 ,"Wei-Cheng_Wong|4952|4953":{"category": "C", "country": "--", "site": "ANALY_DESY-ZN", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "4952"}
@@ -1286,23 +1623,36 @@
 ,"Yasuyuki_Okumura|55620|55621":{"country": "None", "nJobs": "1", "jobSet": "55620"}
 ,"Michele_Petteni_edr-461|6949|6950":{"category": "C", "country": "--", "site": "ANALY_LPC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6949"}
 ,"Oleg_Zenin|4548|4549":{"country": "ru", "nJobs": "27", "jobSet": "4548"}
+,"Oleg_Zenin|4940|4941":{"country": "ru", "nJobs": "63", "jobSet": "4940"}
 ,"Yasuyuki_Okumura|55432|55433":{"country": "None", "nJobs": "1", "jobSet": "55432"}
-,"Yasuyuki_Okumura|55432|55437":{"country": "None", "nJobs": "3", "jobSet": "55432"}
+,"Yasuyuki_Okumura|55266|55267":{"country": "None", "nJobs": "5", "jobSet": "55266"}
 ,"Jun_Wakabayashi|2206|2207":{"country": "jp", "nJobs": "2", "jobSet": "2206"}
-,"Oleg_Zenin|4676|4677":{"country": "ru", "nJobs": "2", "jobSet": "4676"}
+,"Oleg_Zenin|4814|4815":{"country": "ru", "nJobs": "1", "jobSet": "4814"}
 ,"Yasuyuki_Okumura|55234|55235":{"country": "None", "nJobs": "2", "jobSet": "55234"}
-,"Giacinto_Piacquadio|4013|4014":{"country": "None", "nJobs": "2", "jobSet": "4013"}
+,"Vladimir_Lyubushkin|3816|3817":{"country": "None", "nJobs": "1", "jobSet": "3816"}
 ,"Christopher_Young|5953|5954":{"country": "uk", "nJobs": "3", "jobSet": "5953"}
 ,"Yasuyuki_Okumura|55364|55365":{"country": "None", "nJobs": "1", "jobSet": "55364"}
 ,"Yasuyuki_Okumura|55292|55293":{"country": "None", "nJobs": "1", "jobSet": "55292"}
+,"Joseph_David_Price|14895|14896":{"country": "None", "nJobs": "1", "jobSet": "14895"}
+,"Joseph_David_Price|14854|14858":{"country": "None", "nJobs": "1", "jobSet": "14854"}
+,"Joseph_David_Price|14854|14859":{"country": "None", "nJobs": "1", "jobSet": "14854"}
 ,"Yasuyuki_Okumura|55550|55551":{"country": "None", "nJobs": "6", "jobSet": "55550"}
+,"Oleg_Zenin|4794|4795":{"country": "None", "nJobs": "1", "jobSet": "4794"}
+,"Joseph_David_Price|14854|14856":{"country": "None", "nJobs": "1", "jobSet": "14854"}
+,"Joseph_David_Price|14854|14857":{"country": "None", "nJobs": "1", "jobSet": "14854"}
 ,"Yousuke_Kataoka|8214|8215":{"country": "None", "nJobs": "3", "jobSet": "8214"}
+,"Joseph_David_Price|14854|14855":{"country": "None", "nJobs": "1", "jobSet": "14854"}
+,"Jeremiah_Jet_Goodson|66329|66330":{"category": "C", "country": "--", "site": "ANALY_BEIJING", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66329"}
 ,"Yuta_Suzuki|44099|44100":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44099"}
 ,"David_Lopez_Mateos|7616|7617":{"country": "None", "nJobs": "14", "jobSet": "7616"}
+,"Yu_Suzuki|5164|5165":{"country": "jp", "nJobs": "264", "jobSet": "5164"}
 ,"Konstantinos_Nikolopoulos|6856|6857":{"country": "None", "nJobs": "1", "jobSet": "6856"}
 ,"Yu_Suzuki|5158|5159":{"country": "jp", "nJobs": "702", "jobSet": "5158"}
+,"Maximilian_Goblirsch-Kolb|7026|7027":{"country": "de", "nJobs": "206", "jobSet": "7026"}
+,"Joseph_David_Price|14930|14931":{"country": "None", "nJobs": "1", "jobSet": "14930"}
 ,"Christopher_Young|5883|5884":{"country": "uk", "nJobs": "1", "jobSet": "5883"}
 ,"Louis_Bianchini|3288|3289":{"country": "None", "nJobs": "5", "jobSet": "3288"}
+,"Rajivalochan_Subramaniam|3280|3281":{"country": "None", "nJobs": "1", "jobSet": "3280"}
 ,"Yasuyuki_Okumura|55727|55728":{"country": "None", "nJobs": "38", "jobSet": "55727"}
 ,"Yasuyuki_Okumura|55576|55577":{"country": "None", "nJobs": "29", "jobSet": "55576"}
 ,"Katharina_Fiekas|6808|6809":{"country": "de", "nJobs": "5", "jobSet": "6808"}
@@ -1313,10 +1663,14 @@
 ,"Oleg_Zenin|4618|4619":{"country": "ru", "nJobs": "12", "jobSet": "4618"}
 ,"Christopher_Young|5929|5930":{"country": "uk", "nJobs": "3", "jobSet": "5929"}
 ,"Yasuyuki_Okumura|55358|55359":{"country": "None", "nJobs": "1", "jobSet": "55358"}
+,"Kevin_Michael_Mercurio|155|157":{"country": "None", "nJobs": "3", "jobSet": "155"}
 ,"Konstantinos_Nikolopoulos|6826|6827":{"country": "None", "nJobs": "1", "jobSet": "6826"}
+,"Christian_Jung|11495|11498":{"country": "de", "nJobs": "3", "jobSet": "11495"}
 ,"Yasuyuki_Okumura|55352|55353":{"country": "None", "nJobs": "1", "jobSet": "55352"}
 ,"Yu_Suzuki|5148|5149":{"country": "jp", "nJobs": "4", "jobSet": "5148"}
+,"Konstantinos_Nikolopoulos|6824|6825":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6824"}
 ,"Yasuyuki_Okumura|55156|55157":{"country": "None", "nJobs": "2", "jobSet": "55156"}
+,"vossebeld_joost|56983|56984":{"country": "uk", "nJobs": "1", "jobSet": "56983"}
 ,"Yasuyuki_Okumura|55374|55375":{"country": "None", "nJobs": "1", "jobSet": "55374"}
 ,"Mel_Shochet|1459|1461":{"country": "us", "nJobs": "10", "jobSet": "1459"}
 ,"Maximilian_Goblirsch-Kolb|6879|6880":{"country": "de", "nJobs": "4", "jobSet": "6879"}
@@ -1328,9 +1682,11 @@
 ,"Oleg_Zenin|4674|4675":{"country": "ru", "nJobs": "1", "jobSet": "4674"}
 ,"Ippei_Watanabe|14827|14828":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14827"}
 ,"Stephen_Jacob_Sekula|5987|5988":{"category": "C", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "5987"}
+,"Mario_Jose_da_Cunha_Sargedas_de_Sousa|782|783":{"country": "pt", "nJobs": "13", "jobSet": "782"}
 ,"Yasuyuki_Okumura|55152|55153":{"country": "None", "nJobs": "1", "jobSet": "55152"}
 ,"Yasuyuki_Okumura|55296|55297":{"country": "None", "nJobs": "1", "jobSet": "55296"}
 ,"Ippei_Watanabe|14639|14640":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14639"}
+,"Nicolas_Bousson|3789|3790":{"country": "fr", "nJobs": "2", "jobSet": "3789"}
 ,"adrian_lewis|5144|5145":{"country": "uk", "nJobs": "1", "jobSet": "5144"}
 ,"Junpei_Nonaka|583|584":{"country": "jp", "nJobs": "1", "jobSet": "583"}
 ,"Christopher_Young|5891|5892":{"country": "uk", "nJobs": "6", "jobSet": "5891"}
@@ -1338,7 +1694,7 @@
 ,"Yasuyuki_Okumura|55661|55662":{"country": "None", "nJobs": "22", "jobSet": "55661"}
 ,"Yasuyuki_Okumura|55642|55643":{"country": "None", "nJobs": "12", "jobSet": "55642"}
 ,"Yasuyuki_Okumura|55772|55773":{"country": "None", "nJobs": "38", "jobSet": "55772"}
-,"paul_thompson|37792|37793":{"country": "uk", "nJobs": "8", "jobSet": "37792"}
+,"Oleg_Zenin|4950|4951":{"country": "ru", "nJobs": "5", "jobSet": "4950"}
 ,"Yasuyuki_Okumura|55264|55265":{"country": "None", "nJobs": "5", "jobSet": "55264"}
 ,"Maximilian_Goblirsch-Kolb|6885|6886":{"country": "de", "nJobs": "4", "jobSet": "6885"}
 ,"Yu_Suzuki|5156|5157":{"country": "jp", "nJobs": "264", "jobSet": "5156"}
@@ -1347,51 +1703,72 @@
 ,"neil_cooper-smith|2925|2926":{"country": "uk", "nJobs": "13", "jobSet": "2925"}
 ,"Yasuyuki_Okumura|55447|55448":{"country": "None", "nJobs": "4", "jobSet": "55447"}
 ,"Yasuyuki_Okumura|55168|55169":{"country": "None", "nJobs": "1", "jobSet": "55168"}
+,"Christian_Jung|11640|11641":{"country": "de", "nJobs": "2", "jobSet": "11640"}
 ,"Toshi_Sumida|19752|19754":{"country": "None", "nJobs": "999", "jobSet": "19752"}
 ,"paul_thompson|37580|37581":{"country": "uk", "nJobs": "2", "jobSet": "37580"}
+,"Oleg_Zenin|4882|4883":{"country": "ru", "nJobs": "2", "jobSet": "4882"}
 ,"Yasuyuki_Okumura|55354|55355":{"country": "None", "nJobs": "1", "jobSet": "55354"}
 ,"Christopher_Young|5858|5859":{"country": "uk", "nJobs": "1", "jobSet": "5858"}
+,"Nils_Ruthmann|3151|3152":{"country": "de", "nJobs": "1", "jobSet": "3151"}
+,"Nils_Ruthmann|3151|3153":{"country": "de", "nJobs": "6", "jobSet": "3151"}
+,"Joseph_David_Price|14951|14952":{"country": "None", "nJobs": "1", "jobSet": "14951"}
 ,"Yuta_Suzuki|44665|44666":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44665"}
 ,"Ippei_Watanabe|14767|14768":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14767"}
+,"Oleg_Zenin|4884|4885":{"country": "ru", "nJobs": "1", "jobSet": "4884"}
 ,"Yasuyuki_Okumura|55278|55279":{"country": "None", "nJobs": "1", "jobSet": "55278"}
 ,"paul_thompson|37788|37789":{"country": "uk", "nJobs": "7", "jobSet": "37788"}
 ,"Yasuyuki_Okumura|55683|55684":{"country": "None", "nJobs": "22", "jobSet": "55683"}
+,"Alexander_Vincent_Penson|9066|9067":{"country": "None", "nJobs": "1", "jobSet": "9066"}
+,"Joseph_David_Price|14843|14848":{"country": "None", "nJobs": "2", "jobSet": "14843"}
 ,"Yasuyuki_Okumura|55697|55698":{"country": "None", "nJobs": "25", "jobSet": "55697"}
 ,"Lauren_Alexandra_Tompkins|5373|5374":{"country": "us", "nJobs": "1", "jobSet": "5373"}
-,"Jeremiah_Jet_Goodson|66233|66234":{"category": "C", "country": "--", "site": "ANALY_LIP-Lisbon", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "66233"}
-,"Oleg_Zenin|4620|4621":{"country": "ru", "nJobs": "1", "jobSet": "4620"}
+,"Yu_Suzuki|5166|5167":{"country": "jp", "nJobs": "264", "jobSet": "5166"}
+,"Joseph_David_Price|14956|14957":{"country": "None", "nJobs": "1", "jobSet": "14956"}
+,"Yasuyuki_Okumura|55132|55133":{"country": "None", "nJobs": "1", "jobSet": "55132"}
+,"Oleg_Zenin|4734|4735":{"country": "None", "nJobs": "1", "jobSet": "4734"}
+,"Daniele_Zanzi|11422|11429":{"country": "de", "nJobs": "44", "jobSet": "11422"}
 ,"Yasuyuki_Okumura|55481|55485":{"country": "None", "nJobs": "10", "jobSet": "55481"}
 ,"Yasuyuki_Okumura|55481|55482":{"country": "None", "nJobs": "3", "jobSet": "55481"}
 ,"Yasuyuki_Okumura|55386|55387":{"country": "None", "nJobs": "1", "jobSet": "55386"}
 ,"Andrew_Haas|259|260":{"country": "us", "nJobs": "50", "jobSet": "259"}
+,"Oleg_Zenin|4760|4761":{"country": "ru", "nJobs": "2", "jobSet": "4760"}
 ,"David_Lopez_Mateos|7580|7581":{"country": "None", "nJobs": "1", "jobSet": "7580"}
 ,"Toshi_Sumida|19772|19773":{"country": "None", "nJobs": "19", "jobSet": "19772"}
 ,"Andrew_Haas|251|252":{"country": "us", "nJobs": "262", "jobSet": "251"}
+,"Joseph_David_Price|14920|14921":{"country": "None", "nJobs": "1", "jobSet": "14920"}
 ,"Lei_Zhang|1842|1843":{"country": "tw", "nJobs": "3", "jobSet": "1842"}
 ,"Yasuyuki_Okumura|55196|55197":{"country": "None", "nJobs": "8", "jobSet": "55196"}
 ,"Christian_Jung|10827|10828":{"category": "C", "country": "--", "site": "ANALY_INFN-MILANO-ATLASC", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10827"}
+,"Nikola_Makovec|33089|33090":{"country": "fr", "nJobs": "1", "jobSet": "33089"}
 ,"Yasuyuki_Okumura|55810|55811":{"country": "None", "nJobs": "1", "jobSet": "55810"}
 ,"Yuta_Suzuki|44399|44400":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44399"}
+,"paul_thompson|37792|37793":{"country": "uk", "nJobs": "8", "jobSet": "37792"}
 ,"Yasuyuki_Okumura|55688|55689":{"country": "None", "nJobs": "24", "jobSet": "55688"}
 ,"Serguei_Yanush|36079|36080":{"category": "C", "country": "--", "site": "ANALY_DESY-ZN", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36079"}
 ,"Yasuyuki_Okumura|55690|55691":{"country": "None", "nJobs": "24", "jobSet": "55690"}
 ,"Oleg_Zenin|4686|4687":{"country": "ru", "nJobs": "9", "jobSet": "4686"}
+,"Oleg_Zenin|4900|4901":{"country": "ru", "nJobs": "6", "jobSet": "4900"}
 ,"Yasuyuki_Okumura|55204|55205":{"country": "None", "nJobs": "2", "jobSet": "55204"}
 ,"robert_cantrill|704|705":{"country": "uk", "nJobs": "143", "jobSet": "704"}
+,"Eric_Fitzgerald|1960|1961":{"country": "None", "nJobs": "1", "jobSet": "1960"}
 ,"Caleb_Lampen|41673|41679":{"category": "C", "country": "--", "site": "ANALY_VICTORIA-WG1", "logDate": "2011-11-19", "nJobs": "1", "jobSet": "41673"}
 ,"Oleg_Zenin|4604|4605":{"country": "ru", "nJobs": "28", "jobSet": "4604"}
+,"Rocco_Mandrysch|18361|18363":{"country": "de", "nJobs": "178", "jobSet": "18361"}
 ,"Lei_Zhang|1840|1841":{"country": "tw", "nJobs": "1", "jobSet": "1840"}
 ,"neil_cooper-smith|2903|2904":{"country": "uk", "nJobs": "1", "jobSet": "2903"}
 ,"David_Lopez_Mateos|7606|7607":{"country": "None", "nJobs": "25", "jobSet": "7606"}
 ,"Serguei_Yanush|36021|36022":{"category": "C", "country": "--", "site": "ANALY_FREIBURG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36021"}
 ,"paul_thompson|37578|37579":{"country": "uk", "nJobs": "9", "jobSet": "37578"}
+,"Oleg_Zenin|4912|4913":{"country": "ru", "nJobs": "7", "jobSet": "4912"}
+,"Paul_Nilsson|11558|11470":{"category": "A", "country": "--", "site": "ANALY_CERN_XROOTD", "logDate": "2011-11-21", "nJobs": "1", "jobSet": "11558"}
 ,"lucy_kogan|2875|2876":{"country": "uk", "nJobs": "1", "jobSet": "2875"}
 ,"Yasuyuki_Okumura|55723|55724":{"country": "None", "nJobs": "4", "jobSet": "55723"}
 ,"Mel_Shochet|1468|1470":{"country": "us", "nJobs": "18", "jobSet": "1468"}
 ,"Rocco_Mandrysch|18330|18332":{"country": "de", "nJobs": "178", "jobSet": "18330"}
-,"Ippei_Watanabe|14843|14844":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "14843"}
+,"Rajivalochan_Subramaniam|3460|3461":{"country": "None", "nJobs": "1", "jobSet": "3460"}
 ,"Christopher_Young|5831|5832":{"country": "uk", "nJobs": "2", "jobSet": "5831"}
 ,"Christopher_Young|5831|5833":{"country": "uk", "nJobs": "1", "jobSet": "5831"}
+,"Joseph_David_Price|14962|14963":{"country": "None", "nJobs": "1", "jobSet": "14962"}
 ,"Philip_Chang|11829|11830":{"country": "None", "nJobs": "1", "jobSet": "11829"}
 ,"sarah_williams|21837|21838":{"category": "C", "country": "--", "site": "ANALY_ECDF", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "21837"}
 ,"Yasuyuki_Okumura|55286|55287":{"country": "None", "nJobs": "2", "jobSet": "55286"}
@@ -1402,6 +1779,8 @@
 ,"Yasuyuki_Okumura|55116|55123":{"country": "None", "nJobs": "3", "jobSet": "55116"}
 ,"Oleg_Zenin|4712|4713":{"country": "ru", "nJobs": "19", "jobSet": "4712"}
 ,"Christopher_Young|5871|5872":{"country": "uk", "nJobs": "1", "jobSet": "5871"}
+,"Kevin_Michael_Mercurio|164|165":{"country": "None", "nJobs": "7", "jobSet": "164"}
+,"Kevin_Michael_Mercurio|164|166":{"country": "None", "nJobs": "66", "jobSet": "164"}
 ,"Yu_Suzuki|5140|5141":{"country": "jp", "nJobs": "264", "jobSet": "5140"}
 ,"lucy_kogan|2903|2904":{"category": "C", "country": "--", "site": "ANALY_FREIBURG", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "2903"}
 ,"Yasuyuki_Okumura|55534|55535":{"country": "None", "nJobs": "15", "jobSet": "55534"}
@@ -1411,11 +1790,13 @@
 ,"Yasuyuki_Okumura|55148|55149":{"country": "None", "nJobs": "2", "jobSet": "55148"}
 ,"Yuta_Suzuki|44681|44682":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44681"}
 ,"Yasuyuki_Okumura|55262|55263":{"country": "None", "nJobs": "1", "jobSet": "55262"}
-,"paul_thompson|37628|37629":{"country": "uk", "nJobs": "8", "jobSet": "37628"}
-,"Dimitrios_Varouchas|2493|2494":{"country": "None", "nJobs": "1", "jobSet": "2493"}
+,"Yousuke_Kataoka|8288|8289":{"country": "None", "nJobs": "2", "jobSet": "8288"}
+,"Jacobus_Onderwaater|1534|1535":{"country": "None", "nJobs": "9", "jobSet": "1534"}
+,"Yasuyuki_Okumura|55511|55512":{"country": "None", "nJobs": "13", "jobSet": "55511"}
 ,"Yuta_Suzuki|44351|44352":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44351"}
 ,"Serguei_Yanush|36071|36072":{"category": "C", "country": "--", "site": "ANALY_wuppertalprod", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "36071"}
 ,"Lauren_Alexandra_Tompkins|5375|5376":{"country": "us", "nJobs": "16", "jobSet": "5375"}
+,"Joseph_David_Price|14966|14967":{"country": "None", "nJobs": "1", "jobSet": "14966"}
 ,"Soeren_Stamm|160|161":{"category": "C", "country": "--", "site": "ANALY_DESY-HH", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "160"}
 ,"Yousuke_Kataoka|8222|8223":{"country": "None", "nJobs": "109", "jobSet": "8222"}
 ,"Krzysztof_Sliwa|1460|1461":{"country": "us", "nJobs": "1", "jobSet": "1460"}
@@ -1432,16 +1813,23 @@
 ,"Lei_Zhang|1887|1888":{"country": "tw", "nJobs": "1", "jobSet": "1887"}
 ,"Mahsana_Ahsan|4358|4364":{"country": "None", "nJobs": "395", "jobSet": "4358"}
 ,"Oleg_Zenin|4400|4401":{"country": "ru", "nJobs": "3", "jobSet": "4400"}
+,"Yousuke_Kataoka|8262|8263":{"country": "None", "nJobs": "1", "jobSet": "8262"}
+,"vanessa.arnal|1438|1439":{"country": "None", "nJobs": "30", "jobSet": "1438"}
+,"Joseph_David_Price|14946|14947":{"country": "None", "nJobs": "1", "jobSet": "14946"}
 ,"Ludovica_Aperio_Bella|543|545":{"country": "fr", "nJobs": "18", "jobSet": "543"}
 ,"Ludovica_Aperio_Bella|543|544":{"country": "fr", "nJobs": "20", "jobSet": "543"}
 ,"Yasuyuki_Okumura|55388|55389":{"country": "None", "nJobs": "1", "jobSet": "55388"}
 ,"vossebeld_joost|57029|57030":{"country": "uk", "nJobs": "3", "jobSet": "57029"}
 ,"Christopher_Young|5883|5885":{"country": "uk", "nJobs": "1", "jobSet": "5883"}
+,"Rajivalochan_Subramaniam|3276|3277":{"country": "None", "nJobs": "1", "jobSet": "3276"}
 ,"Yuta_Suzuki|44501|44502":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "44501"}
 ,"Christopher_Young|5933|5934":{"country": "uk", "nJobs": "1", "jobSet": "5933"}
-,"Konstantinos_Nikolopoulos|6824|6825":{"category": "A", "country": "--", "site": "ANALY_BNL_ATLAS_1", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "6824"}
+,"Toshi_Sumida|19826|19827":{"country": "None", "nJobs": "1", "jobSet": "19826"}
+,"Oleg_Zenin|4880|4881":{"country": "ru", "nJobs": "5", "jobSet": "4880"}
+,"Joseph_David_Price|14834|14839":{"country": "None", "nJobs": "2", "jobSet": "14834"}
 ,"Yasuyuki_Okumura|55190|55191":{"country": "None", "nJobs": "5", "jobSet": "55190"}
 ,"paul_thompson|37414|37415":{"country": "uk", "nJobs": "1", "jobSet": "37414"}
+,"Joseph_David_Price|14926|14927":{"country": "None", "nJobs": "1", "jobSet": "14926"}
 ,"Krzysztof_Sliwa|1456|1457":{"country": "us", "nJobs": "3", "jobSet": "1456"}
 ,"Toshi_Sumida|19790|19791":{"country": "None", "nJobs": "16", "jobSet": "19790"}
 ,"Andrew_Haas|239|240":{"country": "us", "nJobs": "1", "jobSet": "239"}
@@ -1451,15 +1839,19 @@
 ,"neil_cooper-smith|2959|2960":{"country": "uk", "nJobs": "1", "jobSet": "2959"}
 ,"Joseph_David_Price|13971|13972":{"country": "None", "nJobs": "13", "jobSet": "13971"}
 ,"Yasuyuki_Okumura|55526|55527":{"country": "None", "nJobs": "3", "jobSet": "55526"}
+,"Joseph_David_Price|14834|14837":{"country": "None", "nJobs": "1", "jobSet": "14834"}
 ,"Christopher_Young|5817|5818":{"country": "uk", "nJobs": "1", "jobSet": "5817"}
 ,"Christopher_Young|5817|5819":{"country": "uk", "nJobs": "1", "jobSet": "5817"}
 ,"Yasuyuki_Okumura|55526|55529":{"country": "None", "nJobs": "10", "jobSet": "55526"}
+,"caterina_doglioni|5974|5975":{"country": "None", "nJobs": "5", "jobSet": "5974"}
 ,"David_Lopez_Mateos|7602|7603":{"country": "None", "nJobs": "21", "jobSet": "7602"}
 ,"sarah_livermore|12146|12147":{"country": "us", "nJobs": "2", "jobSet": "12146"}
+,"Yousuke_Kataoka|8264|8265":{"country": "None", "nJobs": "109", "jobSet": "8264"}
 ,"Yasuyuki_Okumura|55594|55595":{"country": "None", "nJobs": "12", "jobSet": "55594"}
 ,"Joseph_David_Price|13964|13965":{"country": "None", "nJobs": "1", "jobSet": "13964"}
 ,"Yasuyuki_Okumura|55182|55183":{"country": "None", "nJobs": "3", "jobSet": "55182"}
 ,"Yasuyuki_Okumura|55483|55484":{"country": "None", "nJobs": "12", "jobSet": "55483"}
+,"Nicolas_Bousson|3809|3810":{"country": "fr", "nJobs": "8", "jobSet": "3809"}
 ,"Christian_Jung|10724|10725":{"category": "C", "country": "--", "site": "ANALY_RHUL", "logDate": "2011-11-20", "nJobs": "1", "jobSet": "10724"}
 ,"Yasuyuki_Okumura|55483|55488":{"country": "None", "nJobs": "3", "jobSet": "55483"}
 ,"Vladyslav_Shtabovenko|288|291":{"country": "None", "nJobs": "8", "jobSet": "288"}

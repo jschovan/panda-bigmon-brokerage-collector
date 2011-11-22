@@ -17,7 +17,7 @@
 				text: ''
 			},
 			subtitle: {
-				text: 'Last updated: 2011-11-21 10:18 (UTC)'
+				text: 'Last updated: 2011-11-22 12:23 (UTC)'
 			},
 			tooltip: {
 				formatter: function() {
@@ -66,164 +66,191 @@
 	$(document).ready(function() {
 	    options.chart.renderTo = "container00";
 		options.title.text = "Category A,B,C on Jobs - Weekly";
+		options.credits.text = "[Details of Category A,B,C]";
 		options.credits.href = "data/ABC_Weekly.html";
-		options.series[0].data = [   {name:'A-User selected a site', y:85060} , {name:'B-User selected a cloud', y:2499} , {name:'C-Panda decides destination', y:2084481} ];
+		options.series[0].data = [   {name:'A-User selected a site', y:87813} , {name:'B-User selected a cloud', y:3151} , {name:'C-Panda decides destination', y:2287239} ];
 		chart00 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container01";
 		options.title.text = "Category A,B,C on jobDef - Weekly";
+		options.credits.text = "[Details of Category A,B,C]";
 		options.credits.href = "data/ABC_Weekly.html";
-		options.series[0].data = [   {name:'A-User selected a site', y:14692} , {name:'B-User selected a cloud', y:257} , {name:'C-Panda decides destination', y:72077} ];
+		options.series[0].data = [   {name:'A-User selected a site', y:14082} , {name:'B-User selected a cloud', y:356} , {name:'C-Panda decides destination', y:66320} ];
 		chart01 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container02";
 		options.title.text = "Category A,B,C on jobSet - Weekly";
+		options.credits.text = "[Details of Category A,B,C]";
 		options.credits.href = "data/ABC_Weekly.html";
-		options.series[0].data = [   {name:'A-User selected a site', y:13994} , {name:'B-User selected a cloud', y:248} , {name:'C-Panda decides destination', y:35688} ];
+		options.series[0].data = [   {name:'A-User selected a site', y:12708} , {name:'B-User selected a cloud', y:347} , {name:'C-Panda decides destination', y:30596} ];
 		chart02 = new Highcharts.Chart(options);
 				
 	    options.chart.renderTo = "container10";
-		options.title.text = "Category A (User selected a site) on Jobs - Top 10 Sites - Weekly";
+		options.title.text = "Category A (User selected a site) on Jobs - Top Sites higher than 1% - Weekly";
+		options.credits.text = "[Details of Category A on sites]";
 		options.credits.href = "data/ASite_Weekly.html";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 31768, color: '00006B'} , {name: 'MWT2_UC (US)', y: 15539, color: '1C1C7B'} , {name: 'WT2 (US)', y: 10007, color: '38388C'} , {name: 'FZK-LCG2 (DE)', y: 5860, color: '000000'} , {name: 'AGLT2 (US)', y: 5392, color: '54549C'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 2637, color: '009246'} , {name: 'UKI-LT2-RHUL (UK)', y: 2000, color: '356C20'} , {name: 'DESY-HH (DE)', y: 1639, color: '1C1C1C'} , {name: 'TRIUMF-LCG2 (CA)', y: 1595, color: 'FF1F1F'} , {name: 'IN2P3-CC-T2 (FR)', y: 1512, color: '0055A5'} , {name: 'others', y: 7111, color: '#CCFFCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 33593, color: '00006B'} , {name: 'MWT2_UC (US)', y: 13778, color: '1C1C7B'} , {name: 'FZK-LCG2 (DE)', y: 6890, color: '000000'} , {name: 'UKI-LT2-RHUL (UK)', y: 3999, color: '356C20'} , {name: 'AGLT2 (US)', y: 3863, color: '38388C'} , {name: 'NIKHEF-ELPROD (NL)', y: 3692, color: 'D97529'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 3637, color: '009246'} , {name: 'TOKYO-LCG2 (FR)', y: 3223, color: '0055A5'} , {name: 'SFU-LCG2 (CA)', y: 2408, color: 'FF1F1F'} , {name: 'IN2P3-CC (FR)', y: 1728, color: '1C68AF'} , {name: 'DESY-HH (DE)', y: 1640, color: '1C1C1C'} , {name: 'IN2P3-CC-T2 (FR)', y: 1515, color: '387AB9'} , {name: 'TW-FTT (TW)', y: 1444, color: '89000F'} , {name: 'IN2P3-LPC (FR)', y: 1046, color: '548DC3'} , {name: 'MPPMU (DE)', y: 1033, color: '383838'} , {name: 'CERN-PROD (CERN)', y: 879, color: 'AE3C51'} , {name: 'others', y: 3445, color: '#CCFFCC'} ];
 		chart10 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container11";
-		options.title.text = "Category A (User selected a site) on jobDef - Top 10 Sites - Weekly";
+		options.title.text = "Category A (User selected a site) on jobDef - Top Sites higher than 1% - Weekly";
+		options.credits.text = "[Details of Category A on sites]";
 		options.credits.href = "data/ASite_Weekly.html";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 10156, color: '00006B'} , {name: 'FZK-LCG2 (DE)', y: 2617, color: '000000'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 1177, color: '009246'} , {name: 'AGLT2 (US)', y: 357, color: '1C1C7B'} , {name: 'MWT2_UC (US)', y: 103, color: '38388C'} , {name: 'TRIUMF-LCG2 (CA)', y: 40, color: 'FF1F1F'} , {name: 'SFU-LCG2 (CA)', y: 39, color: 'FF3737'} , {name: 'DESY-HH (DE)', y: 27, color: '1C1C1C'} , {name: 'WT2 (US)', y: 15, color: '54549C'} , {name: 'BU_ATLAS_Tier2 (US)', y: 14, color: '7070AC'} , {name: 'others', y: 147, color: '#CCFFCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 9225, color: '00006B'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 1874, color: '009246'} , {name: 'FZK-LCG2 (DE)', y: 1803, color: '000000'} , {name: 'AGLT2 (US)', y: 428, color: '1C1C7B'} , {name: 'wuppertalprod (DE)', y: 299, color: '1C1C1C'} , {name: 'others', y: 453, color: '#CCFFCC'} ];
 		chart11 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container12";
-		options.title.text = "Category A (User selected a site) on jobSet - Top 10 Sites - Weekly";
+		options.title.text = "Category A (User selected a site) on jobSet - Top Sites higher than 1% - Weekly";
+		options.credits.text = "[Details of Category A on sites]";
 		options.credits.href = "data/ASite_Weekly.html";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 10153, color: '00006B'} , {name: 'FZK-LCG2 (DE)', y: 2617, color: '000000'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 1152, color: '009246'} , {name: 'AGLT2 (US)', y: 357, color: '1C1C7B'} , {name: 'MWT2_UC (US)', y: 103, color: '38388C'} , {name: 'TRIUMF-LCG2 (CA)', y: 40, color: 'FF1F1F'} , {name: 'SFU-LCG2 (CA)', y: 39, color: 'FF3737'} , {name: 'DESY-HH (DE)', y: 27, color: '1C1C1C'} , {name: 'WT2 (US)', y: 15, color: '54549C'} , {name: 'BU_ATLAS_Tier2 (US)', y: 14, color: '7070AC'} , {name: 'others', y: 147, color: '#CCFFCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 9213, color: '00006B'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 1824, color: '009246'} , {name: 'FZK-LCG2 (DE)', y: 1777, color: '000000'} , {name: 'AGLT2 (US)', y: 428, color: '1C1C7B'} , {name: 'wuppertalprod (DE)', y: 299, color: '1C1C1C'} , {name: 'others', y: 449, color: '#CCFFCC'} ];
 		chart12 = new Highcharts.Chart(options);
 				
 	    options.chart.renderTo = "container20";
 		options.title.text = "Category A (User selected a site) on Jobs - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category A on clouds]";
 		options.credits.href = "data/ACloud_Weekly.html";
-		options.series[0].data = [   {name: 'US', y: 63137, color: '00006B'} , {name: 'DE', y: 9078, color: '000000'} , {name: 'FR', y: 4698, color: '0055A5'} , {name: 'IT', y: 2763, color: '009246'} , {name: 'UK', y: 2406, color: '356C20'} , {name: 'CA', y: 2298, color: 'FF1F1F'} , {name: 'TW', y: 563, color: '89000F'} , {name: 'NL', y: 97, color: 'D97529'} , {name: 'CERN', y: 11, color: 'AE3C51'} , {name: 'ES', y: 9, color: 'EDBF00'} ];
+		options.series[0].data = [   {name: 'US', y: 51450, color: '00006B'} , {name: 'DE', y: 10964, color: '000000'} , {name: 'FR', y: 7574, color: '0055A5'} , {name: 'UK', y: 4653, color: '356C20'} , {name: 'NL', y: 4106, color: 'D97529'} , {name: 'IT', y: 3763, color: '009246'} , {name: 'CA', y: 2960, color: 'FF1F1F'} , {name: 'TW', y: 1444, color: '89000F'} , {name: 'CERN', y: 879, color: 'AE3C51'} , {name: 'ES', y: 20, color: 'EDBF00'} ];
 		chart20 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container21";
 		options.title.text = "Category A (User selected a site) on jobDef - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category A on clouds]";
 		options.credits.href = "data/ACloud_Weekly.html";
-		options.series[0].data = [   {name: 'US', y: 10662, color: '00006B'} , {name: 'DE', y: 2671, color: '000000'} , {name: 'IT', y: 1189, color: '009246'} , {name: 'CA', y: 92, color: 'FF1F1F'} , {name: 'FR', y: 34, color: '0055A5'} , {name: 'UK', y: 18, color: '356C20'} , {name: 'TW', y: 11, color: '89000F'} , {name: 'NL', y: 8, color: 'D97529'} , {name: 'CERN', y: 4, color: 'AE3C51'} , {name: 'ES', y: 3, color: 'EDBF00'} ];
+		options.series[0].data = [   {name: 'US', y: 9792, color: '00006B'} , {name: 'DE', y: 2174, color: '000000'} , {name: 'IT', y: 1886, color: '009246'} , {name: 'CA', y: 96, color: 'FF1F1F'} , {name: 'FR', y: 46, color: '0055A5'} , {name: 'UK', y: 30, color: '356C20'} , {name: 'TW', y: 26, color: '89000F'} , {name: 'NL', y: 22, color: 'D97529'} , {name: 'CERN', y: 6, color: 'AE3C51'} , {name: 'ES', y: 4, color: 'EDBF00'} ];
 		chart21 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container22";
 		options.title.text = "Category A (User selected a site) on jobSet - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category A on clouds]";
 		options.credits.href = "data/ACloud_Weekly.html";
-		options.series[0].data = [   {name: 'US', y: 10657, color: '00006B'} , {name: 'DE', y: 2667, color: '000000'} , {name: 'IT', y: 1163, color: '009246'} , {name: 'CA', y: 92, color: 'FF1F1F'} , {name: 'FR', y: 33, color: '0055A5'} , {name: 'UK', y: 18, color: '356C20'} , {name: 'TW', y: 11, color: '89000F'} , {name: 'NL', y: 8, color: 'D97529'} , {name: 'CERN', y: 4, color: 'AE3C51'} , {name: 'ES', y: 3, color: 'EDBF00'} ];
+		options.series[0].data = [   {name: 'US', y: 9770, color: '00006B'} , {name: 'DE', y: 2143, color: '000000'} , {name: 'IT', y: 1835, color: '009246'} , {name: 'CA', y: 96, color: 'FF1F1F'} , {name: 'FR', y: 45, color: '0055A5'} , {name: 'UK', y: 30, color: '356C20'} , {name: 'TW', y: 26, color: '89000F'} , {name: 'NL', y: 22, color: 'D97529'} , {name: 'CERN', y: 6, color: 'AE3C51'} , {name: 'ES', y: 4, color: 'EDBF00'} ];
 		chart22 = new Highcharts.Chart(options);
 				
 	    options.chart.renderTo = "container30";
 		options.title.text = "Category B (User selected a cloud) on Jobs - Top 20 Sites - Weekly";
+		options.credits.text = "[Details of Category B on sites]";
 		options.credits.href = "data/BSite_Weekly.html";
-		options.series[0].data = [   {name: 'DE (DE)', y: 1073, color: '000000'} , {name: 'IT (IT)', y: 968, color: '009246'} , {name: 'FR (FR)', y: 378, color: '0055A5'} , {name: 'US (US)', y: 80, color: '00006B'} ];
+		options.series[0].data = [   {name: 'DE (DE)', y: 1597, color: '000000'} , {name: 'IT (IT)', y: 1096, color: '009246'} , {name: 'FR (FR)', y: 378, color: '0055A5'} , {name: 'US (US)', y: 80, color: '00006B'} ];
 		chart30 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container31";
 		options.title.text = "Category B (User selected a cloud) on jobDef - Top 20 Sites - Weekly";
+		options.credits.text = "[Details of Category B on sites]";
 		options.credits.href = "data/BSite_Weekly.html";
-		options.series[0].data = [   {name: 'IT (IT)', y: 239, color: '009246'} , {name: 'DE (DE)', y: 15, color: '000000'} , {name: 'US (US)', y: 2, color: '00006B'} , {name: 'FR (FR)', y: 1, color: '0055A5'} ];
+		options.series[0].data = [   {name: 'IT (IT)', y: 335, color: '009246'} , {name: 'DE (DE)', y: 18, color: '000000'} , {name: 'US (US)', y: 2, color: '00006B'} , {name: 'FR (FR)', y: 1, color: '0055A5'} ];
 		chart31 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container32";
 		options.title.text = "Category B (User selected a cloud) on jobSet - Top 20 Sites - Weekly";
+		options.credits.text = "[Details of Category B on sites]";
 		options.credits.href = "data/BSite_Weekly.html";
-		options.series[0].data = [   {name: 'IT (IT)', y: 233, color: '009246'} , {name: 'DE (DE)', y: 12, color: '000000'} , {name: 'US (US)', y: 2, color: '00006B'} , {name: 'FR (FR)', y: 1, color: '0055A5'} ];
+		options.series[0].data = [   {name: 'IT (IT)', y: 329, color: '009246'} , {name: 'DE (DE)', y: 15, color: '000000'} , {name: 'US (US)', y: 2, color: '00006B'} , {name: 'FR (FR)', y: 1, color: '0055A5'} ];
 		chart32 = new Highcharts.Chart(options);
 				
 	    options.chart.renderTo = "container40";
 		options.title.text = "Category B (User selected a cloud) on Jobs - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category B on clouds]";
 		options.credits.href = "data/BCloud_Weekly.html";
-		options.series[0].data = [   {name: 'DE', y: 1073, color: '000000'} , {name: 'IT', y: 968, color: '009246'} , {name: 'FR', y: 378, color: '0055A5'} , {name: 'US', y: 80, color: '00006B'} ];
+		options.series[0].data = [   {name: 'DE', y: 1597, color: '000000'} , {name: 'IT', y: 1096, color: '009246'} , {name: 'FR', y: 378, color: '0055A5'} , {name: 'US', y: 80, color: '00006B'} ];
 		chart40 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container41";
 		options.title.text = "Category B (User selected a cloud) on jobDef - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category B on clouds]";
 		options.credits.href = "data/BCloud_Weekly.html";
-		options.series[0].data = [   {name: 'IT', y: 239, color: '009246'} , {name: 'DE', y: 15, color: '000000'} , {name: 'US', y: 2, color: '00006B'} , {name: 'FR', y: 1, color: '0055A5'} ];
+		options.series[0].data = [   {name: 'IT', y: 335, color: '009246'} , {name: 'DE', y: 18, color: '000000'} , {name: 'US', y: 2, color: '00006B'} , {name: 'FR', y: 1, color: '0055A5'} ];
 		chart41 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container42";
 		options.title.text = "Category B (User selected a cloud) on jobSet - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category B on clouds]";
 		options.credits.href = "data/BCloud_Weekly.html";
-		options.series[0].data = [   {name: 'IT', y: 233, color: '009246'} , {name: 'DE', y: 12, color: '000000'} , {name: 'US', y: 2, color: '00006B'} , {name: 'FR', y: 1, color: '0055A5'} ];
+		options.series[0].data = [   {name: 'IT', y: 329, color: '009246'} , {name: 'DE', y: 15, color: '000000'} , {name: 'US', y: 2, color: '00006B'} , {name: 'FR', y: 1, color: '0055A5'} ];
 		chart42 = new Highcharts.Chart(options);
 				
 	    options.chart.renderTo = "container50";
 		options.title.text = "Category C (Panda decides destination) on Jobs - Top 20 Sites - Weekly";
+		options.credits.text = "[Details of Category C on sites]";
 		options.credits.href = "data/CSite_Weekly.html";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 221658, color: '00006B'} , {name: 'RAL-LCG2 (UK)', y: 129446, color: '356C20'} , {name: 'AGLT2 (US)', y: 82641, color: '1C1C7B'} , {name: 'MWT2_UC (US)', y: 77046, color: '38388C'} , {name: 'TW-FTT (TW)', y: 72343, color: '89000F'} , {name: 'TOKYO-LCG2 (FR)', y: 71922, color: '0055A5'} , {name: 'UKI-LT2-QMUL (UK)', y: 70638, color: '4B7C38'} , {name: 'NIKHEF-ELPROD (NL)', y: 68036, color: 'D97529'} , {name: 'CERN-PROD (CERN)', y: 66607, color: 'AE3C51'} , {name: 'IN2P3-CC (FR)', y: 64712, color: '1C68AF'} , {name: 'WT2 (US)', y: 56891, color: '54549C'} , {name: 'NDGF-T1 (ND)', y: 49719, color: '6298FF'} , {name: 'IN2P3-CC-T2 (FR)', y: 44847, color: '387AB9'} , {name: 'LRZ-LMU (DE)', y: 41440, color: '000000'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 40949, color: '618C51'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 37195, color: '009246'} , {name: 'UNI-FREIBURG (DE)', y: 36994, color: '1C1C1C'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 35740, color: '789D6A'} , {name: 'DESY-HH (DE)', y: 35201, color: '383838'} , {name: 'UTA_SWT2 (US)', y: 34405, color: '7070AC'} , {name: 'others', y: 746051, color: '#CCFFCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 270864, color: '00006B'} , {name: 'RAL-LCG2 (UK)', y: 170927, color: '356C20'} , {name: 'SARA-MATRIX (NL)', y: 146517, color: 'D97529'} , {name: 'MWT2_UC (US)', y: 84858, color: '1C1C7B'} , {name: 'TW-FTT (TW)', y: 75923, color: '89000F'} , {name: 'CERN-PROD (CERN)', y: 74262, color: 'AE3C51'} , {name: 'AGLT2 (US)', y: 70106, color: '38388C'} , {name: 'NIKHEF-ELPROD (NL)', y: 66675, color: 'DE8440'} , {name: 'TOKYO-LCG2 (FR)', y: 63060, color: '0055A5'} , {name: 'UKI-LT2-QMUL (UK)', y: 62669, color: '4B7C38'} , {name: 'IN2P3-CC (FR)', y: 62161, color: '1C68AF'} , {name: 'LRZ-LMU (DE)', y: 56499, color: '000000'} , {name: 'UNI-FREIBURG (DE)', y: 49167, color: '1C1C1C'} , {name: 'WT2 (US)', y: 46627, color: '54549C'} , {name: 'NDGF-T1 (ND)', y: 43977, color: '6298FF'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 42872, color: '618C51'} , {name: 'DESY-HH (DE)', y: 41252, color: '383838'} , {name: 'IN2P3-CC-T2 (FR)', y: 36887, color: '387AB9'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 36519, color: '789D6A'} , {name: 'BU_ATLAS_Tier2 (US)', y: 34975, color: '7070AC'} , {name: 'others', y: 750442, color: '#CCFFCC'} ];
 		chart50 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container51";
 		options.title.text = "Category C (Panda decides destination) on jobDef - Top 20 Sites - Weekly";
+		options.credits.text = "[Details of Category C on sites]";
 		options.credits.href = "data/CSite_Weekly.html";
-		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 6807, color: '00006B'} , {name: 'MWT2_UC (US)', y: 2988, color: '1C1C7B'} , {name: 'NIKHEF-ELPROD (NL)', y: 2407, color: 'D97529'} , {name: 'UKI-LT2-RHUL (UK)', y: 2363, color: '356C20'} , {name: 'AGLT2 (US)', y: 2347, color: '38388C'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 2171, color: '009246'} , {name: 'UKI-LT2-QMUL (UK)', y: 2113, color: '4B7C38'} , {name: 'DESY-HH (DE)', y: 1987, color: '000000'} , {name: 'TOKYO-LCG2 (FR)', y: 1936, color: '0055A5'} , {name: 'NDGF-T1 (ND)', y: 1810, color: '6298FF'} , {name: 'IN2P3-CC (FR)', y: 1792, color: '1C68AF'} , {name: 'WT2 (US)', y: 1573, color: '54549C'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 1543, color: '618C51'} , {name: 'LRZ-LMU (DE)', y: 1493, color: '1C1C1C'} , {name: 'INFN-ROMA1 (IT)', y: 1358, color: '1C9E5A'} , {name: 'CA-SCINET-T2 (CA)', y: 1331, color: 'FF1F1F'} , {name: 'IN2P3-CC-T2 (FR)', y: 1314, color: '387AB9'} , {name: 'RAL-LCG2 (UK)', y: 1261, color: '789D6A'} , {name: 'GRIF-LPNHE (FR)', y: 1226, color: '548DC3'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 1216, color: '8EAD82'} , {name: 'others', y: 31041, color: '#CCFFCC'} ];
+		options.series[0].data = [   {name: 'BNL-ATLAS (US)', y: 6776, color: '00006B'} , {name: 'MWT2_UC (US)', y: 2484, color: '1C1C7B'} , {name: 'NIKHEF-ELPROD (NL)', y: 2426, color: 'D97529'} , {name: 'DESY-HH (DE)', y: 2233, color: '000000'} , {name: 'AGLT2 (US)', y: 1956, color: '38388C'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 1872, color: '009246'} , {name: 'UKI-LT2-RHUL (UK)', y: 1860, color: '356C20'} , {name: 'UKI-LT2-QMUL (UK)', y: 1797, color: '4B7C38'} , {name: 'LRZ-LMU (DE)', y: 1741, color: '1C1C1C'} , {name: 'NDGF-T1 (ND)', y: 1677, color: '6298FF'} , {name: 'IN2P3-CC (FR)', y: 1664, color: '0055A5'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 1648, color: '618C51'} , {name: 'UNI-FREIBURG (DE)', y: 1415, color: '383838'} , {name: 'TOKYO-LCG2 (FR)', y: 1393, color: '1C68AF'} , {name: 'INFN-ROMA1 (IT)', y: 1330, color: '1C9E5A'} , {name: 'WT2 (US)', y: 1292, color: '54549C'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 1271, color: '789D6A'} , {name: 'RAL-LCG2 (UK)', y: 1208, color: '8EAD82'} , {name: 'GRIF-LPNHE (FR)', y: 1187, color: '387AB9'} , {name: 'CA-SCINET-T2 (CA)', y: 1166, color: 'FF1F1F'} , {name: 'others', y: 27924, color: '#CCFFCC'} ];
 		chart51 = new Highcharts.Chart(options);
 		
 	    options.chart.renderTo = "container60";
 		options.title.text = "Category C (Panda decides destination) on Jobs - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category C on clouds]";
 		options.credits.href = "data/CCloud_Weekly.html";
-		options.series[0].data = [   {name: 'US', y: 519056, color: '00006B'} , {name: 'UK', y: 401465, color: '356C20'} , {name: 'FR', y: 310085, color: '0055A5'} , {name: 'DE', y: 235846, color: '000000'} , {name: 'CA', y: 137638, color: 'FF1F1F'} , {name: 'NL', y: 132211, color: 'D97529'} , {name: 'IT', y: 114406, color: '009246'} , {name: 'TW', y: 72343, color: '89000F'} , {name: 'CERN', y: 66607, color: 'AE3C51'} , {name: 'ND', y: 49719, color: '6298FF'} , {name: 'ES', y: 45105, color: 'EDBF00'} ];
+		options.series[0].data = [   {name: 'US', y: 554523, color: '00006B'} , {name: 'UK', y: 436363, color: '356C20'} , {name: 'DE', y: 304065, color: '000000'} , {name: 'FR', y: 271878, color: '0055A5'} , {name: 'NL', y: 254141, color: 'D97529'} , {name: 'CA', y: 133295, color: 'FF1F1F'} , {name: 'IT', y: 101173, color: '009246'} , {name: 'TW', y: 75923, color: '89000F'} , {name: 'CERN', y: 74262, color: 'AE3C51'} , {name: 'ND', y: 43977, color: '6298FF'} , {name: 'ES', y: 37639, color: 'EDBF00'} ];
 		chart60 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container61";
 		options.title.text = "Category C (Panda decides destination) on jobDef - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category C on clouds]";
 		options.credits.href = "data/CCloud_Weekly.html";
-		options.series[0].data = [   {name: 'US', y: 17547, color: '00006B'} , {name: 'UK', y: 12933, color: '356C20'} , {name: 'FR', y: 11271, color: '0055A5'} , {name: 'DE', y: 8676, color: '000000'} , {name: 'CA', y: 5848, color: 'FF1F1F'} , {name: 'IT', y: 5409, color: '009246'} , {name: 'NL', y: 5104, color: 'D97529'} , {name: 'ES', y: 1938, color: 'EDBF00'} , {name: 'ND', y: 1810, color: '6298FF'} , {name: 'CERN', y: 1011, color: 'AE3C51'} , {name: 'TW', y: 530, color: '89000F'} ];
+		options.series[0].data = [   {name: 'US', y: 15903, color: '00006B'} , {name: 'UK', y: 11815, color: '356C20'} , {name: 'DE', y: 10412, color: '000000'} , {name: 'FR', y: 9007, color: '0055A5'} , {name: 'CA', y: 4931, color: 'FF1F1F'} , {name: 'IT', y: 4719, color: '009246'} , {name: 'NL', y: 4560, color: 'D97529'} , {name: 'ND', y: 1677, color: '6298FF'} , {name: 'ES', y: 1664, color: 'EDBF00'} , {name: 'CERN', y: 1058, color: 'AE3C51'} , {name: 'TW', y: 574, color: '89000F'} ];
 		chart61 = new Highcharts.Chart(options);
 		
 		options.chart.renderTo = "container70";
 		options.title.text = "Category E (User excluded a site) on distinct jobSet - Excluded / Non-Excluded - Weekly";
+		options.credits.text = "[Details of Category E]";
 		options.credits.href = "data/E_Weekly.html";
-		options.series[0].data = [ {name:'Excluded', y:15156, color:'#DD0000' },{name:'Non-Excluded', y:25071, color: '#0000DD'} ];
+		options.series[0].data = [ {name:'Excluded', y:15574, color:'#DD0000' },{name:'Non-Excluded', y:22615, color: '#0000DD'} ];
 		chart70 = new Highcharts.Chart(options);
 				
 		options.chart.renderTo = "container80";
 		options.title.text = "Category E (User excluded a site) on jobSet - Top 20 Sites - Weekly";
+		options.credits.text = "[Details of Category E on sites]";
 		options.credits.href = "data/ESite_Weekly.html";
-		options.series[0].data = [   {name: 'CERN-PROD (CERN)', y: 6062, color: 'AE3C51'} , {name: 'BU_ATLAS_Tier2 (US)', y: 3368, color: '00006B'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 3338, color: '356C20'} , {name: 'GRIF-LPNHE (FR)', y: 3126, color: '0055A5'} , {name: 'NDGF-T1 (ND)', y: 2933, color: '6298FF'} , {name: 'MPPMU (DE)', y: 2711, color: '000000'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 2627, color: '4B7C38'} , {name: 'BEIJING-LCG2 (FR)', y: 2583, color: '1C68AF'} , {name: 'GoeGrid (DE)', y: 2130, color: '1C1C1C'} , {name: 'RO-07-NIPNE (FR)', y: 2124, color: '387AB9'} , {name: 'IL-TAU-HEP (NL)', y: 2094, color: 'D97529'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 2045, color: '618C51'} , {name: 'DESY-ZN (DE)', y: 1997, color: '383838'} , {name: 'INFN-T1 (IT)', y: 1985, color: '009246'} , {name: 'UKI-LT2-QMUL (UK)', y: 1957, color: '789D6A'} , {name: 'CYFRONET-LCG2 (DE)', y: 1926, color: '545454'} , {name: 'wuppertalprod (DE)', y: 1904, color: '707070'} , {name: 'TW-FTT (TW)', y: 1785, color: '89000F'} , {name: 'LRZ-LMU (DE)', y: 1749, color: '8D8D8D'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 1700, color: '8EAD82'} , {name: 'others', y: 32078, color: '#CCFFCC'} ];
+		options.series[0].data = [   {name: 'CERN-PROD (CERN)', y: 6674, color: 'AE3C51'} , {name: 'NDGF-T1 (ND)', y: 3463, color: '6298FF'} , {name: 'BU_ATLAS_Tier2 (US)', y: 3120, color: '00006B'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 3093, color: '356C20'} , {name: 'GRIF-LPNHE (FR)', y: 2959, color: '0055A5'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 2867, color: '4B7C38'} , {name: 'BEIJING-LCG2 (FR)', y: 2464, color: '1C68AF'} , {name: 'MPPMU (DE)', y: 2385, color: '000000'} , {name: 'LRZ-LMU (DE)', y: 2354, color: '1C1C1C'} , {name: 'CYFRONET-LCG2 (DE)', y: 2169, color: '383838'} , {name: 'UNI-FREIBURG (DE)', y: 2157, color: '545454'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 2126, color: '618C51'} , {name: 'RO-07-NIPNE (FR)', y: 2037, color: '387AB9'} , {name: 'wuppertalprod (DE)', y: 1955, color: '707070'} , {name: 'DESY-ZN (DE)', y: 1946, color: '8D8D8D'} , {name: 'DESY-HH (DE)', y: 1931, color: 'A9A9A9'} , {name: 'INFN-T1 (IT)', y: 1910, color: '009246'} , {name: 'UKI-LT2-QMUL (UK)', y: 1828, color: '789D6A'} , {name: 'GoeGrid (DE)', y: 1809, color: 'C5C5C5'} , {name: 'TW-FTT (TW)', y: 1781, color: '89000F'} , {name: 'others', y: 32809, color: '#CCFFCC'} ];
 		chart80 = new Highcharts.Chart(options);
 				
 		options.chart.renderTo = "container81";
 		options.title.text = "Category E (User excluded a site) on distinct DnUser - Top 20 Sites - Weekly";
+		options.credits.text = "[Details of Category E on sites]";
 		options.credits.href = "data/ESite_Weekly.html";
-		options.series[0].data = [   {name: 'NDGF-T1 (ND)', y: 57, color: '6298FF'} , {name: 'CERN-PROD (CERN)', y: 50, color: 'AE3C51'} , {name: 'BU_ATLAS_Tier2 (US)', y: 41, color: '00006B'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 36, color: '356C20'} , {name: 'MWT2_UC (US)', y: 36, color: '1C1C7B'} , {name: 'BNL-ATLAS (US)', y: 35, color: '38388C'} , {name: 'GRIF-LPNHE (FR)', y: 34, color: '0055A5'} , {name: 'IN2P3-CC-T2 (FR)', y: 33, color: '1C68AF'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 32, color: '4B7C38'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 31, color: '618C51'} , {name: 'UKI-LT2-QMUL (UK)', y: 31, color: '789D6A'} , {name: 'DESY-ZN (DE)', y: 30, color: '000000'} , {name: 'IN2P3-CC (FR)', y: 30, color: '387AB9'} , {name: 'wuppertalprod (DE)', y: 29, color: '1C1C1C'} , {name: 'WEIZMANN-LCG2 (NL)', y: 27, color: 'D97529'} , {name: 'WT2 (US)', y: 26, color: '54549C'} , {name: 'DESY-HH (DE)', y: 26, color: '383838'} , {name: 'AGLT2 (US)', y: 26, color: '7070AC'} , {name: 'UTA_SWT2 (US)', y: 25, color: '8D8DBD'} , {name: 'GoeGrid (DE)', y: 24, color: '545454'} , {name: 'others', y: 651, color: '#CCFFCC'} ];
+		options.series[0].data = [   {name: 'NDGF-T1 (ND)', y: 57, color: '6298FF'} , {name: 'CERN-PROD (CERN)', y: 53, color: 'AE3C51'} , {name: 'GRIF-LPNHE (FR)', y: 38, color: '0055A5'} , {name: 'BU_ATLAS_Tier2 (US)', y: 38, color: '00006B'} , {name: 'MWT2_UC (US)', y: 37, color: '1C1C7B'} , {name: 'BNL-ATLAS (US)', y: 35, color: '38388C'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 35, color: '356C20'} , {name: 'IN2P3-CC-T2 (FR)', y: 34, color: '1C68AF'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 34, color: '4B7C38'} , {name: 'UKI-LT2-QMUL (UK)', y: 32, color: '618C51'} , {name: 'IN2P3-CC (FR)', y: 32, color: '387AB9'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 30, color: '789D6A'} , {name: 'wuppertalprod (DE)', y: 30, color: '000000'} , {name: 'DESY-ZN (DE)', y: 29, color: '1C1C1C'} , {name: 'WEIZMANN-LCG2 (NL)', y: 28, color: 'D97529'} , {name: 'WT2 (US)', y: 26, color: '54549C'} , {name: 'INFN-MILANO-ATLASC (IT)', y: 25, color: '009246'} , {name: 'LRZ-LMU (DE)', y: 24, color: '383838'} , {name: 'CYFRONET-LCG2 (DE)', y: 24, color: '545454'} , {name: 'DESY-HH (DE)', y: 24, color: '707070'} , {name: 'others', y: 662, color: '#CCFFCC'} ];
 		chart81 = new Highcharts.Chart(options);
 				
 		options.chart.renderTo = "container90";
 		options.title.text = "Category E (User excluded a site) on jobSet - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category E on clouds]";
 		options.credits.href = "data/ECloud_Weekly.html";
-		options.series[0].data = [   {name: 'DE', y: 7780, color: '000000'} , {name: 'UK', y: 7417, color: '356C20'} , {name: 'FR', y: 7372, color: '0055A5'} , {name: 'CERN', y: 6062, color: 'AE3C51'} , {name: 'NL', y: 5514, color: 'D97529'} , {name: 'US', y: 5313, color: '00006B'} , {name: 'IT', y: 4053, color: '009246'} , {name: 'CA', y: 3089, color: 'FF1F1F'} , {name: 'ND', y: 2933, color: '6298FF'} , {name: 'TW', y: 1785, color: '89000F'} , {name: 'ES', y: 1447, color: 'EDBF00'} ];
+		options.series[0].data = [   {name: 'DE', y: 8917, color: '000000'} , {name: 'UK', y: 7478, color: '356C20'} , {name: 'FR', y: 7334, color: '0055A5'} , {name: 'CERN', y: 6674, color: 'AE3C51'} , {name: 'US', y: 5634, color: '00006B'} , {name: 'NL', y: 4961, color: 'D97529'} , {name: 'IT', y: 3905, color: '009246'} , {name: 'ND', y: 3463, color: '6298FF'} , {name: 'CA', y: 2910, color: 'FF1F1F'} , {name: 'TW', y: 1781, color: '89000F'} , {name: 'ES', y: 1534, color: 'EDBF00'} ];
 		chart90 = new Highcharts.Chart(options);
 				
 		options.chart.renderTo = "container91";
 		options.title.text = "Category E (User excluded a site) on distinct DnUser - Per Cloud - Weekly";
+		options.credits.text = "[Details of Category E on clouds]";
 		options.credits.href = "data/ECloud_Weekly.html";
-		options.series[0].data = [   {name: 'DE', y: 103, color: '000000'} , {name: 'US', y: 101, color: '00006B'} , {name: 'UK', y: 99, color: '356C20'} , {name: 'FR', y: 88, color: '0055A5'} , {name: 'NL', y: 77, color: 'D97529'} , {name: 'ND', y: 57, color: '6298FF'} , {name: 'IT', y: 51, color: '009246'} , {name: 'CERN', y: 50, color: 'AE3C51'} , {name: 'CA', y: 50, color: 'FF1F1F'} , {name: 'ES', y: 32, color: 'EDBF00'} , {name: 'TW', y: 21, color: '89000F'} ];
+		options.series[0].data = [   {name: 'DE', y: 110, color: '000000'} , {name: 'US', y: 101, color: '00006B'} , {name: 'UK', y: 94, color: '356C20'} , {name: 'FR', y: 92, color: '0055A5'} , {name: 'NL', y: 77, color: 'D97529'} , {name: 'ND', y: 57, color: '6298FF'} , {name: 'IT', y: 55, color: '009246'} , {name: 'CERN', y: 53, color: 'AE3C51'} , {name: 'CA', y: 46, color: 'FF1F1F'} , {name: 'ES', y: 30, color: 'EDBF00'} , {name: 'TW', y: 22, color: '89000F'} ];
 		chart91 = new Highcharts.Chart(options);
 				
 		options.chart.renderTo = "container100";
 		options.title.text = "Jobs submitted by Country - Weekly";
+		options.credits.text = "[Details of countries]";
 		options.credits.href = "data/Country_Weekly.html";
-		options.series[0].data = [   {name:'None', y:911551} , {name:'de', y:300903} , {name:'us', y:181063} , {name:'ca', y:178131} , {name:'uk', y:154850} , {name:'jp', y:151888} , {name:'fr', y:100713} , {name:'tw', y:39293} , {name:'au', y:29601} , {name:'es', y:24808} , {name:'ch', y:20782} , {name:'tr', y:18636} , {name:'il', y:15955} , {name:'it', y:15037} , {name:'ru', y:7977} , {name:'dk', y:7570} , {name:'se', y:5175} , {name:'pt', y:4677} , {name:'cz', y:2168} , {name:'cn', y:520} , {name:'pl', y:433} , {name:'no', y:309} ];
+		options.series[0].data = [   {name:'None', y:1087574} , {name:'de', y:342474} , {name:'us', y:246679} , {name:'uk', y:155878} , {name:'ca', y:140151} , {name:'fr', y:118813} , {name:'jp', y:105101} , {name:'tw', y:39707} , {name:'au', y:27532} , {name:'es', y:26539} , {name:'il', y:24199} , {name:'tr', y:18671} , {name:'it', y:13557} , {name:'ru', y:10453} , {name:'dk', y:6811} , {name:'se', y:4821} , {name:'pt', y:3427} , {name:'ch', y:2152} , {name:'cz', y:2067} , {name:'no', y:736} , {name:'pl', y:620} , {name:'cn', y:241} ];
 		chart100 = new Highcharts.Chart(options);
 				
 		options.chart.renderTo = "container101";
 		options.title.text = "jobDef submitted by Country - Weekly";
+		options.credits.text = "[Details of countries]";
 		options.credits.href = "data/Country_Weekly.html";
-		options.series[0].data = [   {name:'None', y:19872} , {name:'jp', y:15159} , {name:'fr', y:15067} , {name:'uk', y:12303} , {name:'de', y:10712} , {name:'us', y:4232} , {name:'ca', y:2594} , {name:'tw', y:1850} , {name:'it', y:1638} , {name:'es', y:1162} , {name:'il', y:747} , {name:'au', y:372} , {name:'cz', y:307} , {name:'ru', y:276} , {name:'se', y:177} , {name:'ch', y:146} , {name:'dk', y:122} , {name:'tr', y:97} , {name:'pt', y:79} , {name:'cn', y:77} , {name:'no', y:29} , {name:'pl', y:8} ];
+		options.series[0].data = [   {name:'None', y:19469} , {name:'jp', y:12692} , {name:'uk', y:12061} , {name:'de', y:11514} , {name:'fr', y:9519} , {name:'us', y:4892} , {name:'ca', y:2401} , {name:'tw', y:2210} , {name:'it', y:1839} , {name:'il', y:1242} , {name:'es', y:1101} , {name:'cz', y:389} , {name:'au', y:326} , {name:'ru', y:317} , {name:'se', y:247} , {name:'no', y:168} , {name:'dk', y:108} , {name:'tr', y:102} , {name:'pt', y:89} , {name:'ch', y:36} , {name:'cn', y:23} , {name:'pl', y:13} ];
 		chart101 = new Highcharts.Chart(options);
 				
 		options.chart.renderTo = "container102";
 		options.title.text = "jobSet submitted by Country - Weekly";
+		options.credits.text = "[Details of countries]";
 		options.credits.href = "data/Country_Weekly.html";
-		options.series[0].data = [   {name:'fr', y:14797} , {name:'jp', y:14512} , {name:'None', y:11091} , {name:'uk', y:8253} , {name:'de', y:5832} , {name:'us', y:2987} , {name:'ca', y:1715} , {name:'tw', y:1512} , {name:'it', y:1456} , {name:'es', y:982} , {name:'il', y:747} , {name:'cz', y:296} , {name:'ru', y:256} , {name:'au', y:195} , {name:'se', y:177} , {name:'ch', y:141} , {name:'tr', y:75} , {name:'pt', y:67} , {name:'cn', y:64} , {name:'dk', y:30} , {name:'no', y:21} , {name:'pl', y:8} ];
+		options.series[0].data = [   {name:'jp', y:12232} , {name:'None', y:11393} , {name:'fr', y:9069} , {name:'uk', y:8007} , {name:'de', y:6411} , {name:'us', y:3341} , {name:'tw', y:1804} , {name:'it', y:1688} , {name:'ca', y:1652} , {name:'il', y:1241} , {name:'es', y:921} , {name:'cz', y:378} , {name:'ru', y:278} , {name:'se', y:246} , {name:'au', y:150} , {name:'no', y:122} , {name:'tr', y:80} , {name:'pt', y:70} , {name:'ch', y:36} , {name:'cn', y:21} , {name:'dk', y:15} , {name:'pl', y:13} ];
 		chart102 = new Highcharts.Chart(options);
 				
 	});

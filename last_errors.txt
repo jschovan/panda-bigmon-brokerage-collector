@@ -1,0 +1,176 @@
+Error: 11-21 10:38 Marie-Helene_Genest jobdef=62280 nJobs=7 countryGroup=None  
+Error: 11-21 10:38 Marie-Helene_Genest jobdef=62280 use ANALY_LRZ - outDS exists  
+Error: 11-21 10:48 Marie-Helene_Genest jobdef=62286 nJobs=13 countryGroup=None  
+Error: 11-21 10:48 Marie-Helene_Genest jobdef=62286 action=choose site=ANALY_DESY-HH reason=maxweight - max weight=(1+237/339)*1197/0  
+Error: 11-21 10:47 Marie-Helene_Genest jobdef=62285 nJobs=11 countryGroup=None  
+Error: 11-21 10:47 Marie-Helene_Genest jobdef=62285 action=choose site=ANALY_DESY-HH reason=maxweight - max weight=(1+237/339)*1197/0  
+Error: 11-21 10:46 Marie-Helene_Genest jobdef=62284 nJobs=5 countryGroup=None  
+Error: 11-21 10:46 Marie-Helene_Genest jobdef=62284 use ANALY_LRZ - outDS exists  
+Error: 11-21 10:46 Marie-Helene_Genest jobdef=62283 nJobs=7 countryGroup=None  
+Error: 11-21 10:46 Marie-Helene_Genest jobdef=62283 use ANALY_LRZ - outDS exists  
+Error: 11-21 10:45 Marie-Helene_Genest jobdef=62282 nJobs=13 countryGroup=None  
+Error: 11-21 10:45 Marie-Helene_Genest jobdef=62282 use ANALY_LRZ - outDS exists  
+Error: 11-21 10:44 Marie-Helene_Genest jobdef=62281 nJobs=9 countryGroup=None  
+Error: 11-21 10:44 Marie-Helene_Genest jobdef=62281 use ANALY_FREIBURG - outDS exists  
+Error: 11-21 10:52 Marie-Helene_Genest jobdef=62289 nJobs=1 countryGroup=None  
+Error: 11-21 10:52 Marie-Helene_Genest jobdef=62289 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+377/373)*1001/0  
+Error: 11-21 10:51 Marie-Helene_Genest jobdef=62288 nJobs=1 countryGroup=None  
+Error: 11-21 10:51 Marie-Helene_Genest jobdef=62288 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+377/373)*1001/0  
+Error: 11-21 10:50 Marie-Helene_Genest jobdef=62287 nJobs=1 countryGroup=None  
+Error: 11-21 10:50 Marie-Helene_Genest jobdef=62287 use ANALY_LRZ - outDS exists  
+Error: 11-21 11:03 Marie-Helene_Genest jobdef=62292 nJobs=1 countryGroup=None  
+Error: 11-21 11:03 Marie-Helene_Genest jobdef=62292 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+379/380)*1001/0  
+Error: 11-21 11:02 Marie-Helene_Genest jobdef=62291 nJobs=1 countryGroup=None  
+Error: 11-21 11:02 Marie-Helene_Genest jobdef=62291 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+379/380)*1001/0  
+Error: 11-21 11:01 Marie-Helene_Genest jobdef=62290 nJobs=1 countryGroup=None  
+Error: 11-21 11:01 Marie-Helene_Genest jobdef=62290 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+379/380)*1001/0  
+Error: 11-21 11:09 Marie-Helene_Genest jobdef=62297 nJobs=1 countryGroup=None  
+Error: 11-21 11:09 Marie-Helene_Genest jobdef=62297 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+378/387)*1001/0  
+Error: 11-21 11:08 Marie-Helene_Genest jobdef=62296 nJobs=1 countryGroup=None  
+Error: 11-21 11:08 Marie-Helene_Genest jobdef=62296 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+59/93)*496/0  
+Error: 11-21 11:06 Marie-Helene_Genest jobdef=62295 nJobs=1 countryGroup=None  
+Error: 11-21 11:06 Marie-Helene_Genest jobdef=62295 action=choose site=ANALY_IFIC reason=maxweight - max weight=(1+120/146)*566/0  
+Error: 11-21 11:06 Marie-Helene_Genest jobdef=62294 nJobs=1 countryGroup=None  
+Error: 11-21 11:06 Marie-Helene_Genest jobdef=62294 action=choose site=ANALY_TECHNION-HEP reason=maxweight - max weight=(1+40/21)*138/0  
+Error: 11-21 11:05 Marie-Helene_Genest jobdef=62293 nJobs=1 countryGroup=None  
+Error: 11-21 11:05 Marie-Helene_Genest jobdef=62293 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+379/380)*1001/0  
+Error: 11-21 11:13 Marie-Helene_Genest jobdef=62300 nJobs=1 countryGroup=None  
+Error: 11-21 11:13 Marie-Helene_Genest jobdef=62300 action=choose site=ANALY_TECHNION-HEP reason=maxweight - max weight=(1+40/21)*138/0  
+Error: 11-21 11:12 Marie-Helene_Genest jobdef=62299 nJobs=1 countryGroup=None  
+Error: 11-21 11:12 Marie-Helene_Genest jobdef=62299 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+59/93)*496/0  
+Error: 11-21 11:10 Marie-Helene_Genest jobdef=62298 nJobs=1 countryGroup=None  
+Error: 11-21 11:10 Marie-Helene_Genest jobdef=62298 action=choose site=ANALY_IFIC reason=maxweight - max weight=(1+120/146)*566/0  
+Error: 11-21 11:15 Marie-Helene_Genest jobdef=62302 nJobs=1 countryGroup=None  
+Error: 11-21 11:15 Marie-Helene_Genest jobdef=62302 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+59/93)*496/0  
+Error: 11-21 11:14 Marie-Helene_Genest jobdef=62301 nJobs=1 countryGroup=None  
+Error: 11-21 11:14 Marie-Helene_Genest jobdef=62301 action=choose site=ANALY_DESY-HH reason=maxweight - max weight=(1+228/336)*1197/0  
+Error: 11-21 14:53 Marie-Helene_Genest jobdef=62303 nJobs=1 countryGroup=de  
+Error: 11-21 14:53 Marie-Helene_Genest jobdef=62303 action=choose site=ANALY_INFN-ROMA1 reason=maxweight - max weight=(1+51/55)*371/0  
+Error: 11-21 14:58 Marie-Helene_Genest jobdef=62305 nJobs=1 countryGroup=de  
+Error: 11-21 14:58 Marie-Helene_Genest jobdef=62305 action=choose site=ANALY_ALBERTA-WG1 reason=maxweight - max weight=(1+82/99)*461/0  
+Error: 11-21 14:57 Marie-Helene_Genest jobdef=62304 nJobs=1 countryGroup=de  
+Error: 11-21 14:57 Marie-Helene_Genest jobdef=62304 action=choose site=ANALY_SHEF reason=maxweight - max weight=(1+21/24)*191/0  
+Error: 11-21 15:04 Marie-Helene_Genest jobdef=62307 nJobs=1 countryGroup=de  
+Error: 11-21 15:04 Marie-Helene_Genest jobdef=62307 action=choose site=ANALY_ALBERTA-WG1 reason=maxweight - max weight=(1+82/100)*461/0  
+Error: 11-21 15:02 Marie-Helene_Genest jobdef=62306 nJobs=1 countryGroup=de  
+Error: 11-21 15:02 Marie-Helene_Genest jobdef=62306 action=choose site=ANALY_QMUL reason=maxweight - max weight=(1+145/156)*1327/0  
+Error: 11-21 15:09 Marie-Helene_Genest jobdef=62314 nJobs=1 countryGroup=de  
+Error: 11-21 15:09 Marie-Helene_Genest jobdef=62314 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+319/380)*1001/0  
+Error: 11-21 15:09 Marie-Helene_Genest jobdef=62313 nJobs=1 countryGroup=de  
+Error: 11-21 15:09 Marie-Helene_Genest jobdef=62313 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+319/380)*1001/0  
+Error: 11-21 15:08 Marie-Helene_Genest jobdef=62312 nJobs=1 countryGroup=de  
+Error: 11-21 15:08 Marie-Helene_Genest jobdef=62312 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+319/380)*1001/0  
+Error: 11-21 15:08 Marie-Helene_Genest jobdef=62311 nJobs=1 countryGroup=de  
+Error: 11-21 15:08 Marie-Helene_Genest jobdef=62311 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+319/380)*1001/0  
+Error: 11-21 15:07 Marie-Helene_Genest jobdef=62310 nJobs=1 countryGroup=de  
+Error: 11-21 15:07 Marie-Helene_Genest jobdef=62310 action=choose site=ANALY_TECHNION-HEP reason=maxweight - max weight=(1+37/20)*138/0  
+Error: 11-21 15:06 Marie-Helene_Genest jobdef=62309 nJobs=1 countryGroup=de  
+Error: 11-21 15:06 Marie-Helene_Genest jobdef=62309 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+319/380)*1001/0  
+Error: 11-21 15:06 Marie-Helene_Genest jobdef=62308 nJobs=1 countryGroup=de  
+Error: 11-21 15:06 Marie-Helene_Genest jobdef=62308 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+319/380)*1001/0  
+Error: 11-21 15:10 Marie-Helene_Genest jobdef=62315 nJobs=1 countryGroup=de  
+Error: 11-21 15:10 Marie-Helene_Genest jobdef=62315 action=choose site=ANALY_QMUL reason=maxweight - max weight=(1+145/156)*1327/0  
+Error: 11-21 15:29 Felix_Rauscher jobdef=10461 nJobs=15 countryGroup=None  
+Error: 11-21 15:28 Felix_Rauscher jobdef=10461 action=choose site=ANALY_BNL_ATLAS_1 reason=maxweight - max weight=(1+1357/655)*1960/0  
+Error: 11-22 07:54 Felix_Rauscher jobdef=10462 nJobs=15 countryGroup=None  
+Error: 11-22 07:54 Felix_Rauscher jobdef=10462 action=choose site=ANALY_BNL_ATLAS_1 reason=maxweight - max weight=(1+828/458)*1657/0  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_SFU reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_SFU_bugaboo reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_IN2P3-CC_LONG reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_CSCS reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_LANCS reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_IN2P3-CC-T2 reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_IN2P3-CC-T2_LONG reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_DESY-HH reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_SLAC reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_MWT2 reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_FREIBURG reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 nJobs=1 countryGroup=None  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_VICTORIA-WG1 reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_DESY-ZN reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_GRIF-IRFU reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_GRIF-LAL reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_GOEGRID reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_GRIF-LPNHE reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_FZK reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=exclude site=ANALY_SWT2_CPB reason=useroption - excluded by user  
+Error: 11-22 10:28 Marino_Romano jobdef=5505 action=choose site=ANALY_LONG_BNL_ATLAS reason=maxweight - max weight=(1+900/637)*1985/0  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_IN2P3-CC_LONG reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_LANCS reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_SFU_bugaboo reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_SFU reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_CSCS reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_IN2P3-CC-T2 reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_DESY-HH reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_IN2P3-CC-T2_LONG reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_SLAC reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_VICTORIA-WG1 reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_FREIBURG reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_MWT2 reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_GRIF-IRFU reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_DESY-ZN reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_GRIF-LAL reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 nJobs=2 countryGroup=None  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_GOEGRID reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_FZK reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_GRIF-LPNHE reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=exclude site=ANALY_SWT2_CPB reason=useroption - excluded by user  
+Error: 11-22 10:26 Marino_Romano jobdef=5504 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+324/339)*1000/0  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_SFU_bugaboo reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_IN2P3-CC_LONG reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_CSCS reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_LANCS reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_SFU reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_DESY-HH reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_SLAC reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_IN2P3-CC-T2_LONG reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_IN2P3-CC-T2 reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_MWT2 reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_GOEGRID reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_VICTORIA-WG1 reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 nJobs=3 countryGroup=None  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_FREIBURG reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_GRIF-IRFU reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_DESY-ZN reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_GRIF-LAL reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_GRIF-LPNHE reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_SWT2_CPB reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=exclude site=ANALY_FZK reason=useroption - excluded by user  
+Error: 11-22 10:33 Marino_Romano jobdef=5507 action=choose site=ANALY_LPC reason=maxweight - max weight=(1+130/123)*280/0  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_CSCS reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_SFU reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_SFU_bugaboo reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_IN2P3-CC_LONG reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_IN2P3-CC-T2_LONG reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_IN2P3-CC-T2 reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_LANCS reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_DESY-HH reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_SLAC reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_VICTORIA-WG1 reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 nJobs=2 countryGroup=None  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_DESY-ZN reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_MWT2 reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_FREIBURG reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_GOEGRID reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_GRIF-IRFU reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_GRIF-LPNHE reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_GRIF-LAL reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_FZK reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=exclude site=ANALY_SWT2_CPB reason=useroption - excluded by user  
+Error: 11-22 10:31 Marino_Romano jobdef=5506 action=choose site=ANALY_AUSTRALIA reason=maxweight - max weight=(1+40/41)*391/0  

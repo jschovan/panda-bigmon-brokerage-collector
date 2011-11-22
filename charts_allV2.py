@@ -13,7 +13,7 @@ interval_days = [7,30,90,365] # Weekly,monthly,seasonly,and yearly
 pnames = ["Weekly","Monthly","Seasonly","Yearly"]
 fnames = ["weeklyV2.html","monthlyV2.html","seasonlyV2.html","yearlyV2.html"]
 NTOP = 20
-aTop = 10
+PLOW = 1 # percentage lower than this belong to "others"
 tabname = "dailylogV2"
 db = dailyDBV2()
 DATEFORMAT = "%Y-%m-%d"
@@ -36,12 +36,15 @@ CHARTS = {
              "select category,count(distinct jobSet) from %s where  logDate > '%s' and category in ('A','B','C') group by category order by category"]
           ],
           "ASite":[
-            ["Category A (User selected a site) on Jobs - Top %d Sites - %s",
-             "select site, sum(jobCount) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC"],
-            ["Category A (User selected a site) on jobDef - Top %d Sites - %s",
-             "select site, sum(jobDefCount) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC"],
-            ["Category A (User selected a site) on jobSet - Top %d Sites - %s",
-             "select site, count(distinct jobSet) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC"]
+            ["Category A (User selected a site) on Jobs - Top Sites higher than %d%% - %s",
+             "select site, sum(jobCount) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC",
+             "select sum(jobCount) nums from %s where category='A' and logDate > '%s'"],
+            ["Category A (User selected a site) on jobDef - Top Sites higher than %d%% - %s",
+             "select site, sum(jobDefCount) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC",
+             "select sum(jobDefCount) nums from %s where category='A' and logDate > '%s'"],
+            ["Category A (User selected a site) on jobSet - Top Sites higher than %d%% - %s",
+             "select site, count(distinct jobSet) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC",
+             "select count(distinct jobSet) nums from %s where category='A' and logDate > '%s'"]
           ],
           "ACloud":[
             ["Category A (User selected a site) on Jobs - Per Cloud - %s",
@@ -107,7 +110,7 @@ CHARTS = {
           }
 
 last_updated = db.get_last_updated_time()
-query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days[0]*24*60*60))
+query_from = ""
 # get cloud name
 fjson = open('panda_queues.json','r')
 data = fjson.read()
@@ -183,6 +186,50 @@ def parse_document_site(idx1,idx2,jsonfile,field,nTop=NTOP,show_others=True):
         limit += 1
         cloud = get_cloud_name(row[0])
         if limit <= nTop:
+            if ADC_COLOR.has_key(cloud):
+                try:
+                    cloudIdx[cloud] += 4
+                except KeyError:
+                    cloudIdx[cloud] = 0
+                cidx = cloudIdx[cloud]%30
+                color = ADC_COLOR[cloud][cidx]
+            else:
+                color = "#55FF55"
+            series_data = "%s %s {name: '%s (%s)', y: %d, color: '%s'}"%(series_data,comm,row[0],cloud,row[1],color)
+            comm = ","
+        else:
+            others += row[1]
+            
+        jkey = '%s(%s)'%(row[0],cloud)
+        if jsonfile['data'].has_key(jkey):
+            jsonfile['data'][jkey][field] = row[1]
+        else:
+            jsonfile['data'][jkey] = {field: row[1]}
+            
+    if others > 0 and show_others:
+        series_data = "%s %s {name: 'others', y: %d, color: '#CCFFCC'}"%(series_data,comm,others)
+    return series_data,jsonfile
+
+def parse_document_site_percent(idx1,idx2,jsonfile,field,pLow=PLOW,show_others=True):
+    global db,tabname,query_from,CHARTS,ADC_COLOR
+    comm = ""
+    series_data = ""
+    sqlsum = CHARTS[idx1][idx2][2]
+    rs1 = db.query(sqlsum%(tabname,query_from))
+    nSum = int(rs1[0][0])
+    sql = CHARTS[idx1][idx2][1]
+    rs = db.query(sql%(tabname,query_from))
+    others = 0
+    percent = 0.0
+    cloudIdx = {}
+    for row in rs:
+        cloud = get_cloud_name(row[0])
+        a = int(row[1])
+        if nSum > 0:
+            percent = (a * 100 )/nSum
+        else:
+            percent = 0
+        if percent >= pLow:
             if ADC_COLOR.has_key(cloud):
                 try:
                     cloudIdx[cloud] += 4
@@ -306,7 +353,8 @@ def write_tablehtml(jsonfile,fname):
     
 
 def run(fidx):
-    global last_updated,CHARTS,pnames,fnames,NTOP,aTop
+    global last_updated,CHARTS,DATEFORMAT,interval_days,query_from,pnames,fnames,NTOP
+    query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days[fidx]*24*60*60))
     data = open('template/CHART_brokerageV2.html').read()
     data = data.replace('#LAST_UPDATED#',last_updated)
 
@@ -314,50 +362,61 @@ def run(fidx):
     data = data.replace('#TITLE_TEXT01#',CHARTS["ABC"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT02#',CHARTS["ABC"][2][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF0#',"data/ABC_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT0#',"[Details of Category A,B,C]")
     
-    data = data.replace('#TITLE_TEXT10#',CHARTS["ASite"][0][0]%(aTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT11#',CHARTS["ASite"][1][0]%(aTop,pnames[fidx]))
-    data = data.replace('#TITLE_TEXT12#',CHARTS["ASite"][2][0]%(aTop,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT10#',CHARTS["ASite"][0][0]%(PLOW,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT11#',CHARTS["ASite"][1][0]%(PLOW,pnames[fidx]))
+    data = data.replace('#TITLE_TEXT12#',CHARTS["ASite"][2][0]%(PLOW,pnames[fidx]))
     data = data.replace('#CREDITS_HREF1#',"data/ASite_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT1#',"[Details of Category A on sites]")
 
     data = data.replace('#TITLE_TEXT20#',CHARTS["ACloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT21#',CHARTS["ACloud"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT22#',CHARTS["ACloud"][2][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF2#',"data/ACloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT2#',"[Details of Category A on clouds]")
     
     data = data.replace('#TITLE_TEXT30#',CHARTS["BSite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT31#',CHARTS["BSite"][1][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT32#',CHARTS["BSite"][2][0]%(NTOP,pnames[fidx]))
     data = data.replace('#CREDITS_HREF3#',"data/BSite_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT3#',"[Details of Category B on sites]")
 
     data = data.replace('#TITLE_TEXT40#',CHARTS["BCloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT41#',CHARTS["BCloud"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT42#',CHARTS["BCloud"][2][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF4#',"data/BCloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT4#',"[Details of Category B on clouds]")
     
     data = data.replace('#TITLE_TEXT50#',CHARTS["CSite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT51#',CHARTS["CSite"][1][0]%(NTOP,pnames[fidx]))
     data = data.replace('#CREDITS_HREF5#',"data/CSite_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT5#',"[Details of Category C on sites]")
 
     data = data.replace('#TITLE_TEXT60#',CHARTS["CCloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT61#',CHARTS["CCloud"][1][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF6#',"data/CCloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT6#',"[Details of Category C on clouds]")
     
     data = data.replace('#TITLE_TEXT70#',CHARTS["E"][0][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF7#',"data/E_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT7#',"[Details of Category E]")
     
     data = data.replace('#TITLE_TEXT80#',CHARTS["ESite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT81#',CHARTS["ESite"][1][0]%(NTOP,pnames[fidx]))
     data = data.replace('#CREDITS_HREF8#',"data/ESite_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT8#',"[Details of Category E on sites]")
     
     data = data.replace('#TITLE_TEXT90#',CHARTS["ECloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT91#',CHARTS["ECloud"][1][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF9#',"data/ECloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT9#',"[Details of Category E on clouds]")
 
     data = data.replace('#TITLE_TEXT100#',CHARTS["Country"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT101#',CHARTS["Country"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT102#',CHARTS["Country"][2][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF10#',"data/Country_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT10#',"[Details of countries]")
     
     ABC_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -383,9 +442,9 @@ def run(fidx):
                             },
                 'data': {}
                 }
-    series_data10,ASite_json = parse_document_site("ASite",0,ASite_json,'Jobs',aTop)
-    series_data11,ASite_json = parse_document_site("ASite",1,ASite_json,'JobDef',aTop)
-    series_data12,ASite_json = parse_document_site("ASite",2,ASite_json,'JobSet',aTop)
+    series_data10,ASite_json = parse_document_site_percent("ASite",0,ASite_json,'Jobs')
+    series_data11,ASite_json = parse_document_site_percent("ASite",1,ASite_json,'JobDef')
+    series_data12,ASite_json = parse_document_site_percent("ASite",2,ASite_json,'JobSet')
     write_jsonfile(ASite_json,"ASite_%s"%pnames[fidx])
     write_tablehtml(ASite_json,"ASite_%s"%pnames[fidx])
     
