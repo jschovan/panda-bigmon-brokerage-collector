@@ -33,7 +33,7 @@ bzip2 ${LOGDIR}/log.verifyDB.${DATESTRING} ${LOGDIR}/log.verify_values.${DATESTR
 
 # create index
 cd ${PUBDIR}
-echo -n >>${INDEX}
+echo -n >${INDEX}
 for file in $(ls . | grep -v "index.html"); 
 do
     lsl=$(ls -l $file)
