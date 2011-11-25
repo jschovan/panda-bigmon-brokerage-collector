@@ -18,6 +18,32 @@ tabname = "dailylogV2"
 db = dailyDBV2()
 DATEFORMAT = "%Y-%m-%d"
 
+COUNTRY_CLOUD = {
+                 'au':'CA',
+                 'ca':'CA',
+                 'ch':'CERN', # 'CERN ND DE',
+                 'cn':'FR',
+                 'cz':'DE',
+                 'de':'DE',
+                 'dk':'ND',
+                 'es':'ES',
+                 'fr':'FR',
+                 'il':'NL',
+                 'it':'IT',
+                 'jp':'FR',
+                 'no':'ND',
+                 'pl':'DE',
+                 'pt':'ES',
+                 'ru':'NL',
+                 'se':'ND',
+                 'tr':'NL',
+                 'tw':'TW',
+                 'uk':'UK',
+                 'us':'US',
+                 'za':'IT',
+                 'None':'NONE'
+                 }
+
 CATENAME = {
             'A': 'A-User selected a site',
             'B': 'B-User selected a cloud',
@@ -83,7 +109,7 @@ CHARTS = {
              "select cloud, sum(jobdefCount) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"]
           ],
           "E":[
-            ["Category E (User excluded a site) on distinct jobSet - Excluded / Non-Excluded - %s",
+            ["Category E (User excluded a site) on distinct jobSet - With exclude / Without exclude - %s",
              "select count(distinct jobSet) nums from %s where category='E' and logDate > '%s'",
              "select count(distinct jobSet) nums from %s where category!='E' and logDate > '%s' and jobSet not in (select distinct jobSet from %s where category='E' and logDate > '%s')"]
           ],
@@ -264,7 +290,7 @@ def parse_document_cloud(idx1,idx2,jsonfile,field):
         if ADC_COLOR.has_key(row[0]):
             color = ADC_COLOR[row[0]][0]
         else:
-            color = "#55FF55"
+            color = "#CCFFCC"
         series_data = "%s %s {name: '%s', y: %d, color: '%s'}"%(series_data,comm,row[0],row[1],color)
         comm = ","
             
@@ -284,9 +310,9 @@ def parse_document_excluded(idx1,idx2,jsonfile):
     rs2 = db.query(sql2%(tabname,query_from,tabname,query_from))
     excluded = rs1[0][0]
     nonexcluded = rs2[0][0]
-    series_data = "{name:'Excluded', y:%s, color:'#DD0000' },{name:'Non-Excluded', y:%s, color: '#0000DD'}"%(excluded,nonexcluded)
+    series_data = "{name:'With exclude', y:%s, color:'#DD0000' },{name:'Without exclude', y:%s, color: '#0000DD'}"%(excluded,nonexcluded)
             
-    jsonfile['data']['Yes/No'] = {'excluded': excluded,'nonexcluded': nonexcluded}
+    jsonfile['data']['With/Without'] = {'With exclude': excluded,'Without exclude': nonexcluded}
             
 
     return series_data,jsonfile
@@ -297,8 +323,22 @@ def parse_document_country(idx1,idx2,jsonfile,field):
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
     rs = db.query(sql%(tabname,query_from))
+    cloudIdx = {}
     for row in rs:
-        series_data = "%s %s {name:'%s', y:%d}"%(series_data,comm,row[0],row[1])
+        if COUNTRY_CLOUD.has_key(row[0]):
+            cloud = COUNTRY_CLOUD[row[0]]
+        else:
+            cloud = 'NONE'
+        if ADC_COLOR.has_key(cloud):
+            try:
+                cloudIdx[cloud] += 4
+            except KeyError:
+                cloudIdx[cloud] = 0
+            cidx = cloudIdx[cloud]%30
+            color = ADC_COLOR[cloud][cidx]
+        else:
+            color = "#CCFFCC"
+        series_data = "%s %s {name:'%s (%s)', y:%d, color: '%s'}"%(series_data,comm,row[0],cloud,row[1],color)
         comm = ","
             
         if jsonfile['data'].has_key(row[0]):
@@ -416,7 +456,8 @@ def run(fidx):
     data = data.replace('#TITLE_TEXT101#',CHARTS["Country"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT102#',CHARTS["Country"][2][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF10#',"data/Country_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT10#',"[Details of countries]")
+    data = data.replace('#CREDITS_TEXT10#',"[Details of countries]")    
+    print "Replace ",fidx
     
     ABC_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -432,6 +473,7 @@ def run(fidx):
     series_data02,ABC_json = parse_document_category("ABC",2,ABC_json,'JobSet')
     write_jsonfile(ABC_json,"ABC_%s"%pnames[fidx])
     write_tablehtml(ABC_json,"ABC_%s"%pnames[fidx])
+    print "Get series ABC"
     
     ASite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -447,6 +489,7 @@ def run(fidx):
     series_data12,ASite_json = parse_document_site_percent("ASite",2,ASite_json,'JobSet')
     write_jsonfile(ASite_json,"ASite_%s"%pnames[fidx])
     write_tablehtml(ASite_json,"ASite_%s"%pnames[fidx])
+    print "Get series ASite"
     
     ACloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -462,6 +505,7 @@ def run(fidx):
     series_data22,ACloud_json = parse_document_cloud("ACloud",2,ACloud_json,'JobSet')
     write_jsonfile(ACloud_json,"ACloud_%s"%pnames[fidx])
     write_tablehtml(ACloud_json,"ACloud_%s"%pnames[fidx])
+    print "Get series ACloud"
     
     BSite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -477,6 +521,7 @@ def run(fidx):
     series_data32,BSite_json = parse_document_site("BSite",2,BSite_json,'JobSet')
     write_jsonfile(BSite_json,"BSite_%s"%pnames[fidx])
     write_tablehtml(BSite_json,"BSite_%s"%pnames[fidx])
+    print "Get series BSite"
     
     BCloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -492,6 +537,7 @@ def run(fidx):
     series_data42,BCloud_json = parse_document_cloud("BCloud",2,BCloud_json,'JobSet')
     write_jsonfile(BCloud_json,"BCloud_%s"%pnames[fidx])
     write_tablehtml(BCloud_json,"BCloud_%s"%pnames[fidx])
+    print "Get series BCloud"
     
     CSite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -505,6 +551,7 @@ def run(fidx):
     series_data51,CSite_json = parse_document_site("CSite",1,CSite_json,'JobDef')
     write_jsonfile(CSite_json,"CSite_%s"%pnames[fidx])
     write_tablehtml(CSite_json,"CSite_%s"%pnames[fidx])
+    print "Get series CSite"
     
     CCloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -518,18 +565,20 @@ def run(fidx):
     series_data61,CCloud_json = parse_document_cloud("CCloud",1,CCloud_json,'JobDef')
     write_jsonfile(CCloud_json,"CCloud_%s"%pnames[fidx])
     write_tablehtml(CCloud_json,"CCloud_%s"%pnames[fidx])
+    print "Get series CCloud"
     
     E_json = {'lastUpdate':last_updated,
                 'columns': {
-                            'field0':{'name':'Excluded?', 'type': 'string'},
-                            'field1':{'name':'excluded', 'type':'number'},
-                            'field2':{'name':'nonexcluded', 'type':'number'}
+                            'field0':{'name':'Exclude?', 'type': 'string'},
+                            'field1':{'name':'With exclude', 'type':'number'},
+                            'field2':{'name':'Without exclude', 'type':'number'}
                             },
                 'data': {}
                 }
     series_data70,E_json = parse_document_excluded("E",0,E_json)
     write_jsonfile(E_json,"E_%s"%pnames[fidx])
     write_tablehtml(E_json,"E_%s"%pnames[fidx])
+    print "Get series E"
     
     ESite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -543,6 +592,7 @@ def run(fidx):
     series_data81,ESite_json = parse_document_site("ESite",1,ESite_json,'DnUser')
     write_jsonfile(ESite_json,"ESite_%s"%pnames[fidx])
     write_tablehtml(ESite_json,"ESite_%s"%pnames[fidx])
+    print "Get series ESite"
     
     ECloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -556,6 +606,7 @@ def run(fidx):
     series_data91,ECloud_json = parse_document_cloud("ECloud",1,ECloud_json,'DnUser')
     write_jsonfile(ECloud_json,"ECloud_%s"%pnames[fidx])
     write_tablehtml(ECloud_json,"ECloud_%s"%pnames[fidx])
+    print "Get series ECloud"
     
     Country_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -571,6 +622,7 @@ def run(fidx):
     series_data102,Country_json = parse_document_country("Country",2,Country_json,'JobSet')
     write_jsonfile(Country_json,"Country_%s"%pnames[fidx])
     write_tablehtml(Country_json,"Country_%s"%pnames[fidx])
+    print "Get series Countries"
     
     data = data.replace('#SERIES_DATA00#',series_data00)
     data = data.replace('#SERIES_DATA01#',series_data01)
@@ -624,10 +676,13 @@ if __name__ == "__main__":
     #    exit(1)
     #else:
     #    OUTPUT_FILENAME_PREFIX = sys.argv[1]
-
+    print "run 0"
     run(0) # weekly
+    print "run 1"
     run(1) # monthly
+    print "run 2"
     run(2) # seasonly
+    print "run 3"
     run(3) # yearly
     
 

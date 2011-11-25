@@ -62,9 +62,9 @@
 			tooltip: {
 				crosshairs: [ {color: '#FF8888'}, {color: '#FF8888'} ],
 				formatter: function() {
-					return ''+
-						this.series.name+': '+this.y+
-						(this.series.name=='Parsing Time'?' secs':'');
+					return ''+Highcharts.dateFormat('%Y-%m-%d %H:%M',this.x)+'<br>'+
+						this.series.name+': <b>'+this.y+
+						(this.series.name=='Parsing Time'?'</b> secs':'</b>');
 				}
 			},
 			

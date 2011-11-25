@@ -8,6 +8,8 @@ import pycurl
 import time
 import datetime
 
+last_hours = 4
+
 def get_document(logfile):
     log = open(logfile,'r')
     data = log.read().split('\n')
@@ -47,10 +49,15 @@ def parse_document(document):
                        
     return (from_date, to_date, records)
 
-def write_document(from_date, to_date, records, doc_file="my_logfileV2.html", last_hours=4):
+def write_document(from_date, to_date, records, doc_file="my_logfileV2.html"):
+    global last_hours
     from_date = None
     to_date = None
     data = open('template/CHART_mylogV2.html').read()
+    DATEFORMAT = "%Y-%m-%d %H:%M"
+    t1 = time.time()
+    t2 = t1 - last_hours*60*60
+    tnow = time.strftime(DATEFORMAT,time.gmtime(t2))
 
     comm = ""
     comm1 = ""
@@ -60,8 +67,6 @@ def write_document(from_date, to_date, records, doc_file="my_logfileV2.html", la
     series_data4 = ""
     series_data5 = ""
     series_data6 = ""
-    skip = len(records)-12*last_hours
-    r = 0
     for c in records:
         sDate, sTime = c[0].split(' ')
         sy,sm,sd = sDate.split('-')
@@ -75,8 +80,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfileV2.html", la
         series_data5 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data5,comm1,sy,sm,sd,sh,si,c[4])
         series_data6 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data6,comm1,sy,sm,sd,sh,si,c[5])
         comm1 = ","
-        r += 1
-        if r<skip:
+        if c[0]<tnow:
             continue
         if from_date is None:
             from_date = c[0]
@@ -99,7 +103,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfileV2.html", la
     of = open(doc_file, 'w')
     print >>of, data
     of.close()
-    return data
+    return True
 
 def run(logfile):
     document = get_document(logfile)

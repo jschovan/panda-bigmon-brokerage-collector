@@ -130,11 +130,16 @@ def is_excluded(ex_record,dn,jobset,site):
             break
     return found
     
+def write_document(document, FILENAME):
+    of = open(FILENAME, 'w')
+    print >>of, document
+    of.close()
+
 def get_log_year(p_year,p_date,p_time=''):
-    DATEFORMAT = "%Y-%m-%d %H:%I:%S"
+    DATEFORMAT = "%Y-%m-%d %H:%M:%S"
     r_year = p_year
     t1 = time.time()
-    tf = time.strftime(DATEFORMAT,time.localtime(t1))
+    tf = time.strftime(DATEFORMAT,time.gmtime(t1))
     dt1 = parser.parse("%s-%s %s"%(p_year,p_date,p_time))
     dt2 = parser.parse(tf)
     if dt1 > dt2:
@@ -150,7 +155,7 @@ def parse_document(document):
     XPath_table_body = '%s/tbody' % (XPath_table)
     XPath_table_header = '%s/tr[1]' % (XPath_table_body)
     XPath_table_lines = '%s/tr' % (XPath_table_body)
-    rows = BSXdocument.getItemList(XPath_table_lines)[1:]
+    rows = BSXdocument.getItemList(XPath_table_lines)
     
     # Load unprocessed records
     fjson = open('unprocess.json','r')
@@ -281,11 +286,11 @@ def parse_document(document):
             message_country = message_buf[1].split('=')[1].strip()
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_jobdef)
             if records.has_key(reckey):
-                records[reckey]['jobSet'] = message_jobset
+                records[reckey]['jobSet'] = "%s|%s"%(message_dn,message_jobset)
                 records[reckey]['nJobs'] = message_njobs
                 records[reckey]['country'] = message_country
             else:
-                records[reckey] = {'jobSet':message_jobset,'nJobs':message_njobs,'country':message_country}
+                records[reckey] = {'jobSet':"%s|%s"%(message_dn,message_jobset),'nJobs':message_njobs,'country':message_country}
             
         # exclude : add at 2011-10-26
         elif is_this_category(cell_message, ' action=exclude '):
@@ -296,11 +301,11 @@ def parse_document(document):
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_site)
             if ex_records.has_key(reckey):
                 ex_records[reckey]['logDate'] = logDate
-                ex_records[reckey]['jobSet'] = message_jobset
+                ex_records[reckey]['jobSet'] = "%s|%s"%(message_dn,message_jobset)
                 ex_records[reckey]['category'] = message_category
                 ex_records[reckey]['site'] = message_site
             else:
-                ex_records[reckey] = {'logDate':logDate,'jobSet':message_jobset,'category':message_category,'site':message_site}
+                ex_records[reckey] = {'logDate':logDate,'jobSet':"%s|%s"%(message_dn,message_jobset),'category':message_category,'site':message_site}
         
         ## choose
         elif is_this_category(cell_message, ' action=choose '):
@@ -344,11 +349,11 @@ def parse_document(document):
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_jobdef)
             if records.has_key(reckey):
                 records[reckey]['logDate'] = logDate
-                records[reckey]['jobSet'] = message_jobset
+                records[reckey]['jobSet'] = "%s|%s"%(message_dn,message_jobset)
                 records[reckey]['category'] = message_category
                 records[reckey]['site'] = message_site
             else:
-                records[reckey] = {'logDate':logDate,'jobSet':message_jobset,'category':message_category,'site':message_site}
+                records[reckey] = {'logDate':logDate,'jobSet':"%s|%s"%(message_dn,message_jobset),'category':message_category,'site':message_site}
             
             if not records[reckey].has_key('nJobs'):
                 records[reckey]['nJobs'] = "1"
@@ -407,7 +412,8 @@ def parse_document(document):
             
     fjson.write("}\n")
     fjson.close()
-    os.unlink("unprocess.json")
+    os.unlink("unprocess.json.bak")
+    os.rename("unprocess.json", "unprocess.json.bak")
     os.rename("unprocess.json.new", "unprocess.json")
     
     ## for Excluded        
@@ -440,6 +446,8 @@ def parse_document(document):
         print "Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
     if error_skip > 0:
         print "WARNING: Missing jobSet/jobDef skiped = %d"%error_skip
+    if processed_rows == 0:
+        write_document(document,"zero_process.html")
 
     return (set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
 

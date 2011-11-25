@@ -1,4 +1,4 @@
-from dailyDB import dailyDB
+from dailyDBV2 import dailyDBV2
 import time
 import datetime
 import cx_Oracle
@@ -62,7 +62,7 @@ print con.version
 print "====="
 cursor = con.cursor()
 cursor1 = con.cursor()
-cursor1.execute("select * from dailyLog")
+cursor1.execute("select * from dailyLogV2")
 """
 for result in cursor1:
     # print result
@@ -73,7 +73,7 @@ for result in cursor1:
         cursor.execute(sql)
         con.commit()
 """
-DATEFORMAT = "%Y-%m-%d %H:%I:%S"
+DATEFORMAT = "%Y-%m-%d %H:%M:%S"
 t1 = time.time()
 t2 = t1 - 7*24*60*60
 tf = time.strftime(DATEFORMAT,time.localtime(t2))
@@ -102,7 +102,7 @@ print "MAXID=",maxId
 cursor.close()
 con.close()
 """
-db = dailyDB()
+db = dailyDBV2()
 maxId = db.get_max_id()
 if maxId is None:
     maxId = 0
