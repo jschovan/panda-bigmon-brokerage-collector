@@ -24,8 +24,17 @@ echo "Running at ${DATESTRING}."
 # process data
 /usr/bin/time python verify_values.py ${WORKDIR} 2>&1 | tee ${LOGDIR}/log.verify_values.${DATESTRING}
 
+# pack data
+cd ${WORKDIR}
+bzip2 DAILYLOGV2.py
+bzip2 DAILYLOG.py
+bzip2 LASTUPDATED.py
+bzip2 LASTUPDATEDV2.py
+bzip2 MONTHLYLOG.py
+
+
 # publish data
-cp ${WORKDIR}/DAILYLOGV2.py ${PUBDIR}/DAILYLOGV2.py
+cp ${WORKDIR}/DAILYLOGV2.py.bz2 ${PUBDIR}/DAILYLOGV2.py.bz2
 cp ${LOGDIR}/log.verify_values.${DATESTRING} ${PUBDIR}/log.verify_values.txt
 
 # bzip files
