@@ -158,7 +158,7 @@ def parse_document(document):
     rows = BSXdocument.getItemList(XPath_table_lines)
     
     # Load unprocessed records
-    fjson = open('unprocess.json','r')
+    fjson = open('allunprocess.json','r')
     data = fjson.read()
     records = json.loads(data)
     fjson.close()
@@ -367,7 +367,7 @@ def parse_document(document):
     sum_nJobs = 0
     lost_nJobs = 0
     
-    fjson = open("unprocess.json.new",'w')
+    fjson = open("allunprocess.json.new",'w')
     fjson.write("{\n")
     jcom = ""
     
@@ -412,9 +412,9 @@ def parse_document(document):
             
     fjson.write("}\n")
     fjson.close()
-    os.unlink("unprocess.json.bak")
-    os.rename("unprocess.json", "unprocess.json.bak")
-    os.rename("unprocess.json.new", "unprocess.json")
+    os.unlink("allunprocess.json.bak")
+    os.rename("allunprocess.json", "allunprocess.json.bak")
+    os.rename("allunprocess.json.new", "allunprocess.json")
     
     ## for Excluded        
     for rec in ex_records:
