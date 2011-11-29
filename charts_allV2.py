@@ -45,84 +45,84 @@ COUNTRY_CLOUD = {
                  }
 
 CATENAME = {
-            'A': 'A-User selected a site',
-            'B': 'B-User selected a cloud',
-            'C': 'C-Panda decides destination',
-            'D': 'D-Skip by Panda',
-            'E': 'E-User excluded a site'
+            'A': 'User selected a site',
+            'B': 'User selected a cloud',
+            'C': 'Panda decides destination',
+            'D': 'Skip by Panda',
+            'E': 'User excluded a site'
             }
 
 CHARTS = {
           "ABC":[
-            ["Category A,B,C on Jobs - %s",
+            ["[User selected a site/User selected a cloud/Panda Brokerage decision] on Jobs - %s",
              "select category,sum(jobCount) from %s where  logDate > '%s' and category in ('A','B','C') group by category order by category"],
-            ["Category A,B,C on jobDef - %s",
+            ["[User selected a site/User selected a cloud/Panda Brokerage decision] on jobDef - %s",
              "select category,sum(jobDefCount) from %s where  logDate > '%s' and category in ('A','B','C') group by category order by category"],
-            ["Category A,B,C on jobSet - %s",
+            ["[User selected a site/User selected a cloud/Panda Brokerage decision] on jobSet - %s",
              "select category,count(distinct jobSet) from %s where  logDate > '%s' and category in ('A','B','C') group by category order by category"]
           ],
           "ASite":[
-            ["Category A (User selected a site) on Jobs - Top Sites higher than %d%% - %s",
+            ["[User selected a site] on Jobs - Top Sites higher than %d%% - %s",
              "select site, sum(jobCount) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC",
              "select sum(jobCount) nums from %s where category='A' and logDate > '%s'"],
-            ["Category A (User selected a site) on jobDef - Top Sites higher than %d%% - %s",
+            ["[User selected a site] on jobDef - Top Sites higher than %d%% - %s",
              "select site, sum(jobDefCount) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC",
              "select sum(jobDefCount) nums from %s where category='A' and logDate > '%s'"],
-            ["Category A (User selected a site) on jobSet - Top Sites higher than %d%% - %s",
+            ["[User selected a site] on jobSet - Top Sites higher than %d%% - %s",
              "select site, count(distinct jobSet) nums from %s where category='A' and logDate > '%s' group by site order by nums DESC",
              "select count(distinct jobSet) nums from %s where category='A' and logDate > '%s'"]
           ],
           "ACloud":[
-            ["Category A (User selected a site) on Jobs - Per Cloud - %s",
+            ["[User selected a site] on Jobs - Per Cloud - %s",
              "select cloud, sum(jobCount) nums from %s where category='A' and logDate > '%s' group by cloud order by nums DESC"],
-            ["Category A (User selected a site) on jobDef - Per Cloud - %s",
+            ["[User selected a site] on jobDef - Per Cloud - %s",
              "select cloud, sum(jobdefCount) nums from %s where category='A' and logDate > '%s' group by cloud order by nums DESC"],
-            ["Category A (User selected a site) on jobSet - Per Cloud - %s",
+            ["[User selected a site] on jobSet - Per Cloud - %s",
              "select cloud, count(distinct jobSet) nums from %s where category='A' and logDate > '%s' group by cloud order by nums DESC"]
           ],
           "BSite":[
-            ["Category B (User selected a cloud) on Jobs - Top %d Sites - %s",
+            ["[User selected a cloud] on Jobs - Top %d Sites - %s",
              "select site, sum(jobCount) nums from %s where category='B' and logDate > '%s' group by site order by nums DESC"],
-            ["Category B (User selected a cloud) on jobDef - Top %d Sites - %s",
+            ["[User selected a cloud] on jobDef - Top %d Sites - %s",
              "select site, sum(jobDefCount) nums from %s where category='B' and logDate > '%s' group by site order by nums DESC"],
-            ["Category B (User selected a cloud) on jobSet - Top %d Sites - %s",
+            ["[User selected a cloud] on jobSet - Top %d Sites - %s",
              "select site, count(distinct jobSet) nums from %s where category='B' and logDate > '%s' group by site order by nums DESC"]
           ],
           "BCloud":[
-            ["Category B (User selected a cloud) on Jobs - Per Cloud - %s",
+            ["[User selected a cloud] on Jobs - Per Cloud - %s",
              "select cloud, sum(jobCount) nums from %s where category='B' and logDate > '%s' group by cloud order by nums DESC"],
-            ["Category B (User selected a cloud) on jobDef - Per Cloud - %s",
+            ["[User selected a cloud] on jobDef - Per Cloud - %s",
              "select cloud, sum(jobdefCount) nums from %s where category='B' and logDate > '%s' group by cloud order by nums DESC"],
-            ["Category B (User selected a cloud) on jobSet - Per Cloud - %s",
+            ["[User selected a cloud] on jobSet - Per Cloud - %s",
              "select cloud, count(distinct jobSet) nums from %s where category='B' and logDate > '%s' group by cloud order by nums DESC"]
           ],
           "CSite":[
-            ["Category C (Panda decides destination) on Jobs - Top %d Sites - %s",
+            ["[Panda Brokerage decision] on Jobs - Top %d Sites - %s",
              "select site, sum(jobCount) nums from %s where category='C' and logDate > '%s' group by site order by nums DESC"],
-            ["Category C (Panda decides destination) on jobDef - Top %d Sites - %s",
+            ["[Panda Brokerage decision] on jobDef - Top %d Sites - %s",
              "select site, sum(jobDefCount) nums from %s where category='C' and logDate > '%s' group by site order by nums DESC"]
           ],
           "CCloud":[
-            ["Category C (Panda decides destination) on Jobs - Per Cloud - %s",
+            ["[Panda Brokerage decision] on Jobs - Per Cloud - %s",
              "select cloud, sum(jobCount) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"],
-            ["Category C (Panda decides destination) on jobDef - Per Cloud - %s",
+            ["[Panda Brokerage decision] on jobDef - Per Cloud - %s",
              "select cloud, sum(jobdefCount) nums from %s where category='C' and logDate > '%s' group by cloud order by nums DESC"]
           ],
           "E":[
-            ["Category E (User excluded a site) on distinct jobSet - With exclude / Without exclude - %s",
+            ["[User excluded a site] on distinct jobSet - With exclude / Without exclude - %s",
              "select count(distinct jobSet) nums from %s where category='E' and logDate > '%s'",
              "select count(distinct jobSet) nums from %s where category!='E' and logDate > '%s' and jobSet not in (select distinct jobSet from %s where category='E' and logDate > '%s')"]
           ],
           "ESite":[
-            ["Category E (User excluded a site) on jobSet - Top %d Sites - %s",
+            ["[User excluded a site] on jobSet - Top %d Sites - %s",
              "select site, count(distinct jobSet) nums from %s where category='E' and logDate > '%s' group by site order by nums DESC"],
-            ["Category E (User excluded a site) on distinct DnUser - Top %d Sites - %s",
+            ["[User excluded a site] on distinct DnUser - Top %d Sites - %s",
              "select site, count(distinct dnUser) nums from %s where category='E' and logDate > '%s' group by site order by nums DESC"]
           ],
           "ECloud":[
-            ["Category E (User excluded a site) on jobSet - Per Cloud - %s",
+            ["[User excluded a site] on jobSet - Per Cloud - %s",
              "select cloud, count(distinct jobSet) nums from %s where category='E' and logDate > '%s' group by cloud order by nums DESC"],
-            ["Category E (User excluded a site) on distinct DnUser - Per Cloud - %s",
+            ["[User excluded a site] on distinct DnUser - Per Cloud - %s",
              "select cloud, count(distinct dnUser) nums from %s where category='E' and logDate > '%s' group by cloud order by nums DESC"]
           ],
           "Country":[
@@ -192,10 +192,10 @@ def parse_document_category(idx1,idx2,jsonfile,field):
     rs = db.query(sql%(tabname,query_from))
     for row in rs:
         series_data = "%s %s {name:'%s', y:%d}"%(series_data,comm,CATENAME[row[0]],row[1])
-        if jsonfile['data'].has_key(row[0]):
-            jsonfile['data'][row[0]][field] = row[1]
+        if jsonfile['data'].has_key(CATENAME[row[0]]):
+            jsonfile['data'][CATENAME[row[0]]][field] = row[1]
         else:
-            jsonfile['data'][row[0]] = {field: row[1]}
+            jsonfile['data'][CATENAME[row[0]]] = {field: row[1]}
         comm = ","
     return series_data,jsonfile
 
@@ -401,62 +401,62 @@ def run(fidx):
     data = data.replace('#TITLE_TEXT00#',CHARTS["ABC"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT01#',CHARTS["ABC"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT02#',CHARTS["ABC"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF0#',"data/ABC_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT0#',"[Details of Category A,B,C]")
+    data = data.replace('#CREDITS_HREF0#',"data/All_Actions_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT0#',"[Detail Table]")
     
     data = data.replace('#TITLE_TEXT10#',CHARTS["ASite"][0][0]%(PLOW,pnames[fidx]))
     data = data.replace('#TITLE_TEXT11#',CHARTS["ASite"][1][0]%(PLOW,pnames[fidx]))
     data = data.replace('#TITLE_TEXT12#',CHARTS["ASite"][2][0]%(PLOW,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF1#',"data/ASite_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT1#',"[Details of Category A on sites]")
+    data = data.replace('#CREDITS_HREF1#',"data/User_Selected_a_Site_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT1#',"[Detail Table of 'User selected a site' on sites]")
 
     data = data.replace('#TITLE_TEXT20#',CHARTS["ACloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT21#',CHARTS["ACloud"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT22#',CHARTS["ACloud"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF2#',"data/ACloud_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT2#',"[Details of Category A on clouds]")
+    data = data.replace('#CREDITS_HREF2#',"data/User_Selected_a_Site_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT2#',"[Detail Table of 'User selected a site' on clouds]")
     
     data = data.replace('#TITLE_TEXT30#',CHARTS["BSite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT31#',CHARTS["BSite"][1][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT32#',CHARTS["BSite"][2][0]%(NTOP,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF3#',"data/BSite_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT3#',"[Details of Category B on sites]")
+    data = data.replace('#CREDITS_HREF3#',"data/User_Selected_a_Cloud_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT3#',"[Detail Table of 'User selected a cloud' on sites]")
 
     data = data.replace('#TITLE_TEXT40#',CHARTS["BCloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT41#',CHARTS["BCloud"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT42#',CHARTS["BCloud"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF4#',"data/BCloud_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT4#',"[Details of Category B on clouds]")
+    data = data.replace('#CREDITS_HREF4#',"data/User_Selected_a_Cloud_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT4#',"[Detail Table of 'User selected a cloud' on clouds]")
     
     data = data.replace('#TITLE_TEXT50#',CHARTS["CSite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT51#',CHARTS["CSite"][1][0]%(NTOP,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF5#',"data/CSite_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT5#',"[Details of Category C on sites]")
+    data = data.replace('#CREDITS_HREF5#',"data/Panda_Brokerage_Decision_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT5#',"[Detail Table of 'Panda Brokerage decision' on sites]")
 
     data = data.replace('#TITLE_TEXT60#',CHARTS["CCloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT61#',CHARTS["CCloud"][1][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF6#',"data/CCloud_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT6#',"[Details of Category C on clouds]")
+    data = data.replace('#CREDITS_HREF6#',"data/Panda_Brokerage_Decision_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT6#',"[Detail Table of 'Panda Brokerage decision' on clouds]")
     
     data = data.replace('#TITLE_TEXT70#',CHARTS["E"][0][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF7#',"data/E_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT7#',"[Details of Category E]")
+    data = data.replace('#CREDITS_HREF7#',"data/User_Excluded_a_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT7#',"[Detail Table of 'User excluded a site']")
     
     data = data.replace('#TITLE_TEXT80#',CHARTS["ESite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT81#',CHARTS["ESite"][1][0]%(NTOP,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF8#',"data/ESite_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT8#',"[Details of Category E on sites]")
+    data = data.replace('#CREDITS_HREF8#',"data/User_Excluded_a_Site_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT8#',"[Detail Table of 'User excluded a site' on sites]")
     
     data = data.replace('#TITLE_TEXT90#',CHARTS["ECloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT91#',CHARTS["ECloud"][1][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF9#',"data/ECloud_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT9#',"[Details of Category E on clouds]")
+    data = data.replace('#CREDITS_HREF9#',"data/User_Excluded_a_Site_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_TEXT9#',"[Detail Table of 'User excluded a site' on clouds]")
 
     data = data.replace('#TITLE_TEXT100#',CHARTS["Country"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT101#',CHARTS["Country"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT102#',CHARTS["Country"][2][0]%pnames[fidx])
     data = data.replace('#CREDITS_HREF10#',"data/Country_%s.html"%pnames[fidx])
-    data = data.replace('#CREDITS_TEXT10#',"[Details of countries]")    
+    data = data.replace('#CREDITS_TEXT10#',"[Detail Table of countries]")    
     print "Replace ",fidx
     
     ABC_json = {'lastUpdate':last_updated,
@@ -471,8 +471,8 @@ def run(fidx):
     series_data00,ABC_json = parse_document_category("ABC",0,ABC_json,'Jobs')
     series_data01,ABC_json = parse_document_category("ABC",1,ABC_json,'JobDef')
     series_data02,ABC_json = parse_document_category("ABC",2,ABC_json,'JobSet')
-    write_jsonfile(ABC_json,"ABC_%s"%pnames[fidx])
-    write_tablehtml(ABC_json,"ABC_%s"%pnames[fidx])
+    write_jsonfile(ABC_json,"All_Actions_%s"%pnames[fidx])
+    write_tablehtml(ABC_json,"All_Actions_%s"%pnames[fidx])
     print "Get series ABC"
     
     ASite_json = {'lastUpdate':last_updated,
@@ -487,8 +487,8 @@ def run(fidx):
     series_data10,ASite_json = parse_document_site_percent("ASite",0,ASite_json,'Jobs')
     series_data11,ASite_json = parse_document_site_percent("ASite",1,ASite_json,'JobDef')
     series_data12,ASite_json = parse_document_site_percent("ASite",2,ASite_json,'JobSet')
-    write_jsonfile(ASite_json,"ASite_%s"%pnames[fidx])
-    write_tablehtml(ASite_json,"ASite_%s"%pnames[fidx])
+    write_jsonfile(ASite_json,"User_Selected_a_Site_on_Site_%s"%pnames[fidx])
+    write_tablehtml(ASite_json,"User_Selected_a_Site_on_Site_%s"%pnames[fidx])
     print "Get series ASite"
     
     ACloud_json = {'lastUpdate':last_updated,
@@ -503,8 +503,8 @@ def run(fidx):
     series_data20,ACloud_json = parse_document_cloud("ACloud",0,ACloud_json,'Jobs')
     series_data21,ACloud_json = parse_document_cloud("ACloud",1,ACloud_json,'JobDef')
     series_data22,ACloud_json = parse_document_cloud("ACloud",2,ACloud_json,'JobSet')
-    write_jsonfile(ACloud_json,"ACloud_%s"%pnames[fidx])
-    write_tablehtml(ACloud_json,"ACloud_%s"%pnames[fidx])
+    write_jsonfile(ACloud_json,"User_Selected_a_Site_on_Cloud_%s"%pnames[fidx])
+    write_tablehtml(ACloud_json,"User_Selected_a_Site_on_Cloud_%s"%pnames[fidx])
     print "Get series ACloud"
     
     BSite_json = {'lastUpdate':last_updated,
@@ -519,8 +519,8 @@ def run(fidx):
     series_data30,BSite_json = parse_document_site("BSite",0,BSite_json,'Jobs')
     series_data31,BSite_json = parse_document_site("BSite",1,BSite_json,'JobDef')
     series_data32,BSite_json = parse_document_site("BSite",2,BSite_json,'JobSet')
-    write_jsonfile(BSite_json,"BSite_%s"%pnames[fidx])
-    write_tablehtml(BSite_json,"BSite_%s"%pnames[fidx])
+    write_jsonfile(BSite_json,"User_Selected_a_Cloud_on_Site_%s"%pnames[fidx])
+    write_tablehtml(BSite_json,"User_Selected_a_Cloud_on_Site_%s"%pnames[fidx])
     print "Get series BSite"
     
     BCloud_json = {'lastUpdate':last_updated,
@@ -535,8 +535,8 @@ def run(fidx):
     series_data40,BCloud_json = parse_document_cloud("BCloud",0,BCloud_json,'Jobs')
     series_data41,BCloud_json = parse_document_cloud("BCloud",1,BCloud_json,'JobDef')
     series_data42,BCloud_json = parse_document_cloud("BCloud",2,BCloud_json,'JobSet')
-    write_jsonfile(BCloud_json,"BCloud_%s"%pnames[fidx])
-    write_tablehtml(BCloud_json,"BCloud_%s"%pnames[fidx])
+    write_jsonfile(BCloud_json,"User_Selected_a_Cloud_on_Cloud_%s"%pnames[fidx])
+    write_tablehtml(BCloud_json,"User_Selected_a_Cloud_on_Cloud_%s"%pnames[fidx])
     print "Get series BCloud"
     
     CSite_json = {'lastUpdate':last_updated,
@@ -549,8 +549,8 @@ def run(fidx):
                 }
     series_data50,CSite_json = parse_document_site("CSite",0,CSite_json,'Jobs')
     series_data51,CSite_json = parse_document_site("CSite",1,CSite_json,'JobDef')
-    write_jsonfile(CSite_json,"CSite_%s"%pnames[fidx])
-    write_tablehtml(CSite_json,"CSite_%s"%pnames[fidx])
+    write_jsonfile(CSite_json,"Panda_Brokerage_Decision_on_Site_%s"%pnames[fidx])
+    write_tablehtml(CSite_json,"Panda_Brokerage_Decision_on_Site_%s"%pnames[fidx])
     print "Get series CSite"
     
     CCloud_json = {'lastUpdate':last_updated,
@@ -563,8 +563,8 @@ def run(fidx):
                 }
     series_data60,CCloud_json = parse_document_cloud("CCloud",0,CCloud_json,'Jobs')
     series_data61,CCloud_json = parse_document_cloud("CCloud",1,CCloud_json,'JobDef')
-    write_jsonfile(CCloud_json,"CCloud_%s"%pnames[fidx])
-    write_tablehtml(CCloud_json,"CCloud_%s"%pnames[fidx])
+    write_jsonfile(CCloud_json,"Panda_Brokerage_Decision_on_Cloud_%s"%pnames[fidx])
+    write_tablehtml(CCloud_json,"Panda_Brokerage_Decision_on_Cloud_%s"%pnames[fidx])
     print "Get series CCloud"
     
     E_json = {'lastUpdate':last_updated,
@@ -576,8 +576,8 @@ def run(fidx):
                 'data': {}
                 }
     series_data70,E_json = parse_document_excluded("E",0,E_json)
-    write_jsonfile(E_json,"E_%s"%pnames[fidx])
-    write_tablehtml(E_json,"E_%s"%pnames[fidx])
+    write_jsonfile(E_json,"User_Excluded_a_Site_%s"%pnames[fidx])
+    write_tablehtml(E_json,"User_Excluded_a_Site_%s"%pnames[fidx])
     print "Get series E"
     
     ESite_json = {'lastUpdate':last_updated,
@@ -590,8 +590,8 @@ def run(fidx):
                 }
     series_data80,ESite_json = parse_document_site("ESite",0,ESite_json,'JobSet')
     series_data81,ESite_json = parse_document_site("ESite",1,ESite_json,'DnUser')
-    write_jsonfile(ESite_json,"ESite_%s"%pnames[fidx])
-    write_tablehtml(ESite_json,"ESite_%s"%pnames[fidx])
+    write_jsonfile(ESite_json,"User_Excluded_a_Site_on_Site_%s"%pnames[fidx])
+    write_tablehtml(ESite_json,"User_Excluded_a_Site_on_Site_%s"%pnames[fidx])
     print "Get series ESite"
     
     ECloud_json = {'lastUpdate':last_updated,
@@ -604,8 +604,8 @@ def run(fidx):
                 }
     series_data90,ECloud_json = parse_document_cloud("ECloud",0,ECloud_json,'JobSet')
     series_data91,ECloud_json = parse_document_cloud("ECloud",1,ECloud_json,'DnUser')
-    write_jsonfile(ECloud_json,"ECloud_%s"%pnames[fidx])
-    write_tablehtml(ECloud_json,"ECloud_%s"%pnames[fidx])
+    write_jsonfile(ECloud_json,"User_Excluded_a_Site_on_Cloud_%s"%pnames[fidx])
+    write_tablehtml(ECloud_json,"User_Excluded_a_Site_on_Cloud_%s"%pnames[fidx])
     print "Get series ECloud"
     
     Country_json = {'lastUpdate':last_updated,

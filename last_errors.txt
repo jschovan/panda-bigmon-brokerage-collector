@@ -5272,3 +5272,236 @@ Error: 11-28 00:25 Adam_Trzupek_-_Atlas jobdef=3575 nJobs=742 countryGroup=pl
 Error: 11-28 00:25 Adam_Trzupek_-_Atlas jobdef=3575 action=choose site=ANALY_FZU reason=maxweight - max weight=(1+133/172)*389/1  
 Error: 11-28 08:33 Felix_Rauscher jobdef=10478 nJobs=425 countryGroup=None  
 Error: 11-28 08:33 Felix_Rauscher jobdef=10478 action=choose site=ANALY_CERN_XROOTD reason=maxweight - max weight=(1+1322/1159)*1492/0  
+Error: 11-28 12:51 Felix_Rauscher jobdef=10479 nJobs=425 countryGroup=None  
+Error: 11-28 12:51 Felix_Rauscher jobdef=10479 action=choose site=ANALY_CERN_XROOTD reason=maxweight - max weight=(1+179/882)*1492/26  
+Error: 11-28 15:36 Marie-Helene_Genest jobdef=62429 nJobs=1 countryGroup=fr  
+Error: 11-28 15:35 Marie-Helene_Genest jobdef=62429 action=choose site=ANALY_ALBERTA-WG1 reason=maxweight - max weight=(1+20/30)*346/0  
+Error: 11-28 15:35 Marie-Helene_Genest jobdef=62429 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:24 Marie-Helene_Genest jobdef=62434 nJobs=1 countryGroup=fr  
+Error: 11-28 17:24 Marie-Helene_Genest jobdef=62434 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:24 Marie-Helene_Genest jobdef=62434 action=choose site=ANALY_SHEF reason=maxweight - max weight=(1+19/22)*204/0  
+Error: 11-28 17:24 Marie-Helene_Genest jobdef=62433 nJobs=1 countryGroup=fr  
+Error: 11-28 17:24 Marie-Helene_Genest jobdef=62433 action=choose site=ANALY_IFIC reason=maxweight - max weight=(1+37/48)*272/0  
+Error: 11-28 17:24 Marie-Helene_Genest jobdef=62433 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:24 Marie-Helene_Genest jobdef=62432 nJobs=1 countryGroup=fr  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62432 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/6  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62432 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62431 nJobs=1 countryGroup=fr  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62431 action=choose site=ANALY_BEIJING reason=maxweight - max weight=(1+17/30)*169/14  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62431 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62430 nJobs=1 countryGroup=fr  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62430 action=choose site=ANALY_INFN-ROMA1 reason=maxweight - max weight=(1+18/28)*354/0  
+Error: 11-28 17:23 Marie-Helene_Genest jobdef=62430 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62447 nJobs=1 countryGroup=fr  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62447 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62447 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+54/92)*978/93  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62446 nJobs=1 countryGroup=fr  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62446 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62446 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/0  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62445 nJobs=1 countryGroup=fr  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62445 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:29 Marie-Helene_Genest jobdef=62445 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/0  
+Error: 11-28 17:28 Marie-Helene_Genest jobdef=62444 nJobs=1 countryGroup=fr  
+Error: 11-28 17:28 Marie-Helene_Genest jobdef=62444 action=choose site=ANALY_GLASGOW reason=maxweight - max weight=(1+76/68)*728/0  
+Error: 11-28 17:28 Marie-Helene_Genest jobdef=62444 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:28 Marie-Helene_Genest jobdef=62443 nJobs=1 countryGroup=fr  
+Error: 11-28 17:28 Marie-Helene_Genest jobdef=62443 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+54/92)*978/92  
+Error: 11-28 17:28 Marie-Helene_Genest jobdef=62443 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:28 Marie-Helene_Genest jobdef=62442 nJobs=1 countryGroup=fr  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62442 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+54/92)*978/92  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62442 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62441 nJobs=1 countryGroup=fr  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62441 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62441 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/0  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62440 nJobs=1 countryGroup=fr  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62440 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:27 Marie-Helene_Genest jobdef=62440 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/0  
+Error: 11-28 17:26 Marie-Helene_Genest jobdef=62439 nJobs=1 countryGroup=fr  
+Error: 11-28 17:26 Marie-Helene_Genest jobdef=62439 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:26 Marie-Helene_Genest jobdef=62439 action=choose site=ANALY_AGLT2 reason=maxweight - max weight=(1+134/93)*2026/0  
+Error: 11-28 17:26 Marie-Helene_Genest jobdef=62438 nJobs=1 countryGroup=fr  
+Error: 11-28 17:26 Marie-Helene_Genest jobdef=62438 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:26 Marie-Helene_Genest jobdef=62438 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+54/92)*978/91  
+Error: 11-28 17:26 Marie-Helene_Genest jobdef=62437 nJobs=1 countryGroup=fr  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62437 action=choose site=ANALY_ALBERTA-WG1 reason=maxweight - max weight=(1+27/33)*346/0  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62437 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62436 nJobs=1 countryGroup=fr  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62436 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+50/89)*978/99  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62436 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62435 nJobs=1 countryGroup=fr  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62435 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:25 Marie-Helene_Genest jobdef=62435 action=choose site=ANALY_LAPP reason=maxweight - max weight=(1+10/30)*541/23  
+Error: 11-28 17:34 Marie-Helene_Genest jobdef=62457 nJobs=1 countryGroup=fr  
+Error: 11-28 17:34 Marie-Helene_Genest jobdef=62457 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:34 Marie-Helene_Genest jobdef=62457 action=choose site=ANALY_INFN-ROMA1 reason=maxweight - max weight=(1+19/28)*354/11  
+Error: 11-28 17:34 Marie-Helene_Genest jobdef=62456 nJobs=1 countryGroup=fr  
+Error: 11-28 17:34 Marie-Helene_Genest jobdef=62456 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/0  
+Error: 11-28 17:34 Marie-Helene_Genest jobdef=62456 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:33 Marie-Helene_Genest jobdef=62455 nJobs=1 countryGroup=fr  
+Error: 11-28 17:33 Marie-Helene_Genest jobdef=62455 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+58/95)*976/51  
+Error: 11-28 17:33 Marie-Helene_Genest jobdef=62455 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:33 Marie-Helene_Genest jobdef=62454 nJobs=1 countryGroup=fr  
+Error: 11-28 17:33 Marie-Helene_Genest jobdef=62454 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:33 Marie-Helene_Genest jobdef=62454 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+58/95)*976/51  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62453 nJobs=1 countryGroup=fr  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62453 action=choose site=ANALY_OX reason=maxweight - max weight=(1+30/29)*594/11  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62453 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62452 nJobs=1 countryGroup=fr  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62452 action=choose site=ANALY_SLAC reason=maxweight - max weight=(1+70/90)*843/0  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62452 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62451 nJobs=1 countryGroup=fr  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62451 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:32 Marie-Helene_Genest jobdef=62451 action=choose site=ANALY_QMUL reason=maxweight - max weight=(1+53/56)*1646/0  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62450 nJobs=1 countryGroup=fr  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62450 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62450 action=choose site=ANALY_QMUL reason=maxweight - max weight=(1+53/56)*1646/0  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62449 nJobs=1 countryGroup=fr  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62449 action=choose site=ANALY_wuppertalprod reason=maxweight - max weight=(1+36/38)*332/2  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62449 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62448 nJobs=1 countryGroup=fr  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62448 action=choose site=ANALY_SHEF reason=maxweight - max weight=(1+21/22)*211/9  
+Error: 11-28 17:31 Marie-Helene_Genest jobdef=62448 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:39 Marie-Helene_Genest jobdef=62467 nJobs=1 countryGroup=fr  
+Error: 11-28 17:39 Marie-Helene_Genest jobdef=62467 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/2  
+Error: 11-28 17:39 Marie-Helene_Genest jobdef=62467 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:39 Marie-Helene_Genest jobdef=62466 nJobs=1 countryGroup=fr  
+Error: 11-28 17:39 Marie-Helene_Genest jobdef=62466 action=choose site=ANALY_VICTORIA-WG1 reason=maxweight - max weight=(1+24/24)*457/0  
+Error: 11-28 17:39 Marie-Helene_Genest jobdef=62466 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:38 Marie-Helene_Genest jobdef=62465 nJobs=1 countryGroup=fr  
+Error: 11-28 17:38 Marie-Helene_Genest jobdef=62465 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:38 Marie-Helene_Genest jobdef=62465 action=choose site=ANALY_QMUL reason=maxweight - max weight=(1+52/57)*1646/2  
+Error: 11-28 17:37 Marie-Helene_Genest jobdef=62464 nJobs=1 countryGroup=fr  
+Error: 11-28 17:37 Marie-Helene_Genest jobdef=62464 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:37 Marie-Helene_Genest jobdef=62464 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/2  
+Error: 11-28 17:37 Marie-Helene_Genest jobdef=62463 nJobs=1 countryGroup=fr  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62463 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62463 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+34/35)*446/2  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62462 nJobs=1 countryGroup=fr  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62462 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62462 action=choose site=ANALY_IFIC reason=maxweight - max weight=(1+37/47)*272/1  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62461 nJobs=1 countryGroup=fr  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62461 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:36 Marie-Helene_Genest jobdef=62461 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+60/98)*976/23  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62460 nJobs=1 countryGroup=fr  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62460 action=choose site=ANALY_ECDF reason=maxweight - max weight=(1+61/57)*308/0  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62460 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62459 nJobs=1 countryGroup=fr  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62459 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+58/95)*976/34  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62459 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62458 nJobs=1 countryGroup=fr  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62458 action=choose site=ANALY_QMUL reason=maxweight - max weight=(1+53/56)*1646/0  
+Error: 11-28 17:35 Marie-Helene_Genest jobdef=62458 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:44 Marie-Helene_Genest jobdef=62472 nJobs=13 countryGroup=fr  
+Error: 11-28 17:44 Marie-Helene_Genest jobdef=62472 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:44 Marie-Helene_Genest jobdef=62472 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+41/45)*499/0  
+Error: 11-28 17:43 Marie-Helene_Genest jobdef=62471 nJobs=70 countryGroup=fr  
+Error: 11-28 17:43 Marie-Helene_Genest jobdef=62471 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:43 Marie-Helene_Genest jobdef=62471 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+41/45)*499/0  
+Error: 11-28 17:41 Marie-Helene_Genest jobdef=62470 nJobs=1 countryGroup=fr  
+Error: 11-28 17:41 Marie-Helene_Genest jobdef=62470 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:41 Marie-Helene_Genest jobdef=62470 action=choose site=ANALY_LIV reason=maxweight - max weight=(1+59/70)*341/1  
+Error: 11-28 17:40 Marie-Helene_Genest jobdef=62469 nJobs=1 countryGroup=fr  
+Error: 11-28 17:40 Marie-Helene_Genest jobdef=62469 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+59/98)*976/12  
+Error: 11-28 17:40 Marie-Helene_Genest jobdef=62469 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:40 Marie-Helene_Genest jobdef=62468 nJobs=1 countryGroup=fr  
+Error: 11-28 17:40 Marie-Helene_Genest jobdef=62468 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:40 Marie-Helene_Genest jobdef=62468 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+60/98)*976/12  
+Error: 11-28 17:49 Marie-Helene_Genest jobdef=62478 nJobs=13 countryGroup=fr  
+Error: 11-28 17:49 Marie-Helene_Genest jobdef=62478 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:49 Marie-Helene_Genest jobdef=62478 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+42/45)*499/0  
+Error: 11-28 17:48 Marie-Helene_Genest jobdef=62477 nJobs=69 countryGroup=fr  
+Error: 11-28 17:48 Marie-Helene_Genest jobdef=62477 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:48 Marie-Helene_Genest jobdef=62477 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+42/45)*499/18  
+Error: 11-28 17:47 Marie-Helene_Genest jobdef=62476 nJobs=2 countryGroup=fr  
+Error: 11-28 17:47 Marie-Helene_Genest jobdef=62476 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:47 Marie-Helene_Genest jobdef=62476 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+42/45)*499/0  
+Error: 11-28 17:47 Marie-Helene_Genest jobdef=62475 nJobs=5 countryGroup=fr  
+Error: 11-28 17:46 Marie-Helene_Genest jobdef=62475 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:46 Marie-Helene_Genest jobdef=62475 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+42/45)*499/0  
+Error: 11-28 17:46 Marie-Helene_Genest jobdef=62474 nJobs=21 countryGroup=fr  
+Error: 11-28 17:46 Marie-Helene_Genest jobdef=62474 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:46 Marie-Helene_Genest jobdef=62474 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+42/45)*499/0  
+Error: 11-28 17:45 Marie-Helene_Genest jobdef=62473 nJobs=76 countryGroup=fr  
+Error: 11-28 17:45 Marie-Helene_Genest jobdef=62473 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:45 Marie-Helene_Genest jobdef=62473 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+48/97)*976/0  
+Error: 11-28 17:52 Marie-Helene_Genest jobdef=62482 nJobs=2 countryGroup=fr  
+Error: 11-28 17:52 Marie-Helene_Genest jobdef=62482 action=choose site=ANALY_QMUL reason=maxweight - max weight=(1+52/56)*1646/0  
+Error: 11-28 17:52 Marie-Helene_Genest jobdef=62482 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:51 Marie-Helene_Genest jobdef=62481 nJobs=5 countryGroup=fr  
+Error: 11-28 17:51 Marie-Helene_Genest jobdef=62481 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:51 Marie-Helene_Genest jobdef=62481 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+605/216)*1227/2  
+Error: 11-28 17:51 Marie-Helene_Genest jobdef=62480 nJobs=21 countryGroup=fr  
+Error: 11-28 17:51 Marie-Helene_Genest jobdef=62480 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:51 Marie-Helene_Genest jobdef=62480 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+43/96)*976/55  
+Error: 11-28 17:50 Marie-Helene_Genest jobdef=62479 nJobs=76 countryGroup=fr  
+Error: 11-28 17:50 Marie-Helene_Genest jobdef=62479 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-28 17:50 Marie-Helene_Genest jobdef=62479 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+42/45)*499/0  
+Error: 11-29 08:50 Marie-Helene_Genest jobdef=62483 nJobs=1 countryGroup=fr  
+Error: 11-29 08:50 Marie-Helene_Genest jobdef=62483 action=use site=ANALY_ARC reason=outds - outDS exists  
+Error: 11-29 08:50 Marie-Helene_Genest jobdef=62483 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:58 Marie-Helene_Genest jobdef=62489 nJobs=1 countryGroup=fr  
+Error: 11-29 08:58 Marie-Helene_Genest jobdef=62489 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:58 Marie-Helene_Genest jobdef=62489 action=choose site=ANALY_INFN-NAPOLI reason=maxweight - max weight=(1+34/40)*1111/0  
+Error: 11-29 08:58 Marie-Helene_Genest jobdef=62488 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:58 Marie-Helene_Genest jobdef=62488 nJobs=3 countryGroup=fr  
+Error: 11-29 08:58 Marie-Helene_Genest jobdef=62488 action=choose site=ANALY_INFN-NAPOLI reason=maxweight - max weight=(1+34/40)*1111/0  
+Error: 11-29 08:57 Marie-Helene_Genest jobdef=62487 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:57 Marie-Helene_Genest jobdef=62487 nJobs=9 countryGroup=fr  
+Error: 11-29 08:57 Marie-Helene_Genest jobdef=62487 action=choose site=ANALY_CERN_XROOTD reason=maxweight - max weight=(1+239/426)*1491/0  
+Error: 11-29 08:56 Marie-Helene_Genest jobdef=62486 nJobs=27 countryGroup=fr  
+Error: 11-29 08:56 Marie-Helene_Genest jobdef=62486 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:56 Marie-Helene_Genest jobdef=62486 action=choose site=ANALY_HU_ATLAS_Tier2 reason=maxweight - max weight=(1+26/37)*342/0  
+Error: 11-29 08:56 Marie-Helene_Genest jobdef=62485 nJobs=133 countryGroup=fr  
+Error: 11-29 08:56 Marie-Helene_Genest jobdef=62485 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:56 Marie-Helene_Genest jobdef=62485 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+3425/128)*1227/0  
+Error: 11-29 08:55 Marie-Helene_Genest jobdef=62484 nJobs=300 countryGroup=fr  
+Error: 11-29 08:55 Marie-Helene_Genest jobdef=62484 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:55 Marie-Helene_Genest jobdef=62484 action=choose site=ANALY_FREIBURG reason=maxweight - max weight=(1+13/44)*533/0  
+Error: 11-29 09:09 Marie-Helene_Genest jobdef=62504 nJobs=50 countryGroup=fr  
+Error: 11-29 09:09 Marie-Helene_Genest jobdef=62504 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:09 Marie-Helene_Genest jobdef=62504 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+3368/106)*1227/98  
+Error: 11-29 09:09 Marie-Helene_Genest jobdef=62503 nJobs=5 countryGroup=fr  
+Error: 11-29 09:09 Marie-Helene_Genest jobdef=62503 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:09 Marie-Helene_Genest jobdef=62503 action=choose site=ANALY_TOKYO reason=maxweight - max weight=(1+46/47)*898/0  
+Error: 11-29 09:08 Marie-Helene_Genest jobdef=62502 nJobs=9 countryGroup=fr  
+Error: 11-29 09:08 Marie-Helene_Genest jobdef=62502 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:08 Marie-Helene_Genest jobdef=62502 action=choose site=ANALY_CYF reason=maxweight - max weight=(1+85/137)*794/0  
+Error: 11-29 09:07 Marie-Helene_Genest jobdef=62501 nJobs=133 countryGroup=fr  
+Error: 11-29 09:07 Marie-Helene_Genest jobdef=62501 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+3368/106)*1227/0  
+Error: 11-29 09:07 Marie-Helene_Genest jobdef=62501 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:06 Marie-Helene_Genest jobdef=62500 nJobs=27 countryGroup=fr  
+Error: 11-29 09:06 Marie-Helene_Genest jobdef=62500 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:06 Marie-Helene_Genest jobdef=62500 action=choose site=ANALY_MANC reason=maxweight - max weight=(1+48/88)*601/0  
+Error: 11-29 09:05 Marie-Helene_Genest jobdef=62499 nJobs=1 countryGroup=fr  
+Error: 11-29 09:05 Marie-Helene_Genest jobdef=62499 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:05 Marie-Helene_Genest jobdef=62499 action=choose site=ANALY_BNL_ATLAS_1 reason=maxweight - max weight=(1+497/200)*1731/0  
+Error: 11-29 09:05 Marie-Helene_Genest jobdef=62498 nJobs=3 countryGroup=fr  
+Error: 11-29 09:05 Marie-Helene_Genest jobdef=62498 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:05 Marie-Helene_Genest jobdef=62498 action=choose site=ANALY_TRIUMF reason=maxweight - max weight=(1+22/26)*121/0  
+Error: 11-29 09:04 Marie-Helene_Genest jobdef=62497 nJobs=1 countryGroup=fr  
+Error: 11-29 09:04 Marie-Helene_Genest jobdef=62497 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:04 Marie-Helene_Genest jobdef=62497 action=choose site=ANALY_INFN-NAPOLI reason=maxweight - max weight=(1+35/40)*1111/0  
+Error: 11-29 09:03 Marie-Helene_Genest jobdef=62496 nJobs=1 countryGroup=fr  
+Error: 11-29 09:03 Marie-Helene_Genest jobdef=62496 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+3376/111)*1227/0  
+Error: 11-29 09:03 Marie-Helene_Genest jobdef=62496 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:03 Marie-Helene_Genest jobdef=62495 nJobs=1 countryGroup=fr  
+Error: 11-29 09:03 Marie-Helene_Genest jobdef=62495 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:03 Marie-Helene_Genest jobdef=62495 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+3376/111)*1227/0  
+Error: 11-29 09:02 Marie-Helene_Genest jobdef=62494 nJobs=3 countryGroup=fr  
+Error: 11-29 09:02 Marie-Helene_Genest jobdef=62494 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:02 Marie-Helene_Genest jobdef=62494 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+3376/111)*1227/0  
+Error: 11-29 09:01 Marie-Helene_Genest jobdef=62493 nJobs=9 countryGroup=fr  
+Error: 11-29 09:01 Marie-Helene_Genest jobdef=62493 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:01 Marie-Helene_Genest jobdef=62493 action=choose site=ANALY_ARC reason=maxweight - max weight=(1+3376/111)*1227/0  
+Error: 11-29 09:00 Marie-Helene_Genest jobdef=62492 nJobs=27 countryGroup=fr  
+Error: 11-29 09:00 Marie-Helene_Genest jobdef=62492 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:00 Marie-Helene_Genest jobdef=62492 action=choose site=ANALY_INFN-NAPOLI reason=maxweight - max weight=(1+34/40)*1111/0  
+Error: 11-29 09:00 Marie-Helene_Genest jobdef=62491 nJobs=133 countryGroup=fr  
+Error: 11-29 09:00 Marie-Helene_Genest jobdef=62491 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 09:00 Marie-Helene_Genest jobdef=62491 action=choose site=ANALY_SWT2_CPB reason=maxweight - max weight=(1+51/69)*701/0  
+Error: 11-29 08:59 Marie-Helene_Genest jobdef=62490 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  
+Error: 11-29 08:59 Marie-Helene_Genest jobdef=62490 action=choose site=ANALY_LONG_BNL_ATLAS reason=maxweight - max weight=(1+565/230)*2718/0  
+Error: 11-29 08:59 Marie-Helene_Genest jobdef=62490 nJobs=1 countryGroup=fr  
+Error: 11-29 09:10 Marie-Helene_Genest jobdef=62505 nJobs=5 countryGroup=fr  
+Error: 11-29 09:10 Marie-Helene_Genest jobdef=62505 action=choose site=ANALY_TOKYO reason=maxweight - max weight=(1+46/47)*898/0  
+Error: 11-29 09:10 Marie-Helene_Genest jobdef=62505 action=exclude site=ANALY_LRZ reason=useroption - excluded by user  

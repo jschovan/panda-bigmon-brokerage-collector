@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+         data.addColumn('string','Cloud');
+ data.addColumn('number','Jobs');
+ data.addColumn('number','JobDef');
+
+		data.addRows(11)
+ data.setCell(0,0,'FR');
+ data.setCell(0,1,696644);
+ data.setCell(0,2,22607);
+ data.setCell(1,0,'NL');
+ data.setCell(1,1,410211);
+ data.setCell(1,2,11203);
+ data.setCell(2,0,'CERN');
+ data.setCell(2,1,168612);
+ data.setCell(2,2,2401);
+ data.setCell(3,0,'TW');
+ data.setCell(3,1,106532);
+ data.setCell(3,2,934);
+ data.setCell(4,0,'CA');
+ data.setCell(4,1,329190);
+ data.setCell(4,2,11751);
+ data.setCell(5,0,'DE');
+ data.setCell(5,1,761589);
+ data.setCell(5,2,25404);
+ data.setCell(6,0,'ND');
+ data.setCell(6,1,127246);
+ data.setCell(6,2,4469);
+ data.setCell(7,0,'IT');
+ data.setCell(7,1,309700);
+ data.setCell(7,2,11692);
+ data.setCell(8,0,'US');
+ data.setCell(8,1,1247955);
+ data.setCell(8,2,38169);
+ data.setCell(9,0,'UK');
+ data.setCell(9,1,877362);
+ data.setCell(9,2,27460);
+ data.setCell(10,0,'ES');
+ data.setCell(10,1,111484);
+ data.setCell(10,2,3966);
+
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+    <title>Panda_Brokerage_Decision_on_Cloud_Seasonly</title>
+  </head>
+
+  <body>
+    Title: Panda_Brokerage_Decision_on_Cloud_Seasonly<br>
+    Last Updated: 2011-11-29 09:51<br>
+    Json file: <a href="Panda_Brokerage_Decision_on_Cloud_Seasonly.json">Panda_Brokerage_Decision_on_Cloud_Seasonly.json</a><br>
+    <div id='table_div' width='80%' align='center'></div>
+  </body>
+</html>
+

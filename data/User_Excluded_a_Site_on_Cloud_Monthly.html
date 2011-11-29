@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+         data.addColumn('string','Cloud');
+ data.addColumn('number','JobSet');
+ data.addColumn('number','DnUser');
+
+		data.addRows(11)
+ data.setCell(0,0,'FR');
+ data.setCell(0,1,20240);
+ data.setCell(0,2,159);
+ data.setCell(1,0,'NL');
+ data.setCell(1,1,14238);
+ data.setCell(1,2,118);
+ data.setCell(2,0,'CERN');
+ data.setCell(2,1,16012);
+ data.setCell(2,2,75);
+ data.setCell(3,0,'TW');
+ data.setCell(3,1,7030);
+ data.setCell(3,2,39);
+ data.setCell(4,0,'CA');
+ data.setCell(4,1,9972);
+ data.setCell(4,2,93);
+ data.setCell(5,0,'DE');
+ data.setCell(5,1,27165);
+ data.setCell(5,2,167);
+ data.setCell(6,0,'ND');
+ data.setCell(6,1,12263);
+ data.setCell(6,2,98);
+ data.setCell(7,0,'IT');
+ data.setCell(7,1,11373);
+ data.setCell(7,2,93);
+ data.setCell(8,0,'US');
+ data.setCell(8,1,19543);
+ data.setCell(8,2,162);
+ data.setCell(9,0,'UK');
+ data.setCell(9,1,28406);
+ data.setCell(9,2,154);
+ data.setCell(10,0,'ES');
+ data.setCell(10,1,4400);
+ data.setCell(10,2,52);
+
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+    <title>User_Excluded_a_Site_on_Cloud_Monthly</title>
+  </head>
+
+  <body>
+    Title: User_Excluded_a_Site_on_Cloud_Monthly<br>
+    Last Updated: 2011-11-29 09:51<br>
+    Json file: <a href="User_Excluded_a_Site_on_Cloud_Monthly.json">User_Excluded_a_Site_on_Cloud_Monthly.json</a><br>
+    <div id='table_div' width='80%' align='center'></div>
+  </body>
+</html>
+

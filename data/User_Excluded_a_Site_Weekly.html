@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+         data.addColumn('string','Exclude?');
+ data.addColumn('number','With exclude');
+ data.addColumn('number','Without exclude');
+
+		data.addRows(1)
+ data.setCell(0,0,'With/Without');
+ data.setCell(0,1,23862);
+ data.setCell(0,2,32616);
+
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true});
+      }
+    </script>
+    <title>User_Excluded_a_Site_Weekly</title>
+  </head>
+
+  <body>
+    Title: User_Excluded_a_Site_Weekly<br>
+    Last Updated: 2011-11-29 09:51<br>
+    Json file: <a href="User_Excluded_a_Site_Weekly.json">User_Excluded_a_Site_Weekly.json</a><br>
+    <div id='table_div' width='80%' align='center'></div>
+  </body>
+</html>
+
