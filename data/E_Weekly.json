@@ -1,1 +1,0 @@
-{"lastUpdate": "2011-11-29 09:23", "data": {"With/Without": {"With exclude": 23719, "Without exclude": 32472}}, "columns": {"field2": {"type": "number", "name": "Without exclude"}, "field0": {"type": "string", "name": "Exclude?"}, "field1": {"type": "number", "name": "With exclude"}}}
