@@ -49,7 +49,7 @@ def parse_document(document):
                        
     return (from_date, to_date, records)
 
-def write_document(from_date, to_date, records, doc_file="my_logfileV2.html"):
+def write_document(from_date, to_date, records, doc_file="my_logfile.html"):
     global last_hours
     from_date = None
     to_date = None

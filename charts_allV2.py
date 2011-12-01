@@ -11,7 +11,7 @@ from ADC_colors import ADC_COLOR
 
 interval_days = [7,30,90,365] # Weekly,monthly,seasonly,and yearly
 pnames = ["Weekly","Monthly","Seasonly","Yearly"]
-fnames = ["weeklyV2.html","monthlyV2.html","seasonlyV2.html","yearlyV2.html"]
+fnames = ["weekly.html","monthly.html","seasonly.html","yearly.html"]
 NTOP = 20
 PLOW = 1 # percentage lower than this belong to "others"
 tabname = "dailylogV2"
@@ -348,7 +348,7 @@ def parse_document_country(idx1,idx2,jsonfile,field):
             
     return series_data,jsonfile
 
-def write_document(document, FILENAME='weeklyV2.html'):
+def write_document(document, FILENAME='weekly.html'):
     of = open(FILENAME, 'w')
     print >>of, document
     of.close()

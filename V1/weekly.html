@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Panda Brokerage Monitor</title>
+<meta http-equiv='refresh' content='600'>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/highcharts.js'></script>
+<script type='text/javascript'>
+	var chart;
+	var options = {
+			chart: {
+				renderTo: '',
+				plotBackgroundColor: null,
+				plotBorderWidth: 1,
+				plotShadow: false
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: 'Last updated: 2011-11-10 16:14 (UTC)'
+			},
+			tooltip: {
+				formatter: function() {
+					return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+				}
+			},
+			credits: {
+				enabled: false
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#000000',
+						connecterColor: '#000000',
+						formatter: function() {
+							return this.point.name+': '+this.y+' ('+Highcharts.numberFormat(this.percentage,1)+'%)';
+						}
+					},
+					showInLegend: true
+				}
+			},
+			series: [{
+				type: 'pie',
+				name: 'Panda Brokerage Job',
+				data: []
+			}]
+		};
+		
+	$(document).ready(function() {
+	    options.chart.renderTo = "container1";
+		options.title.text = "Category A,B,C,E Analy - Weekly";
+		options.series[0].data = [   ['A', 1267] , ['B', 493] , ['C', 72289] , ['E', 155442] ];
+		chart1 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container2";
+		options.title.text = "Top 10 sites of Category A - Weekly";
+		options.series[0].data = [   {name: 'IllinoisHEP (US)', y: 360, color: '#00006B'} , {name: 'AGLT2 (US)', y: 236, color: '#00006B'} , {name: 'FZK-LCG2 (DE)', y: 144, color: '#000000'} , {name: 'BNL-ATLAS (US)', y: 108, color: '#00006B'} , {name: 'CERN-PROD (CERN)', y: 44, color: '#AE3C51'} , {name: 'MWT2_UC (US)', y: 40, color: '#00006B'} , {name: 'praguelcg2 (DE)', y: 35, color: '#000000'} , {name: 'LRZ-LMU (DE)', y: 32, color: '#000000'} , {name: 'TRIUMF-LCG2 (CA)', y: 26, color: '#FF1F1F'} , {name: 'TOKYO-LCG2 (FR)', y: 22, color: '#0055A5'} , {name: 'others', y: 220, color: '#CCCCCC'} ];
+		chart2 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container3";
+		options.title.text = "Cloud Analy of Category B - Weekly";
+		options.series[0].data = [   {name: 'IT', y: 365, color: '#009246'} , {name: 'US', y: 64, color: '#00006B'} , {name: 'DE', y: 53, color: '#000000'} , {name: 'FR', y: 11, color: '#0055A5'} ];
+		chart3 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container4";
+		options.title.text = "Top 20 sites of Category C - Weekly";
+		options.series[0].data = [   {name: 'MWT2_UC (US)', y: 3357, color: '#00006B'} , {name: 'BNL-ATLAS (US)', y: 2518, color: '#00006B'} , {name: 'NDGF-T1 (ND)', y: 2474, color: '#6298FF'} , {name: 'UKI-LT2-QMUL (UK)', y: 2432, color: '#356C20'} , {name: 'DESY-HH (DE)', y: 2425, color: '#000000'} , {name: 'IN2P3-CC-T2 (FR)', y: 2283, color: '#0055A5'} , {name: 'INFN-T1 (IT)', y: 2283, color: '#009246'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 2275, color: '#356C20'} , {name: 'UKI-SCOTGRID-GLASGOW (UK)', y: 2165, color: '#356C20'} , {name: 'INFN-NAPOLI-ATLAS (IT)', y: 1970, color: '#009246'} , {name: 'AGLT2 (US)', y: 1852, color: '#00006B'} , {name: 'BU_ATLAS_Tier2 (US)', y: 1810, color: '#00006B'} , {name: 'CYFRONET-LCG2 (DE)', y: 1738, color: '#000000'} , {name: 'WT2 (US)', y: 1716, color: '#00006B'} , {name: 'TOKYO-LCG2 (FR)', y: 1623, color: '#0055A5'} , {name: 'IN2P3-CC (FR)', y: 1525, color: '#0055A5'} , {name: 'LRZ-LMU (DE)', y: 1490, color: '#000000'} , {name: 'wuppertalprod (DE)', y: 1478, color: '#000000'} , {name: 'GRIF-LPNHE (FR)', y: 1439, color: '#0055A5'} , {name: 'UNI-FREIBURG (DE)', y: 1369, color: '#000000'} , {name: 'others', y: 32067, color: '#CCCCCC'} ];
+		chart4 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container5";
+		options.title.text = "Cloud Analy of Category C - Weekly";
+		options.series[0].data = [   {name: 'DE', y: 13617, color: '#000000'} , {name: 'UK', y: 13272, color: '#356C20'} , {name: 'US', y: 12761, color: '#00006B'} , {name: 'FR', y: 10851, color: '#0055A5'} , {name: 'IT', y: 6891, color: '#009246'} , {name: 'CA', y: 5187, color: '#FF1F1F'} , {name: 'NL', y: 3135, color: '#D97529'} , {name: 'ES', y: 2849, color: '#EDBF00'} , {name: 'ND', y: 2474, color: '#6298FF'} , {name: 'CERN', y: 1005, color: '#AE3C51'} , {name: 'TW', y: 247, color: '#89000F'} ];
+		chart5 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container6";
+		options.title.text = "Top 20 sites of Category E - Weekly";
+		options.series[0].data = [   {name: 'GRIF-LPNHE (FR)', y: 8317, color: '#0055A5'} , {name: 'CERN-PROD (CERN)', y: 6905, color: '#AE3C51'} , {name: 'FZK-LCG2 (DE)', y: 5722, color: '#000000'} , {name: 'UKI-SOUTHGRID-RALPP (UK)', y: 5279, color: '#356C20'} , {name: 'CYFRONET-LCG2 (DE)', y: 4799, color: '#000000'} , {name: 'UKI-NORTHGRID-LANCS-HEP (UK)', y: 4780, color: '#356C20'} , {name: 'LRZ-LMU (DE)', y: 4693, color: '#000000'} , {name: 'NDGF-T1 (ND)', y: 4587, color: '#6298FF'} , {name: 'NIKHEF-ELPROD (NL)', y: 4446, color: '#D97529'} , {name: 'wuppertalprod (DE)', y: 4374, color: '#000000'} , {name: 'DESY-ZN (DE)', y: 4305, color: '#000000'} , {name: 'UKI-NORTHGRID-MAN-HEP (UK)', y: 4075, color: '#356C20'} , {name: 'INFN-MILANO-ATLASC (IT)', y: 4053, color: '#009246'} , {name: 'RAL-LCG2 (UK)', y: 4029, color: '#356C20'} , {name: 'UNI-FREIBURG (DE)', y: 3770, color: '#000000'} , {name: 'praguelcg2 (DE)', y: 3664, color: '#000000'} , {name: 'SFU-LCG2 (CA)', y: 3571, color: '#FF1F1F'} , {name: 'GoeGrid (DE)', y: 3529, color: '#000000'} , {name: 'INFN-ROMA1 (IT)', y: 3387, color: '#009246'} , {name: 'UKI-LT2-QMUL (UK)', y: 3358, color: '#356C20'} , {name: 'others', y: 63799, color: '#CCCCCC'} ];
+		chart6 = new Highcharts.Chart(options);
+		
+		options.chart.renderTo = "container7";
+		options.title.text = "Cloud Analy of Category E - Weekly";
+		options.series[0].data = [   {name: 'DE', y: 41265, color: '#000000'} , {name: 'UK', y: 34685, color: '#356C20'} , {name: 'FR', y: 23315, color: '#0055A5'} , {name: 'IT', y: 12989, color: '#009246'} , {name: 'NL', y: 10404, color: '#D97529'} , {name: 'US', y: 8817, color: '#00006B'} , {name: 'CA', y: 7899, color: '#FF1F1F'} , {name: 'CERN', y: 6905, color: '#AE3C51'} , {name: 'ND', y: 4587, color: '#6298FF'} , {name: 'ES', y: 2413, color: '#EDBF00'} , {name: 'TW', y: 2163, color: '#89000F'} ];
+		chart7 = new Highcharts.Chart(options);
+		
+	});
+</script>
+</head>
+<body>
+<a href='index.html'>[Back]</a>
+<div id='container1' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container2' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container3' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container4' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container5' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container6' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+<div id='container7' style='width:100%; height:480px;'>
+</div>
+<a href='index.html'>[Back]</a>
+</body>
+</html>
+
