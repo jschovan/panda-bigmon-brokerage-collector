@@ -5,8 +5,8 @@ MYPYTHON=/usr/bin/python2.5
 
 ### adcmon
 WORKDIR=/data/jschovan/PandaBrokerageMon/verify_values
-#PUBDIR=/var/www/html/PandaBrokerageMon/verify_values
-PUBDIR=/data/adcmon-preproduction/PandaBrokerageMon/verify_values.test
+PUBDIR=/var/www/html/PandaBrokerageMon/verify_values
+#PUBDIR=/data/adcmon-preproduction/PandaBrokerageMon/verify_values.test
 
 ### lxplus
 #WORKDIR=/afs/cern.ch/user/j/jschovan/scratch0/PandaBrokerageMon/verify_values
