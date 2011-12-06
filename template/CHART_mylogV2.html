@@ -64,7 +64,7 @@
 				formatter: function() {
 					return ''+Highcharts.dateFormat('%Y-%m-%d %H:%M',this.x)+'<br>'+
 						this.series.name+': <b>'+this.y+
-						(this.series.name=='Parsing Time'?'</b> secs':'</b>');
+						(this.series.name=='Parsing Time'?'</b> secs':(this.series.name=='Limit/10'?'0':'</b>'));
 				}
 			},
 			
@@ -83,6 +83,11 @@
 				color: '#FF72A7',
 				yAxis: 1,
 				type: 'column',
+				data: []
+			},{
+				name: 'Limit/10',
+				color: '#FF0000',
+				type: 'line',
 				data: []
 			}
 			]
@@ -278,6 +283,7 @@
 		options.series[0].data = [ #SERIES_DATA1# ];
 		options.series[1].data = [ #SERIES_DATA2# ];
 		options.series[2].data = [ #SERIES_DATA3# ];
+		options.series[3].data = [ #SERIES_DATA7# ];
 		chart = new Highcharts.Chart(options);
 				
 		options2.chart.renderTo = "container2";
