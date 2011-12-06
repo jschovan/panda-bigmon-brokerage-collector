@@ -14,6 +14,7 @@ import simplejson as json
 from dateutil import parser
 #from pd2p_monitoring import WORKDIR
 
+USERNAME="adcpbm1"
 
 OUTPUT_FILENAME_PREFIX = 'analyBrokerageLog'
 db = dailyDBV2()
@@ -489,9 +490,9 @@ def run():
     print u'INFOR: %s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
     
 if __name__ == "__main__":
-    
+    global USERNAME
     pid = str(os.getpid())
-    pidfile = "/tmp/pbm_pidfile"
+    pidfile = "/tmp/%s/pbm_pidfile" % (USERNAME)
     if os.path.isdir(pidfile):
         print u'WARNING: another parser(%s) is running.'%pid
         sys.exit()

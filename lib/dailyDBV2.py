@@ -4,6 +4,8 @@ class dailyDBV2(object):
     
     _db = None
     _connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
+    #_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2iiiii@devdb11'
+
     
     def __init__(self):       
         # self._db = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')

@@ -1,5 +1,10 @@
 #!/bin/bash
-source /home/ookey/workspace/PandaBrokerageMonitor/pbm_profile
+source /data/adcpbm1/PandaBrokerageMonitor/PandaBrokerageMonitor.conf
 
-cd /home/ookey/workspace/PandaBrokerageMonitor
-/usr/bin/python charts_allV2.py > /dev/null 2>&1
+source ${WORKDIR}/pbm_profile
+
+cd ${WORKDIR}
+
+/usr/bin/python ${WORKDIR}/charts_allV2.py > /dev/null 2>&1
+
+
