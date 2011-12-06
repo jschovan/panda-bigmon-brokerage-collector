@@ -1,5 +1,5 @@
 #!/bin/bash
-source /home/ookey/.bash_profile
+source /home/ookey/workspace/PandaBrokerageMonitor/pbm_profile
 
 cd /home/ookey/workspace/PandaBrokerageMonitor
 /usr/bin/python parse_analy_brokerage_logV2.py >> logs/PBMonV2.log 2>&1

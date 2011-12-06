@@ -1,10 +1,12 @@
 from dailyDBV2 import dailyDBV2
 import time
 import datetime
+import calendar
 import cx_Oracle
 import os
 from dateutil import parser
 import simplejson as json
+import email
 
 QUERY_HOUR = 1
 QUERY_LIMIT = 650
@@ -52,9 +54,10 @@ data = fjson.read()
 records = json.loads(data)
 fjson.close()
 print "Records"
+"""
 for r in records:
     print r,":",records[r]
-
+"""
 # print dic[10]['cloud'],dic[10]['panda_siteID']
 
 con = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')
@@ -76,19 +79,17 @@ for result in cursor1:
 DATEFORMAT = "%Y-%m-%d %H:%M:%S"
 t1 = time.time()
 t2 = t1 - 7*24*60*60
-tf = time.strftime(DATEFORMAT,time.localtime(t2))
+tf = time.strftime(DATEFORMAT,time.gmtime(t2))
 print tf
 print "=====" 
 print "Year:",datetime.date.today().year
-dt = parser.parse("2011-10-02 14:00")
-dt1 = parser.parse("2011-10-02")
-dt2 = parser.parse(tf)
+dt = time.strptime("2011-12-06 09:00","%Y-%m-%d %H:%M")
+dt1 = calendar.timegm(dt)
+dt2 = int((t1-dt1)/60)
 print "DT:",dt
 print "DT1:",dt1
 print "DT2:",dt2
-print "t1:",tf
-if dt > dt2:
-    print "BIG"
+print "t1:",tf, t1
 
 """
 cursor.execute("select * from dailyLog where logDate>'2011-10-06' order by dailyLogId DESC")
@@ -136,5 +137,7 @@ print(rec2)[5][1]
 cursor.close()
 cursor1.close()
 con.close()
+
+print email.__all__
 
 

@@ -1,0 +1,17 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+export JAVA_HOME=/usr/java/jdk1.6.0_26
+
+# Add SVN binaries to PATH
+PATH=$PATH:$JAVA_HOME/bin:/opt/CollabNet_Subversion/bin:$HOME/bin
+
+export PYTHONPATH=./lib
+export PATH
+source /afs/cern.ch/project/oracle/script/setoraenv.sh -s prod

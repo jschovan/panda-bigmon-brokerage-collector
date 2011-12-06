@@ -20,8 +20,8 @@ db = dailyDBV2()
 
 MESSAGE_CATEGORIES=[' action=skip ', ' action=choose ', ' action=exclude ', ' action=use ',' use ']
 SKIPPED_REASONS=['notmaxweight', 'missingapp','nopilot']
-QUERY_HOUR = 1
-QUERY_LIMIT = 11000
+QUERY_HOUR = 0
+QUERY_LIMIT = 0
 DEBUG = 0
 
 # get cloud name
@@ -29,6 +29,18 @@ fjson = open('panda_queues.json','r')
 data = fjson.read()
 dic = json.loads(data)
 fjson.close()
+
+# get query options
+try:
+    qjson = open('queryOptions.json','r')
+    data = qjson.read()
+    qoptions = json.loads(data)
+    qjson.close()
+    QUERY_HOUR = qoptions['QUERY_HOUR']
+    QUERY_LIMIT = qoptions['QUERY_LIMIT']
+except:
+    QUERY_HOUR = 1
+    QUERY_LIMIT = 11111
 
 class Test:
     def __init__(self):
@@ -452,7 +464,7 @@ def parse_document(document):
     return (set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
 
 def run():
-    global db
+    global db,QUERY_HOUR,QUERY_LIMIT
     #t1 = time.time()
     document = get_document()
     t2 = time.time()
@@ -464,7 +476,8 @@ def run():
     db.increase_buf_count(in_buf_records)
 
     #t4 = time.time()
-    db.set_last_updated_time(set_last) # set when all done.
+    if set_last is not None:
+        db.set_last_updated_time(set_last) # set when all done.
     
     #time_get = t2-t1
     time_parse = t3-t2
@@ -473,7 +486,7 @@ def run():
     logs_count = len(eff_records)+len(exist_records)+len(in_buf_records)
     #last_time = db.get_last_updated_time()
     
-    print u'INFOR: %s Limit: %d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
+    print u'INFOR: %s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
     
 if __name__ == "__main__":
     

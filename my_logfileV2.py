@@ -7,6 +7,10 @@ import os
 import pycurl
 import time
 import datetime
+import calendar
+import simplejson as json
+import smtplib
+import email
 
 last_hours = 4
 
@@ -40,14 +44,59 @@ def parse_document(document):
             if to_date == buf_datetime:
                 continue
             to_date = buf_datetime
+            try:
+                limit,hour = buf[4].split('/')
+            except:
+                limit = 11000
+                hour = 1
             processed,all = buf[6].split('/')
             nJobs = buf[8]
             parsingTime = buf[10]
             unprocessed = buf[12]
             
-            records.append((buf_datetime,processed,all,parsingTime,nJobs,unprocessed))
+            records.append((buf_datetime,processed,all,parsingTime,nJobs,unprocessed,limit))
+    
+    if to_date is not None:
+        tnow = time.time()
+        tm_todate = time.strptime(to_date,"%Y-%m-%d %H:%M")
+        todate = calendar.timegm(tm_todate)
+        tdiff = int((tnow-todate)/60)
+        my_notify(tdiff,to_date)
+        update_queryOptions(tdiff)
                        
     return (from_date, to_date, records)
+
+def my_notify(tdiff,todate):
+    mFrom = 'PBMon <no-reply@cern.ch>'
+    mTo = 'ookey.lai@twgrid.org'
+    msg = email.message_from_string("Data missing for %d mins from %s"%(tdiff,todate))
+    msg['Subject'] = "Notification from PandaBrokerageMonitor"
+    msg['From'] = mFrom
+    msg['To'] = mTo
+    s = smtplib.SMTP('localhost')
+    if tdiff > 5 and tdiff < 40:
+        s.sendmail(mFrom, [mTo], msg.as_string())
+    s.quit()
+    return True
+
+def update_queryOptions(tdiff):
+    options = {'QUERY_HOUR': 1, 'QUERY_LIMIT': 12000}
+    hour = int(tdiff/60)
+    q = tdiff%60
+    if q>0:
+        hour += 1
+    cycle = int(tdiff/5)
+    limit = 12000 + 2000*cycle
+    options['QUERY_HOUR'] = hour
+    options['QUERY_LIMIT'] = limit
+    write_jsonfile(options)
+    return True
+
+def write_jsonfile(options):
+    of = open("queryOptions.json",'w')
+    json_string = json.dumps(options)
+    of.write(json_string)
+    of.close()
 
 def write_document(from_date, to_date, records, doc_file="my_logfile.html"):
     global last_hours
@@ -67,6 +116,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfile.html"):
     series_data4 = ""
     series_data5 = ""
     series_data6 = ""
+    series_data7 = ""
     for c in records:
         sDate, sTime = c[0].split(' ')
         sy,sm,sd = sDate.split('-')
@@ -88,6 +138,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfile.html"):
         series_data1 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data1,comm,sy,sm,sd,sh,si,c[1])
         series_data2 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data2,comm,sy,sm,sd,sh,si,c[2])
         series_data3 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data3,comm,sy,sm,sd,sh,si,c[3])
+        series_data7 = "%s %s [Date.UTC(%d,%d,%d,%d,%d), %s]"%(series_data7,comm,sy,sm,sd,sh,si,int(c[6])/10)
         comm = ","
         
     data = data.replace('#FROM_DATE#',from_date)
@@ -99,6 +150,7 @@ def write_document(from_date, to_date, records, doc_file="my_logfile.html"):
     data = data.replace('#SERIES_DATA4#',series_data4)
     data = data.replace('#SERIES_DATA5#',series_data5)
     data = data.replace('#SERIES_DATA6#',series_data6)
+    data = data.replace('#SERIES_DATA7#',series_data7)
         
     of = open(doc_file, 'w')
     print >>of, data

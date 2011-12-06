@@ -64,7 +64,7 @@
 				formatter: function() {
 					return ''+Highcharts.dateFormat('%Y-%m-%d %H:%M',this.x)+'<br>'+
 						this.series.name+': <b>'+this.y+
-						(this.series.name=='Parsing Time'?'</b> secs':(this.series.name=='Limit/10'?'0':'</b>'));
+						(this.series.name=='Parsing Time'?'</b> secs':'</b>');
 				}
 			},
 			
