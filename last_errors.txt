@@ -8456,3 +8456,171 @@ Error: 12-05 16:47 Matteo_Franchini jobdef=868 action=exclude site=ANALY_GRIF-IR
 Error: 12-05 16:47 Matteo_Franchini jobdef=868 action=choose site=ANALY_LONG_BNL_ATLAS reason=maxweight - max weight=(1+198/169)*2390/0  
 Error: 12-06 08:19 Adam_Trzupek_-_Atlas jobdef=3712 nJobs=6 countryGroup=pl  
 Error: 12-06 08:18 Adam_Trzupek_-_Atlas jobdef=3712 action=choose site=ANALY_INFN-T1 reason=maxweight - max weight=(1+1/2)*9/344  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 nJobs=12 countryGroup=de  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:18 Jeanette_Lorenz jobdef=28939 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+28/30)*1140/0  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 nJobs=1 countryGroup=de  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:17 Jeanette_Lorenz jobdef=28938 action=choose site=ANALY_RHUL reason=maxweight - max weight=(1+21/27)*652/0  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 nJobs=3 countryGroup=de  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:23 Jeanette_Lorenz jobdef=28943 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+67/101)*993/0  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 nJobs=4 countryGroup=de  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:22 Jeanette_Lorenz jobdef=28942 action=choose site=ANALY_AUSTRALIA reason=maxweight - max weight=(1+7/13)*389/0  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 nJobs=3 countryGroup=de  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:21 Jeanette_Lorenz jobdef=28941 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+67/101)*993/0  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 nJobs=3 countryGroup=de  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:20 Jeanette_Lorenz jobdef=28940 action=choose site=ANALY_CSCS reason=maxweight - max weight=(1+28/30)*1140/0  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 nJobs=4 countryGroup=de  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:29 Jeanette_Lorenz jobdef=28948 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+73/101)*993/0  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 nJobs=7 countryGroup=de  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:28 Jeanette_Lorenz jobdef=28947 action=choose site=ANALY_TECHNION-HEP reason=maxweight - max weight=(1+13/15)*141/0  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 nJobs=2 countryGroup=de  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:27 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:26 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:26 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:26 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:26 Jeanette_Lorenz jobdef=28946 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:26 Jeanette_Lorenz jobdef=28946 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+73/101)*993/0  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 nJobs=5 countryGroup=de  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+67/101)*993/0  
+Error: 12-06 12:25 Jeanette_Lorenz jobdef=28945 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 nJobs=1 countryGroup=de  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:24 Jeanette_Lorenz jobdef=28944 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+67/101)*993/0  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 nJobs=6 countryGroup=de  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_CERN_XROOTD reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_wuppertalprod reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_INFN-MILANO-ATLASC reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_INFN-T1 reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_GLASGOW reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_INFN-NAPOLI reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_INFN-ROMA1 reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_INFN-BOLOGNA-T3 reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_INFN-FRASCATI reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_QMUL reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_INFN-GENOVA reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=exclude site=ANALY_ARC reason=useroption - excluded by user  
+Error: 12-06 12:31 Jeanette_Lorenz jobdef=28949 action=choose site=ANALY_NIKHEF-ELPROD reason=maxweight - max weight=(1+73/101)*993/0  

@@ -13,6 +13,10 @@ import smtplib
 import email
 
 last_hours = 4
+NOTIFY_MIN = 3 # mins
+NOTIFY_MAX = 30 # mins
+mFrom = 'PBMon <no-reply@cern.ch>'
+mTo = 'ookey.lai@twgrid.org,ookey.lai@gmail.com'
 
 def get_document(logfile):
     log = open(logfile,'r')
@@ -67,14 +71,13 @@ def parse_document(document):
     return (from_date, to_date, records)
 
 def my_notify(tdiff,todate):
-    mFrom = 'PBMon <no-reply@cern.ch>'
-    mTo = 'ookey.lai@twgrid.org'
+    global NOTIFY_MIN, NOTIFY_MAX,mFrom,mTo
     msg = email.message_from_string("Data missing for %d mins from %s"%(tdiff,todate))
     msg['Subject'] = "Notification from PandaBrokerageMonitor"
     msg['From'] = mFrom
     msg['To'] = mTo
     s = smtplib.SMTP('localhost')
-    if tdiff > 5 and tdiff < 40:
+    if tdiff > NOTIFY_MIN and tdiff < NOTIFY_MAX:
         s.sendmail(mFrom, [mTo], msg.as_string())
     s.quit()
     return True
@@ -86,7 +89,7 @@ def update_queryOptions(tdiff):
     if q>0:
         hour += 1
     cycle = int(tdiff/5)
-    limit = 12000 + 2000*cycle
+    limit = 12000 + 1000*cycle
     options['QUERY_HOUR'] = hour
     options['QUERY_LIMIT'] = limit
     write_jsonfile(options)
