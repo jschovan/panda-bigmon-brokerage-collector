@@ -455,9 +455,9 @@ def parse_document(document):
             eff_records.append(record)
 
     if (this_time is not None) and not (this_time <= last_time):
-        print "Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
+        print u"Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
     if error_skip > 0:
-        print "WARNING: Missing jobSet/jobDef skiped = %d"%error_skip
+        print u"WARNING: Missing jobSet/jobDef skiped = %d"%error_skip
     if processed_rows == 0:
         write_document(document,"zero_process.html")
 
@@ -490,7 +490,15 @@ def run():
     
 if __name__ == "__main__":
     
-    run()
+    pid = str(os.getpid())
+    pidfile = "/tmp/pbm_pidfile"
+    if os.path.isdir(pidfile):
+        print u'WARNING: another parser(%s) is running.'%pid
+        sys.exit()
+    else:
+        file(pidfile,'w').write(pid)
+        run()
+        os.unlink(pidfile)
     
 
 
