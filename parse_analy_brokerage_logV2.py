@@ -493,8 +493,8 @@ if __name__ == "__main__":
     global USERNAME
     pid = str(os.getpid())
     pidfile = "/tmp/%s/pbm_pidfile" % (USERNAME)
-    if os.path.isdir(pidfile):
-        print u'WARNING: another parser(%s) is running.'%pid
+    if os.path.isfile(pidfile):
+        print u'WARNING: another parser (in %s) is running.'%(pidfile)
         sys.exit()
     else:
         file(pidfile,'w').write(pid)
