@@ -417,7 +417,7 @@ def run(fidx):
     data = data.replace('#TITLE_TEXT20#',CHARTS["ACloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT21#',CHARTS["ACloud"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT22#',CHARTS["ACloud"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF2#',"%s/data/User_Selected_a_Site_on_Cloud_%s.html"%(PUBDIR,pnames[fidx])
+    data = data.replace('#CREDITS_HREF2#',"%s/data/User_Selected_a_Site_on_Cloud_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT2#',"[Detail Table of 'User selected a site' on clouds]")
     
     data = data.replace('#TITLE_TEXT30#',CHARTS["BSite"][0][0]%(NTOP,pnames[fidx]))
