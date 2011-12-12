@@ -1,12 +1,12 @@
 import cx_Oracle
 
 ### Production
-#TABLE_DAILYLOG="dailyLogV2"
-#TABLE_LASTUPDATED="LastUpdatedV2"
+TABLE_DAILYLOG="dailyLogV2"
+TABLE_LASTUPDATED="LastUpdatedV2"
 
 ### Development/tests
-TABLE_DAILYLOG="dailyLogV2T1"
-TABLE_LASTUPDATED="lastUpdatedV2T1"
+#TABLE_DAILYLOG="dailyLogV2T1"
+#TABLE_LASTUPDATED="lastUpdatedV2T1"
 
 
 class dailyDBV2(object):
