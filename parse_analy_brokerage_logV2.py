@@ -2,7 +2,6 @@
 from BSXPath import BSXPathEvaluator,XPathResult, XPathExpression
 from BeautifulSoup import BeautifulSoup
 from dailyDBV2 import dailyDBV2
-from glchess.gtkui.chessview import len
 
 ### get it from: http://www.crummy.com/software/BeautifulSoup/
 import re
@@ -12,7 +11,7 @@ import pycurl
 import time
 import datetime
 import simplejson as json
-from dateutil import parser
+#from dateutil import parser
 #from pd2p_monitoring import WORKDIR
 
 USERNAME="adcpbm1"
