@@ -2,8 +2,7 @@
 #source /home/ookey/workspace/PandaBrokerageMonitor/pbm_profile
 #cd /home/ookey/workspace/PandaBrokerageMonitor
 
-set -x
-
+#set -x
 PYTHON_EXECUTABLE="/usr/bin/python2.5"
 
 source /data/adcpbm1/PandaBrokerageMonitor/PandaBrokerageMonitor.conf
