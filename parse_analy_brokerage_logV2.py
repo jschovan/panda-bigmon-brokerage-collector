@@ -488,8 +488,9 @@ def run():
     #last_time = db.get_last_updated_time()
     
     print u'INFOR: %s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
-    
-if __name__ == "__main__":
+
+
+def main():
     global USERNAME
     pid = str(os.getpid())
     pidfile = "/tmp/%s/pbm_pidfile" % (USERNAME)
@@ -500,6 +501,9 @@ if __name__ == "__main__":
         file(pidfile,'w').write(pid)
         run()
         os.unlink(pidfile)
-    
+
+
+if __name__ == "__main__":
+    main()
 
 
