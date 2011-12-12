@@ -2,6 +2,7 @@
 from BSXPath import BSXPathEvaluator,XPathResult, XPathExpression
 from BeautifulSoup import BeautifulSoup
 from dailyDBV2 import dailyDBV2
+from glchess.gtkui.chessview import len
 
 ### get it from: http://www.crummy.com/software/BeautifulSoup/
 import re
@@ -153,8 +154,13 @@ def get_log_year(p_year,p_date,p_time=''):
     r_year = p_year
     t1 = time.time()
     tf = time.strftime(DATEFORMAT,time.gmtime(t1))
-    dt1 = parser.parse("%s-%s %s"%(p_year,p_date,p_time))
-    dt2 = parser.parse(tf)
+    dt1_string="%s-%s %s"%(p_year,p_date,p_time)
+    if len(p_time)==5:
+        dt1_string="%s:00" % (dt1_string)
+    #dt1 = parser.parse("%s-%s %s"%(p_year,p_date,p_time))
+    #dt2 = parser.parse(tf)
+    dt1=datetime.strptime(dt1_string, DATEFORMAT)
+    dt2=datetime.strptime(tf, DATEFORMAT)
     if dt1 > dt2:
         r_year -= 1
     return r_year
