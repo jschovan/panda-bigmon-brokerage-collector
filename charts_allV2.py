@@ -9,6 +9,9 @@ import simplejson as json
 
 from ADC_colors import ADC_COLOR
 
+PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/data"
+WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
+
 interval_days = [7,30,90,365] # Weekly,monthly,seasonly,and yearly
 pnames = ["Weekly","Monthly","Seasonly","Yearly"]
 fnames = ["weekly.html","monthly.html","seasonly.html","yearly.html"]
@@ -354,16 +357,17 @@ def write_document(document, FILENAME='weekly.html'):
     of.close()
     
 def write_jsonfile(jsonfile, fname):
-    of = open("data/%s.json"%fname, 'w')
+    global PUBDIR
+    of = open("%s/data/%s.json" % (PUBDIR, fname), 'w')
     json_string = json.dumps(jsonfile)
     of.write(json_string)
     of.close()
 
 def write_tablehtml(jsonfile,fname):
     global last_updated
-    htmlfile = "data/%s.html"%fname
+    htmlfile = "%s/data/%s.html" % (PUBDIR, fname)
     jfile = "%s.json"%fname
-    data = open('template/TABLE_brokerageV2.html').read()
+    data = open('%s/template/TABLE_brokerageV2.html'%WORKDIR).read()
     data = data.replace('#LAST_UPDATED#',last_updated)
     data = data.replace('#JSONFILE#',jfile)
     data = data.replace('#TITLE#',fname)
@@ -395,67 +399,67 @@ def write_tablehtml(jsonfile,fname):
 def run(fidx):
     global last_updated,CHARTS,DATEFORMAT,interval_days,query_from,pnames,fnames,NTOP
     query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days[fidx]*24*60*60))
-    data = open('template/CHART_brokerageV2.html').read()
+    data = open('%s/template/CHART_brokerageV2.html'%WORKDIR).read()
     data = data.replace('#LAST_UPDATED#',last_updated)
 
     data = data.replace('#TITLE_TEXT00#',CHARTS["ABC"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT01#',CHARTS["ABC"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT02#',CHARTS["ABC"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF0#',"data/All_Actions_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF0#',"%s/data/All_Actions_%s.html" % (PUBDIR, pnames[fidx]))
     data = data.replace('#CREDITS_TEXT0#',"[Detail Table]")
     
     data = data.replace('#TITLE_TEXT10#',CHARTS["ASite"][0][0]%(PLOW,pnames[fidx]))
     data = data.replace('#TITLE_TEXT11#',CHARTS["ASite"][1][0]%(PLOW,pnames[fidx]))
     data = data.replace('#TITLE_TEXT12#',CHARTS["ASite"][2][0]%(PLOW,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF1#',"data/User_Selected_a_Site_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF1#',"%s/data/User_Selected_a_Site_on_Site_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT1#',"[Detail Table of 'User selected a site' on sites]")
 
     data = data.replace('#TITLE_TEXT20#',CHARTS["ACloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT21#',CHARTS["ACloud"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT22#',CHARTS["ACloud"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF2#',"data/User_Selected_a_Site_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF2#',"%s/data/User_Selected_a_Site_on_Cloud_%s.html"%(PUBDIR,pnames[fidx])
     data = data.replace('#CREDITS_TEXT2#',"[Detail Table of 'User selected a site' on clouds]")
     
     data = data.replace('#TITLE_TEXT30#',CHARTS["BSite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT31#',CHARTS["BSite"][1][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT32#',CHARTS["BSite"][2][0]%(NTOP,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF3#',"data/User_Selected_a_Cloud_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF3#',"%s/data/User_Selected_a_Cloud_on_Site_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT3#',"[Detail Table of 'User selected a cloud' on sites]")
 
     data = data.replace('#TITLE_TEXT40#',CHARTS["BCloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT41#',CHARTS["BCloud"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT42#',CHARTS["BCloud"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF4#',"data/User_Selected_a_Cloud_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF4#',"%s/data/User_Selected_a_Cloud_on_Cloud_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT4#',"[Detail Table of 'User selected a cloud' on clouds]")
     
     data = data.replace('#TITLE_TEXT50#',CHARTS["CSite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT51#',CHARTS["CSite"][1][0]%(NTOP,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF5#',"data/Panda_Brokerage_Decision_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF5#',"%s/data/Panda_Brokerage_Decision_on_Site_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT5#',"[Detail Table of 'Panda Brokerage decision' on sites]")
 
     data = data.replace('#TITLE_TEXT60#',CHARTS["CCloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT61#',CHARTS["CCloud"][1][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF6#',"data/Panda_Brokerage_Decision_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF6#',"%s/data/Panda_Brokerage_Decision_on_Cloud_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT6#',"[Detail Table of 'Panda Brokerage decision' on clouds]")
     
     data = data.replace('#TITLE_TEXT70#',CHARTS["E"][0][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF7#',"data/User_Excluded_a_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF7#',"%s/data/User_Excluded_a_Site_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT7#',"[Detail Table of 'User excluded a site']")
     
     data = data.replace('#TITLE_TEXT80#',CHARTS["ESite"][0][0]%(NTOP,pnames[fidx]))
     data = data.replace('#TITLE_TEXT81#',CHARTS["ESite"][1][0]%(NTOP,pnames[fidx]))
-    data = data.replace('#CREDITS_HREF8#',"data/User_Excluded_a_Site_on_Site_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF8#',"%s/data/User_Excluded_a_Site_on_Site_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT8#',"[Detail Table of 'User excluded a site' on sites]")
     
     data = data.replace('#TITLE_TEXT90#',CHARTS["ECloud"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT91#',CHARTS["ECloud"][1][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF9#',"data/User_Excluded_a_Site_on_Cloud_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF9#',"%s/data/User_Excluded_a_Site_on_Cloud_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT9#',"[Detail Table of 'User excluded a site' on clouds]")
 
     data = data.replace('#TITLE_TEXT100#',CHARTS["Country"][0][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT101#',CHARTS["Country"][1][0]%pnames[fidx])
     data = data.replace('#TITLE_TEXT102#',CHARTS["Country"][2][0]%pnames[fidx])
-    data = data.replace('#CREDITS_HREF10#',"data/Country_%s.html"%pnames[fidx])
+    data = data.replace('#CREDITS_HREF10#',"%s/data/Country_%s.html"%(PUBDIR,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT10#',"[Detail Table of countries]")    
     print "Replace ",fidx
     
