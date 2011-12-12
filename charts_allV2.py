@@ -9,7 +9,7 @@ import simplejson as json
 
 from ADC_colors import ADC_COLOR
 
-PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/data"
+PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon"
 WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
 
 interval_days = [7,30,90,365] # Weekly,monthly,seasonly,and yearly
