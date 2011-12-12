@@ -81,8 +81,8 @@ class dailyDBV2(object):
         
     def add_logs(self,logs):
         cursor = self._db.cursor()
-        sql = "INSERT INTO %s ( dailyLogId, logDate, jobSet, category, site, cloud, dnUser, jobdefCount, jobCount, country) " + \
-                  "VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10 )" % (TABLE_DAILYLOG)
+        sql = "INSERT INTO %s ( dailyLogId, logDate, jobSet, category, site, cloud, dnUser, jobdefCount, jobCount, country) " % (TABLE_DAILYLOG)
+        sql += "VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10 )"
         cursor.executemany(sql, logs)
         self._db.commit()
         cursor.close()

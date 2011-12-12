@@ -191,7 +191,7 @@ def parse_document(document):
     this_time = None
     skip_time = None
     set_last = None
-    this_year = datetime.datetime.date.today().year
+    this_year = date.today().year
     if maxId is None:
         maxId = 0
     processed_rows = 0
