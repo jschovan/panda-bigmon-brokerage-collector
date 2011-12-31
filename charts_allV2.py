@@ -360,8 +360,10 @@ def parse_document_country(idx1,idx2,jsonfile,field):
     return series_data,jsonfile
 
 def write_document(document, FILENAME='weekly.html'):
+    global LOGGER
     of = open(FILENAME, 'w')
     print >>of, document
+    LOGGER.info("Wrote file %s" % FILENAME)
     of.close()
     
 def write_jsonfile(jsonfile, fname):
@@ -370,9 +372,10 @@ def write_jsonfile(jsonfile, fname):
     json_string = json.dumps(jsonfile)
     of.write(json_string)
     of.close()
+    LOGGER.info("Wrote file %s/data/%s.json" % (PUBDIR, fname) )
 
 def write_tablehtml(jsonfile,fname):
-    global last_updated
+    global last_updated, LOGGER
     htmlfile = "%s/data/%s.html" % (PUBDIR, fname)
     jfile = "%s.json"%fname
     data = open('%s/template/TABLE_brokerageV2.html'%WORKDIR).read()
@@ -402,10 +405,11 @@ def write_tablehtml(jsonfile,fname):
     data = data.replace('#SETCELLS#',setcells)
 
     write_document(data,htmlfile)
-    
+    LOGGER.info("Wrote file %s" % (htmlfile) )
 
 def run(fidx):
-    global last_updated,CHARTS,DATEFORMAT,interval_days,query_from,pnames,fnames,NTOP
+    global last_updated,CHARTS,DATEFORMAT,interval_days,query_from,pnames,fnames,NTOP, \
+        LOGGER
     query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days[fidx]*24*60*60))
     data = open('%s/template/CHART_brokerageV2.html'%WORKDIR).read()
     data = data.replace('#LAST_UPDATED#',last_updated)
@@ -645,6 +649,7 @@ def run(fidx):
     series_data102,Country_json = parse_document_country("Country",2,Country_json,'JobSet')
     write_jsonfile(Country_json,"Country_%s"%pnames[fidx])
     write_tablehtml(Country_json,"Country_%s"%pnames[fidx])
+    
     print "Get series Countries"
     LOGGER.info("Get series Countries")
     
