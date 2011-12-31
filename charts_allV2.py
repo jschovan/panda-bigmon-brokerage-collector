@@ -8,6 +8,13 @@ import time
 import simplejson as json
 
 from ADC_colors import ADC_COLOR
+from logger import logger
+
+WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
+LOGDIR="%s/logs" % (WORKDIR)
+logname="charts_allV2"
+logfile="%s/%s.log" % (LOGDIR, logname)
+LOGGER=logger(logname, logfile)
 
 PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
 PUBDIRURL="./data"
@@ -463,6 +470,7 @@ def run(fidx):
     data = data.replace('#CREDITS_HREF10#',"%s/data/Country_%s.html"%(PUBDIRURL,pnames[fidx]))
     data = data.replace('#CREDITS_TEXT10#',"[Detail Table of countries]")    
     print "Replace ",fidx
+    LOGGER.info("Replace %d" % (fidx))
     
     ABC_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -479,6 +487,7 @@ def run(fidx):
     write_jsonfile(ABC_json,"All_Actions_%s"%pnames[fidx])
     write_tablehtml(ABC_json,"All_Actions_%s"%pnames[fidx])
     print "Get series ABC"
+    LOGGER.info("Get series ABC")
     
     ASite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -495,6 +504,7 @@ def run(fidx):
     write_jsonfile(ASite_json,"User_Selected_a_Site_on_Site_%s"%pnames[fidx])
     write_tablehtml(ASite_json,"User_Selected_a_Site_on_Site_%s"%pnames[fidx])
     print "Get series ASite"
+    LOGGER.info("Get series ASite")
     
     ACloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -511,6 +521,7 @@ def run(fidx):
     write_jsonfile(ACloud_json,"User_Selected_a_Site_on_Cloud_%s"%pnames[fidx])
     write_tablehtml(ACloud_json,"User_Selected_a_Site_on_Cloud_%s"%pnames[fidx])
     print "Get series ACloud"
+    LOGGER.info("Get series ACloud")
     
     BSite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -527,6 +538,7 @@ def run(fidx):
     write_jsonfile(BSite_json,"User_Selected_a_Cloud_on_Site_%s"%pnames[fidx])
     write_tablehtml(BSite_json,"User_Selected_a_Cloud_on_Site_%s"%pnames[fidx])
     print "Get series BSite"
+    LOGGER.info("Get series BSite")
     
     BCloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -543,6 +555,7 @@ def run(fidx):
     write_jsonfile(BCloud_json,"User_Selected_a_Cloud_on_Cloud_%s"%pnames[fidx])
     write_tablehtml(BCloud_json,"User_Selected_a_Cloud_on_Cloud_%s"%pnames[fidx])
     print "Get series BCloud"
+    LOGGER.info("Get series BCloud")
     
     CSite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -557,6 +570,7 @@ def run(fidx):
     write_jsonfile(CSite_json,"Panda_Brokerage_Decision_on_Site_%s"%pnames[fidx])
     write_tablehtml(CSite_json,"Panda_Brokerage_Decision_on_Site_%s"%pnames[fidx])
     print "Get series CSite"
+    LOGGER.info("Get series CSite")
     
     CCloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -571,6 +585,7 @@ def run(fidx):
     write_jsonfile(CCloud_json,"Panda_Brokerage_Decision_on_Cloud_%s"%pnames[fidx])
     write_tablehtml(CCloud_json,"Panda_Brokerage_Decision_on_Cloud_%s"%pnames[fidx])
     print "Get series CCloud"
+    LOGGER.info("Get series CCloud")
     
     E_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -584,6 +599,7 @@ def run(fidx):
     write_jsonfile(E_json,"User_Excluded_a_Site_%s"%pnames[fidx])
     write_tablehtml(E_json,"User_Excluded_a_Site_%s"%pnames[fidx])
     print "Get series E"
+    LOGGER.info("Get series E")
     
     ESite_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -598,6 +614,7 @@ def run(fidx):
     write_jsonfile(ESite_json,"User_Excluded_a_Site_on_Site_%s"%pnames[fidx])
     write_tablehtml(ESite_json,"User_Excluded_a_Site_on_Site_%s"%pnames[fidx])
     print "Get series ESite"
+    LOGGER.info("Get series ESite")
     
     ECloud_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -612,6 +629,7 @@ def run(fidx):
     write_jsonfile(ECloud_json,"User_Excluded_a_Site_on_Cloud_%s"%pnames[fidx])
     write_tablehtml(ECloud_json,"User_Excluded_a_Site_on_Cloud_%s"%pnames[fidx])
     print "Get series ECloud"
+    LOGGER.info("Get series ECloud")
     
     Country_json = {'lastUpdate':last_updated,
                 'columns': {
@@ -628,6 +646,7 @@ def run(fidx):
     write_jsonfile(Country_json,"Country_%s"%pnames[fidx])
     write_tablehtml(Country_json,"Country_%s"%pnames[fidx])
     print "Get series Countries"
+    LOGGER.info("Get series Countries")
     
     data = data.replace('#SERIES_DATA00#',series_data00)
     data = data.replace('#SERIES_DATA01#',series_data01)
@@ -670,6 +689,7 @@ def run(fidx):
     write_document(data,'%s/%s' % (WORKDIR, fnames[fidx]))
 
     print u'DEBUG: Done'
+    LOGGER.DEBUG("Done")
     
 
 
