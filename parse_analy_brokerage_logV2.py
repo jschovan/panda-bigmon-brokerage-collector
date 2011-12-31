@@ -11,6 +11,7 @@ import pycurl
 import time
 from datetime import datetime, date
 import simplejson as json
+from logger import logger
 #from dateutil import parser
 #from pd2p_monitoring import WORKDIR
 
@@ -27,6 +28,11 @@ DEBUG = 0
 
 WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
 PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
+LOGDIR="%s/logs" % (WORKDIR)
+logname="dailyCollectV2"
+logfile="%s/logging.%s" % (LOGDIR, logname)
+LOGGER=logger(logname, logfile)
+
 
 # get cloud name
 fjson = open('%s/panda_queues.json' % WORKDIR,'r')
@@ -150,6 +156,7 @@ def write_document(document, FILENAME):
     of = open(FILENAME, 'w')
     print >>of, document
     of.close()
+    LOGGER.info("Wrote file %s" % FILENAME)
 
 def get_log_year(p_year,p_date,p_time=''):
     DATEFORMAT = "%Y-%m-%d %H:%M:%S"
@@ -365,6 +372,7 @@ def parse_document(document):
             message_buf = tmp_message[2].split(' ')
             message_action = message_buf[0].split('=')[1].strip()
             print "WARNING: action=%s is not processed!"%message_action
+            LOGGER.warning("action=%s is not processed!"%message_action)
 
         if message_category in ['A','B','C']:
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_jobdef)
@@ -465,10 +473,13 @@ def parse_document(document):
 
     if (this_time is not None) and not (this_time <= last_time):
         print u"Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
+        LOGGER.error("DID NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time))
     if error_skip > 0:
         print u"WARNING: Missing jobSet/jobDef skiped = %d"%error_skip
+        LOGGER.warning("Missing jobSet/jobDef skiped = %d"%error_skip)
     if processed_rows == 0:
         write_document(document,"%s/zero_process.html" % WORKDIR)
+        LOGGER.warning("Processed 0 rows")
 
     return (set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
 
@@ -496,14 +507,17 @@ def run():
     #last_time = db.get_last_updated_time()
     
     print u'INFOR: %s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
+    LOGGER.warning(u'%s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs))
 
 
 def main():
     global USERNAME
     pid = str(os.getpid())
     pidfile = "/tmp/%s/pbm_pidfile" % (USERNAME)
+    LOGGER.DEBUG(u'PID: %d PIDFILE: %s' % (pid, pidfile) )
     if os.path.isfile(pidfile):
         print u'WARNING: another parser (in %s) is running.'%(pidfile)
+        LOGGER.critical(u'Another parser (in %s) is running. Skipping this run.'%(pidfile))
         sys.exit()
     else:
         file(pidfile,'w').write(pid)
