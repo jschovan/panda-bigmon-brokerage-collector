@@ -507,7 +507,7 @@ def run():
     #last_time = db.get_last_updated_time()
     
     print u'INFOR: %s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs)
-    LOGGER.warning(u'%s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs))
+    LOGGER.info(u'%s Limit: %d/%d Effective: %d/%d nJobs: %d ParsingTime: %d nJobsUnprocess: %d'%(set_last,QUERY_LIMIT,QUERY_HOUR,logs_count,processed_rows,sum_nJobs,time_parse,lost_nJobs))
 
 
 def main():
