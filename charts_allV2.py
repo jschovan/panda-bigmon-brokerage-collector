@@ -667,7 +667,7 @@ def run(fidx):
     data = data.replace('#SERIES_DATA101#',series_data101)
     data = data.replace('#SERIES_DATA102#',series_data102)
 
-    write_document(data,fnames[fidx])
+    write_document(data,'%s/%s' % (WORKDIR, fnames[fidx]))
 
     print u'DEBUG: Done'
     

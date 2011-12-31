@@ -25,15 +25,18 @@ QUERY_HOUR = 0
 QUERY_LIMIT = 0
 DEBUG = 0
 
+WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
+PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
+
 # get cloud name
-fjson = open('panda_queues.json','r')
+fjson = open('%s/panda_queues.json' % WORKDIR,'r')
 data = fjson.read()
 dic = json.loads(data)
 fjson.close()
 
 # get query options
 try:
-    qjson = open('queryOptions.json','r')
+    qjson = open('%s/queryOptions.json' % WORKDIR,'r')
     data = qjson.read()
     qoptions = json.loads(data)
     qjson.close()
@@ -166,7 +169,7 @@ def get_log_year(p_year,p_date,p_time=''):
     
 
 def parse_document(document):
-    global db
+    global db, WORKDIR
     BSXdocument = BSXPathEvaluator(document)
     
     XPath_table = './/*[@id="main"]/p[2]/table'
@@ -176,7 +179,7 @@ def parse_document(document):
     rows = BSXdocument.getItemList(XPath_table_lines)
     
     # Load unprocessed records
-    fjson = open('allunprocess.json','r')
+    fjson = open('%s/allunprocess.json' % WORKDIR,'r')
     data = fjson.read()
     records = json.loads(data)
     fjson.close()
@@ -197,7 +200,7 @@ def parse_document(document):
     processed_rows = 0
     
     error_skip =0
-    ferror = open("last_errors.txt",'a')
+    ferror = open("%s/last_errors.txt" % WORKDIR,'a')
 
     for row_counter in xrange(len(rows)):
         record = ()
@@ -385,7 +388,7 @@ def parse_document(document):
     sum_nJobs = 0
     lost_nJobs = 0
     
-    fjson = open("allunprocess.json.new",'w')
+    fjson = open("%s/allunprocess.json.new" % WORKDIR,'w')
     fjson.write("{\n")
     jcom = ""
     
@@ -430,9 +433,9 @@ def parse_document(document):
             
     fjson.write("}\n")
     fjson.close()
-    os.unlink("allunprocess.json.bak")
-    os.rename("allunprocess.json", "allunprocess.json.bak")
-    os.rename("allunprocess.json.new", "allunprocess.json")
+    os.unlink("%s/allunprocess.json.bak" % WORKDIR)
+    os.rename("%s/allunprocess.json" % WORKDIR, "%s/allunprocess.json.bak" % WORKDIR)
+    os.rename("%s/allunprocess.json.new" % WORKDIR, "%s/allunprocess.json" % WORKDIR)
     
     ## for Excluded        
     for rec in ex_records:
@@ -465,7 +468,7 @@ def parse_document(document):
     if error_skip > 0:
         print u"WARNING: Missing jobSet/jobDef skiped = %d"%error_skip
     if processed_rows == 0:
-        write_document(document,"zero_process.html")
+        write_document(document,"%s/zero_process.html" % WORKDIR)
 
     return (set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
 

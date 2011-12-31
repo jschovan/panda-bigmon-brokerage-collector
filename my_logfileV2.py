@@ -18,6 +18,9 @@ NOTIFY_MAX = 30 # mins
 mFrom = 'PBMon <no-reply@cern.ch>'
 mTo = 'ookey.lai@twgrid.org,ookeykimo@yahoo.com.tw'
 
+WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
+PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
+
 def get_document(logfile):
     log = open(logfile,'r')
     data = log.read().split('\n')
@@ -96,16 +99,18 @@ def update_queryOptions(tdiff):
     return True
 
 def write_jsonfile(options):
-    of = open("queryOptions.json",'w')
+    global WORKDIR
+    of = open("%s/queryOptions.json" % WORKDIR,'w')
     json_string = json.dumps(options)
     of.write(json_string)
     of.close()
 
 def write_document(from_date, to_date, records, doc_file="my_logfile.html"):
-    global last_hours
+    global last_hours, WORKDIR, PUBDIR
+    doc_file='%s/%s' % (PUBDIR, doc_file)
     from_date = None
     to_date = None
-    data = open('template/CHART_mylogV2.html').read()
+    data = open('%s/template/CHART_mylogV2.html' % WORKDIR).read()
     DATEFORMAT = "%Y-%m-%d %H:%M"
     t1 = time.time()
     t2 = t1 - last_hours*60*60
@@ -180,7 +185,7 @@ if __name__ == "__main__":
     #    OUTPUT_FILENAME_PREFIX = sys.argv[1]
     """
 
-    run('logs/PBMonV2.log')
+    run('%s/logs/PBMonV2.log' % WORKDIR)
     
 
 
