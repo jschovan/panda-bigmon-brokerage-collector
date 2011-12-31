@@ -689,7 +689,7 @@ def run(fidx):
     write_document(data,'%s/%s' % (WORKDIR, fnames[fidx]))
 
     print u'DEBUG: Done'
-    LOGGER.DEBUG("Done")
+    LOGGER.debug("Done")
     
 
 
