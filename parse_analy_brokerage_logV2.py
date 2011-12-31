@@ -514,7 +514,7 @@ def main():
     global USERNAME
     pid = str(os.getpid())
     pidfile = "/tmp/%s/pbm_pidfile" % (USERNAME)
-    LOGGER.DEBUG(u'PID: %d PIDFILE: %s' % (pid, pidfile) )
+    LOGGER.debug(u'PID: %d PIDFILE: %s' % (pid, pidfile) )
     if os.path.isfile(pidfile):
         print u'WARNING: another parser (in %s) is running.'%(pidfile)
         LOGGER.critical(u'Another parser (in %s) is running. Skipping this run.'%(pidfile))
