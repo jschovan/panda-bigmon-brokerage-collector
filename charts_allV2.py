@@ -13,7 +13,7 @@ from logger import logger
 WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
 LOGDIR="%s/logs" % (WORKDIR)
 logname="charts_allV2"
-logfile="%s/%s.log" % (LOGDIR, logname)
+logfile="%s/logging.%s" % (LOGDIR, logname)
 LOGGER=logger(logname, logfile)
 
 PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
