@@ -405,11 +405,11 @@ def write_tablehtml(jsonfile,fname):
     data = data.replace('#SETCELLS#',setcells)
 
     write_document(data,htmlfile)
-    LOGGER.info("Wrote file %s" % (htmlfile) )
+    LOGGER.debug("Wrote file %s" % (htmlfile) )
 
 def run(fidx):
     global last_updated,CHARTS,DATEFORMAT,interval_days,query_from,pnames,fnames,NTOP, \
-        LOGGER
+        LOGGER, PUBDIR, WORKDIR
     query_from = time.strftime(DATEFORMAT,time.localtime(time.time()-interval_days[fidx]*24*60*60))
     data = open('%s/template/CHART_brokerageV2.html'%WORKDIR).read()
     data = data.replace('#LAST_UPDATED#',last_updated)
@@ -691,7 +691,7 @@ def run(fidx):
     data = data.replace('#SERIES_DATA101#',series_data101)
     data = data.replace('#SERIES_DATA102#',series_data102)
 
-    write_document(data,'%s/%s' % (WORKDIR, fnames[fidx]))
+    write_document(data,'%s/%s' % (PUBDIR, fnames[fidx]))
 
     print u'DEBUG: Done'
     LOGGER.debug("Done")
