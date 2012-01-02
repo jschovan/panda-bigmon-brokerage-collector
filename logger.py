@@ -2,7 +2,7 @@
 
 def logger(name="PandaBrokerageMonitor", file="/tmp/logger.log"):
     import logging
-    loggerO = logging.getLogger('name')
+    loggerO = logging.getLogger(name)
     
     formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
     
