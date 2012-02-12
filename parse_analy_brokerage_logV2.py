@@ -61,7 +61,10 @@ class Test:
 
 
 def get_URL():
-    global QUERY_HOUR,QUERY_LIMIT
+    global QUERY_HOUR,QUERY_LIMIT, LOGGER
+    LOGGER.debug('get_URL(): QUERY_HOUR=%s QUERY_LIMIT=%s' % (QUERY_HOUR,QUERY_LIMIT))
+    QUERY_HOUR=2; QUERY_LIMIT=20;
+    LOGGER.debug('get_URL(): QUERY_HOUR=%s QUERY_LIMIT=%s' % (QUERY_HOUR,QUERY_LIMIT))
     return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=%d&limit=%d'%(QUERY_HOUR,QUERY_LIMIT)
     #return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=pd2p&hours=2&limit=500'
     ##return 'http://panda.cern.ch/server/pandamon/query?mode=mon&hours=48&name=panda.mon.prod&type=pd2p&limit=20000'
