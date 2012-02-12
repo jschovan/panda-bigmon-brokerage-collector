@@ -10,7 +10,8 @@ def logger(name="PandaBrokerageMonitor", file="/tmp/logger.log"):
     hdlr.setFormatter(formatter)
     
     loggerO.addHandler(hdlr) 
-    loggerO.setLevel(logging.DEBUG)
+    #loggerO.setLevel(logging.DEBUG)
+    loggerO.setLevel(logging.INFO)
     
     return loggerO
 
