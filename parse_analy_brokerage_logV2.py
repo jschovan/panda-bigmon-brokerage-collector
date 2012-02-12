@@ -430,7 +430,7 @@ def parse_document(document):
     LOGGER.info('Processing %d records' % (len(records)))
     
     for rec in records:
-        LOGGER.debug('Processing record: %s' % (record))
+        LOGGER.debug('Processing record: %s' % (rec))
         if not records[rec].has_key('category'):
             if records[rec].has_key('nJobs'):
                 lost_nJobs += int(records[rec]['nJobs'])
@@ -448,7 +448,7 @@ def parse_document(document):
         site_name,cloud = get_sitecloud_name(records[rec]['site'])
         dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
         
-        LOGGER.debug('Insert record to DB: %s' % (record))
+        LOGGER.debug('Insert record to DB: %s' % (rec))
         
         if country == '--':
             lost_nJobs += int(nJobs)
@@ -471,7 +471,7 @@ def parse_document(document):
             record = (maxId, logDate, jobSet, category, site_name, cloud, dnUser, '1', nJobs, country)
             eff_records.append(record)
             
-        LOGGER.debug('Finished processing of record: %s' % (record))
+        LOGGER.debug('Finished processing of record: %s' % (rec))
     fjson.write("}\n")
     fjson.close()
     os.unlink("%s/allunprocess.json.bak" % WORKDIR)
