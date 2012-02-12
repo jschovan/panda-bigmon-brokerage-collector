@@ -184,7 +184,7 @@ def parse_document(document):
     global db, WORKDIR, LOGGER
     LOGGER.info('len(document)=%d. BSXdocument will be evaluated.' % (len(document)) )
     BSXdocument = BSXPathEvaluator(document)
-    LOGGER.info('BSXdocument was evaluated.' % (len(BSXdocument)) )
+    LOGGER.info('BSXdocument was evaluated. len(BSXdocument)=%d' % (len(BSXdocument)) )
     
     XPath_table = './/*[@id="main"]/p[2]/table'
     XPath_table_body = '%s/tbody' % (XPath_table)
