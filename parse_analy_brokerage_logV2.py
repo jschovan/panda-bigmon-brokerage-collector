@@ -179,7 +179,9 @@ def get_log_year(p_year,p_date,p_time=''):
 
 def parse_document(document):
     global db, WORKDIR, LOGGER
+    LOGGER.info('len(document)=%d. BSXdocument will be evaluated.' % (len(document)) )
     BSXdocument = BSXPathEvaluator(document)
+    LOGGER.info('BSXdocument was evaluated.' % (len(BSXdocument)) )
     
     XPath_table = './/*[@id="main"]/p[2]/table'
     XPath_table_body = '%s/tbody' % (XPath_table)
