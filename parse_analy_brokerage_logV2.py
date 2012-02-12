@@ -543,7 +543,7 @@ def run():
     #t4 = time.time()
     if set_last is not None:
         db.set_last_updated_time(set_last) # set when all done.
-    LOGGER.info(u'Finished re-setting last_updated.')
+    LOGGER.info(u'Finished re-setting last_updated: %s' % (set_last))
     
     #time_get = t2-t1
     time_parse = t3-t2
