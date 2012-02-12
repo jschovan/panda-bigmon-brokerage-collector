@@ -72,12 +72,14 @@ def get_URL():
 
 
 def get_document():
+    LOGGER.info(u'Starting get_document()')
     t = Test()
     c = pycurl.Curl()
     c.setopt(c.URL, get_URL())
     c.setopt(c.WRITEFUNCTION, t.body_callback)
     c.perform()
     c.close()
+    LOGGER.info(u'Finished get_document()')
     
     return t.contents
 
@@ -518,18 +520,26 @@ def parse_document(document):
 def run():
     global db,QUERY_HOUR,QUERY_LIMIT
     #t1 = time.time()
+    LOGGER.info(u'Starting run.')
+    LOGGER.info(u'Retrieving document.')
     document = get_document()
+    LOGGER.info(u'Document retrieved.')
+    LOGGER.info(u'Processing of retrieved document.')
     t2 = time.time()
     set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records,exist_records,in_buf_records = parse_document(document)
     t3 = time.time()
-
+    LOGGER.info(u'Finished processing of retrieved document.')
+    LOGGER.info(u'Increasing DB counters.')
     db.add_logs(eff_records)
     db.increase_logs_count(exist_records)
     db.increase_buf_count(in_buf_records)
-
+    LOGGER.info(u'Finished increasing DB counters.')
+    
+    LOGGER.info(u'Re-setting last_updated.')
     #t4 = time.time()
     if set_last is not None:
         db.set_last_updated_time(set_last) # set when all done.
+    LOGGER.info(u'Finished re-setting last_updated.')
     
     #time_get = t2-t1
     time_parse = t3-t2
