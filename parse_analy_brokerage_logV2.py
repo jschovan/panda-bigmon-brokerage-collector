@@ -410,7 +410,6 @@ def parse_document(document):
                 records[reckey]['nJobs'] = "1"
                 records[reckey]['country'] = '--'
         LOGGER.debug('Finished processing of line %d' % (row_counter+1))
-    from iotop.netlink import len
     LOGGER.infod('Finished processing of all %d lines' % (len(rows)))
     
     ferror.close()
