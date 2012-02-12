@@ -176,7 +176,7 @@ def get_log_year(p_year,p_date,p_time=''):
     
 
 def parse_document(document):
-    global db, WORKDIR
+    global db, WORKDIR, LOGGER
     BSXdocument = BSXPathEvaluator(document)
     
     XPath_table = './/*[@id="main"]/p[2]/table'
@@ -185,11 +185,16 @@ def parse_document(document):
     XPath_table_lines = '%s/tr' % (XPath_table_body)
     rows = BSXdocument.getItemList(XPath_table_lines)
     
+    LOGGER.info('Defined Xpaths to parse document. Retrieved %d rows to process.' % (len(rows)) )
+    
     # Load unprocessed records
-    fjson = open('%s/allunprocess.json' % WORKDIR,'r')
+    input_file='%s/allunprocess.json' % WORKDIR
+    fjson = open(input_file,'r')
     data = fjson.read()
     records = json.loads(data)
     fjson.close()
+    
+    LOGGER.info('Retrieved content of file %s' % (input_file))
     
     # records = {}
     ex_records = {}
@@ -206,18 +211,26 @@ def parse_document(document):
         maxId = 0
     processed_rows = 0
     
+    LOGGER.info('maxId=%s' % (maxId))
+    LOGGER.info('info=%s' % (last_time))
+    
     error_skip =0
     ferror = open("%s/last_errors.txt" % WORKDIR,'a')
-
+    
+    LOGGER.info('Starting loop over input rows.')
+    
+    
     for row_counter in xrange(len(rows)):
+        LOGGER.debug('Processing line %d/%d' % (row_counter+1, len(rows)))
         record = ()
         ex_rec = ()
         SHIFT=0
         
         row = rows[row_counter]
-
+        
         rowDoc = BSXPathEvaluator('%s'%row)
-
+        LOGGER.debug('line %d parsed' % (row_counter+1))
+        
         #XPath_table_row = '%s/tr[%d]' % (XPath_table_body, row_counter+1)
         XPath_table_row = '/'
         """
@@ -246,6 +259,7 @@ def parse_document(document):
         #if len(cell_message)>0:
             #cell_message = cell_message[0]
         
+        LOGGER.debug('retrieved message for line %d' % (row_counter+1))
         
         message_category="no.category"
         message_date = ""
@@ -261,6 +275,8 @@ def parse_document(document):
         message_datetime = str(cell_time).split(' ')
         message_date = message_datetime[0].strip()
         message_time = message_datetime[1].strip()
+        
+        LOGGER.debug('Will apply category rules to message for line %d' % (row_counter+1))
         
         # Skip the leading uncompleted minute
         log_year = get_log_year(this_year, message_date, message_time)
@@ -295,7 +311,7 @@ def parse_document(document):
                 error_skip += 1
                 ferror.write("Error: %s %s %s %s %s\n"%(message_date,message_time,message_dn,tmp_message[1],tmp_message[2]))
             continue
-
+        
         processed_rows += 1
         
         ## skip
@@ -373,7 +389,9 @@ def parse_document(document):
             message_action = message_buf[0].split('=')[1].strip()
             print "WARNING: action=%s is not processed!"%message_action
             LOGGER.warning("action=%s is not processed!"%message_action)
-
+        
+        LOGGER.debug('Category rules applied to message for line %d' % (row_counter+1))
+        
         if message_category in ['A','B','C']:
             reckey = "%s|%s|%s"%(message_dn,message_jobset,message_jobdef)
             if records.has_key(reckey):
@@ -387,6 +405,9 @@ def parse_document(document):
             if not records[reckey].has_key('nJobs'):
                 records[reckey]['nJobs'] = "1"
                 records[reckey]['country'] = '--'
+        LOGGER.debug('Finished processing of line %d' % (row_counter+1))
+    from iotop.netlink import len
+    LOGGER.infod('Finished processing of all %d lines' % (len(rows)))
     
     ferror.close()
 
@@ -400,7 +421,10 @@ def parse_document(document):
     fjson.write("{\n")
     jcom = ""
     
+    LOGGER.info('Processing %d records' % (len(records)))
+    
     for rec in records:
+        LOGGER.debug('Processing record: %s' % (record))
         if not records[rec].has_key('category'):
             if records[rec].has_key('nJobs'):
                 lost_nJobs += int(records[rec]['nJobs'])
@@ -417,6 +441,8 @@ def parse_document(document):
         nJobs = records[rec]['nJobs']
         site_name,cloud = get_sitecloud_name(records[rec]['site'])
         dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
+        
+        LOGGER.debug('Insert record to DB: %s' % (record))
         
         if country == '--':
             lost_nJobs += int(nJobs)
@@ -439,14 +465,17 @@ def parse_document(document):
             record = (maxId, logDate, jobSet, category, site_name, cloud, dnUser, '1', nJobs, country)
             eff_records.append(record)
             
+        LOGGER.debug('Finished processing of record: %s' % (record))
     fjson.write("}\n")
     fjson.close()
     os.unlink("%s/allunprocess.json.bak" % WORKDIR)
     os.rename("%s/allunprocess.json" % WORKDIR, "%s/allunprocess.json.bak" % WORKDIR)
     os.rename("%s/allunprocess.json.new" % WORKDIR, "%s/allunprocess.json" % WORKDIR)
     
+    LOGGER.info('Processing %s records "For Excluded"' % (len(ex_records)))
     ## for Excluded        
     for rec in ex_records:
+        LOGGER.debug('Processing excluded record: %s' % (rec))
         if not ex_records[rec].has_key('category'):
             continue
         rec_idx = None
@@ -458,6 +487,7 @@ def parse_document(document):
         nJobs = "1"
         site_name,cloud = get_sitecloud_name(ex_records[rec]['site'])
         dailyLogId = db.is_exist_item(logDate, jobSet, category, site_name, dnUser)
+        LOGGER.debug('Insert record to DB: %s' % (rec))
         if dailyLogId is None:
             rec_idx = is_in_buf(eff_records, logDate, jobSet, category, site_name, dnUser)
         if dailyLogId is not None:
@@ -470,7 +500,9 @@ def parse_document(document):
             maxId += 1
             record = (maxId, logDate, jobSet, category, site_name, cloud, dnUser, '1', nJobs, country)
             eff_records.append(record)
-
+        LOGGER.debug('Finished processing of record: %s' % (rec))
+    LOGGER.info('Finished processing %s records "For Excluded"' % (len(ex_records)))
+    
     if (this_time is not None) and not (this_time <= last_time):
         print u"Error: === NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time)
         LOGGER.error("DID NOT Reach the last updated time (%s -> %s) ==="%(this_time,last_time))
