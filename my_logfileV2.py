@@ -16,7 +16,7 @@ last_hours = 4
 NOTIFY_MIN = 10 # mins
 NOTIFY_MAX = 30 # mins
 mFrom = 'PBMon <no-reply@cern.ch>'
-mTo = 'ookey.lai@twgrid.org,ookeykimo@yahoo.com.tw'
+mTo = 'ookey.lai@twgrid.org,ookeykimo@yahoo.com.tw,adcpbm1@cern.ch'
 
 WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
 PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"

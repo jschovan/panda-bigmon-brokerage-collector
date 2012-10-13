@@ -566,10 +566,21 @@ def main():
         LOGGER.critical(u'Another parser (in %s) is running. Skipping this run.'%(pidfile))
         sys.exit()
     else:
-        file(pidfile,'w').write(pid)
+        fpidfile = open(pidfile, 'w') 
+        fpidfile.write(pid)
+        #file(pidfile,'w').write(pid)
         run()
+        fpidfile.close()
         os.unlink(pidfile)
-
+        if os.path.isfile(pidfile):
+            print u'WARNING: was not able to delete PIDFILE %s.'%(pidfile)
+            LOGGER.warning(u'was not able to delete PIDFILE %s.'%(pidfile))
+            os.unlink(pidfile)
+        else:
+            print u'INFO: was able to delete PIDFILE %s.'%(pidfile)
+            LOGGER.info(u'was able to delete PIDFILE %s.'%(pidfile))
+    print u'INFO: Finishing run with PID=%s' % (pid)
+    LOGGER.info(u'Finishing run with PID=%s' % (pid))
 
 if __name__ == "__main__":
     main()

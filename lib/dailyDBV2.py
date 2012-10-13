@@ -12,7 +12,9 @@ TABLE_LASTUPDATED="LastUpdatedV2"
 class dailyDBV2(object):
     
     _db = None
-    _connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
+    #before 2012-10-13#_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
+    #after 2012-10-13#_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2new@devdb11'
+    _connect = 'atlaspd2pmon_w_jschovan/PandaBrokerageMonitor2new@devdb11'
     
     def __init__(self):
         global TABLE_DAILYLOG, TABLE_LASTUPDATED

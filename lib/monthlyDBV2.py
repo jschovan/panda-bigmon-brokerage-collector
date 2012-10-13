@@ -8,7 +8,8 @@ TABLE_LASTUPDATED="LastUpdatedV2"
 class monthlyDBV2(object):
     
     _db = None
-    _connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
+    #_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
+    _connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2new@devdb11'
     
     def __init__(self):       
         global TABLE_MONTHLYLOG, TABLE_LASTUPDATED
