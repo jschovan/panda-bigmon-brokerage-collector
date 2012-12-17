@@ -14,6 +14,17 @@ mkdir -p ${TMP_DIR}
 TIMESTAMP=$(date '+%F %T' -u)
 
 
+### cleanup the PID file
+PIDFILE=/tmp/adcpbm1/pbm_pidfile 
+if [ -f "${PIDFILE}" ]; then 
+	mypid=$(cat ${PIDFILE} )
+	if [ -z "$(ps ux | awk '{print $2;}' | grep ${mypid})" ]; then
+		echo "Found file ${PIDFILE}, but the process is not running. Will delete ${PIDFILE} ."
+		rm ${PIDFILE}
+	fi
+fi
+
+
 date >> ${WORKDIR}/logs/PBMonV2.log
 ${PYTHON_EXECUTABLE} ${WORKDIR}/parse_analy_brokerage_logV2.py >> ${WORKDIR}/logs/PBMonV2.log 2>&1
 
