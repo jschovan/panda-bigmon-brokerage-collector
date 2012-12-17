@@ -14,42 +14,42 @@ QUERY_LIMIT = 650
 def multi_result():
     rec1 = []
     rec2 = []
-    for i in range(1,10):
-        rec1.append((i,i))
-    for j in range(11,20):
-        rec2.append((j,j))
-    return (rec1,rec2)
+    for i in range(1, 10):
+        rec1.append((i, i))
+    for j in range(11, 20):
+        rec2.append((j, j))
+    return (rec1, rec2)
 
 def get_document_wget():
     url = get_URL()
-    cmd = 'wget -q -r -l 2 -w 10 -O /tmp/PBMon_log.txt %s'%url
+    cmd = 'wget -q -r -l 2 -w 10 -O /tmp/PBMon_log.txt %s' % url
     os.system(cmd)
     time.sleep(5)
     contents = open('/tmp/PBMon_log.txt').read()
     return contents
 
 def get_URL():
-    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=%d&limit=%d'%(QUERY_HOUR,QUERY_LIMIT)
+    return 'http://panda.cern.ch/server/pandamon/query?mode=mon&name=panda.mon.prod&type=analy_brokerage&hours=%d&limit=%d' % (QUERY_HOUR, QUERY_LIMIT)
 
 def get_sitecloud_name(siteID):
     cloud = siteID
     site_name = siteID
     for site in dic:
-        if site['panda_siteID']==siteID:
+        if site['panda_siteID'] == siteID:
             cloud = site['cloud']
             site_name = site['agis_ssb_site_name']
             break
-    return (site_name,cloud)
+    return (site_name, cloud)
 
 #contents = get_document_wget()
 #print "Contents:",contents
 
-fjson = open('panda_queues.json','r')
+fjson = open('panda_queues.json', 'r')
 data = fjson.read()
 dic = json.loads(data)
 fjson.close()
 
-fjson = open('allunprocess.json','r')
+fjson = open('allunprocess.json', 'r')
 data = fjson.read()
 records = json.loads(data)
 fjson.close()
@@ -65,7 +65,7 @@ print con.version
 print "====="
 cursor = con.cursor()
 cursor1 = con.cursor()
-cursor1.execute("select * from dailyLogV2")
+cursor1.execute("select * from dailyLogV3")
 """
 for result in cursor1:
     # print result
@@ -78,18 +78,18 @@ for result in cursor1:
 """
 DATEFORMAT = "%Y-%m-%d %H:%M:%S"
 t1 = time.time()
-t2 = t1 - 7*24*60*60
-tf = time.strftime(DATEFORMAT,time.gmtime(t2))
+t2 = t1 - 7 * 24 * 60 * 60
+tf = time.strftime(DATEFORMAT, time.gmtime(t2))
 print tf
 print "=====" 
-print "Year:",datetime.date.today().year
-dt = time.strptime("2011-12-06 09:00","%Y-%m-%d %H:%M")
+print "Year:", datetime.date.today().year
+dt = time.strptime("2011-12-06 09:00", "%Y-%m-%d %H:%M")
 dt1 = calendar.timegm(dt)
-dt2 = int((t1-dt1)/60)
-print "DT:",dt
-print "DT1:",dt1
-print "DT2:",dt2
-print "t1:",tf, t1
+dt2 = int((t1 - dt1) / 60)
+print "DT:", dt
+print "DT1:", dt1
+print "DT2:", dt2
+print "t1:", tf, t1
 
 """
 cursor.execute("select * from dailyLog where logDate>'2011-10-06' order by dailyLogId DESC")

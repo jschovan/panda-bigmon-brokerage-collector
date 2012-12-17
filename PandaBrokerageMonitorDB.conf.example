@@ -1,0 +1,5 @@
+[DB_collector]
+DB_HOST=devdb11
+DB_USER=atlaspd2pmon_w_jschovan
+DB_CRED=password
+

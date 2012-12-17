@@ -1,8 +1,10 @@
 import cx_Oracle
+import ConfigParser
 
 ### Production
-TABLE_DAILYLOG="dailyLogV2"
-TABLE_LASTUPDATED="LastUpdatedV2"
+#TABLE_DAILYLOG = "dailyLogV2"
+TABLE_DAILYLOG = "dailyLogV3"
+TABLE_LASTUPDATED = "LastUpdatedV2"
 
 ### Development/tests
 #TABLE_DAILYLOG="dailyLogV2T1"
@@ -14,12 +16,19 @@ class dailyDBV2(object):
     _db = None
     #before 2012-10-13#_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
     #after 2012-10-13#_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2new@devdb11'
-    _connect = 'atlaspd2pmon_w_jschovan/PandaBrokerageMonitor2new@devdb11'
+    _configfile = '/data/adcpbm1/PandaBrokerageMonitor/PandaBrokerageMonitorDB.conf'
+    
+    ### DB connection
+    _connect = 'DBuser/DBpassword@DBhost'
+    _DB_HOST = 'DBhost'
+    _DB_USER = 'DBuser'
+    _DB_PASSWORD = 'DBpassword'
     
     def __init__(self):
         global TABLE_DAILYLOG, TABLE_LASTUPDATED
         # self._db = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')
-        self._db = cx_Oracle.connect(self._connect)
+        self.dbConfig()
+        # self._db = cx_Oracle.connect(self._connect)
         
     def get_max_id(self):
         cursor = self._db.cursor()
@@ -29,9 +38,29 @@ class dailyDBV2(object):
         cursor.close()
         return maxID
     
+    def dbConfig(self):
+        """
+        dbConfig(self)
+        Configure the database. 
+        Config file: self._configfile
+        """
+        #self._logger.info('Inside dbConfig()')
+        config = ConfigParser.ConfigParser()
+        config.read(self._configfile)
+        
+        self._DB_HOST = config.get("DB_collector", "DB_HOST")
+        #self._logger.debug('DB_HOST=%s' % (self._DB_HOST))
+        self._DB_USER = config.get("DB_collector", "DB_USER")
+        #self._logger.debug('DB_USER=%s' % (self._DB_USER))
+        
+        self._DB_PASSWORD = config.get("DB_collector", "DB_CRED")
+        
+        self._connect = '%s/%s@%s' % (self._DB_USER, self._DB_PASSWORD, self._DB_HOST)
+        #self._logger.info('Exiting dbConfig()')
+    
     def get_logdate_by_id(self, id):
         cursor = self._db.cursor()
-        sql = "SELECT logDate from %s where dailyLogId=%d" % (TABLE_DAILYLOG, id)
+        sql = "SELECT TO_CHAR(logDate, 'YYYY-MM-DD') from %s where dailyLogId=%d" % (TABLE_DAILYLOG, id)
         cursor.execute(sql)
         rs = cursor.fetchone()
         if rs is not None:
@@ -71,8 +100,13 @@ class dailyDBV2(object):
     
     def is_exist_item(self, logDate, jobSet, category, site, dnUser):
         cursor = self._db.cursor()
-        sql = "SELECT dailyLogId FROM %s WHERE logDate='%s' AND jobSet='%s' AND category='%s' AND site='%s' AND dnUser='%s'"%(TABLE_DAILYLOG, logDate,jobSet,category,site,dnUser)
-        cursor.execute(sql)
+        sql = "SELECT dailyLogId FROM %s WHERE logDate=TO_DATE(:logDate, 'YYYY-MM-DD') AND jobSet=:jobSet AND category=:category AND site=:site AND dnUser=:dnUser" % (TABLE_DAILYLOG)
+        dataQ = {'logDate': logDate, \
+               'jobSet': jobSet, \
+               'category':category, \
+               'site':site,
+               'dnUser':dnUser}
+        cursor.execute(sql, dataQ)
         rs = cursor.fetchone()
         if rs is not None:
             dailyLogId = rs[0]
@@ -81,16 +115,16 @@ class dailyDBV2(object):
         cursor.close()
         return dailyLogId
         
-    def add_logs(self,logs):
+    def add_logs(self, logs):
         cursor = self._db.cursor()
         sql = "INSERT INTO %s ( dailyLogId, logDate, jobSet, category, site, cloud, dnUser, jobdefCount, jobCount, country) " % (TABLE_DAILYLOG)
-        sql += "VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10 )"
+        sql += "VALUES ( :1, TO_DATE(:2, 'YYYY-MM-DD'), :3, :4, :5, :6, :7, :8, :9, :10 )"
         cursor.executemany(sql, logs)
         self._db.commit()
         cursor.close()
         return True
         
-    def increase_logs_count(self,logIds):
+    def increase_logs_count(self, logIds):
         cursor = self._db.cursor()
         sql = "UPDATE %s SET jobdefCount = jobdefCount + 1, jobCount = jobCount + :1 WHERE dailyLogId = :2 " % (TABLE_DAILYLOG)
         cursor.executemany(sql, logIds)
@@ -98,7 +132,7 @@ class dailyDBV2(object):
         cursor.close()
         return True
         
-    def increase_buf_count(self,logs):
+    def increase_buf_count(self, logs):
         cursor = self._db.cursor()
         sql = "UPDATE %s SET jobdefCount = jobdefCount + 1, jobCount = jobCount + :1 WHERE logDate = :2 AND jobSet=:3 AND category = :4 AND site = :5 AND dnUser = :6 " % (TABLE_DAILYLOG)
         cursor.executemany(sql, logs)
@@ -106,7 +140,7 @@ class dailyDBV2(object):
         cursor.close()
         return True
     
-    def query(self,sql):
+    def query(self, sql):
         cursor = self._db.cursor()
         cursor.execute(sql)
         rs = cursor.fetchall()
