@@ -14,6 +14,9 @@ mkdir -p ${TMP_DIR}
 TIMESTAMP=$(date '+%F %T' -u)
 
 
+date >> ${WORKDIR}/logs/PBMonV2.log
+${PYTHON_EXECUTABLE} ${WORKDIR}/parse_analy_brokerage_logV2.py >> ${WORKDIR}/logs/PBMonV2.log 2>&1
+
 ### cleanup the PID file
 PIDFILE=/tmp/adcpbm1/pbm_pidfile 
 if [ -f "${PIDFILE}" ]; then 
@@ -25,11 +28,8 @@ if [ -f "${PIDFILE}" ]; then
 fi
 
 
-date >> ${WORKDIR}/logs/PBMonV2.log
-${PYTHON_EXECUTABLE} ${WORKDIR}/parse_analy_brokerage_logV2.py >> ${WORKDIR}/logs/PBMonV2.log 2>&1
-
 ### Deal with unresolved filesystems
-if [ -f "/tmp/adcpbm1/pbm_pidfile" ]; then 
+if [ -f "${PIDFILE}" ]; then 
 ### mail to ADMIN
     ADMIN="adcpbm1@cern.ch"
     echo -e "$(basename $0) INFO [${TIMESTAMP} UTC] Please check logs and remove PIDfile (/tmp/adcpbm1/pbm_pidfile)" | mail -s "[PandaBrokerageMonitor] $(basename $0) - PID file stale lock" ${ADMIN} 
