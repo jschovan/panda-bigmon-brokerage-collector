@@ -56,6 +56,7 @@ class dailyDBV2(object):
         self._DB_PASSWORD = config.get("DB_collector", "DB_CRED")
         
         self._connect = '%s/%s@%s' % (self._DB_USER, self._DB_PASSWORD, self._DB_HOST)
+        self._db = cx_Oracle.connect(self._connect)
         #self._logger.info('Exiting dbConfig()')
     
     def get_logdate_by_id(self, id):
