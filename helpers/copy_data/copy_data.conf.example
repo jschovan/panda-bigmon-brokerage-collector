@@ -1,0 +1,6 @@
+[logger]
+log_name=cpd
+log_file=/data/adcpbm1/PandaBrokerageMonitor/helpers/copy_data/logs/copy_data.log
+log_level=DEBUG
+
+
