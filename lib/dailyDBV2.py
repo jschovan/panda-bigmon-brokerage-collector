@@ -143,6 +143,7 @@ class dailyDBV2(object):
     
     def query(self, sql):
         cursor = self._db.cursor()
+        print u'DEBUG: SQL query to be executed: %s' % (sql)
         cursor.execute(sql)
         rs = cursor.fetchall()
         cursor.close()
