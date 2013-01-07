@@ -20,10 +20,14 @@ mypid="0"
 ### cleanup the PID file
 PIDFILE=/tmp/adcpbm1/pbm_pidfile 
 if [ -f "${PIDFILE}" ]; then 
-	mypid=$(cat ${PIDFILE} )
-	if [ -z "$(ps ux | awk '{print $2;}' | grep ${mypid})" ]; then
-		echo "Found file ${PIDFILE}, but the process is not running. Will delete ${PIDFILE} ."
-		rm ${PIDFILE}
+	if [ -s "${PIDFILE}" ]; then
+		mypid=$(cat ${PIDFILE} )
+		if [ -z "$(ps ux | awk '{print $2;}' | grep ${mypid})" ]; then
+			echo "Found not-empty file ${PIDFILE}, but the process is not running. Will delete ${PIDFILE}."
+			rm ${PIDFILE}
+		fi
+	else
+			echo "Found EMPTY file ${PIDFILE}, but the process is not running. Will NOTdelete ${PIDFILE}."
 	fi
 fi
 
@@ -32,8 +36,9 @@ fi
 if [ -f "${PIDFILE}" ]; then 
 ### mail to ADMIN
     ADMIN="adcpbm1@cern.ch"
-    echo -e "$(basename $0) INFO [${TIMESTAMP} UTC] Please check logs and remove PIDfile (/tmp/adcpbm1/pbm_pidfile)" | mail -s "[PandaBrokerageMonitor] $(basename $0) - PID file stale lock" ${ADMIN} 
+    echo -e "$(basename $0) INFO [${TIMESTAMP} UTC] Please check logs and remove PIDfile (/tmp/adcpbm1/pbm_pidfile :ls $(ls -l ${PIDFILE})) :cat $(cat ${PIDFILE})" | mail -s "[PandaBrokerageMonitor] $(basename $0) - PID file stale lock" ${ADMIN} 
 fi
 
 ${PYTHON_EXECUTABLE} ${WORKDIR}/my_logfileV2.py > /dev/null 2>&1
+
 
