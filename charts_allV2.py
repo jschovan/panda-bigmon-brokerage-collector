@@ -204,7 +204,7 @@ def parse_document_category(idx1, idx2, jsonfile, field):
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
-    rs = db.query(sql % (tabname) , {'logDate': query_from})
+    rs = db.query(sql % (tabname), {'logDate': query_from})
     for row in rs:
         series_data = "%s %s {name:'%s', y:%d}" % (series_data, comm, CATENAME[row[0]], row[1])
         if jsonfile['data'].has_key(CATENAME[row[0]]):
@@ -219,7 +219,7 @@ def parse_document_site(idx1, idx2, jsonfile, field, nTop=NTOP, show_others=True
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
-    rs = db.query(sql % (tabname, query_from))
+    rs = db.query(sql % (tabname), {'logDate': query_from})
     limit = 0
     others = 0
     cloudIdx = {}
@@ -256,10 +256,10 @@ def parse_document_site_percent(idx1, idx2, jsonfile, field, pLow=PLOW, show_oth
     comm = ""
     series_data = ""
     sqlsum = CHARTS[idx1][idx2][2]
-    rs1 = db.query(sqlsum % (tabname, query_from))
+    rs1 = db.query(sqlsum % (tabname), {'logDate': query_from})
     nSum = int(rs1[0][0])
     sql = CHARTS[idx1][idx2][1]
-    rs = db.query(sql % (tabname, query_from))
+    rs = db.query(sql % (tabname), {'logDate': query_from})
     others = 0
     percent = 0.0
     cloudIdx = {}
@@ -300,7 +300,7 @@ def parse_document_cloud(idx1, idx2, jsonfile, field):
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
-    rs = db.query(sql % (tabname, query_from))
+    rs = db.query(sql % (tabname), {'logDate': query_from})
     for row in rs:
         if ADC_COLOR.has_key(row[0]):
             color = ADC_COLOR[row[0]][0]
@@ -321,8 +321,8 @@ def parse_document_excluded(idx1, idx2, jsonfile):
     series_data = ""
     sql1 = CHARTS[idx1][idx2][1]
     sql2 = CHARTS[idx1][idx2][2]
-    rs1 = db.query(sql1 % (tabname, query_from))
-    rs2 = db.query(sql2 % (tabname, query_from, tabname, query_from))
+    rs1 = db.query(sql1 % (tabname), {'logDate': query_from})
+    rs2 = db.query(sql2 % (tabname, tabname), {'logDate': query_from})
     excluded = rs1[0][0]
     nonexcluded = rs2[0][0]
     series_data = "{name:'With exclude', y:%s, color:'#DD0000' },{name:'Without exclude', y:%s, color: '#0000DD'}" % (excluded, nonexcluded)
@@ -337,7 +337,7 @@ def parse_document_country(idx1, idx2, jsonfile, field):
     comm = ""
     series_data = ""
     sql = CHARTS[idx1][idx2][1]
-    rs = db.query(sql % (tabname, query_from))
+    rs = db.query(sql % (tabname), {'logDate': query_from})
     cloudIdx = {}
     for row in rs:
         if COUNTRY_CLOUD.has_key(row[0]):

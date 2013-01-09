@@ -141,10 +141,13 @@ class dailyDBV2(object):
         cursor.close()
         return True
     
-    def query(self, sql):
+    def query(self, sql, bindvarsdict):
         cursor = self._db.cursor()
         print u'DEBUG: SQL query to be executed: %s' % (sql)
-        cursor.execute(sql)
+        if len(bindvarsdict.keys()) > 0:
+            cursor.execute(sql, bindvarsdict)
+        else:
+            cursor.execute(sql)
         rs = cursor.fetchall()
         cursor.close()
         return rs
