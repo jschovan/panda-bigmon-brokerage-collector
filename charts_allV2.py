@@ -64,85 +64,90 @@ CATENAME = {
             }
 
 CHARTS = {
+        # from:
+        #            and TO_CHAR(logDate, 'YYYY-MM-DD') > '2012-01-09' 
+        # to:
+        #            and logDate > to_date( '2012-01-09','YYYY-MM-DD')
           "ABC":[
             ["[User selected a site/User selected a cloud/Panda Brokerage decision] on Jobs - %s",
-             "select category,sum(jobCount) from %s where  TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' and category in ('A','B','C') group by category order by category"],
+            # "select category,sum(jobCount) from %s where  TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' and category in ('A','B','C') group by category order by category"],
+             "select category,sum(jobCount) from %s where  logDate > TO_DATE( '%s' ,'YYYY-MM-DD')  and category in ('A','B','C') group by category order by category"],
             ["[User selected a site/User selected a cloud/Panda Brokerage decision] on jobDef - %s",
-             "select category,sum(jobDefCount) from %s where  TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' and category in ('A','B','C') group by category order by category"],
+             "select category,sum(jobDefCount) from %s where  logDate > TO_DATE( '%s' ,'YYYY-MM-DD') and category in ('A','B','C') group by category order by category"],
             ["[User selected a site/User selected a cloud/Panda Brokerage decision] on jobSet - %s",
-             "select category,count(distinct jobSet) from %s where  TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' and category in ('A','B','C') group by category order by category"]
+             "select category,count(distinct jobSet) from %s where  logDate > TO_DATE( '%s' ,'YYYY-MM-DD') and category in ('A','B','C') group by category order by category"]
           ],
           "ASite":[
             ["[User selected a site] on Jobs - Top Sites higher than %d%% - %s",
-             "select site, sum(jobCount) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC",
-             "select sum(jobCount) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s'"],
+             "select site, sum(jobCount) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC",
+             "select sum(jobCount) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD')"],
             ["[User selected a site] on jobDef - Top Sites higher than %d%% - %s",
-             "select site, sum(jobDefCount) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC",
-             "select sum(jobDefCount) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s'"],
+             "select site, sum(jobDefCount) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC",
+             "select sum(jobDefCount) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD')"],
             ["[User selected a site] on jobSet - Top Sites higher than %d%% - %s",
-             "select site, count(distinct jobSet) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC",
-             "select count(distinct jobSet) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s'"]
+             "select site, count(distinct jobSet) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC",
+             "select count(distinct jobSet) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD')"]
           ],
           "ACloud":[
             ["[User selected a site] on Jobs - Per Cloud - %s",
-             "select cloud, sum(jobCount) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"],
+             "select cloud, sum(jobCount) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"],
             ["[User selected a site] on jobDef - Per Cloud - %s",
-             "select cloud, sum(jobdefCount) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"],
+             "select cloud, sum(jobdefCount) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"],
             ["[User selected a site] on jobSet - Per Cloud - %s",
-             "select cloud, count(distinct jobSet) nums from %s where category='A' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"]
+             "select cloud, count(distinct jobSet) nums from %s where category='A' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"]
           ],
           "BSite":[
             ["[User selected a cloud] on Jobs - Top %d Sites - %s",
-             "select site, sum(jobCount) nums from %s where category='B' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC"],
+             "select site, sum(jobCount) nums from %s where category='B' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC"],
             ["[User selected a cloud] on jobDef - Top %d Sites - %s",
-             "select site, sum(jobDefCount) nums from %s where category='B' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC"],
+             "select site, sum(jobDefCount) nums from %s where category='B' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC"],
             ["[User selected a cloud] on jobSet - Top %d Sites - %s",
-             "select site, count(distinct jobSet) nums from %s where category='B' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC"]
+             "select site, count(distinct jobSet) nums from %s where category='B' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC"]
           ],
           "BCloud":[
             ["[User selected a cloud] on Jobs - Per Cloud - %s",
-             "select cloud, sum(jobCount) nums from %s where category='B' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"],
+             "select cloud, sum(jobCount) nums from %s where category='B' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"],
             ["[User selected a cloud] on jobDef - Per Cloud - %s",
-             "select cloud, sum(jobdefCount) nums from %s where category='B' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"],
+             "select cloud, sum(jobdefCount) nums from %s where category='B' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"],
             ["[User selected a cloud] on jobSet - Per Cloud - %s",
-             "select cloud, count(distinct jobSet) nums from %s where category='B' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"]
+             "select cloud, count(distinct jobSet) nums from %s where category='B' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"]
           ],
           "CSite":[
             ["[Panda Brokerage decision] on Jobs - Top %d Sites - %s",
-             "select site, sum(jobCount) nums from %s where category='C' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC"],
+             "select site, sum(jobCount) nums from %s where category='C' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC"],
             ["[Panda Brokerage decision] on jobDef - Top %d Sites - %s",
-             "select site, sum(jobDefCount) nums from %s where category='C' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC"]
+             "select site, sum(jobDefCount) nums from %s where category='C' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC"]
           ],
           "CCloud":[
             ["[Panda Brokerage decision] on Jobs - Per Cloud - %s",
-             "select cloud, sum(jobCount) nums from %s where category='C' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"],
+             "select cloud, sum(jobCount) nums from %s where category='C' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"],
             ["[Panda Brokerage decision] on jobDef - Per Cloud - %s",
-             "select cloud, sum(jobdefCount) nums from %s where category='C' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"]
+             "select cloud, sum(jobdefCount) nums from %s where category='C' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"]
           ],
           "E":[
             ["[User excluded a site] on distinct jobSet - With exclude / Without exclude - %s",
-             "select count(distinct jobSet) nums from %s where category='E' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s'",
-             "select count(distinct jobSet) nums from %s where category!='E' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' and jobSet not in (select distinct jobSet from %s where category='E' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s')"]
+             "select count(distinct jobSet) nums from %s where category='E' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD')",
+             "select count(distinct jobSet) nums from %s where category!='E' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') and jobSet not in (select distinct jobSet from %s where category='E' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD'))"]
           ],
           "ESite":[
             ["[User excluded a site] on jobSet - Top %d Sites - %s",
-             "select site, count(distinct jobSet) nums from %s where category='E' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC"],
+             "select site, count(distinct jobSet) nums from %s where category='E' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC"],
             ["[User excluded a site] on distinct DnUser - Top %d Sites - %s",
-             "select site, count(distinct dnUser) nums from %s where category='E' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by site order by nums DESC"]
+             "select site, count(distinct dnUser) nums from %s where category='E' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by site order by nums DESC"]
           ],
           "ECloud":[
             ["[User excluded a site] on jobSet - Per Cloud - %s",
-             "select cloud, count(distinct jobSet) nums from %s where category='E' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"],
+             "select cloud, count(distinct jobSet) nums from %s where category='E' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"],
             ["[User excluded a site] on distinct DnUser - Per Cloud - %s",
-             "select cloud, count(distinct dnUser) nums from %s where category='E' and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by cloud order by nums DESC"]
+             "select cloud, count(distinct dnUser) nums from %s where category='E' and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by cloud order by nums DESC"]
           ],
           "Country":[
             ["Jobs submitted by Country - %s",
-             "select country, sum(jobCount) nums from %s where category in ('A','B','C') and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by country order by nums DESC"],
+             "select country, sum(jobCount) nums from %s where category in ('A','B','C') and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by country order by nums DESC"],
             ["jobDef submitted by Country - %s",
-             "select country, sum(jobdefCount) nums from %s where category in ('A','B','C') and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by country order by nums DESC"],
+             "select country, sum(jobdefCount) nums from %s where category in ('A','B','C') and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by country order by nums DESC"],
             ["jobSet submitted by Country - %s",
-             "select country, count(distinct jobSet) nums from %s where category in ('A','B','C') and TO_CHAR(logDate, 'YYYY-MM-DD') > '%s' group by country order by nums DESC"]
+             "select country, count(distinct jobSet) nums from %s where category in ('A','B','C') and logDate > TO_DATE( '%s' ,'YYYY-MM-DD') group by country order by nums DESC"]
           ]
           }
 
