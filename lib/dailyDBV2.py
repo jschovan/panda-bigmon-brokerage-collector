@@ -61,8 +61,8 @@ class dailyDBV2(object):
     
     def get_logdate_by_id(self, id):
         cursor = self._db.cursor()
-        sql = "SELECT TO_CHAR(logDate, 'YYYY-MM-DD') from %s where dailyLogId=%d" % (TABLE_DAILYLOG, id)
-        cursor.execute(sql)
+        sql = "SELECT TO_CHAR(logDate, 'YYYY-MM-DD') from %s where dailyLogId=:dailyLogId" % (TABLE_DAILYLOG)
+        cursor.execute(sql, {'dailyLogId': id})
         rs = cursor.fetchone()
         if rs is not None:
             logDate = rs[0]
@@ -135,7 +135,7 @@ class dailyDBV2(object):
         
     def increase_buf_count(self, logs):
         cursor = self._db.cursor()
-        sql = "UPDATE %s SET jobdefCount = jobdefCount + 1, jobCount = jobCount + :1 WHERE logDate = :2 AND jobSet=:3 AND category = :4 AND site = :5 AND dnUser = :6 " % (TABLE_DAILYLOG)
+        sql = "UPDATE %s SET jobdefCount = jobdefCount + 1, jobCount = jobCount + :1 WHERE logDate = TO_DATE(:2, 'YYYY-MM-DD') AND jobSet=:3 AND category = :4 AND site = :5 AND dnUser = :6 " % (TABLE_DAILYLOG)
         cursor.executemany(sql, logs)
         self._db.commit()
         cursor.close()
