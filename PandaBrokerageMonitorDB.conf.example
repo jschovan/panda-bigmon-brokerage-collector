@@ -1,7 +1,4 @@
 [DB_collector]
-#DB_HOST=devdb11
-#DB_USER=atlaspd2pmon_w_jschovan
-#DB_CRED=password
 DB_HOST=INTR
 DB_USER=ATLAS_PANDABROMON_W
 DB_CRED=password
