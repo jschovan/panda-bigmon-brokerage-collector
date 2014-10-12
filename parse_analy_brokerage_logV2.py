@@ -4,7 +4,10 @@ from BeautifulSoup import BeautifulSoup
 from dailyDBV2 import dailyDBV2
 
 ### get it from: http://www.crummy.com/software/BeautifulSoup/
-import json
+try:
+    import json
+except:
+    import simplejson as json
 import re
 import sys
 import os
