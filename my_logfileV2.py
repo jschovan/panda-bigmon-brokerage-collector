@@ -175,17 +175,6 @@ def run(logfile):
     write_document(from_date,to_date,records)
 
 if __name__ == "__main__":
-    
-    """
-    if len(sys.argv) < 2:
-        print "ERROR: too few input parameters"
-        print "USAGE: python   parse_logfile.py   <input logfile>"
-        sys.exit(1) # before Python 2.5, after: exit(1)
-    #else:
-    #    OUTPUT_FILENAME_PREFIX = sys.argv[1]
-    """
-
     run('%s/logs/PBMonV2.log' % WORKDIR)
-    
 
 
