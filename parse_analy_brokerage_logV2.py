@@ -77,10 +77,10 @@ def get_URL_oldV2():
 
 def get_URL():
     global QUERY_HOUR
-#    return 'http://bigpanda.cern.ch/pbm/api/?type=analy_brokerage&starttime=%s&endtime=%s' % \
-#        ((datetime.utcnow() - timedelta(hours=QUERY_HOUR)).isoformat(), \
-#          datetime.utcnow().isoformat())
-    return 'file:///tmp/pbm-input.json'
+    return 'http://bigpanda.cern.ch/pbm/api/?type=analy_brokerage&starttime=%s&endtime=%s' % \
+        ((datetime.utcnow() - timedelta(hours=QUERY_HOUR)).isoformat(), \
+          datetime.utcnow().isoformat())
+#    return 'file:///tmp/pbm-input.json'
 
 
 def get_document():
