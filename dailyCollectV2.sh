@@ -1,9 +1,8 @@
 #!/bin/bash
-#source /home/ookey/workspace/PandaBrokerageMonitor/pbm_profile
-#cd /home/ookey/workspace/PandaBrokerageMonitor
-
 #set -x
-PYTHON_EXECUTABLE="/usr/bin/python2.5"
+
+# PYTHON_EXECUTABLE="/usr/bin/python2.5"
+PYTHON_EXECUTABLE=$( if [ -f /usr/bin/python ]; then echo "/usr/bin/python" ; else echo "/usr/bin/python2.5"; fi ) 
 
 source /data/adcpbm1/PandaBrokerageMonitor/PandaBrokerageMonitor.conf
 source ${WORKDIR}/pbm_profile
