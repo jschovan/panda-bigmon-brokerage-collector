@@ -1,0 +1,12 @@
+#SB
+RUCIO_ACCOUNT=adcpbm1
+
+59 * * * * /data/adcpbm1/PandaBrokerageMonitor/getSiteJson.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.getSiteJson
+#frequency.changed.by.Jarka.20121215#*/10 * * * * /data/adcpbm1/PandaBrokerageMonitor/dailyCollectV2.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.dailyCollectV2
+#frequency.changed.by.Jarka.20121217#*/12 * * * * /data/adcpbm1/PandaBrokerageMonitor/dailyCollectV2.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.dailyCollectV2
+*/15 * * * * /data/adcpbm1/PandaBrokerageMonitor/dailyCollectV2.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.dailyCollectV2
+#debug#43 * * * * /data/adcpbm1/PandaBrokerageMonitor/dailyCollectV2.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.dailyCollectV2
+
+*/30 * * * * /data/adcpbm1/PandaBrokerageMonitor/charts_genV2.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.charts_genV2
+
+
