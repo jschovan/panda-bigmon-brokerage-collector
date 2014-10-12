@@ -14,10 +14,7 @@ import os
 import pycurl
 import time
 from datetime import datetime, date, timedelta
-#import simplejson as json
 from logger import logger
-#from dateutil import parser
-#from pd2p_monitoring import WORKDIR
 
 USERNAME="adcpbm1"
 
