@@ -13,7 +13,7 @@ TIMESTAMP=$(date '+%F %T' -u)
 
 
 date >> ${WORKDIR}/logs/PBMonV2.log
-${PYTHON_EXECUTABLE} ${WORKDIR}/parse_analy_brokerage_logV2.py >> ${WORKDIR}/logs/PBMonV2.log 2>&1
+${PYTHON_EXECUTABLE} ${WORKDIR}/daily_collect/parse_analy_brokerage_logV2.py >> ${WORKDIR}/logs/PBMonV2.log 2>&1
 mypid="0"
 ### cleanup the PID file
 PIDFILE=${TMP_DIR}/pbm_pidfile 
