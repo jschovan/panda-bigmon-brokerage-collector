@@ -1,0 +1,4 @@
+include *.txt *.py *.conf
+recursive-include pbm_collector
+global-include *.sh *.conf *.txt *.json *.example LICENSE README.md pbm_profile
+prune pbm_collector_obsoleted pbm_collector/helpers pbm_collector/prepare
