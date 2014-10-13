@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
-from BSXPath import BSXPathEvaluator,XPathResult, XPathExpression
-from BeautifulSoup import BeautifulSoup
 from dailyDBV2 import dailyDBV2
 
-### get it from: http://www.crummy.com/software/BeautifulSoup/
 try:
     import json
 except:
