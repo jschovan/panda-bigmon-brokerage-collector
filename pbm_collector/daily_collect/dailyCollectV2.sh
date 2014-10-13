@@ -4,7 +4,7 @@
 # PYTHON_EXECUTABLE="/usr/bin/python2.5"
 PYTHON_EXECUTABLE=$( if [ -f /usr/bin/python ]; then echo "/usr/bin/python" ; else echo "/usr/bin/python2.5"; fi ) 
 
-source /data/adcpbm1/lib/python2.6/site-packages/pbm_collector/PandaBrokerageMonitor.conf
+source /data/adcpbm1/lib/python2.6/site-packages/pbm_collector/settings/PandaBrokerageMonitor.conf
 source ${WORKDIR}/pbm_profile
 cd ${WORKDIR}
 
@@ -38,6 +38,5 @@ if [ -f "${PIDFILE}" ]; then
     echo -e "$(basename $0) INFO [${TIMESTAMP} UTC] Please check logs and remove PIDfile (/tmp/adcpbm1/pbm_pidfile :ls $(ls -l ${PIDFILE})) :cat $(cat ${PIDFILE})" | mail -s "[PandaBrokerageMonitor] $(basename $0) - PID file stale lock" ${ADMIN} 
 fi
 
-${PYTHON_EXECUTABLE} ${WORKDIR}/my_logfileV2.py > /dev/null 2>&1
 
 
