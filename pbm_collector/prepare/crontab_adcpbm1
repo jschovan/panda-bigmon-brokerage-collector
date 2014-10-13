@@ -1,6 +1,6 @@
 MAILTO=adcpbm1@cern.ch
 RUCIO_ACCOUNT=adcpbm1
 
-59 * * * * /data/adcpbm1/PandaBrokerageMonitor/getSiteJson.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.getSiteJson
-*/15 * * * * /data/adcpbm1/PandaBrokerageMonitor/dailyCollectV2.sh 2>&1 >>/data/adcpbm1/PandaBrokerageMonitor/logs/log.dailyCollectV2
+59 * * * * /data/adcpbm1/lib/python2.6/site-packages/pbm_collector/get_site/getSiteJson.sh 2>&1 >>/data/adcpbm1/lib/python2.6/site-packages/pbm_collector/logs/log.getSiteJson
+*/15 * * * * /data/adcpbm1/lib/python2.6/site-packages/pbm_collector/daily_collect/dailyCollectV2.sh 2>&1 >>/data/adcpbm1/lib/python2.6/site-packages/pbm_collector/logs/log.dailyCollectV2
 

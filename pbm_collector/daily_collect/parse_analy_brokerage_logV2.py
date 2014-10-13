@@ -215,7 +215,7 @@ def parse_document(document_filename):
     LOGGER.info('info=%s' % (last_time))
     
     error_skip =0
-    ferror = open("%s/last_errors.txt" % WORKDIR,'a')
+    ferror = open("%s/settings/last_errors.txt" % WORKDIR, 'a')
     
     LOGGER.info('Starting loop over input rows.')
     
@@ -475,7 +475,7 @@ def parse_document(document_filename):
         print u"WARNING: Missing jobSet/jobDef skiped = %d"%error_skip
         LOGGER.warning("Missing jobSet/jobDef skiped = %d"%error_skip)
     if processed_rows == 0:
-        write_document(document,"%s/zero_process.html" % WORKDIR)
+        write_document(document, "%s/settings/zero_process.html" % WORKDIR)
         LOGGER.warning("Processed 0 rows")
 
     return (set_last,processed_rows,sum_nJobs,lost_nJobs,eff_records, exist_records, in_buf_records)
