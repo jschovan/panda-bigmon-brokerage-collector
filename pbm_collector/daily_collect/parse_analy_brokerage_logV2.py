@@ -28,7 +28,6 @@ QUERY_LIMIT = 0
 DEBUG = 0
 
 WORKDIR="/data/adcpbm1/lib/python2.6/site-packages/pbm_collector"
-PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
 LOGDIR="%s/logs" % (WORKDIR)
 logname="dailyCollectV2"
 logfile="%s/logging.%s" % (LOGDIR, logname)
@@ -36,14 +35,14 @@ LOGGER=logger(logname, logfile)
 
 
 # get cloud name
-fjson = open('%s/panda_queues.json' % WORKDIR,'r')
+fjson = open('%s/settings/panda_queues.json' % WORKDIR, 'r')
 data = fjson.read()
 dic = json.loads(data)
 fjson.close()
 
 # get query options
 try:
-    qjson = open('%s/queryOptions.json' % WORKDIR,'r')
+    qjson = open('%s/settings/queryOptions.json' % WORKDIR, 'r')
     data = qjson.read()
     qoptions = json.loads(data)
     qjson.close()
