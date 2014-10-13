@@ -49,6 +49,9 @@ except:
     QUERY_HOUR = 1
     QUERY_LIMIT = 11111
 
+LOGGER.debug('QUERY_HOUR=%s' % (QUERY_HOUR))
+LOGGER.debug('QUERY_LIMIT=%s' % (QUERY_LIMIT))
+
 class Test:
     def __init__(self):
         self.contents = ''
