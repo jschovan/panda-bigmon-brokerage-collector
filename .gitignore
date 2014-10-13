@@ -52,3 +52,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# PyDev stuff:
+
+
+.project
+.pydevproject
+PandaBrokerageMonitorDB.conf
