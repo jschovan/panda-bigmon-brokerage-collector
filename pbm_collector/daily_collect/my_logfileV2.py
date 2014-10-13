@@ -16,9 +16,9 @@ last_hours = 4
 NOTIFY_MIN = 10 # mins
 NOTIFY_MAX = 30 # mins
 mFrom = 'PBMon <no-reply@cern.ch>'
-mTo = 'ookey.lai@twgrid.org,ookeykimo@yahoo.com.tw,adcpbm1@cern.ch'
+mTo = 'adcpbm1@cern.ch'
 
-WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
+WORKDIR="/data/adcpbm1/lib/python2.6/site-packages/pbm_collector"
 PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
 
 def get_document(logfile):
@@ -33,7 +33,7 @@ def is_this_category(string, category_pattern):
         return True
     
 def parse_document(document):
-    records = []    
+    records = []
     from_date = None
     to_date = None
     

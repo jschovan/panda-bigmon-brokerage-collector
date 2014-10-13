@@ -11,21 +11,14 @@ import ConfigParser
 import re
 
 ### Production
-#TABLE_DAILYLOG = "dailyLogV2"
 TABLE_DAILYLOG = "dailyLogV3"
 TABLE_LASTUPDATED = "LastUpdatedV2"
-
-### Development/tests
-#TABLE_DAILYLOG="dailyLogV2T1"
-#TABLE_LASTUPDATED="lastUpdatedV2T1"
 
 
 class dailyDBV2(object):
     
     _db = None
-    #before 2012-10-13#_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
-    #after 2012-10-13#_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2new@devdb11'
-    _configfile = '/data/adcpbm1/PandaBrokerageMonitor/PandaBrokerageMonitorDB.conf'
+    _configfile = '/data/adcpbm1/lib/python2.6/site-packages/pbm_collector/settings/PandaBrokerageMonitorDB.conf'
     
     ### DB connection
     _connect = 'DBuser/DBpassword@DBhost'
@@ -38,9 +31,7 @@ class dailyDBV2(object):
     
     def __init__(self):
         global TABLE_DAILYLOG, TABLE_LASTUPDATED
-        # self._db = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')
         self.dbConfig()
-        # self._db = cx_Oracle.connect(self._connect)
         
     def get_max_id(self):
         cursor = self._db.cursor()
@@ -56,17 +47,12 @@ class dailyDBV2(object):
         Configure the database. 
         Config file: self._configfile
         """
-        #self._logger.info('Inside dbConfig()')
         config = ConfigParser.ConfigParser()
         config.read(self._configfile)
 
         self._DB_BACKEND = config.get("DB_collector", "DB_BACKEND")
-        
         self._DB_HOST = config.get("DB_collector", "DB_HOST")
-        #self._logger.debug('DB_HOST=%s' % (self._DB_HOST))
         self._DB_USER = config.get("DB_collector", "DB_USER")
-        #self._logger.debug('DB_USER=%s' % (self._DB_USER))
-
         self._DB_PASSWORD = config.get("DB_collector", "DB_CRED")
 
         if self._DB_BACKEND == 'mysql':
@@ -81,7 +67,6 @@ class dailyDBV2(object):
         else:
             self._connect = '%s/%s@%s' % (self._DB_USER, self._DB_PASSWORD, self._DB_HOST)
             self._db = cx_Oracle.connect(self._connect)
-        #self._logger.info('Exiting dbConfig()')
     
 
     def mysqlize_query_bindvars(self, sql, varMap):

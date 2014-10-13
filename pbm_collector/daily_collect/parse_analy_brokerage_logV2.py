@@ -27,7 +27,7 @@ QUERY_HOUR = 0
 QUERY_LIMIT = 0
 DEBUG = 0
 
-WORKDIR="/data/adcpbm1/PandaBrokerageMonitor"
+WORKDIR="/data/adcpbm1/lib/python2.6/site-packages/pbm_collector"
 PUBDIR="/data/adcmon-preproduction/PandaBrokerageMon/pubdir"
 LOGDIR="%s/logs" % (WORKDIR)
 logname="dailyCollectV2"

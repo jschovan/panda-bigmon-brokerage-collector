@@ -8,12 +8,10 @@ TABLE_LASTUPDATED="LastUpdatedV2"
 class monthlyDBV2(object):
     
     _db = None
-    #_connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11'
     _connect = 'PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2new@devdb11'
     
-    def __init__(self):       
+    def __init__(self):
         global TABLE_MONTHLYLOG, TABLE_LASTUPDATED
-        # self._db = cx_Oracle.connect('PandaBrokerageMonitor_ookey/PandaBrokerageMonitor2@devdb11')
         self._db = cx_Oracle.connect(self._connect)
         
     def get_max_id(self):

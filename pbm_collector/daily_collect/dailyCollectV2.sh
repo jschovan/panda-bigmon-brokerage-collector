@@ -4,7 +4,7 @@
 # PYTHON_EXECUTABLE="/usr/bin/python2.5"
 PYTHON_EXECUTABLE=$( if [ -f /usr/bin/python ]; then echo "/usr/bin/python" ; else echo "/usr/bin/python2.5"; fi ) 
 
-source /data/adcpbm1/PandaBrokerageMonitor/PandaBrokerageMonitor.conf
+source /data/adcpbm1/lib/python2.6/site-packages/pbm_collector/PandaBrokerageMonitor.conf
 source ${WORKDIR}/pbm_profile
 cd ${WORKDIR}
 
