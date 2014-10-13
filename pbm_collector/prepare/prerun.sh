@@ -8,28 +8,39 @@
 # sudo chown adcmusr1:zp /data/adcmusr1
 # sudo chmod og-rwx /data/adcmusr1
 
+TMPDIR=/tmp/${USER}
+mkdir -p ${TMPDIR}
 
-mkdir -p /tmp/${USER}
-WORKDIR=/data/${USER}/PandaBrokerageMonitor
+
+WORKDIR=/data/${USER}/lib/python2.6/site-packages/pbm_collector
 mkdir -p ${WORKDIR}
-svn co svn+ssh://svn.cern.ch/reps/adcsw/adcmon/PandaBrokerageMonitor/trunk ${WORKDIR}
+# git clone https://github.com/jschovan/panda-bigmon-brokerage-collector.git ${WORKDIR}
+# yum install bigpanda-brokerage-collector
 
-cd ${WORKDIR}
 
-mkdir -p logs 
 
+mkdir -p ${WORKDIR}/logs 
+
+
+
+cd ${WORKDIR}/settings/
 echo -n "{}" > allunprocess.json
 cp allunprocess.json allunprocess.json.bak
 cp allunprocess.json allunprocess.json.new
 touch zero_process.html panda_queues.json last_errors.txt
 
-### get getSiteJson.shcontent of panda_queues.json
-./getSiteJson.sh
-
 ### edit config files
 # vim PandaBrokerageMonitor.conf
 # vim PandaBrokerageMonitorDB.conf
 
+
+
+### get getSiteJson.shcontent of panda_queues.json
+${WORKDIR}/get_site/getSiteJson.sh
+
+
+
 ### set up crontab, see content of crontab_adcpbm1
+
 
 

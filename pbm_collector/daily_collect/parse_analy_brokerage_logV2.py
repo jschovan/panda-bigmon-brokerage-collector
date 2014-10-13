@@ -188,7 +188,7 @@ def parse_document(document_filename):
     LOGGER.info('Retrieved %d rows to process.' % (len(rows)))
 
     # Load unprocessed records
-    input_file='%s/allunprocess.json' % WORKDIR
+    input_file = '%s/settings/allunprocess.json' % WORKDIR
     fjson = open(input_file,'r')
     data = fjson.read()
     records = json.loads(data)
@@ -381,7 +381,7 @@ def parse_document(document_filename):
     sum_nJobs = 0
     lost_nJobs = 0
     
-    fjson = open("%s/allunprocess.json.new" % WORKDIR,'w')
+    fjson = open("%s/settings/allunprocess.json.new" % WORKDIR, 'w')
     fjson.write("{\n")
     jcom = ""
     
@@ -432,9 +432,9 @@ def parse_document(document_filename):
         LOGGER.debug('Finished processing of record: %s' % (rec))
     fjson.write("}\n")
     fjson.close()
-    os.unlink("%s/allunprocess.json.bak" % WORKDIR)
-    os.rename("%s/allunprocess.json" % WORKDIR, "%s/allunprocess.json.bak" % WORKDIR)
-    os.rename("%s/allunprocess.json.new" % WORKDIR, "%s/allunprocess.json" % WORKDIR)
+    os.unlink("%s/settings/allunprocess.json.bak" % WORKDIR)
+    os.rename("%s/settings/allunprocess.json" % WORKDIR, "%s/settings/allunprocess.json.bak" % WORKDIR)
+    os.rename("%s/settings/allunprocess.json.new" % WORKDIR, "%s/settings/allunprocess.json" % WORKDIR)
     
 
     LOGGER.info('Processing %s records "For Excluded"' % (len(ex_records)))

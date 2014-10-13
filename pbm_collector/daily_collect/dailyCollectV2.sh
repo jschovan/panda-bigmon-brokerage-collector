@@ -1,7 +1,6 @@
 #!/bin/bash
 #set -x
 
-# PYTHON_EXECUTABLE="/usr/bin/python2.5"
 PYTHON_EXECUTABLE=$( if [ -f /usr/bin/python ]; then echo "/usr/bin/python" ; else echo "/usr/bin/python2.5"; fi ) 
 
 source /data/adcpbm1/lib/python2.6/site-packages/pbm_collector/settings/PandaBrokerageMonitor.conf
@@ -17,7 +16,7 @@ date >> ${WORKDIR}/logs/PBMonV2.log
 ${PYTHON_EXECUTABLE} ${WORKDIR}/parse_analy_brokerage_logV2.py >> ${WORKDIR}/logs/PBMonV2.log 2>&1
 mypid="0"
 ### cleanup the PID file
-PIDFILE=/tmp/adcpbm1/pbm_pidfile 
+PIDFILE=${TMP_DIR}/pbm_pidfile 
 if [ -f "${PIDFILE}" ]; then 
 	if [ -s "${PIDFILE}" ]; then
 		mypid=$(cat ${PIDFILE} )
